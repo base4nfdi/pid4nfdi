@@ -1,0 +1,10 @@
+# IDEs
+.idea/
+
+# Hugo
+/resources/
+public/
+assets/jsconfig.json
+
+# Ignore .DS_Store files of macOS
+.DS_Store
