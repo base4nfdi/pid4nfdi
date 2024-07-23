@@ -50,7 +50,7 @@ social:
     link: 'mailto:sven.bingert@gwdg.de'
   - icon: researcherid
     icon_pack: ai
-    link: http://www.researcherid.com/rid/S-5704-2017
+    link: https://www.webofscience.com/wos/author/record/1209949
   - icon: scopus
     icon_pack: ai
     link: https://www.scopus.com/authid/detail.uri?authorId=8576427200
@@ -70,7 +70,6 @@ highlight_name: true
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - Principal Investigators
-  - Project Team Members
 ---
 
 Sven works at the Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) and is a principal investigator and project team member of PID4NFDI.

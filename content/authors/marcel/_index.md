@@ -20,20 +20,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Marcel works at the Helmholtz Open Science Office and is an interim principal investigator of PID4NFDI.
 
-interests:
-  - tba
-  - tba
-  - tba
-
-education:
-  courses:
-    - course: tba
-      institution: tba
-      year: 2000
-    - course: tba
-      institution: tba
-      year: 2000
-
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -66,4 +52,4 @@ user_groups:
   - Principal Investigators
 ---
 
-Marcel works at the Helmholtz Open Science Office and is an interim principal investigator of PID4NFDI.
+Marcel works at the Helmholtz Open Science Office and is an interim principal investigator of PID4NFDI. Check [Marcel's ORCID record](https://orcid.org/0000-0001-6347-9926) for more information.
