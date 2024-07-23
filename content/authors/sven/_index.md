@@ -10,7 +10,7 @@ last_name: Bingert
 superuser: false
 
 # Role/position
-role: Principial investigator and project team member
+role: Principial investigator
 
 # Organizations/Affiliations
 organizations:
