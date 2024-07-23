@@ -45,15 +45,6 @@ social:
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0000-0001-9547-1582
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:sven.bingert@gwdg.de'
-  - icon: researcherid
-    icon_pack: ai
-    link: https://www.webofscience.com/wos/author/record/1209949
-  - icon: scopus
-    icon_pack: ai
-    link: https://www.scopus.com/authid/detail.uri?authorId=8576427200
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
