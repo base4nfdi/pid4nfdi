@@ -3,7 +3,7 @@ title: 'PID4NFDI: Survey on PID Practices. Main results.'
 authors:
 - stephanie
 date: '2023-02-13'
-publishDate: '2023-02-13'
+publishDate: '2024-07-23'
 #publication: ''
 publication_types: 'speech'
 doi: '10.5281/zenodo.7635791'

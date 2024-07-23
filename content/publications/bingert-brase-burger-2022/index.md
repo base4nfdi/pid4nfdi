@@ -1,19 +1,17 @@
 ---
-title: Concept for Setting up the Persistent Identifier Services Working Group in
-  the NFDI Section \"Common Infrastructures\"
+title: 'Concept for Setting up the Persistent Identifier Services Working Group in the NFDI Section "Common Infrastructures"'
 authors:
-- Sven Bingert
+- sven
 - Jan Brase
 - Felix Burger
 - Britta Dreyer
-- Stephanie Hagemann-Wilholt
+- stephanie
 - Paul Vierkant
 - Philipp Wieder
 date: '2022-04-30'
-publishDate: '2024-07-23T14:54:36.262030Z'
-publication_types:
-- manuscript
-publication: ''
+publishDate: '2024-07-23'
+publication_types: 'report'
+publication: 'NFDI Section _Common Infrastructures_'
 institution: 'NFDI Section _Common Infrastructures_'
 doi: 10.5281/zenodo.6507760
 abstract: The aim of this NFDI working group is to develop a common strategy for the
@@ -29,4 +27,5 @@ tags:
 - Base4NFDI
 - persistent identifier
 - PID4NFI
+share: false
 ---
