@@ -7,7 +7,7 @@ authors:
 - Nelli Taller
 date: '2024-06-11'
 publishDate: '2024-06-28'
-publication: 'Prague: [PIDfest 2024](https://www.pidfest.org)'
+publication: '[PIDfest 2024](https://www.pidfest.org), Prague, 11–13 June 2024'
 publication_types: 'speech'
 event: 'PIDfest 2024'
 doi: '10.48813/ygsd-wh84'

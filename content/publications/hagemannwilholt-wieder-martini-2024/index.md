@@ -7,7 +7,7 @@ authors:
 - Matthias Lange
 date: '2024-02-20'
 publishDate: '2024-07-15'
-publication: Zenodo
+publication: 'NFDITalk, 19 February 2024'
 publication_types: 'speech'
 event: 'NFDITalk'
 doi: '10.5281/zenodo.10685209'
@@ -19,4 +19,5 @@ tags:
 - use case
 - service
 share: false
+url_video: 'https://www.youtube.com/watch?v=y-dJUOBUZWs'
 ---
