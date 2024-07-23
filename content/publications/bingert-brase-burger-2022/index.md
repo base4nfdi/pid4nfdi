@@ -9,11 +9,12 @@ authors:
 - Stephanie Hagemann-Wilholt
 - Paul Vierkant
 - Philipp Wieder
-date: '2022-01-01'
+date: '2022-04-30'
 publishDate: '2024-07-23T14:54:36.262030Z'
 publication_types:
 - manuscript
-publication: '*Zenodo*'
+publication: ''
+institution: 'NFDI Section _Common Infrastructures_'
 doi: 10.5281/zenodo.6507760
 abstract: The aim of this NFDI working group is to develop a common strategy for the
   implementation and extension of PID services that is closely aligned with the needs
@@ -26,6 +27,6 @@ abstract: The aim of this NFDI working group is to develop a common strategy for
 tags:
 - NFDI
 - Base4NFDI
-- Persistent Identifier Services
-- PID
+- persistent identifier
+- PID4NFI
 ---
