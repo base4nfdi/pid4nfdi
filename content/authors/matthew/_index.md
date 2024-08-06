@@ -20,20 +20,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Matthew works at DataCite and is a principal investigator of PID4NFDI.
 
-interests:
-  - tba
-  - tba
-  - tba
-
-education:
-  courses:
-    - course: tba
-      institution: tba
-      year: 2000
-    - course: tba
-      institution: tba
-      year: 2000
-
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -63,4 +49,4 @@ user_groups:
   - Principal Investigators
 ---
 
-Matthew works at DataCite and is a principal investigator of PID4NFDI.
+Matthew works at DataCite and is a principal investigator of PID4NFDI. Check [Matthew's ORCID record](https://orcid.org/0000-0001-7234-3684) for more information.

@@ -20,20 +20,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Marc works at the Helmholtz Open Science Office and is a project team member of PID4NFDI.
 
-interests:
-  - Open Science
-  - Open Access
-  - Persistent Identifiers
-
-education:
-  courses:
-    - course: MPhil in Anthropology
-      institution: Humboldt-Universität zu Berlin
-      year: 2019
-    - course: BPhil in Anthropology and Geography
-      institution: Humboldt-Universität zu Berlin
-      year: 2016
-
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -63,4 +49,4 @@ user_groups:
   - Project Team Members
 ---
 
-Marc works at the Helmholtz Open Science Office and is a project team member of PID4NFDI.
+Marc works at the Helmholtz Open Science Office and is a project team member of PID4NFDI. Check [Marc's ORCID record](https://orcid.org/0000-0002-7742-3867) for more information.
