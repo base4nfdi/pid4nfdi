@@ -15,25 +15,25 @@ sections:
 
         {{% cta cta_link="./about/" cta_text="Read more →" %}}
   
-  - block: collection
-    content:
-      title: Latest Blog Posts
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-        folders:
-          - blog
-      offset: 0
-      order: desc
-    design:
-      view: card
-      columns: '1'
+#  - block: collection
+#    content:
+#      title: Latest Blog Posts
+#      subtitle:
+#      text:
+#      count: 5
+#      filters:
+#        author: ''
+#        category: ''
+#        exclude_featured: false
+#        publication_type: ''
+#        tag: ''
+#        folders:
+#          - blog
+#      offset: 0
+#      order: desc
+#    design:
+#      view: card
+#      columns: '1'
 
   - block: collection
     content:
