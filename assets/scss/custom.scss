@@ -36,6 +36,17 @@ a {
 	}
 }
 
+.article-metadata {
+	color: black;
+	
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: var(--color-blue);
+		transition: color .6s ease !important;
+	}
+}
+
 .btn {
 	border: 0;
 	border-radius: var(--border-radius);
@@ -130,5 +141,15 @@ a {
 	&:hover {
 		color: var(--color-white) !important;
 		transition: color .6s ease;
+	}
+}
+
+.section-subheading {
+	font-family: "Fira Sans";
+	
+	a {
+		color: var(--color-blue);
+		background-color: transparent;
+		text-decoration: none !important;
 	}
 }
