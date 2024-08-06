@@ -85,6 +85,21 @@ a {
     color: var(--color-white);
 }
 
+#navbar-main .main-menu-item .nav-link {
+	color: var(--color-white) !important;
+	
+	&.active {
+		span {
+			color: var(--color-blue);
+		}
+	}
+	
+	&:focus,
+	&:hover {
+		color: var(--color-blue) !important;
+	}
+}
+
 .page-footer, .site-footer {
 	font-family: "Fira Sans";
 	background-color: var(--color-anthracite);
