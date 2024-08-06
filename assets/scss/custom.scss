@@ -42,7 +42,7 @@ a {
 	&:active,
 	&:focus,
 	&:hover {
-		background-color: var(--color-blue);
+		color: var(--color-blue);
 		transition: color .6s ease !important;
 	}
 }
@@ -151,5 +151,12 @@ a {
 		color: var(--color-blue);
 		background-color: transparent;
 		text-decoration: none !important;
+		
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: var(--color-anthracite);
+			transition: color .6s ease !important;
+		}
 	}
 }
