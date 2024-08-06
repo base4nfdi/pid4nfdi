@@ -77,6 +77,21 @@ a {
 	color: var(--color-white);
 }
 
+.navbar .navbar-nav .nav-link {
+    color: var(--color-white);
+    
+    	&.active {
+		span {
+			color: var(--color-blue);
+		}
+	}
+	
+	&:focus,
+	&:hover {
+		color: var(--color-blue) !important;
+	}
+}
+
 .navbar-light .navbar-brand {
 	color: var(--color-blue);
 }
