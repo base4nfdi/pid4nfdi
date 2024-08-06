@@ -3,6 +3,61 @@
     src: url("../fonts/FiraSans.woff2") format("woff2");
 }
 
+:root {
+	--color-anthracite: #45546b;
+	--color-blue: #0abaf0;
+	--color-white: #ffffff;
+	--color-green: #a3c717;
+	--color-red: #e7324c;
+	--color-orange: #fbbc43;
+	--color-grey: #6c8080;
+	--color-grey-80: #6c8080cc;
+	--color-grey-60: #6c808099;
+	--color-grey-40: #6c808066;
+	--color-grey-20: #6c808033;
+	--color-grey-10: #6c80801a;
+	--border-radius: 5px;
+}
+
 html, body, h1, h2, h3, h4, h5, h6 {
 	font-family: "Fira Sans"
+}
+
+a {
+	color: var(--color-blue);
+	background-color: transparent;
+	text-decoration: none;
+}
+
+&:focus, &:hover {
+	background-color: var(--color-anthracite);
+}
+
+.btn {
+	border: 0;
+	border-radius: var(--border-radius);
+	font-size: 1.35rem;
+	padding: 10px 20px;
+}
+
+.btn-primary {
+	background-color: var(--color-blue);
+}
+
+.btn-outline-primary {
+	background-color: transparent;
+	border: 1px solid var(--color-blue);
+	color: var(--color-blue);
+}
+
+.page-header, .site-header {
+	font-family: "Fira Sans";
+	background-color: var(--color-anthracite);
+	color: var(--color-white);
+}
+
+.page-footer, .site-footer {
+	font-family: "Fira Sans";
+	background-color: var(--color-anthrazit);
+	color: var(--color-white);
 }
