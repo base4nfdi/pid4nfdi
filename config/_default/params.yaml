@@ -42,7 +42,7 @@ header:
     show_theme_chooser: true
     highlight_active_link: true
     logo:
-        text: 'PID4NFDI'
+        text: ''
         filnename: 'icon.png'
 
 # Site footer
