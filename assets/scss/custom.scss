@@ -1,4 +1,8 @@
 @font-face {
     font-family: "Fira Sans";
-    src: url('../fonts/FiraSans.woff2') format('woff2');
+    src: url("../fonts/FiraSans.woff2") format("woff2");
+}
+
+html, body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Fira Sans"
 }
