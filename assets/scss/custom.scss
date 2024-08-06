@@ -27,11 +27,6 @@ a {
 	color: var(--color-blue);
 	background-color: transparent;
 	text-decoration: none !important;
-	
-	&:focus,
-	&:hover {
-		color: var(--color-anthracite);
-	}
 }
 
 .btn {
@@ -70,7 +65,7 @@ a {
 	}
 }
 
-.page-header, .site-header {
+.navbar {
 	font-family: "Fira Sans";
 	background-color: var(--color-anthracite);
 	color: var(--color-white);
