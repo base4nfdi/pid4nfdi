@@ -28,6 +28,7 @@ a {
 	background-color: transparent;
 	text-decoration: none !important;
 	
+	&:active,
 	&:focus,
 	&:hover {
 		color: var(--color-anthracite);
@@ -45,10 +46,11 @@ a {
 .btn-primary {
 	background-color: var(--color-blue);
 	
+	&:active,
 	&:focus,
 	&:hover {
 		background-color: var(--color-anthracite);
-		transition: color .6s ease;
+		transition: color .6s ease !important;
 	}
 }
 
@@ -57,19 +59,13 @@ a {
 	border: 1px solid var(--color-blue);
 	color: var(--color-blue);
 	
-	&:active {
-		background-color: var(--color-blue);
-		border: 1px solid var(--color-blue);
-		color: var(--color-white);
-		outline: 0;
-	}
-	
+	&:active,
 	&:focus,
 	&:hover {
 		background-color: var(--color-blue);
 		border: 1px solid var(--color-blue);
 		color: var(--color-white);
-		transition: color .6s ease;
+		transition: color .6s ease !important;
 	}
 }
 
@@ -88,10 +84,11 @@ a {
 		}
 	}
 	
+	&:active,
 	&:focus,
 	&:hover {
 		color: var(--color-blue) !important;
-		transition: color .6s ease;
+		transition: color .6s ease !important;
 	}
 }
 
@@ -113,6 +110,7 @@ a {
 		}
 	}
 	
+	&:active,
 	&:focus,
 	&:hover {
 		color: var(--color-blue) !important;
@@ -127,6 +125,7 @@ a {
 }
 
 .page-footer, .site-footer a {
+	&:active,
 	&:focus,
 	&:hover {
 		color: var(--color-white) !important;
