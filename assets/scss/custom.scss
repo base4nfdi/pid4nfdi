@@ -48,6 +48,7 @@ a {
 	&:focus,
 	&:hover {
 		background-color: var(--color-anthracite);
+		transition: color .6s ease;
 	}
 }
 
@@ -100,6 +101,7 @@ a {
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
     color: var(--color-white);
+    transition: color .6s ease;
 }
 
 #navbar-main .main-menu-item .nav-link {
