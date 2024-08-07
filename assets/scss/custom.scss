@@ -36,6 +36,17 @@ a {
 	}
 }
 
+.article-metadata.li-cite-author a {
+	color: black;
+	
+	&:active,
+	&:focus,
+	&:hover {
+		color: var(--color-blue);
+		transition: color .6s ease !important;
+	}
+}
+
 .author-highlighted a {
 	color: black;
 	
@@ -76,6 +87,17 @@ a {
 		background-color: var(--color-blue);
 		border: 1px solid var(--color-blue);
 		color: var(--color-white);
+		transition: color .6s ease !important;
+	}
+}
+
+.card-title {
+	color: var(--color-blue);
+	
+	&:active,
+	&:focus,
+	&:hover {
+		color: var(--color-anthracite);
 		transition: color .6s ease !important;
 	}
 }
