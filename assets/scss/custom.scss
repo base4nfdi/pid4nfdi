@@ -36,7 +36,7 @@ a {
 	}
 }
 
-.article-metadata.li-cite-author a {
+.article-metadata a {
 	color: black;
 	
 	&:active,
@@ -91,7 +91,7 @@ a {
 	}
 }
 
-.card-title {
+.card-title a {
 	color: var(--color-blue);
 	
 	&:active,
