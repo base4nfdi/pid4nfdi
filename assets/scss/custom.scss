@@ -36,7 +36,7 @@ a {
 	}
 }
 
-.article-metadata {
+.author-highlighted {
 	color: black;
 	
 	&:active,
@@ -155,7 +155,7 @@ a {
 		&:active,
 		&:focus,
 		&:hover {
-			background-color: var(--color-anthracite);
+			color: var(--color-anthracite);
 			transition: color .6s ease !important;
 		}
 	}
