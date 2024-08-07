@@ -102,6 +102,14 @@ a {
 	}
 }
 
+.experience .m-2 .border, .experience .col.border-right {
+	border-color: var(--color-blue) !important;
+}
+
+.experience .m-2 .border.exp-fill {
+	background-color: var(--color-blue) !important;
+}
+
 .navbar {
 	font-family: "Fira Sans";
 	background-color: var(--color-anthracite);
