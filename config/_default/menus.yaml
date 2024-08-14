@@ -6,7 +6,6 @@
 main:
   - name: About
     url: about
-    identifier: about
     weight: 10
 #  - name: Blog
 #    url: blog
@@ -14,21 +13,20 @@ main:
   - name: Publications
     url: publications
     weight: 30
-  - name: Training Material
-    url: training-material
-    weight: 40
-  - name: Best Practice
-    url: best-practice
-    weight: 50
-  - name: PID Services/Provider
-    url: pid-services-provider
-    weight: 60
+#  - name: Training Material
+#    url: training-material
+#    weight: 40
+#  - name: Best Practice
+#    url: best-practice
+#    weight: 50
+#  - name: PID Services/Provider
+#    url: pid-services-provider
+#    weight: 60
   - name: Events
     url: event
     weight: 70
   - name: People
     url: people
-    parent: about
     weight: 80
   - name: Contact
     url: contact
