@@ -54,11 +54,11 @@ footer:
     Grant Numbers: 521453681, 521460392, 521462155, 521463400, 521466146, 521471126, 521473512, 521474032, 521475185, 521476232. <br><br>
     [Contact](/contact) | [Legal Notice](https://www.base4nfdi.de) | [Privacy](https://www.base4nfdi.de) | [Accessibility](https://www.base4nfdi.de) <br><br>
     This work is licensed under {license}.'
-    license:
-      enable: true
-      allow_derivatives: true
-      share_alike: true
-      allow_commercial: true
+#    license:
+#      enable: true
+#      allow_derivatives: true
+#      share_alike: true
+#      allow_commercial: true
 
 # Localization
 
