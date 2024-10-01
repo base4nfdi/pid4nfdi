@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Marcel Meistring
+title: Mathijs Vleugel
 
 # Full Name (for SEO)
-first_name: Marcel
-last_name: Meistring
+first_name: Mathijs
+last_name: Vleugel
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Principal investigator (interim)
+role: Principal investigator
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
     url: 'https://os.helmholtz.de/'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Marcel works at the Helmholtz Open Science Office and is an interim principal investigator of PID4NFDI.
+bio: Mathijs works at the Helmholtz Open Science Office and is a principal investigator of PID4NFDI.
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -30,7 +30,7 @@ social:
     link: https://ror.org/0281dp749
   - icon: orcid
     icon_pack: ai
-    link: https://orcid.org/0000-0001-6347-9926
+    link: https://orcid.org/0000-0003-2988-2628
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -49,4 +49,4 @@ user_groups:
   - Principal Investigators
 ---
 
-Marcel works at the Helmholtz Open Science Office and is an interim principal investigator of PID4NFDI. Check [Marcel's ORCID record](https://orcid.org/0000-0001-6347-9926) for more information.
+Mathijs works at the Helmholtz Open Science Office and is a principal investigator of PID4NFDI. Check [Mathijs' ORCID record](https://orcid.org/0000-0003-2988-2628) for more information.
