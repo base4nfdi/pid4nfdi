@@ -4,30 +4,82 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
+#  - name: Home
+#    url: /
+#    weight: 100
+  - name: Get a PID
+    identifier: get-pid
+    url: get-pid
+    weight: 200
+  - name: How to Start
+    parent: get-pid
+    url: get-pid/start
+    weight: 10
+  - name: Services and Provider
+    parent: get-pid
+    url: get-pid/services-provider
+    weight: 20
+  - name: Services
+    identifier: services
+    url: services
+    weight: 300
+  - name: Metadata Support and Assessment
+    parent: services
+    url: services/metadata-support-assessment
+    weight: 10
+#  - name: Datatype Registry
+#    parent: services
+#    url: services/datatype-registry
+#    weight: 20
+  - name: Resources
+    identifier: resources
+    url: resources
+    weight: 400
+  - name: Training Material
+    parent: resources
+    url: resources/training-material
+    weight: 10
+#  - name: Best Practice
+#    parent: resources
+#    url: resources/best-practice
+#    weight: 20
+#  - name: Policies
+#    parent: resources
+#    url: resources/policies
+#    weight: 30
+#  - name: Standards and Schemes
+#    parent: resources
+#    url: resources/standards-schemes
+#    weight: 40
+  - name: Publications
+    parent: resources
+    url: resources/publications
+    weight: 50
+  - name: News
+    identifier: news
+    #url: news
+    weight: 500
+#  - name: Blog
+#    parent: news
+#    url: blog
+#    weight: 10
+  - name: Events
+    parent: news
+    url: events
+    weight: 20
   - name: About
+    identifier: about
+    url: about
+    weight: 600
+  - name: What is PID4NFDI?
+    parent: about
     url: about
     weight: 10
-#  - name: Blog
-#    url: blog
-#    weight: 20
-  - name: Publications
-    url: publications
-    weight: 30
-#  - name: Training Material
-#    url: training-material
-#    weight: 40
-#  - name: Best Practice
-#    url: best-practice
-#    weight: 50
-#  - name: PID Services/Provider
-#    url: pid-services-provider
-#    weight: 60
-  - name: Events
-    url: event
-    weight: 70
-  - name: People
-    url: people
-    weight: 80
+  - name: Team
+    parent: about
+    url: about/team
+    weight: 20
   - name: Contact
-    url: contact
-    weight: 90
+    parent: about
+    url: about/contact
+    weight: 30

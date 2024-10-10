@@ -102,6 +102,10 @@ a {
 	}
 }
 
+.center {
+	text-align:center;
+}
+
 .experience .m-2 .border, .experience .col.border-right {
 	border-color: var(--color-blue) !important;
 }
@@ -189,4 +193,10 @@ a {
 			transition: color .6s ease !important;
 		}
 	}
+}
+
+.w-100 img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
