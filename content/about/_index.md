@@ -39,14 +39,14 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - title: Initialisation Phase
-          company: First Phase
+          company: first phase (12 months)
           location: current
           date_start: '2024-01-01'
-          date_end: ''
+          date_end: '2024-12-31'
           #description: 
         - title: Integration Phase
-          company: Second Phase
-          location: planned / in preparation
+          company: second phase (24 months)
+          location: in preparation
           date_start: '2025-01-01'
           date_end: '2026-12-31'
           #description: 

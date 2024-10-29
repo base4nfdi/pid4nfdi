@@ -59,10 +59,10 @@ main:
     identifier: news
     #url: news
     weight: 500
-#  - name: Blog
-#    parent: news
-#    url: blog
-#    weight: 10
+  - name: Blog
+    parent: news
+    url: blog
+    weight: 10
   - name: Events
     parent: news
     url: events

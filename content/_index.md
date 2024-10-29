@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title:
-date: 2024-09-09
+date: 2024-10-29
 type: landing
 
 sections:
@@ -36,38 +36,25 @@ sections:
     design:
         columns: '1'
   
-#  - block: collection
-#    content:
-#      title: Latest Blog Posts
-#      subtitle:
-#      text:
-#      count: 5
-#      filters:
-#        author: ''
-#        category: ''
-#        exclude_featured: false
-#        publication_type: ''
-#        tag: ''
-#        folders:
-#          - blog
-#      offset: 0
-#      order: desc
-#    design:
-#      view: card
-#      columns: '1'
-
-#  - block: collection
-#    content:
-#      title: Latest Publications
-#      text: ""
-#      count: 5
-#      filters:
-#        folders:
-#          - publications
-#        #publication_type: 'article'
-#    design:
-#      view: list
-#      columns: '1'
+  - block: collection
+    content:
+      title: Latest Blog Posts
+      subtitle:
+      text:
+      count: 5
+      filters:
+        author: ''
+        category: ''
+        exclude_featured: false
+        publication_type: ''
+        tag: ''
+        folders:
+          - blog
+      offset: 0
+      order: desc
+    design:
+      view: compact
+      columns: '1'
 
   - block: collection
     content:
@@ -81,6 +68,19 @@ sections:
     design:
         view: compact
         columns: '1'
+
+#  - block: collection
+#    content:
+#      title: Latest Publications
+#      text: ""
+#      count: 5
+#      filters:
+#        folders:
+#          - publications
+#        #publication_type: 'article'
+#    design:
+#      view: list
+#      columns: '1'
 
   - block: markdown
     content:
