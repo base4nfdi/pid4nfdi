@@ -24,18 +24,38 @@ sections:
     design:
       columns: '1'
 
-  - block: contact
+  - block: markdown
     content:
       title: Imprint
-      directions: Technische Informationsbibliothek (TIB)
-      address:
-        street: Welfengarten 1 B
-        city: Hannover
-        #region: Niedersachsen
-        postcode: '30167'
-        country: Germany
-        country_code: DE
-      email: information@tib.eu
-    design:
-      columns: '1'
+      subtitle: Imprint for this website – also serves as provider identification according to § 5 Digitale Dienste Gesetz (DDG)
+      text: |
+        ## Provider:
+        Technische Informationsbibliothek (TIB)<br />
+        Welfengarten 1 B, 30167 Hannover<br />
+        Postfach 6080, 30060 Hannover
+        
+        ## Authorised Representative:
+        Prof. Dr. Sören Auer (Director of TIB)
+        
+        Technische Informationsbibliothek (TIB) is a foundation of public law of the state of Lower Saxony.
+        
+        ## Responsible Supervisory Authority:
+        
+        Ministry for Science and Culture of Lower Saxony
+        
+        ## Contact:
+        Phone: +49 511 762-8989 or +49 511 762-2268<br />
+        Email: customerservice@tib.eu or einformation@tib.eu
+        
+        ## VAT (sales tax) registration number:
+        DE 214931803
+        
+        ## Editorial Office:
+        Responsible for the content according to § 18 Abs. 2 MStV:<br />
+        Dr. Sandra Niemeyer; email: sandra.niemeyer@tib.eu<br />
+        Michael Hohlfeld; email: michael.hohlfeld@tib.eu
+        
+        ## Copyright:
+        The layout of this website is protected under copyright, as are the graphics and all other contents contained in the website.
+
 ---
