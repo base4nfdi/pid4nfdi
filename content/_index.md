@@ -17,7 +17,8 @@ sections:
         filename: pid4nfdi_small.jpg
   - block: markdown
     content:
-      title: Driving FAIR, Open, and Persistent Research Practices with PIDHub. 
+      title: | 
+        <span style="color: #243B54; font-size: 3rem;"> Driving FAIR, Open, and Persistent Research Practices with PIDHub.</span>
       text: |
         <br> 
         
@@ -28,7 +29,8 @@ sections:
   
   - block: markdown
     content:
-        title: What are PIDs?
+        title: |
+          <span style="color: #243B54; font-size: 3rem;"> What are PIDs?  </span>
         text: |
             A persistent identifier, or short PID, is a unique alphanumeric code that makes it possible to uniquely and sustainably reference objects, persons and organizations. Importantly, a PID is linked to descriptive information (metadata) about the resource, thereby providing context information. The use of PIDs is growing steadily and is being extended to more and more areas of research, for example through the development of PIDs for samples, data management plans or research projects.
 
@@ -45,27 +47,31 @@ sections:
   
   - block: markdown
     content:
-        title: What do we offer?
+        title: | 
+          <span style="color: #243B54; font-size: 3rem;"> What do we offer? </span>
         text: | 
-           <span style="font-size: 1.5rem;"> Support for PID implementation and selection and provide information on best practices, standards and trainings for the NFDI. </span> 
+          <span style="font-size: 1.5rem;"> Support for PID implementation and selection and provide information on best practices, standards and trainings for the NFDI. </span> 
            {.left}
-           
-           <span style="font-size: 1.5rem;">{{% cta cta_alt_link="./get-pid/start" cta_new_tab="false" cta_alt_text="How to get a PID?" %}}</span>
+           <br>
+
+         
+           <span style="font-size: 1rem;"> {{% cta cta_link="./get-pid/start" cta_new_tab="false" cta_text="How to get a PID?" %}} </span>
           
           
-            <span style="font-size: 1.5rem;"> More Services and Resources: </span> 
+            <span style="font-size: 1.5rem;"> Metadata Support and Assessment </span> 
             {.left}
+            <br>
+
+            <span style="font-size: 1rem;">  {{< cta cta_text="" cta_link="" cta_new_tab="false" cta_text="Seek support in enhancing your PID metadata" cta_link="./services/metadata-support-assessment" cta_new_tab="false" >}} </span>
             
-            {{< cta cta_text="" cta_link="" cta_new_tab="false" cta_alt_text="Seek support in enhancing your PID metadata" cta_alt_link="./services/metadata-support-assessment" cta_alt_new_tab="false" >}}
             
-            
-            {{< cta cta_text="Other questions? Get in touch!" cta_link="./about/contact" cta_new_tab="false" >}}
     design:
-        columns: '2'
+        columns: '3'
   
   - block: collection
     content:
-      title: Latest Blog Posts
+      title: |
+          <span style="color: #243B54; font-size: 3rem;"> Latest Blog Posts </span>
       subtitle:
       text:
       count: 5
@@ -85,7 +91,8 @@ sections:
 
   - block: collection
     content:
-        title: Upcoming Events
+        title: |
+          <span style="color: #243B54; font-size: 3rem;"> Upcoming Events </span>
         text: ""
         count: 3
         filters:
@@ -111,7 +118,8 @@ sections:
 
   - block: markdown
     content:
-        title: About
+        title: |
+          <span style="color: #243B54; font-size: 3rem;"> About </span>
         subtitle: PID4NFDI – Persistent Identifier Services for the German National Research Data Infrastructure
         text: |
             {{% cta cta_link="./about/" cta_text="More about the project" %}}
@@ -121,5 +129,5 @@ sections:
             
             
     design:
-        columns: '2'
+        columns: '3'
 ---
