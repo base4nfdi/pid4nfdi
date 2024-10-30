@@ -8,7 +8,7 @@ sections:
     content:
         title: Metadata Support and Assessment
         text: | 
-            Metadata is essentially _data about data_, providing descriptive information that helps in organizing, finding, and understanding resources. Therefore, metadata support (creating, managing and maintaining metadata) and metadata assessment (evaluating the quality and effectiveness of metadata, and its adherence to standards) are crucial for managing and utilizing digital resources such as research data effectively. Most important is that data is FAIR, which means that the data – and its metadata – meet the [FAIR principles](https://www.go-fair.org/fair-principles/), so that data is _F_indable, _A_ccessible, _I_nteroperable and _R_eusable. Persistent identifiers (PIDs) play a crucial role in making data FAIR, as outlined in the principles themselves and the [FAIR principles' interpretation by the GO FAIR community](https://www.gofair.foundation/interpretation).
+            Metadata is essentially _data about data_, providing descriptive information that helps in organizing, finding, and understanding resources. Therefore, metadata support (creating, managing and maintaining metadata) and metadata assessment (evaluating the quality and effectiveness of metadata, and its adherence to standards) are crucial for managing and utilizing digital resources such as research data effectively. Most important is that data is FAIR, which means that the data – and its metadata – meet the [FAIR principles](https://www.go-fair.org/fair-principles/), so that data is **F**indable, **A**ccessible, **I**nteroperable and **R**eusable. Persistent identifiers (PIDs) play a crucial role in making data FAIR, as outlined in the principles themselves and the [FAIR principles' interpretation by the GO FAIR community](https://www.gofair.foundation/interpretation).
 
   - block: markdown
     content:
@@ -34,7 +34,7 @@ sections:
             The FAIR Evaluation Services collect resources and guidelines to assess the FAIRness of digital resources. It focuses on maturity indicator tests. It is maintained by the [FAIRmetrics](https://github.com/FAIRMetrics) and the [FAIRsharing](https://sansonegroup.eng.ox.ac.uk/) groups.
             
             ### [AtMoDat Data Checker](https://www.atmodat.de/adc)
-            The AtMoDat Data Checker is a Python-based library that contains checks to ensure compliance with the [AtMoDat Standard](https://www.atmodat.de/atmodat-standard). It is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker).
+            The AtMoDat Data Checker is a Python-based library that contains checks to ensure compliance with the [AtMoDat Standard](https://www.atmodat.de/atmodat-standard). It is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker) and was developed for the climate research community.
             
             ## Overviews and Comparisons of Tools for FAIR Data Assessment
             
