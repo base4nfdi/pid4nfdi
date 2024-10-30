@@ -50,12 +50,17 @@ sections:
         title: |
          <span style="color: #243B54; font-size: 3rem;"> What do we offer? </span>
         text: |
-          <span style="font-size: 1.5rem;"> Support for PID implementation and selection and provide information on best practices, standards, and trainings for the NFDI. </span>
-          
-          <span style="font-size: 1rem;"> {{% cta cta_link="./get-pid/start" cta_new_tab="false" cta_text="How to get a PID?" %}} </span>
-                  <br>
-          <span style="font-size: 1rem;"> {{< cta cta_text="" cta_link="" cta_new_tab="false" cta_text="Seek support in enhancing your PID metadata" cta_link="./services/metadata-support-assessment" cta_new_tab="false" >}} </span>
-         
+              <ul style="font-size: 1.5rem;">
+                  <li>Support for PID implementation and selection, with information on best practices, standards, and training for the NFDI.</li>
+                  <li>Metadata Quality Assessment</li>
+                  <li>Standards and Best Practices</li>
+                  <li>Training and Support</li>
+                  <li>Governance Support</li>
+              </ul>
+              <br> 
+
+              {{< cta cta_text="" cta_link="" cta_new_tab="false" cta_alt_text="And more" cta_alt_link="./services/metadata-support-assessment" cta_alt_new_tab="false" >}}
+
     design:
         columns: '2'
 
@@ -115,12 +120,20 @@ sections:
           <span style="color: #011936; font-size: 3rem;"> About </span>
         subtitle: PID4NFDI – Persistent Identifier Services for the German National Research Data Infrastructure
         text: |
-            {{% cta cta_link="./about/" cta_text="More about the project" %}}
-            {{% cta cta_link="./resources/publications/" cta_text="Latest publications" %}}
-            {{% cta cta_link="./about/team/" cta_text="Meet the team" %}}
-            {{% cta cta_link="./about/contact/" cta_text="Contact us" %}}
-            
-            
+           <div class="row row-cols-4">
+            <div class="col">
+            {{% cta cta_alt_link="./about/" cta_alt_text="More about the project" %}}
+            </div>
+            <div class="col">
+            {{% cta cta_alt_link="./resources/publications/" cta_alt_text="Latest publications" %}}
+            </div>
+            <div class="col">
+            {{% cta cta_alt_link="./about/team/" cta_alt_text="Meet the team" %}}
+            </div>
+            <div class="col">
+            {{% cta cta_alt_link="./about/contact/" cta_alt_text="Contact us" %}}
+            </div>
+            </div>
     design:
-        columns: '3'
+        columns: '1'
 ---
