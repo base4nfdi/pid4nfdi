@@ -8,17 +8,17 @@ sections:
   - block: hero
     content:
       title: |
-        <span style="color: #243B54; font-size: 4.5rem;">PID4NFDI </span>
+        <span style="color: #011936; font-size: 4.5rem;">PID4NFDI </span>
         <br> 
 
 
-        <span style="color: #243B54; font-size: 3rem;"> Persistent Identifier Services for NFDI</span>
+        <span style="color: #011936; font-size: 3rem;"> Persistent Identifier Services for NFDI</span>
       image:
         filename: pid4nfdi_small.jpg
   - block: markdown
     content:
       title: | 
-        <span style="color: #243B54; font-size: 3rem;"> Driving FAIR, Open, and Persistent Research Practices with PIDHub.</span>
+        <span style="color: #243B54; font-size: 2.5rem;"> Driving FAIR, Open, and Persistent Research Practices with PIDHub.</span>
       text: |
         <br> 
         
@@ -30,7 +30,7 @@ sections:
   - block: markdown
     content:
         title: |
-          <span style="color: #243B54; font-size: 3rem;"> What are PIDs?  </span>
+          <span style="color: #011936; font-size: 3rem;"> What are PIDs?  </span>
         text: |
             A persistent identifier, or short PID, is a unique alphanumeric code that makes it possible to uniquely and sustainably reference objects, persons and organizations. Importantly, a PID is linked to descriptive information (metadata) about the resource, thereby providing context information. The use of PIDs is growing steadily and is being extended to more and more areas of research, for example through the development of PIDs for samples, data management plans or research projects.
 
@@ -44,34 +44,27 @@ sections:
 
     design:
         columns: '2'
-  
+
   - block: markdown
     content:
-        title: | 
-          <span style="color: #243B54; font-size: 3rem;"> What do we offer? </span>
-        text: | 
-          <span style="font-size: 1.5rem;"> Support for PID implementation and selection and provide information on best practices, standards and trainings for the NFDI. </span> 
-           {.left}
-           <br>
-
+        title: |
+         <span style="color: #243B54; font-size: 3rem;"> What do we offer? </span>
+        text: |
+          <span style="font-size: 1.5rem;"> Support for PID implementation and selection and provide information on best practices, standards, and trainings for the NFDI. </span>
+          
+          <span style="font-size: 1rem;"> {{% cta cta_link="./get-pid/start" cta_new_tab="false" cta_text="How to get a PID?" %}} </span>
+                  <br>
+          <span style="font-size: 1rem;"> {{< cta cta_text="" cta_link="" cta_new_tab="false" cta_text="Seek support in enhancing your PID metadata" cta_link="./services/metadata-support-assessment" cta_new_tab="false" >}} </span>
          
-           <span style="font-size: 1rem;"> {{% cta cta_link="./get-pid/start" cta_new_tab="false" cta_text="How to get a PID?" %}} </span>
-          
-          
-            <span style="font-size: 1.5rem;"> Metadata Support and Assessment </span> 
-            {.left}
-            <br>
-
-            <span style="font-size: 1rem;">  {{< cta cta_text="" cta_link="" cta_new_tab="false" cta_text="Seek support in enhancing your PID metadata" cta_link="./services/metadata-support-assessment" cta_new_tab="false" >}} </span>
-            
-            
     design:
-        columns: '3'
-  
+        columns: '2'
+
+ 
+
   - block: collection
     content:
       title: |
-          <span style="color: #243B54; font-size: 3rem;"> Latest Blog Posts </span>
+          <span style="color: #011936; font-size: 3rem;"> Latest Blog Posts </span>
       subtitle:
       text:
       count: 5
@@ -92,7 +85,7 @@ sections:
   - block: collection
     content:
         title: |
-          <span style="color: #243B54; font-size: 3rem;"> Upcoming Events </span>
+          <span style="color: #011936; font-size: 3rem;"> Upcoming Events </span>
         text: ""
         count: 3
         filters:
@@ -119,7 +112,7 @@ sections:
   - block: markdown
     content:
         title: |
-          <span style="color: #243B54; font-size: 3rem;"> About </span>
+          <span style="color: #011936; font-size: 3rem;"> About </span>
         subtitle: PID4NFDI – Persistent Identifier Services for the German National Research Data Infrastructure
         text: |
             {{% cta cta_link="./about/" cta_text="More about the project" %}}
