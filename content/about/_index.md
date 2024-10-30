@@ -43,7 +43,7 @@ sections:
           company: first phase (12 months)
           location: current
           date_start: '2024-01-01'
-          date_end: '2024-12-31'
+          date_end: ''
           #description: 
         - title: Integration Phase
           company: second phase (24 months)
