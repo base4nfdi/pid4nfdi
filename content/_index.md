@@ -40,7 +40,7 @@ sections:
             <br>
 
         
-            {{< video src="FREYA_The_power_of_PIDs_540p.mp4" controls="yes" >}}
+            {{< video src="FREYA_The_power_of_PIDs_540p.mp4" controls="yes" poster="FREYA_The_power_of_PIDs_preview.png">}}
 
     design:
         columns: '2'
