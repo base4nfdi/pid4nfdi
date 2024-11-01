@@ -209,3 +209,26 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
+.table-custom {
+	font-size: 0.8rem;  /* Increases overall table font size */
+  }
+  
+  .table-custom thead th {
+	font-size: 1.25rem;  /* Makes header even larger */
+	font-weight: bold;
+	background-color: #e9ecef;  /* Light gray background for header */
+	color: #212529;  /* Dark text color */
+  }
+.flipped-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-flow: dense;
+}
+
+.flipped-columns .title {
+    grid-column: 2;
+}
+
+.flipped-columns .text {
+    grid-column: 1;
+}

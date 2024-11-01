@@ -4,14 +4,16 @@ date: 2024-10-09
 type: landing
 
 sections:
+  
   - block: markdown
     content:
-      text: |
-        {.flex-row-reverse}
-        Metadata is essentially *data about data*, providing descriptive information that helps in organizing, finding, and understanding resources. Therefore, metadata support (creating, managing and maintaining metadata) and metadata assessment (evaluating the quality and effectiveness of metadata, and its adherence to standards) are crucial for managing and utilizing digital resources such as research data effectively. Most important is that data is FAIR, which means that the data – and its metadata – meet the [FAIR principles](https://www.go-fair.org/fair-principles/), so that data is **F**indable, **A**ccessible, **I**nteroperable and **R**eusable. Persistent identifiers (PIDs) play a crucial role in making data FAIR, as outlined in the principles themselves and the [FAIR principles' interpretation by the GO FAIR community](https://www.gofair.foundation/interpretation).
       title: Metadata Support and Assessment
+      text: |
+        Metadata is essentially *data about data*, providing descriptive information that helps in organizing, finding, and understanding resources. Therefore, metadata support (creating, managing and maintaining metadata) and metadata assessment (evaluating the quality and effectiveness of metadata, and its adherence to standards) are crucial for managing and utilizing digital resources such as research data effectively. Most important is that data is FAIR, which means that the data – and its metadata – meet the [FAIR principles](https://www.go-fair.org/fair-principles/), so that data is **F**indable, **A**ccessible, **I**nteroperable and **R**eusable. Persistent identifiers (PIDs) play a crucial role in making data FAIR, as outlined in the principles themselves and the [FAIR principles' interpretation by the GO FAIR community](https://www.gofair.foundation/interpretation).
+      
     design:
-      columns: '2'
+      columns: '3'
+      
 
   - block: markdown
     content:
@@ -27,13 +29,29 @@ sections:
             | [ARDC FAIR Data Self Assessment Tool](https://ardc.edu.au/resource/fair-data-self-assessment-tool/) | The ARDC FAIR Data Self Assessment Tool assesses how FAIR your research dataset is based on a checklist and gives practical tips on how to enhance its FAIRness. It is developed by the [Australian Research Data Commons (ARDC)](https://ardc.edu.au/). |
             | [FAIR Evaluation Services](https://fairsharing.github.io/FAIR-Evaluator-FrontEnd) | The FAIR Evaluation Services collect resources and guidelines to assess the FAIRness of digital resources. It focuses on maturity indicator tests. It is maintained by the [FAIRmetrics](https://github.com/FAIRMetrics) and the [FAIRsharing](https://sansonegroup.eng.ox.ac.uk/) groups. |
             | [AtMoDat Data Checker](https://www.atmodat.de/adc) | The AtMoDat Data Checker is a Python-based library that contains checks to ensure compliance with the [AtMoDat Standard](https://www.atmodat.de/atmodat-standard). It is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker) and was developed for the climate research community. |
-            {.table .table-bordered .table-hover .table-custom}
-
-            ## Overviews and Comparisons of Tools for FAIR Data Assessment
-            
-            The Hyve, a support portal for the life sciences, published an [overview and evaluation of the aforementioned four FAIR data assessment tools](https://www.thehyve.nl/articles/evaluation-fair-data-assessment-tools) (2023).
-            
-            The EOSC FAIR-IMPACT project has also reviewed three of these tools, but [with a focus on the application and potential repurposing to assess compliance with the FAIR for Research Software (FAIR4RS) principles](https://fair-impact.eu/news/comparison-tools-automated-fair-software-assessment) (2024).
+            {.table .table-borderless .table-hover .table-info:hover .table-custom}
+  - block: markdown
+    content:
+      title: Overviews and Comparisons of Tools for FAIR Data Assessment
+      text: 
+            <ul>
+            <li>
+              The Hyve, a support portal for the life sciences, published an 
+              <a href="https://www.thehyve.nl/articles/evaluation-fair-data-assessment-tools">
+                overview and evaluation of the aforementioned four FAIR data assessment tools
+              </a> 
+              (2023).
+            </li>
+            <li>
+              The EOSC FAIR-IMPACT project has also reviewed three of these tools, focusing on their application and potential repurposing to assess compliance with the 
+              <a href="https://fair-impact.eu/news/comparison-tools-automated-fair-software-assessment">
+                FAIR for Research Software (FAIR4RS) principles
+              </a> 
+              (2024).
+            </li>
+          </ul>
+    design:
+      columns: '2'
 
   - block: markdown
     content:
