@@ -10,7 +10,7 @@ sections:
       title: |
         <span style="color: #011936; font-size: 4.5rem;">PID4NFDI </span>
         <br> 
-        <span style="color: #011936; font-size: 3rem;"> Persistent Identifier Services for NFDI</span>
+        <span style="color: #011936; font-size: 2.8rem;"> Persistent Identifier Services for NFDI</span>
        
       image:
         filename: pid4nfdi_small.jpg

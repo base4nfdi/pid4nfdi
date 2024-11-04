@@ -295,15 +295,12 @@ video {
     padding: 2rem;
 }
 
-/* Title styling */
-
-
 /* Grid layout */
 .pid4nfdi-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;  /* Two equal columns */
     gap: 20px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Column styling */
@@ -321,7 +318,7 @@ video {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-    margin-top: 2rem;
+    
 }
 
 /* List styling */
