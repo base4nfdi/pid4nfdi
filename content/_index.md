@@ -46,7 +46,7 @@ sections:
   - block: markdown
     content:
         title: |
-         <span style="color: #243B54; font-size: 3rem;"> What do we offer? </span>
+         <span style="color: #011936; font-size: 3rem;"> What do we offer? </span>
         text: |
               <ul style="font-size: 1.5rem;">
                   <li>Support for PID implementation and selection, with information on best practices, standards, and training for the NFDI.</li>

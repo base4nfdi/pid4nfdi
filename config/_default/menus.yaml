@@ -19,11 +19,11 @@ main:
     parent: get-pid
     url: get-pid/services-provider
     weight: 20
-  - name: Metadata Guide
+  - name: Metadata Essentials
     identifier: services
     url: services
     weight: 300
-  - name: Metadata Essentials
+  - name: Metadata Guide
     parent: services
     url: services/metadata-support-assessment
     weight: 10
