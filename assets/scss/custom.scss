@@ -219,19 +219,7 @@ video {
 	background-color: #e9ecef;  /* Light gray background for header */
 	color: #212529;  /* Dark text color */
   }
-.flipped-columns {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-auto-flow: dense;
-}
 
-.flipped-columns .title {
-    grid-column: 2;
-}
-
-.flipped-columns .text {
-    grid-column: 1;
-}
 .card.course {
 	margin-bottom: 1.2rem;
 	padding: 1.2rem;
@@ -284,4 +272,105 @@ video {
 	color: #007acc;
 	text-decoration: none;
   }
+  .pid4nfdi-title h2 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #011936; /* Matches the existing color scheme */
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+  }
   
+  .pid4nfdi-subtitle h3 {
+	font-size: 1.25rem;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.54);
+	text-align: center;
+	margin-bottom: 20px;
+  }
+/* Two-column layout container */
+.pid4nfdi-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Title styling */
+
+
+/* Grid layout */
+.pid4nfdi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Two equal columns */
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+/* Column styling */
+.pid4nfdi-column {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Bottom spanning section */
+.pid4nfdi-bottom {
+    grid-column: 1 / -1;  /* Spans both columns */
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+/* List styling */
+.pid4nfdi-column ul {
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.pid4nfdi-column li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.pid4nfdi-column li::before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: -1rem;
+}
+
+/* Link styling */
+a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+a:hover {
+    border-bottom-color: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .pid4nfdi-grid {
+        grid-template-columns: 1fr;  /* Stack columns on mobile */
+    }
+}
+.small-text-section {
+	font-size: 0.8rem; /* Adjust this value as needed */
+	line-height: 1.4; /* Optional: Adjust line height for better readability */
+	color: #243B54; /* Optional: Set a specific color if needed */
+  }
+  
+  .small-text-section h2, 
+  .small-text-section h3, 
+  .small-text-section h4 {
+	font-size: 1.2rem; /* Adjust heading sizes within this section */
+  }

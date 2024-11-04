@@ -10,19 +10,17 @@ sections:
       title: |
         <span style="color: #011936; font-size: 4.5rem;">PID4NFDI </span>
         <br> 
-
-
         <span style="color: #011936; font-size: 3rem;"> Persistent Identifier Services for NFDI</span>
+       
       image:
         filename: pid4nfdi_small.jpg
   - block: markdown
     content:
       title: | 
-        <span style="color: #243B54; font-size: 2.5rem;"> Driving FAIR, Open, and Persistent Research Practices with PIDHub.</span>
+        <div class="pid4nfdi-title"><h2> Driving FAIR, Open, and Persistent Research Practices with PIDHub.</h2></div>
       text: |
         <br> 
-        
-         <span style="font-size: 1.5rem; text-align: center; display: block;"> The PIDHub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). </span>
+        <span style="font-size: 1.5rem; text-align: center; display: block;"> The PIDHub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). </span>
          <br> 
          
         The PIDHub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PIDHub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.
