@@ -113,20 +113,19 @@ a {
 .experience .m-2 .border.exp-fill {
 	background-color: var(--color-blue) !important;
 }
-
+/* General navbar styles */
 .navbar {
 	font-family: "Fira Sans";
 	background-color: var(--color-anthracite);
 	color: var(--color-white);
 }
 
+/* General link styles within navbar */
 .navbar .navbar-nav .nav-link {
-    color: var(--color-white);
-    
-    	&.active {
-		span {
-			color: var(--color-blue);
-		}
+	color: var(--color-white);
+	
+	&.active span {
+		color: var(--color-blue);
 	}
 	
 	&:active,
@@ -137,22 +136,23 @@ a {
 	}
 }
 
+/* Navbar brand styling in light mode */
 .navbar-light .navbar-brand {
 	color: var(--color-blue);
 }
 
-.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-    color: var(--color-white);
-    transition: color .6s ease;
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
+	color: var(--color-white);
+	transition: color .6s ease;
 }
 
+/* Main menu item link styling */
 #navbar-main .main-menu-item .nav-link {
 	color: var(--color-white) !important;
-	
-	&.active {
-		span {
-			color: var(--color-blue);
-		}
+
+	&.active span {
+		color: var(--color-blue);
 	}
 	
 	&:active,
@@ -163,6 +163,84 @@ a {
 	}
 }
 
+/* Navbar text styling */
+.navbar-text {
+	display: inline-block;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+/* Navbar collapse styling */
+.navbar-collapse {
+	flex-basis: 100%;
+	flex-grow: 1;
+	align-items: center;
+}
+
+/* Navbar toggler button */
+.navbar-toggler {
+	padding: 0.25rem 0;
+	font-size: 1.125rem;
+	line-height: 1;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	color: #0abaf0;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+	text-decoration: none;
+}
+
+/* Navbar toggler icon */
+.navbar-toggler-icon {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+	background: 50% / 100% 100% no-repeat;
+	content: "";
+	color: #0abaf0;
+}
+
+/* Mobile-specific styles for navbar links and toggler icon */
+@media (max-width: 768px) {
+	/* Background and text color of navbar when expanded on mobile */
+	.navbar-collapse {
+		background-color: var(--color-anthracite); /* Dark background */
+		color: var(--color-anthracite); /* White text color for contrast */
+	}
+
+	/* Navbar links visibility in mobile */
+	.navbar-collapse .nav-link {
+		color: var(--color-anthracite) !important; /* Ensure links are visible */
+		padding: 0.75rem 1.5rem; /* Padding for touch accessibility */
+	}
+
+	/* Hover and focus states for links in expanded mobile menu */
+	.navbar-collapse .nav-link:hover,
+	.navbar-collapse .nav-link:focus {
+		color: var(--color-blue) !important; /* Hover/focus color */
+	}
+	
+	/* Navbar toggler styling */
+	.navbar-toggler {
+		border-color: transparent; /* Remove any border */
+	}
+
+	/* Burger menu icon color in mobile view */
+	.navbar-toggler-icon {
+		background-image: none;
+		background-color: transparent;
+		mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+		mask-size: contain;
+		-webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+		background-color: #0abaf0; /* Set color of the icon here */
+		width: 1.5em;
+		height: 1.5em;
+	}
+}
 .page-footer, .site-footer {
 	font-family: "Fira Sans";
 	background-color: var(--color-anthracite);
@@ -173,7 +251,7 @@ a {
 	&:active,
 	&:focus,
 	&:hover {
-		color: var(--color-white) !important;
+		color: var(--color-anthracite) !important;
 		transition: color .6s ease;
 	}
 }
