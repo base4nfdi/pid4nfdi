@@ -7,23 +7,23 @@ main:
 #  - name: Home
 #    url: /
 #    weight: 100
-  - name: Get a PID
+  - name: PID Essentials
     identifier: get-pid
     url: get-pid
     weight: 200
-  - name: How to Start
+  - name: Getting Started
     parent: get-pid
     url: get-pid/start
     weight: 10
-  - name: Services and Provider
+  - name: Services & Providers
     parent: get-pid
     url: get-pid/services-provider
     weight: 20
-  - name: Services
+  - name: Metadata Essentials
     identifier: services
     url: services
     weight: 300
-  - name: Metadata Support and Assessment
+  - name: Metadata Guide
     parent: services
     url: services/metadata-support-assessment
     weight: 10
@@ -71,7 +71,7 @@ main:
     identifier: about
     url: about
     weight: 600
-  - name: What is PID4NFDI?
+  - name: About PID4NFDI
     parent: about
     url: about
     weight: 10
