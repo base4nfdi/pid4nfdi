@@ -54,8 +54,8 @@ sections:
           
           ## Editorial Office:
           <p>Responsible for the content according to § 18 Abs. 2 MStV:<br />
-          Dr. Sandra Niemeyer; email: sandra.niemeyer@tib.eu<br />
-          Michael Hohlfeld; email: michael.hohlfeld@tib.eu</p>
+          Dr. Stephanie Hagemann-Wilholt; email: stephanie.hagemann@tib.eu<br />
+          Marc Lange; email: marc.lange@os.helmholtz.de</p>
           
           ## Copyright:
           <p>The layout of this website is protected under copyright, as are the graphics and all other contents contained in the website.</p>
