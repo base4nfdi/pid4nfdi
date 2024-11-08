@@ -9,7 +9,7 @@ sections:
       title: Training Material
       text: |
         {{% callout note %}}
-        Stay tuned! You will find selected training material on persistent identifiers here soon.
+        You will find selected training material on persistent identifiers here soon.
         {{% /callout %}}
     design:
       columns: '1'
