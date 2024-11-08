@@ -1,70 +1,39 @@
----
-title: Accessibility Statement
-date: 2024-10-30
-type: landing
+**Accessibility Statement**
 
-sections:
-  - block: markdown
-    content:
-      title: Accessibility Statement
-#      subtitle: 
-      text: |
-        _(Date of this declaration 18 August 2020)_
-        
-        Information on the accessibility of these web pages and its contact details in accordance with § 9b NBGG
-        
-        This accessibility statement applies to https://pid.services.base4nfdi.de/ and its sub-pages.
-        
-        **These websites are mostly compatible with the requirements of the harmonized European standard EN 301 549 V2.1.2 (08-2018) and WCAG 2.1 (Web Content Accessibility Guidelines).**
-        
-        ## Non-accessible content:
-        1. contents that the TIB, in its function as a cultural heritage collection, is unable to convert into barrier-free content or can only do so at disproportionate expense
-        2. contents that are considered as archives of the TIB, i.e. contents that are neither required for active administrative procedures nor updated or revised after 23 September 2019
-        3. information integrated into the website, in particular
-            - PDF documents
-            - Videos
-        
-        **The listed contents are not barrier-free for the following reasons:**
-        
-        To 1 and 2.:
-        
-        These contents are excluded from the application of accessibility according to § 9 section 2 NBGG.
-        
-        To 3:
-        
-        The website is being adapted and optimized to comply with the EU Directive 2016/2102 on the implementation of a barrier-free Internet for public sector bodies. The identified deficits and deficiencies are currently undergoing a continuous improvement process that will be successively processed.
-        
-        ## Establishment of this Accessibility Statement
-        
-        This statement was established on 18 August 2020.
-        
-        The assessment is based on self-assessment.
-        
-        ## Feedback and contact details
-        
-        You can report cases of non-compliance with accessibility requirements to us.
-        
-        Contact:
-        
-        Technische Informationsbibliothek (TIB)<br />
-        Vertrauensperson der TIB für schwerbehinderte Menschen<br />
-        Postfach 60 80, 30060 Hannover
-        
-        Phone: +49 (0)511 762-17806
-        Email: SBV@tib.eu
-        
-        ## Arbitration procedure
-        
-        If you are not satisfied with the answers of our above-mentioned contact point, you can contact the arbitration office, which is located at the State Representative for People with Disabilities in Lower Saxony, for the initiation of an arbitration procedure in accordance with the Niedersächsisches Behindertengleichstellungsgesetz (Disability Equality Act of Lower Saxony) (NBGG).
-        
-        The arbitration office has the task according to § 9 d NBGG of settling disputes between people with disabilities and public institutions of the state of Lower Saxony on the topic of accessibility in IT.
-        
-        The arbitration procedure is free of charge.
-        
-        No Legal Counsels are required.
-        
-        You can contact the arbitration office directly at<br />
-        Phone: +49 (0)511/120-4010<br />
-        Email: schlichtungsstelle@ms.niedersachsen.de
+This accessibility statement applies to base4nfdi.de. This website is run by the Chair of Geoinformatics, Technische Universität Dresden.
 
----
+The Chair of Geoinformatics is committed to making its websites and mobile applications accessible, in accordance with BfWebG (Barrierefreie-Websites-Gesetz) and BITV 2.0 (Barrierefreie-Informationstechnik-Verordnung), implementing EU Directive 2016/2102.
+
+**Preparation of this accessibility statement**
+
+This statement was prepared in December 2022 and last reviewed on 09.12.2022. 
+The basis for the preparation of this accessibility statement is a BITV self-assessment on 09.12.2022 carried out by the Chair of Geoinformatics.
+
+**Compliance status**
+
+This website is not compliant with the requirements of the BfWebG in conjunction with BITV 2.0. The non-compliances and/or exemptions are listed below.
+
+**Non-accessible content**
+
+ * the submenus in the navigation menu can not be reached and controlled with a keyboard
+ * schematic images do not have an alternative text
+
+**Feedback and contact information**
+
+If you notice any shortcomings concerning accessible design, please contact
+Daniel Henzen
+Phone: +49 351 463-39275
+Email: Daniel.Henzen (at) tu-dresden (dot) de
+
+**Enforcement procedure**
+
+If we do not process your feedback satisfactorily from your point of view, you can contact the Enforcement Body of Saxony: 
+Office of the Commissioner of the Saxon State Government for the Affairs of Persons with Disabilities
+Albertstraße 10, 01097 Dresden 
+
+Postal address: Archivstraße 1, 01097 Dresden
+Email: info.behindertenbeauftragter@sk.sachsen.de 
+Telephone: +49 351 564-12161
+Fax: +49 351 564-12169
+
+Website: https://www.sk.sachsen.de/land](https://www.sk.sachsen.de/landesinklusionsbeauftragter.html
