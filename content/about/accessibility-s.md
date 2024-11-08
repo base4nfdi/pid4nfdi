@@ -9,7 +9,6 @@ sections:
       title: Accessibility Statement
 #      subtitle: 
       text: |
-
 This accessibility statement applies to base4nfdi.de. This website is run by the Chair of Geoinformatics, Technische Universität Dresden.
 
 The Chair of Geoinformatics is committed to making its websites and mobile applications accessible, in accordance with BfWebG (Barrierefreie-Websites-Gesetz) and BITV 2.0 (Barrierefreie-Informationstechnik-Verordnung), implementing EU Directive 2016/2102.
@@ -30,9 +29,9 @@ This website is not compliant with the requirements of the BfWebG in conjunction
 
 **Feedback and contact information**
 
-If you notice any shortcomings concerning accessible design, please contact
-Daniel Henzen
-Phone: +49 351 463-39275
+If you notice any shortcomings concerning accessible design, please contact<br/>
+Daniel Henzen<br/>
+Phone: +49 351 463-39275<br/>
 Email: Daniel.Henzen (at) tu-dresden (dot) de
 
 **Enforcement procedure**
@@ -41,9 +40,11 @@ If we do not process your feedback satisfactorily from your point of view, you c
 Office of the Commissioner of the Saxon State Government for the Affairs of Persons with Disabilities
 Albertstraße 10, 01097 Dresden 
 
-Postal address: Archivstraße 1, 01097 Dresden
-Email: info.behindertenbeauftragter@sk.sachsen.de 
-Telephone: +49 351 564-12161
+Postal address: Archivstraße 1, 01097 Dresden<br/>
+Email: info.behindertenbeauftragter@sk.sachsen.de<br/>
+Telephone: +49 351 564-12161<br/>
 Fax: +49 351 564-12169
+
+---
 
 Website: https://www.sk.sachsen.de/land](https://www.sk.sachsen.de/landesinklusionsbeauftragter.html
