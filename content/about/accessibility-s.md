@@ -1,4 +1,14 @@
-**Accessibility Statement**
+--
+title: Accessibility Statement
+date: 2024-11-08
+type: landing
+
+sections:
+  - block: markdown
+    content:
+      title: Accessibility Statement
+#      subtitle: 
+      text: |
 
 This accessibility statement applies to base4nfdi.de. This website is run by the Chair of Geoinformatics, Technische Universität Dresden.
 
