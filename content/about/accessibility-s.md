@@ -45,7 +45,6 @@ sections:
         Telephone: +49 351 564-12161<br/>
         Fax: +49 351 564-12169<br/>
         Website: https://www.sk.sachsen.de/land](https://www.sk.sachsen.de/landesinklusionsbeauftragter.html
-
 ---
 
 
