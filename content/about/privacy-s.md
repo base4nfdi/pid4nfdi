@@ -9,7 +9,7 @@ sections:
       title: Privacy Statement
 #      subtitle: 
       text: |
-        Please see the following page for information on our privacy policy: https://base4nfdi.de/privacy-policy
-        
+      
+        Please refer to the [privacy policy of Base4NFDI (base4nfdi.de)](https://base4nfdi.de/privacy-policy), which also applies for this site.
 
 ---
