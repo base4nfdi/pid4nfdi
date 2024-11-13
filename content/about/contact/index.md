@@ -29,9 +29,28 @@ sections:
       title: Imprint (Legal Notice)
 #      subtitle: Imprint for this website – also serves as provider identification according to § 5 Digitale Dienste Gesetz (DDG)
       text: |
-        
-        Please refer to the [legal notice of Base4NFDI (base4nfdi.de)](https://base4nfdi.de/legal-notice), which also applies for this site.
-        
+            
+            <div class="small-text-section">
+            
+            ## Site Provider:
+            <p>Chair of Geoinformatics<br />
+            Faculty of Environmental Sciences<br />
+            Technische Universität Dresden</p>
+            
+            <p>Prof. Dr. rer. nat. Lars Bernard<br />
+            Helmholtzstraße 10<br />
+            01069 Dresden</p>
+            
+            ## Technical Administrator:
+            <p>Daniel Henzen<br />
+            Phone: (+49) 351 463 33576<br />
+            Email: Daniel.Henzen@tu-dresden.de</p>
+            
+            ## Content Management:
+            <p>PID4NFDI / Base4NFDI</p>
+            
+            </div>
+
     design:
       columns: '2'
 
