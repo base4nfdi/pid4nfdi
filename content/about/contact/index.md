@@ -29,13 +29,9 @@ sections:
       title: Imprint (Legal Notice)
 #      subtitle: Imprint for this website – also serves as provider identification according to § 5 Digitale Dienste Gesetz (DDG)
       text: |
-
-#          <div class="small-text-section">
-          
-          Please refer to the [legal notice of Base4NFDI (base4nfdi.de)](https://base4nfdi.de/legal-notice), which also applies for this site.
-          
-#          </div>
-          
+        
+        Please refer to the [legal notice of Base4NFDI (base4nfdi.de)](https://base4nfdi.de/legal-notice), which also applies for this site.
+        
     design:
       columns: '2'
 
