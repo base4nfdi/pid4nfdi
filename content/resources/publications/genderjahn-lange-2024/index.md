@@ -1,5 +1,5 @@
 ---
-title: 'PID4NFDI: Survey on PID Practices. Main results.'
+title: 'PIDs in der offenen Wissenschaft – Chancen und Herausforderungen'
 
 # Draft?
 draft: false
@@ -8,17 +8,18 @@ draft: false
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- stephanie
+- steffi
+- marc
 
 # Author notes (optional, uncomment line below)
 #author_notes:
 #  - 'e.g. equal contribution'
 
 # Publication date
-date: '2023-02-13'
+date: '2024-09-04'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-07-23'
+publishDate: '2024-09-04'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -30,23 +31,24 @@ publication: 'Zenodo'
 #publication_short: ''
 
 # Event (optional, uncomment lines below)
-#event: ''
+event: 'DINI Jahrestagung 2024, Potsdam, 18–19 September 2024'
 
 # Abstract
-abstract: 'In December 2022 and January 2023, the NFDI working group on Persistent Identifier Services conducted a survey among infrastructure managers of NFDI services to learn about current PID integrations and future plans on PID usage. The slides summarise the key results of the survey.'
+abstract: 'Persistente Identifikatoren (PID) sind entscheidend für den Aufbau gemeinsamer Infrastruktur für offene Wissenschaft. Sie ermöglichen die eindeutige, dauerhafte Identifizierung von Forschungsobjekten und wissenschaftlichen Ressourcen. Gleichzeitig enthalten dazugehörige, beschreibende Metadaten Informationen rund um die Ressource und sind essentiell für eine digitale, vernetzten Wissenschaftslandschaft. Es gibt verschiedene Ansätze an denen zahlreiche Akteure und Infrastrukturen beteiligt sind, um einheitliche Strategien für die Nutzung von PID zu etablieren. Die Projekte PID Network Deutschland [https://www.pid-network.de] und PID4NFDI [https://base4nfdi.de/projects/pid4nfdi] haben zum Ziel, das Bewusstsein für PIDs in einer vielfältigen Landschaft mit spezifischen Anforderungen und verschiedenen institutionellen  Rahmenbedingungen zu schärfen, indem sie Bedarfe ermitteln, Vernetzung fördern und Schulungen anbieten. Spezifische Umfragen und Workshops, die vom PID-Netzwerk Deutschland organisiert werden, tragen dazu bei den Einsatz von PID zu identifizieren und weiter zu fördern, die Bedürfnisse und Herausforderungen in verschiedenen Forschungs- und Infrastruktureinrichtungen zu identifizieren und die Vernetzung verschiedener offener PID-Systeme auf nationaler und internationaler Ebene zu fördern. Im Rahmen der Nationalen Forschungsdateninfrastruktur (NFDI) beschäftigt sich das Projekt PID4NFDI mit technischen und metadatenbezogenen Fragen zur Interoperabilität und Standardisierung. Zudem adressiert es die Herausforderungen, die sich aus der netzwerk- und projektbasierten Governance-Struktur der NFDI ergeben. Das Poster thematisiert die Chancen und Herausforderungen, die sich aus der Vielfalt der Ansätze ergeben und fasst insbesondere die Ergebnisse der PID Network Workshops zusammen.'
 
 # Summary. An optional shortened abstract. (uncomment lines below)
 #summary: ''
 
 # DOI
-doi: '10.5281/zenodo.7635791'
+doi: '10.5281/zenodo.13682538'
 
 # Tags (site-wide tags)
 tags:
 - persistent identifier
-- PID4NFDI
-- Base4NFDI
+- open science
 - NFDI
+- PID4NFDI
+- PID Network Germany
 
 # Display this page in the Featured widget?
 featured: false

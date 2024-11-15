@@ -1,5 +1,5 @@
 ---
-title: 'PID4nfdi - Example Use Cases and Services for NFDI'
+title: 'PID4NFDI – A Base4NFDI Service to Enhanced Research Data Management'
 
 # Draft?
 draft: false
@@ -8,20 +8,18 @@ draft: false
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- stephanie
-- Philipp Wieder
-- Daniel Martini
-- Matthias Lange
+- steffi
+- torsten
 
 # Author notes (optional, uncomment line below)
 #author_notes:
 #  - 'e.g. equal contribution'
 
 # Publication date
-date: '2024-02-20'
+date: '2024-09-18'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-07-15'
+publishDate: '2024-09-18'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -33,24 +31,23 @@ publication: 'Zenodo'
 #publication_short: ''
 
 # Event (optional, uncomment lines below)
-event: 'NFDITalk, 19 February 2024'
+event: 'NFDI4Memory 2nd Community Forum, Halle/Saale, 18 September 2024'
 
 # Abstract
-abstract: 'The PID4NFDI basic service project was presented as part of the NFDITalks: Persistent identifiers (PIDs) are central to FAIR research data management. However, different disciplines and different resources result in diverse requirements and the different NFDI consortia have different levels of maturity in PID implementation. PID4NFDI will design a work programme to build an NFDI foundation service on established PID infrastructures.'
+abstract: 'The PID4NFDI project is an initiative aimed at enhancing the use and management of Persistent Identifiers (PIDs) within the framework of the National Research Data Infrastructure (NFDI) in Germany. The poster provides an overview of the importance of PIDs and how PID4NFDI aims to address the needs of the community.'
 
 # Summary. An optional shortened abstract. (uncomment lines below)
 #summary: ''
 
 # DOI
-doi: '10.5281/zenodo.10685209'
+doi: '10.5281/zenodo.13735557'
 
 # Tags (site-wide tags)
 tags:
+- persistent identifier
+- research data management
 - NFDI
 - PID4NFDI
-- persistent identifier
-- use case
-- service
 
 # Display this page in the Featured widget?
 featured: false
@@ -63,7 +60,7 @@ featured: false
 #url_project: ''
 #url_slides: ''
 #url_source: ''
-url_video: 'https://www.youtube.com/watch?v=y-dJUOBUZWs'
+#url_video: ''
 
 # Custom links (optional, uncomment lines below)
 # links:
@@ -72,10 +69,10 @@ url_video: 'https://www.youtube.com/watch?v=y-dJUOBUZWs'
 
 # Featured image (optional, uncomment lines below)
 # To use, add an image named `featured.jpg/png` to your page's folder.
-image:
-  caption: 'Image credit: [**NFDI**](https://nfdi.de)'
-  focal_point: ''
-  preview_only: false
+#image:
+#  caption: 'Image credit: [**Example**](https://example.com/)'
+#  focal_point: ''
+#  preview_only: false
 
 # Associated Projects (optional, uncomment lines below)
 #   Associate this publication with one or more of your projects.
