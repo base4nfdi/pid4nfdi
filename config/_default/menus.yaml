@@ -53,7 +53,7 @@ main:
 #    weight: 40
   - name: Publications
     parent: resources
-    url: resources/publications
+    url: publication # Note: Folder for publications must be named 'publication' and remain in the folder 'content'!
     weight: 50
   - name: News
     identifier: news
