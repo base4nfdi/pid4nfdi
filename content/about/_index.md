@@ -60,15 +60,15 @@ sections:
       items:
         - title: Initialisation Phase
           company: first phase (12 months)
-          location: current
+          location: completed
           date_start: '2024-01-01'
-          date_end: ''
+          date_end: '2025-12-31'
           #description: 
         - title: Integration Phase
           company: second phase (24 months)
-          location: in preparation
+          location: current
           date_start: '2025-01-01'
-          date_end: '2026-12-31'
+          date_end: ''
           #description: 
     design:
       columns: '1'
