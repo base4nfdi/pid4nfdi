@@ -45,7 +45,7 @@ doi: '10.5281/zenodo.14506202'
 # Tags (site-wide tags)
 tags:
 - persistent identifier
-- PID4NFI
+- PID4NFDI
 - use case
 - FAIRagro
 

@@ -52,7 +52,7 @@ tags:
 - NFDI
 - Base4NFDI
 - persistent identifier
-- PID4NFI
+- PID4NFDI
 
 # Display this page in the Featured widget?
 featured: false

@@ -45,7 +45,7 @@ doi: '10.5281/zenodo.14267399'
 # Tags (site-wide tags)
 tags:
 - persistent identifier
-- PID4NFI
+- PID4NFDI
 - research data management
 - training
 

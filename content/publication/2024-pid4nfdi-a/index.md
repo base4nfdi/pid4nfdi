@@ -44,7 +44,7 @@ doi: '10.5281/zenodo.14232461'
 # Tags (site-wide tags)
 tags:
 - persistent identifier
-- PID4NFI
+- PID4NFDI
 - NFDI
 - stakeholder
 - research data management

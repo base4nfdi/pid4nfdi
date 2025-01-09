@@ -44,7 +44,7 @@ doi: '10.5281/zenodo.14357800'
 # Tags (site-wide tags)
 tags:
 - persistent identifier
-- PID4NFI
+- PID4NFDI
 - use case
 - StrainInfo
 - NFDI4Microbiota

@@ -45,7 +45,7 @@ doi: '10.5281/zenodo.14328204'
 # Tags (site-wide tags)
 tags:
 - persistent identifier
-- PID4NFI
+- PID4NFDI
 - PID provider
 
 # Display this page in the Featured widget?

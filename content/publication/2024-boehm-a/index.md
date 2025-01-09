@@ -44,7 +44,7 @@ doi: '10.5281/zenodo.14327691'
 # Tags (site-wide tags)
 tags:
 - persistent identifier
-- PID4NFI
+- PID4NFDI
 - use case
 - Text+
 

@@ -44,7 +44,7 @@ doi: '10.5281/zenodo.14512768'
 # Tags (site-wide tags)
 tags:
 - persistent identifier
-- PID4NFI
+- PID4NFDI
 - metadata
 - NFDI
 

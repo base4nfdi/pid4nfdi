@@ -56,7 +56,7 @@ tags:
 - NFDI
 - Base4NFDI
 - persistent identifier
-- PID4NFI
+- PID4NFDI
 - funding proposal
 
 # Display this page in the Featured widget?

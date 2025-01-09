@@ -50,7 +50,7 @@ doi: '10.5281/zenodo.14327774'
 tags:
 - NFDI
 - persistent identifier
-- PID4NFI
+- PID4NFDI
 - survey
 
 # Display this page in the Featured widget?
