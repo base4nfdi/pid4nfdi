@@ -36,7 +36,7 @@ image:
   focal_point: Right
 
 url_code: ''
-url_pdf: ''
+url_pdf: 'https://doi.org/10.5281/zenodo.14232461'
 url_slides: ''
 url_video: ''
 

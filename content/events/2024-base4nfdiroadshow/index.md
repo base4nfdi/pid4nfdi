@@ -1,30 +1,25 @@
 ---
 draft: false
 
-title: PID4NFDI @ 1st Base4NFDI User Conference
+title: Services Roadshow by Base4NFDI
 
-event: 1st Base4NFDI User Conference
-event_url: https://events.gwdg.de/event/658/
+event: Services Roadshow by Base4NFDI
+event_url: https://base4nfdi.de/news-events/events/services-roadshow-by-base4nfdi-12-2024
 
-location: Fraunhofer FOKUS – Fraunhofer Institute for Open Communication Systems
-address:
-  street: Kaiserin-Augusta-Allee 31
-  city: Berlin
-  #region: Berlin
-  postcode: '10589'
-  country: Germany
+location: online
+#address:
 
-summary: PID4NFDI will take part in the first Base4NFDI User Conference in 2024 in Berlin.
-abstract: 'The team of PID4NFDI will join in participating in the first Base4NFDI User Conference which takes place in Berlin in November 2024.'
+summary: PID4NFDI will take part in the first Base4NFDI Services Roadshow.
+abstract: 'The team of PID4NFDI will join in participating in the first Base4NFDI Services Roadshow which takes place as an online event in December 2024.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-11-20T12:00:00Z'
-date_end: '2024-11-21T14:00:00Z'
+date: '2024-12-04T14:00:00Z'
+#date_end: '2024-11-21T14:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2024-07-15T00:00:00Z'
+publishDate: '2024-12-01T00:00:00Z'
 
 tags: ["Base4NFDI"]
 
@@ -43,8 +38,8 @@ image:
 
 url_code: ''
 url_pdf: ''
-url_slides: 'https://doi.org/10.5281/zenodo.14201186'
-url_video: ''
+url_slides: 'https://base4nfdi.de/news-events/events/services-roadshow-by-base4nfdi-12-2024'
+url_video: 'https://base4nfdi.de/news-events/events/services-roadshow-by-base4nfdi-12-2024'
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
@@ -61,4 +56,4 @@ slides:
 projects:
 ---
 
-The team of PID4NFDI will join in participating in the first Base4NFDI User Conference which takes place in Berlin in November 2024.
+The team of PID4NFDI will join in participating in the first Base4NFDI Services Roadshow which takes place as an online event in December 2024.
