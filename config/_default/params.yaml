@@ -57,8 +57,8 @@ footer:
         Grant number: [521466146](https://gepris.dfg.de/gepris/projekt/521466146)
         '
     copyright:
-        notice: '© {year} PID4NFDI<br>
-        [Contact](/about/contact)'
+        notice: '© {year} PID4NFDI<br><br>
+        [Mastodon](https://nfdi.social/@pid4nfdi) | [Bluesky](https://bsky.app/profile/pid4nfdi.bsky.social) | [LinkedIn](https://www.linkedin.com/showcase/pid4nfdi/)'
 #    license:
 #      enable: true
 #      allow_derivatives: true
