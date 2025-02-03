@@ -3,7 +3,7 @@
 
 title: "PID4NFDI’s first year, PID support resources, and what’s to come next"
 subtitle: ""
-summary: "It has been an eventful and fruitful first year for PID4NFDI, the basic service for persistent identifiers in development for NFDI, the German National Research Data Infrastructure. PID4NFDI completed its first service development phase, the initialisation phase, at the end of 2024 and now heads into a second term, the two-year integration phase running in 2025 and 2026. In this blog post, we review and summarise PID4NFDI’s activities and outputs from the initialisation phase and preview what’s to come in the next two years."
+summary: "A review and summary of PID4NFDI’s activities and outputs from 2024 and a preview of what’s to come in the next two years."
 authors: ["marc"]
 tags: ["PID4NFDI", "project news", "NFDI", "Base4NFDI"]
 categories: []
