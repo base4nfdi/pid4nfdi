@@ -38,7 +38,7 @@ publication: 'Zenodo'
 #event: ''
 
 # Abstract
-#abstract: ''
+abstract: 'This document contains the questionnaire of the survey entitled PID Service Landscape in the NFDI, which was conducted from April 9 to May 12, 2024 as part of the first phase of PID4NFDI. The survey was designed by the PID4NFDI team, implemented in LimeSurvey and completed by 34 consortia representatives with responsibilities in PID management. The purpose of the survey was to assess the current level of PID adoption and integration among NFDI consortia and to understand their future needs. By identifying these needs and pinpointing existing gaps, the PID4NFDI team aims to develop a cross-cutting PID service that meets the evolving needs of the NFDI community. A detailed report of the survey framework and results can be found in El-Gebali, S., & Böhm, J. (2025). Landscape Analysis of PID Practices in NFDI (1.0). Zenodo. https://doi.org/10.5281/zenodo.14652295.'
 
 # Summary. An optional shortened abstract. (uncomment lines below)
 #summary: ''

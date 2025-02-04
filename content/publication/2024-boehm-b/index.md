@@ -33,7 +33,7 @@ publication: 'Zenodo'
 #event: ''
 
 # Abstract
-#abstract: ''
+abstract: 'This document is part of the deliverables produced by PID4NFDI, a core service for persistent identifiers developed within the German National Research Data Infrastructure (Nationale Forschungsdateninfrastruktur – NFDI). Specifically, this document contains a catalog of metadata standards relevant to NFDI, serving as deliverable 2.2. of the PID4NFDI initialization phase. The catalog contains a list of metadata standards that are applied within NFDI repositories, a list of PID provider defined metadata standards, and a list of working groups around metadata issues. The catalog is treated as a living document and will be continuously updated within the next project phase.'
 
 # Summary. An optional shortened abstract. (uncomment lines below)
 #summary: ''

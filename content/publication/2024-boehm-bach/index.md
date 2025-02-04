@@ -34,7 +34,7 @@ publication: 'Zenodo'
 #event: ''
 
 # Abstract
-#abstract: ''
+abstract: 'This report is part of the deliverables produced by PID4NFDI, a core service for persistent identifiers developed within the German National Research Data Infrastructure (Nationale Forschungsdateninfrastruktur – NFDI). Specifically, this report addresses the use-case analysis outlined in work packages 1 and 2 of the PID4NFDI initialization phase. The purpose of this report is to showcase PID integration in a new PID service that is being developed within KonsortSWD task area 5, measure 1. This service aims to reference elements below the dataset, study, or publication level via PID, enhancing FAIRness of low-granular dataset elements and fulfilling requirements such as handling a large number of PIDs.'
 
 # Summary. An optional shortened abstract. (uncomment lines below)
 #summary: ''

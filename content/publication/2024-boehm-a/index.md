@@ -33,7 +33,7 @@ publication: 'Zenodo'
 #event: ''
 
 # Abstract
-#abstract: ''
+abstract: 'This report is part of the deliverables produced by PID4NFDI, a core service for persistent identifiers developed within the German National Research Data Infrastructure (Nationale Forschungsdateninfrastruktur – NFDI). Specifically, this report addresses the use-case analysis outlined in work packages 1 and 2 of the PID4NFDI initialization phase. The purpose of this report is to showcase PID integration within the Text+ consortium using the example of the SUB Göttingen. The report focuses on two well-integratied and long-running repositories (the DARIAH-DE Repository and the TextGrid Repository) for text-based research data from the humanities. We give details on different types of integrated PIDs, metadata quality handling, interaction with major infrastructures such as DARIAH and CLARIN, and describe new requirements and developments such as improved user input interfaces.'
 
 # Summary. An optional shortened abstract. (uncomment lines below)
 #summary: ''
