@@ -62,7 +62,7 @@ sections:
           company: first phase (12 months)
           location: completed
           date_start: '2024-01-01'
-          date_end: '2025-12-31'
+          date_end: '2024-12-31'
           description: |-
             **Funding proposal:** [Persistent Identifier Services for the German National Research Data Infrastructure: Proposal for the Initialisation Phase of Base4NFDI](https://doi.org/10.5281/zenodo.14281250)
             
