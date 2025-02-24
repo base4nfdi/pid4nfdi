@@ -4,22 +4,22 @@ draft: false
 title: PID4NFDI @ Services Roadshow by Base4NFDI
 
 event: Services Roadshow by Base4NFDI
-event_url: https://base4nfdi.de/news-events/events/services-roadshow-by-base4nfdi-12-2024
+event_url: https://base4nfdi.de/index.php?option=com_content&view=article&id=120
 
 location: online
 #address:
 
-summary: PID4NFDI will take part in the 1st Base4NFDI Services Roadshow.
-abstract: 'The team of PID4NFDI will join in participating in the 1st Base4NFDI Services Roadshow which takes place as an online event in December 2024.'
+summary: PID4NFDI will take part in the 2nd Base4NFDI Services Roadshow.
+abstract: 'The team of PID4NFDI will join in participating in the 2nd Base4NFDI Services Roadshow which takes place as an online event in May 2025.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-12-04T14:00:00Z'
+date: '2025-05-22T14:00:00Z'
 #date_end: '2024-11-21T14:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2024-12-01T00:00:00Z'
+publishDate: '2025-02-24T00:00:00Z'
 
 tags: ["Base4NFDI"]
 
@@ -38,8 +38,8 @@ image:
 
 url_code: ''
 url_pdf: ''
-url_slides: 'https://base4nfdi.de/news-events/events/services-roadshow-by-base4nfdi-12-2024'
-url_video: 'https://base4nfdi.de/news-events/events/services-roadshow-by-base4nfdi-12-2024'
+url_slides: ''
+url_video: ''
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
@@ -56,4 +56,4 @@ slides:
 projects:
 ---
 
-The team of PID4NFDI will join in participating in the 1st Base4NFDI Services Roadshow which takes place as an online event in December 2024.
+The team of PID4NFDI will join in participating in the 2nd Base4NFDI Services Roadshow which takes place as an online event in May 2025. The event will be held on two days, May 22 and 27. Pid4NFDI will be presented in the session on _infrastructure providers and developers_ on May 22.

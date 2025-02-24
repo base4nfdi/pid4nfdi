@@ -6,25 +6,25 @@ title: PID4NFDI @ Base4NFDI User Conference
 event: Base4NFDI User Conference
 event_url: https://events.gwdg.de/event/658/
 
-location: Fraunhofer FOKUS – Fraunhofer Institute for Open Communication Systems
-address:
-  street: Kaiserin-Augusta-Allee 31
-  city: Berlin
+location: Aachen
+#address:
+  #street: Kaiserin-Augusta-Allee 31
+  #city: Berlin
   #region: Berlin
-  postcode: '10589'
-  country: Germany
+  #postcode: '10589'
+  #country: Germany
 
-summary: PID4NFDI will take part in the 1st Base4NFDI User Conference in 2024 in Berlin.
-abstract: 'The team of PID4NFDI will join in participating in the 1st Base4NFDI User Conference which takes place in Berlin in November 2024.'
+summary: PID4NFDI will take part in the 2nd Base4NFDI User Conference in 2025 in Aachen.
+abstract: 'The team of PID4NFDI will join in participating in the 2nd Base4NFDI User Conference which takes place in Aachen in August 2025.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-11-20T12:00:00Z'
-date_end: '2024-11-21T14:00:00Z'
-all_day: false
+date: '2025-08-29T00:00:00Z'
+date_end: '2025-08-29T00:00:00Z'
+all_day: true
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2024-07-15T00:00:00Z'
+publishDate: '2025-02-24T00:00:00Z'
 
 tags: ["Base4NFDI"]
 
@@ -38,12 +38,12 @@ share: false
 featured: false
 
 image:
-  caption: 'Image credit: [Base4NFDI](https://base4nfdi.de/)'
-  focal_point: Right
+  #caption: 'Image credit: [Base4NFDI](https://base4nfdi.de/)'
+  #focal_point: Right
 
 url_code: ''
 url_pdf: ''
-url_slides: 'https://doi.org/10.5281/zenodo.14201186'
+url_slides: ''
 url_video: ''
 
 # Markdown Slides (optional).
@@ -61,4 +61,4 @@ slides:
 projects:
 ---
 
-The team of PID4NFDI will join in participating in the 1st Base4NFDI User Conference which takes place in Berlin in November 2024.
+The team of PID4NFDI will join in participating in the 2nd Base4NFDI User Conference which takes place in Aachen in August 2025.
