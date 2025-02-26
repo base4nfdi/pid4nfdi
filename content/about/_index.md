@@ -41,7 +41,8 @@ sections:
             
             <!-- Full-Width Text Across Both Columns -->
             <div class="pid4nfdi-bottom">
-              PID4NFDI is organized internally by different work packages that cover these measures and areas of engagement. We operate as part of <a href="https://base4nfdi.de/">Base4NFDI</a>, a joint initiative of all 26 consortia within NFDI to foster and establish reliable NFDI-wide basic services, and are one of <a href="https://base4nfdi.de/projects">several basic services in development</a>.
+              <p>PID4NFDI is organized internally by different work packages that cover these measures and areas of engagement. We operate as part of <a href="https://base4nfdi.de/">Base4NFDI</a>, a joint initiative of all 26 consortia within NFDI to foster and establish reliable NFDI-wide basic services, and are one of <a href="https://base4nfdi.de/projects">several basic services in development</a>.</p>
+              <p>The organizations responsible for operating PID4NFDI are [DataCite](https://datacite.org/), the [Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG)](https://gwdg.de), the [Helmholtz Open Science Office](https://os.helmholtz.de/) and the [TIB – German National Library of Science and Technology](https://www.tib.eu/).</p>
             </div>
           </div>
           
@@ -78,4 +79,11 @@ sections:
             **Funding proposal:** [Persistent Identifier Services for the German National Research Data Infrastructure: Proposal for the Integration Phase of Base4NFDI](https://doi.org/10.5281/zenodo.14281255)
     design:
       columns: '1'
+
+  - block: markdown
+    content:
+      title: Collaboration with PID Network Germany
+      text: |
+        PID4NFDI closely collaborates with the project [PID Network Germany](https://www.pid-network.de/), which aims to establish a network in science and culture that promotes and consolidates the application, implementation, standardization and international connectivity of PID systems on a national and international level. Both projects have an overlap in partners (DataCite, Helmholtz Open Science Office and TIB – German National Library of Science and Technology) and are hence aligned through bilateral coordination and a well-established exchange of information, which is important due to the different scopes of the projects: PID4NFDI focuses on PID implementation in the context of NFDI and especially within NFDI consortia with analyses of specific use cases. PID Network Germany addresses the wider scientific and cultural sector, covering a more extensive range of PID application areas beyond research data (management) and with a focus on a wide variety of use cases and stakeholders. PID4NFDI can use and integrate results and findings from PID Network Germany, and vice versa: For example, PID4NFDI will adapt the national PID roadmap to be released by PID Network Germany in developing PID guidelines for NFDI, while in turn PID4NFDI contributes PID-related NFDI activities and perspectives to PID Network Germany.
+
 ---
