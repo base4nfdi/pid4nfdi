@@ -42,7 +42,7 @@ sections:
             <!-- Full-Width Text Across Both Columns -->
             <div class="pid4nfdi-bottom">
               <p>PID4NFDI is organized internally by different work packages that cover these measures and areas of engagement. We operate as part of <a href="https://base4nfdi.de/">Base4NFDI</a>, a joint initiative of all 26 consortia within NFDI to foster and establish reliable NFDI-wide basic services, and are one of <a href="https://base4nfdi.de/projects">several basic services in development</a>.</p>
-              <p>The organizations responsible for operating PID4NFDI are [DataCite](https://datacite.org/), the [Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG)](https://gwdg.de), the [Helmholtz Open Science Office](https://os.helmholtz.de/) and the [TIB – German National Library of Science and Technology](https://www.tib.eu/).</p>
+              <p>The organizations responsible for operating PID4NFDI are <a href="https://datacite.org/">DataCite</a>, the <a href="https://gwdg.de">Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG)</a>, the <a href="https://os.helmholtz.de/">Helmholtz Open Science Office</a> and the <a href="https://www.tib.eu/">TIB – German National Library of Science and Technology</a>.</p>
             </div>
           </div>
           
