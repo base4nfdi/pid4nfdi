@@ -9,16 +9,15 @@ sections:
     content:
       title: Contact
       text: |-
-        Questions? Suggestions? Something else? We're always glad to hear from you.
+        Questions? Suggestions? Something else? We're glad to hear from you.
         
         If possible and applicable, please help us reply to your inquiry in the best way possible, by giving us more information about your PID use case or context. For example, answer (some of) the following questions:
-        
         * Is this about a planned PID or an already implemented PID use case or scenario?
-        * Do you have any specific challenges you need support for? For example: metadata quality and harmonization, interoperability using different PIDs, interoperability of own system with PID provider requirements, training, governance of PIDs (financing, organization requirements)
-        * Do you need support by a specific PID provider (i.e. metadata interpretation, quality, completeness, reporting)?
-        * Do you want to present anything at the PID Working Group OpenHour?
+        * Do you have any specific challenges you need support for? For example metadata quality and harmonization, interoperability using different PIDs, interoperability of own system with PID provider requirements, training, governance of PIDs (financing, organization requirements)?
+        * Do you need support from a specific PID provider? For example concerning metadata interpretation, quality, completeness, reporting?
+        * Would you like to present anything at the PID Working Group OpenHour?
         
-        <!-- Put form here as HTML, because the hugo template does not support custom URLs for contact forms.. -->
+        <!-- Put form here as HTML, because the hugo template does not support custom URLs for contact forms. -->
         <div class="mb-3">
          <form action="https://pid.nfdiform.techfak.de/create" method="post">
           <div class="container mt-5">
@@ -57,15 +56,15 @@ sections:
         
         Or contact us by email:
         
-        email: pid4nfdi@lists.nfdi.de
-        #appointment_url: 'https://calendly.com'
-        #contact_links:
-        #  - icon: comments
-        #    icon_pack: fas
-        #    name: Discuss on Forum
-        #    link: 'https://discourse.gohugo.io'
-        # Automatically link email and phone or display as text?
-        autolink: true
+      email: pid4nfdi@lists.nfdi.de
+      #appointment_url: 'https://calendly.com'
+      #contact_links:
+      #  - icon: comments
+      #    icon_pack: fas
+      #    name: Discuss on Forum
+      #    link: 'https://discourse.gohugo.io'
+      # Automatically link email and phone or display as text?
+      autolink: true
     
     design:
       columns: '1'
