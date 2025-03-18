@@ -1,6 +1,6 @@
 ---
 title: Contact
-date: 2024-07-15
+date: 2025-03-18
 
 type: landing
 
@@ -10,14 +10,14 @@ sections:
       title: Contact
       text: |-
         Questions? Suggestions? Something else? We're always glad to hear from you.
-
+        
         If possible and applicable, please help us reply to your inquiry in the best way possible, by giving us more information about your PID use case or context. For example, answer (some of) the following questions:
-
+        
         * Is this about a planned PID or an already implemented PID use case or scenario?
         * Do you have any specific challenges you need support for? For example: metadata quality and harmonization, interoperability using different PIDs, interoperability of own system with PID provider requirements, training, governance of PIDs (financing, organization requirements)
         * Do you need support by a specific PID provider (i.e. metadata interpretation, quality, completeness, reporting)?
         * Do you want to present anything at the PID Working Group OpenHour?
-
+        
         <!-- Put form here as HTML, because the hugo template does not support custom URLs for contact forms.. -->
         <div class="mb-3">
          <form action="https://pid.nfdiform.techfak.de/create" method="post">
@@ -54,9 +54,9 @@ sections:
           </div>
         </form>
         </div>
-
-        Or contact us by e-mail:
-
+        
+        Or contact us by email:
+        
         email: pid4nfdi@lists.nfdi.de
         #appointment_url: 'https://calendly.com'
         #contact_links:
@@ -66,14 +66,14 @@ sections:
         #    link: 'https://discourse.gohugo.io'
         # Automatically link email and phone or display as text?
         autolink: true
-
+    
     design:
-        columns: '1'
+      columns: '1'
 
   - block: markdown
     content:
       title: Imprint (Legal Notice)
-#      subtitle: Imprint for this website – also serves as provider identification according to § 5 Digitale Dienste Gesetz (DDG)
+      #subtitle: Imprint for this website – also serves as provider identification according to § 5 Digitale Dienste Gesetz (DDG)
       text: |
             
             <div class="small-text-section">
@@ -96,7 +96,7 @@ sections:
             <p>PID4NFDI / Base4NFDI</p>
             
             </div>
-
+    
     design:
       columns: '2'
 
