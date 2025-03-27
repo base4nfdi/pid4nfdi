@@ -44,6 +44,7 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
+  alt_text: "Fireworks in front of all-black."
 
 # Projects
 #   Associate this post with one or more of your projects.

@@ -44,6 +44,7 @@ image:
   caption: "licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), reuses [work by Premeditated](https://w.wiki/CvkA)"
   focal_point: ""
   preview_only: false
+  alt_text: "An illustration showing the PID4NFDI logo and below a simplistic space rocket launching from the spelled-out year 2024 to the spelled-out years 2025/2026."
 
 # Projects
 #   Associate this post with one or more of your projects.
