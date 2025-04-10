@@ -8,12 +8,9 @@ sections:
   - block: hero
     content:
       title: |
-        <span style="font-size: 4.5rem;">PID4NFDI</span>
-        <br> 
-        <span style="font-size: 2.8rem;">Persistent Identifier Services for NFDI</span>
-        <br> 
+        <span style="font-size: 3rem;">Persistent Identifier Services for NFDI</span>
+        <br />
         <span style="color: #6c808099; font-size: 1.4rem;">in development</span>
-       
       image:
         filename: PID4NFDI-top-neg.png
   - block: markdown
@@ -43,12 +40,13 @@ sections:
     content:
         title: What do we offer?
         text: |
-              <ul style="font-size: 1.5rem;">
-                  <li>Support for PID implementation and selection, with information on best practices, standards, and training for the NFDI.</li>
-                  <li>Metadata Quality Assessment</li>
-                  <li>Standards and Best Practices</li>
-                  <li>Training and Support</li>
-                  <li>Governance Support</li>
+              <ul>
+                  <li>Support for PID implementation and selection</li>
+                  <li>Information on best practices, standards, and training</li>
+                  <li>Metadata quality assessment</li>
+                  <li>Standards and best practices</li>
+                  <li>Training and support</li>
+                  <li>Governance support</li>
               </ul>
               <br> 
             
