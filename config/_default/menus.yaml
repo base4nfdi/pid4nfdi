@@ -7,7 +7,7 @@ main:
 #  - name: Home
 #    url: /
 #    weight: 100
-  - name: PID Essentials
+  - name: Get a PID
     identifier: get-pid
     url: get-pid
     weight: 200
@@ -15,15 +15,15 @@ main:
     parent: get-pid
     url: get-pid/start
     weight: 10
-  - name: Services & Providers
+  - name: PID Providers
     parent: get-pid
-    url: get-pid/services-provider
+    url: get-pid/providers
     weight: 20
-  - name: Metadata Essentials
+  - name: Services
     identifier: services
     url: services
     weight: 300
-  - name: Metadata Guide
+  - name: Metadata Support and Assessment
     parent: services
     url: services/metadata-support-assessment
     weight: 10

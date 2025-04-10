@@ -1,12 +1,12 @@
 ---
-title: How to Start
+title: Getting Started
 date: 2024-09-09
 type: landing
 
 sections:
   - block: markdown
     content:
-        title: How to Start
+        title: Getting Started
         subtitle: How to get a PID and select a PID provider 
         text: | 
             The **PID4NFDI Cookbook** is a practical guide designed to help individuals and organizations get started with PID registration and usage. It provides support for understanding what PIDs are, why they are important for long-term access and citation of digital resources, and how to integrate them into your workflows. The guide includes:
