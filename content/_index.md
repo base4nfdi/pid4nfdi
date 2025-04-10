@@ -30,10 +30,10 @@ sections:
                     {{< cta cta_alt_link="./get-pid/start" cta_alt_text="Get started, get a PID" >}}
                 </div>
                 <div class="col">
-                    {{% cta cta_alt_link="./get-pid/provider" cta_alt_text="Find a PID provider" %}}
+                    {{< cta cta_alt_link="./get-pid/provider" cta_alt_text="Find a PID provider" >}}
                 </div>
                 <div class="col">
-                    {{% cta cta_alt_link="./services/metadata-support-assessment" cta_alt_text="Metadata support and assessment" %}}
+                    {{< cta cta_alt_link="./services/metadata-support-assessment" cta_alt_text="Metadata support and assessment" >}}
                 </div>
             </div>
   
@@ -121,18 +121,18 @@ sections:
         subtitle: PID4NFDI – Persistent Identifier Services for the German National Research Data Infrastructure (NFDI)
         text: |
             <div class="row row-cols-4">
-                <div class="col">
-                    {{% cta cta_alt_link="./about/" cta_alt_text="More about the project" %}}
-                </div>
-                <div class="col">
-                    {{% cta cta_alt_link="./publication/" cta_alt_text="Latest publications" %}}
-                </div>
-                <div class="col">
-                    {{% cta cta_alt_link="./about/team/" cta_alt_text="Meet the team" %}}
-                </div>
-                <div class="col">
-                    {{% cta cta_alt_link="./about/contact/" cta_alt_text="Contact us" %}}
-                </div>
+            <div class="col">
+            {{% cta cta_alt_link="./about/" cta_alt_text="More about the project" %}}
+            </div>
+            <div class="col">
+            {{% cta cta_alt_link="./publication/" cta_alt_text="Latest publications" %}}
+            </div>
+            <div class="col">
+            {{% cta cta_alt_link="./about/team/" cta_alt_text="Meet the team" %}}
+            </div>
+            <div class="col">
+            {{% cta cta_alt_link="./about/contact/" cta_alt_text="Contact us" %}}
+            </div>
             </div>
     design:
         columns: '1'
