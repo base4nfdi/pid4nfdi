@@ -26,15 +26,15 @@ sections:
         title: What do we offer?
         text: |
             <div class="row row-cols-3">
-                <div class="col">
-                    {{< cta cta_alt_link="./get-pid/start" cta_alt_text="Get started, get a PID" >}}
-                </div>
-                <div class="col">
-                    {{< cta cta_alt_link="./get-pid/provider" cta_alt_text="Find a PID provider" >}}
-                </div>
-                <div class="col">
-                    {{< cta cta_alt_link="./services/metadata-support-assessment" cta_alt_text="Metadata support and assessment" >}}
-                </div>
+            <div class="col">
+            {{% cta cta_alt_link="./get-pid/start" cta_alt_text="Get started, get a PID" %}}
+            </div>
+            <div class="col">
+            {{% cta cta_alt_link="./get-pid/provider" cta_alt_text="Find a PID provider" %}}
+            </div>
+            <div class="col">
+            {{% cta cta_alt_link="./services/metadata-support-assessment" cta_alt_text="Metadata support and assessment" %}}
+            </div>
             </div>
   
   - block: markdown
