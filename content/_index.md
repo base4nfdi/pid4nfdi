@@ -7,18 +7,19 @@ type: landing
 sections:
   - block: hero
     content:
-      title: |
-        <span style="font-size: 3rem;">Persistent Identifier Services for NFDI</span>
-        <br />
-        <span style="color: #6c808099; font-size: 1.4rem;">in development</span>
-      image:
-        filename: PID4NFDI-top-neg.png
+        title: |
+            <span style="font-size: 3rem;">Persistent Identifier Services for NFDI</span>
+            <br />
+            <span style="color: #6c808099; font-size: 1.4rem;">in development</span>
+        image:
+            filename: PID4NFDI-top-neg.png
   - block: markdown
     content:
-      title: PID Coordination Hub
-      subtitle: Driving FAIR, Open, and Persistent Research Practices
-      text: |
-        The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.
+        title: PID Coordination Hub
+        subtitle: Driving FAIR, Open, and Persistent Research Practices
+        text: |
+            The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.
+        
 
 sections:
   - block: markdown
