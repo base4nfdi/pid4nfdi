@@ -36,6 +36,8 @@ sections:
             {{% cta cta_alt_link="./services/metadata-support-assessment" cta_alt_text="Metadata support and assessment" %}}
             </div>
             </div>
+    design:
+        columns: '1'
   
   - block: markdown
     content:
