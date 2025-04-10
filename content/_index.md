@@ -47,7 +47,9 @@ sections:
             - Training and support
             - Governance support
             
+            <div style="text-align: left;">
             {{< cta cta_text="" cta_link="" cta_new_tab="false" cta_alt_text="And more" cta_alt_link="./services/metadata-support-assessment" cta_alt_new_tab="false" >}}
+            </div>
 
     design:
         columns: '2'
