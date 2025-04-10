@@ -19,6 +19,23 @@ sections:
       subtitle: Driving FAIR, Open, and Persistent Research Practices
       text: |
         The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.
+
+sections:
+  - block: markdown
+    content:
+        title: What do we offer?
+        text: |
+            <div class="row row-cols-3">
+                <div class="col">
+                    {{< cta cta_alt_link="./get-pid/start" cta_alt_text="Get started, get a PID" >}}
+                </div>
+                <div class="col">
+                    {{% cta cta_alt_link="./get-pid/provider" cta_alt_text="Find a PID provider" %}}
+                </div>
+                <div class="col">
+                    {{% cta cta_alt_link="./services/metadata-support-assessment" cta_alt_text="Metadata support and assessment" %}}
+                </div>
+            </div>
   
   - block: markdown
     content:
@@ -36,6 +53,7 @@ sections:
     design:
         columns: '2'
 
+<!--
   - block: markdown
     content:
         title: What do we offer?
@@ -47,21 +65,18 @@ sections:
             - Training and support
             - Governance support
             
-            <div style="text-align: left;">
             {{< cta cta_text="" cta_link="" cta_new_tab="false" cta_alt_text="And more" cta_alt_link="./services/metadata-support-assessment" cta_alt_new_tab="false" >}}
-            </div>
 
     design:
         columns: '2'
-
- 
+-->
 
   - block: collection
     content:
       title: Latest Blog Posts
       subtitle:
       text:
-      count: 5
+      count: 3
       filters:
         author: ''
         category: ''
@@ -79,7 +94,7 @@ sections:
   - block: collection
     content:
         title: Upcoming Events
-        text: ""
+        text:
         count: 3
         filters:
             folders:
@@ -107,20 +122,21 @@ sections:
         title: About
         subtitle: PID4NFDI – Persistent Identifier Services for the German National Research Data Infrastructure (NFDI)
         text: |
-           <div class="row row-cols-4">
-            <div class="col">
-            {{% cta cta_alt_link="./about/" cta_alt_text="More about the project" %}}
-            </div>
-            <div class="col">
-            {{% cta cta_alt_link="./publication/" cta_alt_text="Latest publications" %}}
-            </div>
-            <div class="col">
-            {{% cta cta_alt_link="./about/team/" cta_alt_text="Meet the team" %}}
-            </div>
-            <div class="col">
-            {{% cta cta_alt_link="./about/contact/" cta_alt_text="Contact us" %}}
-            </div>
+            <div class="row row-cols-4">
+                <div class="col">
+                    {{% cta cta_alt_link="./about/" cta_alt_text="More about the project" %}}
+                </div>
+                <div class="col">
+                    {{% cta cta_alt_link="./publication/" cta_alt_text="Latest publications" %}}
+                </div>
+                <div class="col">
+                    {{% cta cta_alt_link="./about/team/" cta_alt_text="Meet the team" %}}
+                </div>
+                <div class="col">
+                    {{% cta cta_alt_link="./about/contact/" cta_alt_text="Contact us" %}}
+                </div>
             </div>
     design:
         columns: '1'
+
 ---
