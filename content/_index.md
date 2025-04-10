@@ -40,17 +40,14 @@ sections:
     content:
         title: What do we offer?
         text: |
-              <ul>
-                  <li>Support for PID implementation and selection</li>
-                  <li>Information on best practices, standards, and training</li>
-                  <li>Metadata quality assessment</li>
-                  <li>Standards and best practices</li>
-                  <li>Training and support</li>
-                  <li>Governance support</li>
-              </ul>
-              <br> 
+            - Support for PID implementation and selection
+            - Information on best practices, standards, and training
+            - Metadata quality assessment
+            - Standards and best practices
+            - Training and support
+            - Governance support
             
-              {{< cta cta_text="" cta_link="" cta_new_tab="false" cta_alt_text="And more" cta_alt_link="./services/metadata-support-assessment" cta_alt_new_tab="false" >}}
+            {{< cta cta_text="" cta_link="" cta_new_tab="false" cta_alt_text="And more" cta_alt_link="./services/metadata-support-assessment" cta_alt_new_tab="false" >}}
 
     design:
         columns: '2'
