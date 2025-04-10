@@ -17,7 +17,7 @@ sections:
   - block: markdown
     content:
       title: | 
-        <div class="pid4nfdi-title"><h2> Driving FAIR, Open, and Persistent Research Practices with PIDHub.</h2></div>
+        <div class="pid4nfdi-title"><h2> Driving FAIR, Open, and Persistent Research Practices with PID Coordination Hub.</h2></div>
       text: |
         <br> 
         <span style="font-size: 1.5rem; text-align: center; display: block;"> The PIDHub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). </span>
