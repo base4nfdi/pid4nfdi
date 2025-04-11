@@ -17,7 +17,7 @@ authors:
 - Janete Saldanha Bach Estevao
 - Philipp Wieder
 - Peter Mutschke
-- Antonia Schrader
+- antonia
 - Paul Vierkant
 - David Linke
 

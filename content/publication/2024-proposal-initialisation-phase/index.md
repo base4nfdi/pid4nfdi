@@ -15,7 +15,7 @@ authors:
 - sven
 - Britta Dreyer
 - stephanie
-- Antonia C. Schrader
+- antonia
 - Kelly Stathis
 - Paul Vierkant
 - PID4NFDI Working Group
