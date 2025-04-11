@@ -65,4 +65,4 @@ We **invite you and everyone interested from NFDI to participate in and contribu
 The **initial meeting** of the focus group will be held on **April 1, 2025, 1:00 to 2:30 pm**. (No april's fools.)
 In the meeting, PID4NFDI will introduce our two-year plan in the Base4NFDI integration phase, and together we will define collaborative tasks and establish a clear action plan.
 
-If you are interested in participating or should you have any questions or require further information, please contact me or write us an email at pid4nfdi@lists.nfdi.de.
+If you are interested in participating or should you have any questions or require further information, please contact us at pid4nfdi@lists.nfdi.de.
