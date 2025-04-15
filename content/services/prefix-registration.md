@@ -59,8 +59,8 @@ sections:
               </select>
             </div>
             <div class="form-group row">
-              <label class="col-sm-2 col-form-label">I have read and accept the <a href"/privacy/">privacy policy</a>.</label>
-              <input required type="checkbox" id="accept-privacy-policy" name="accept-privacy-policy" class="form-control col-sm-10">
+              <label class="col-sm-2 col-form-label">I have read and accept the <a href="/privacy/">privacy policy</a>.</label>
+              <input required type="checkbox" id="accept-privacy-policy" name="accept-privacy-policy" class="">
             </div>
             <button type="submit" class="btn btn-primary col-sm-2 offset-sm-5">Send</button>
           </div>
