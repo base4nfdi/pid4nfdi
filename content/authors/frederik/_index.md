@@ -49,4 +49,4 @@ user_groups:
   - Project Team Members
 ---
 
-Frederik works at the German National Library of Science and Technology (TIB) and is a project team member of PID4NFDI. Check [Torsten's ORCID record](https://orcid.org/0009-0003-3264-5006) for more information.
+Frederik works at the German National Library of Science and Technology (TIB) and is a project team member of PID4NFDI. Check [Frederik's ORCID record](https://orcid.org/0000-0001-5379-0059) for more information.
