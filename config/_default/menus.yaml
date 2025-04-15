@@ -39,10 +39,10 @@ main:
     parent: resources
     url: resources/training-material
     weight: 10
-#  - name: Best Practice
-#    parent: resources
-#    url: resources/best-practice
-#    weight: 20
+  - name: Use Cases
+    parent: resources
+    url: resources/use-cases
+    weight: 20
 #  - name: Policies
 #    parent: resources
 #    url: resources/policies
