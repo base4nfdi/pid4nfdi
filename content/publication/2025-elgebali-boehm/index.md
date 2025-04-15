@@ -34,7 +34,7 @@ publication: 'Zenodo'
 #event: ''
 
 # Abstract
-abstract: 'This report is part of the deliverables produced by PID4NFDI, a core service for persistent identifiers developed within the German National Research Data Infrastructure (Nationale Forschungsdateninfrastruktur – NFDI). The survey, titled "PID Service Landscape in the NFDI," was conducted during the initial funding phase of the PID4NFDI project in 2024. The main objective of PID4NFDI is to establish a foundational PID service for Germany's National Research Data Infrastructure (NFDI).'
+abstract: ''
 
 # Summary. An optional shortened abstract. (uncomment lines below)
 #summary: ''
