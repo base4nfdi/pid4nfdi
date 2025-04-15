@@ -30,7 +30,7 @@ sections:
       title: <h2>Genebank Information System (FAIRAgro)</h2>
       subtitle: <h3>Metadata Analysis</h3>
       text: |
-        The purpose of this analysis is a comprehensive evaluation of the metadata quality and completeness of the [Genebank Information System (GBIS)](https://gbis.ipk-gatersleben.de/) in the [FAIRAgro](https://fairagro.net/) consortium. This analysis, conducted by DataCite, highlights the current state of metadata, offering insights into its alignment with persistent identifier and metadata best practices.
+        The purpose of this analysis is a comprehensive evaluation of the metadata quality and completeness of the [Genebank Information System (GBIS)](https://gbis.ipk-gatersleben.de/) in the [FAIRagro](https://fairagro.net/) consortium. This analysis, conducted by DataCite, highlights the current state of metadata, offering insights into its alignment with persistent identifier and metadata best practices.
         
         {{% cta cta_alt_link="https://doi.org/10.5281/zenodo.14506202" cta_alt_text="Read the metadata analysis" %}}
     design:
