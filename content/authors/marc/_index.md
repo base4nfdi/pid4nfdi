@@ -18,7 +18,7 @@ organizations:
     url: 'https://os.helmholtz.de/'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Marc works at the Helmholtz Open Science Office and is a project team member of PID4NFDI.
+bio: Marc was a project team member of PID4NFDI from March 2024 to April 2025.
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -46,7 +46,8 @@ highlight_name: true
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Project Team Members
+  - Alumni
+
 ---
 
-Marc works at the Helmholtz Open Science Office and is a project team member of PID4NFDI. Check [Marc's ORCID record](https://orcid.org/0000-0002-7742-3867) for more information.
+Marc was a project team member of PID4NFDI from March 2024 to April 2025.
