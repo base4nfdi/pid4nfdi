@@ -17,13 +17,9 @@ sections:
         
         We offer a limited number of free productive prefixes for your PID use cases during the project period. However, please note that dedicated contracts with GWDG will be necessary to continue PID generation after the PID4NFDI project concludes. For more detailed information on the ePIC PID service, please also check out our [PID4NFDI Cookbook](/pid4nfdi/get-pid/start).
         
-        {{% callout note %}}
-        This form will generate an email in a predefined form for you to send with your email client.
-        {{% /callout %}}
-        
-        <!-- HTML mailto form -->
+        <!-- Put form here as HTML, because the hugo template does not support custom URLs for contact forms. -->
         <div class="mb-3">
-         <form action="mailto:support@pidconsortium.net" method="post" enctype="text/plain">
+         <form action="" method="post">
           <div class="container mt-5">
             <div class="form-group row">
               <label class="col-sm-2 col-form-label">Your name:</label>
@@ -62,7 +58,11 @@ sections:
                 <option value="1000000+">more than 1.000.000</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary col-sm-2 offset-sm-5">Generate email</button>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">I have read and accept the <a href"/privacy/">privacy policy</a>.</label>
+              <input required type="checkbox" id="accept-privacy-policy" name="accept-privacy-policy" class="form-control col-sm-10">
+            </div>
+            <button type="submit" class="btn btn-primary col-sm-2 offset-sm-5">Send</button>
           </div>
         </form>
         </div>
