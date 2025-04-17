@@ -26,7 +26,7 @@ publishDate: '2025-04-17'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['report']
+publication_types: ['speech']
 
 # Publication name and optional abbreviated publication name (uncomment line below).
 publication: 'Zenodo'
