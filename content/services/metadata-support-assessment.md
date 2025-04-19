@@ -27,6 +27,8 @@ sections:
             | [ARDC FAIR Data Self Assessment Tool](https://ardc.edu.au/resource/fair-data-self-assessment-tool/) | The ARDC FAIR Data Self Assessment Tool assesses how FAIR your research dataset is based on a checklist and gives practical tips on how to enhance its FAIRness. It is developed by the [Australian Research Data Commons (ARDC)](https://ardc.edu.au/). |
             | [FAIR Evaluation Services](https://fairsharing.github.io/FAIR-Evaluator-FrontEnd) | The FAIR Evaluation Services collect resources and guidelines to assess the FAIRness of digital resources. It focuses on maturity indicator tests. It is maintained by the [FAIRmetrics](https://github.com/FAIRMetrics) and the [FAIRsharing](https://sansonegroup.eng.ox.ac.uk/) groups. |
             | [AtMoDat Data Checker](https://www.atmodat.de/adc) | The AtMoDat Data Checker is a Python-based library that contains checks to ensure compliance with the [AtMoDat Standard](https://www.atmodat.de/atmodat-standard). It is based on the [IOOS compliance checker](https://github.com/ioos/compliance-checker) and was developed for the climate research community. |
+    design:
+      columns: '1'
 
   - block: markdown
     content:
@@ -39,8 +41,24 @@ sections:
 
   - block: markdown
     content:
+        title: Catalog of Metadata Standards
+        text: |
+            A [catalog of metadata standards relevant to NFDI](https://docs.google.com/spreadsheets/d/1mWpqGqsl_y17YI2-9XE8RFucIUy-qJtQ64bI0OvcrL0/edit?gid=103618958#gid=103618958) was compiled during the initialisation phase of PID4NFDI. It contains a list of metadata standards that are applied within NFDI repositories, a list of PID provider defined metadata standards, and a list of working groups around metadata issues. The catalog is treated as a living document and will be continuously updated within the current project phase. For example, a list of metadata mappings will be added, and the current tables will be extended. The catalog can act as guidance for stakeholders to address questions around metadata standards, such as:
+            * I want to develop a service that will issue PIDs and l am looking for a discipline specific or generic metadata standard to use. Which standards are used in NFDI by the other consortia and by which specific services? Which are the most popular standards used within NFDI? If I decide for standard X, which other services or consortia will my service be interoperable with, such that data can flow seamlessly between them?
+            * I am not sure which PID provider my organization should work with. Which provider has its own metadata schema and where can I find it? Do they have a mapping I can use?
+            * I am interested in joining a metadata group. Which groups do other NFDI consortia engage with and are those groups discussing discipline specific metadata issues?
+            
+            The catalog was part of the deliverables in the initialisation phase of PID4NFDI. For the deliverable, see: [_Catalog of Metadata Standards Relevant to NFDI (D2.2)_](/publication/2024-boehm-b/)
+
+    design:
+      columns: '1'
+
+  - block: markdown
+    content:
         title: Metadata Working Groups within NFDI
         text: |
             Of the sections of the NFDI, which work on cross-sectional topics across the consortia, the one most relevant in terms of PIDs is the section [_(Meta)data, Termino­­lo­gies, Provenance_](https://www.nfdi.de/section-meta/?lang=en). The section includes all consortia and communities and strives for connecting and harmonizing the developments in consortia that work with similar data structures, standards and tools in the topics of the section. Its goals are concepts and recommendations for the harmonization of (meta)data and the evaluation of existing approaches and best practices for the NFDI and beyond, among others. These goals are pursued in the section's different working groups.
+    design:
+      columns: '1'
 
 ---
