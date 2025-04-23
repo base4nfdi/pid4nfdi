@@ -1,116 +1,93 @@
 ---
-title: "PID Providers"
-date: 2024-10-09
+title: My page
 type: landing
-menu: main
-weight: 20
-
-providers:                     # ⟵ Datenquelle für Loop
-  - name: "DataCite"
-    logo: "media/datacite.png"
-    pid_type: "DOI"
-    year: 2009
-    description: "Globales Non-Profit-Consortium zur Vergabe von DOIs für Forschungsdaten und andere Outputs. Unterstützt ROR, ORCID & Cross-repository-Suche."
-    pid_example: "https://doi.org/10.5438/1dgk-1m22"
-    membership: "https://datacite.org/become-a-member/"
-    posi: "https://doi.org/10.5438/vy7h-g464"
-    url: "https://datacite.org/"
-  - name: "ORCID"
-    logo: "media/orcid.png"
-    pid_type: "ORCID iD"
-    year: 2012
-    description: "Eindeutige Kennung für Forschende, um ihre Publikationen & Beiträge zu verknüpfen."
-    pid_example: "https://orcid.org/0000-0001-2345-6789"
-    membership: "https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID"
-    posi: "https://info.orcid.org/orcids-self-assessment-of-the-posi-principles/"
-    url: "https://orcid.org/"
-  # … weitere Provider analog …
 
 sections:
-  - block: markdown            # Intro-Text
+  - block: markdown
     content:
       title: PID Providers
-      text: >
-        Persistent identifiers (PIDs) are provided by different organizations (*PID providers*). One provider may cover several PID types, and one PID type can be offered by multiple providers. The list is work-in-progress – suggestions welcome!
+      text: |
+        Persistent identifiers (PIDs) are provided by different organizations, so called PID providers. While often one provider focuses on one type of PID, a provider could have a service range offering several different types of PIDs. Vice versa, one type of PID can be offered by more than one provider, such as in the case of DOIs, but could also be exclusive to one particular provider, such as in the case of ORCID. The following table gives an overview of PIDs and PID providers. Please note that this list is not comprehensive and is a work in progress. We welcome any suggestions for additional PIDs or providers that could be added to this list.
+        
+        | **Provider** | **Description** | **URL** | **Example for PID** | **Year started** | **Register / Membership Info** | **Alignment with POSI Principles** |
+        |--------------|-----------------|---------|---------------------|------------------|--------------------------------|------------------------------------|
+        | <span style="text-align: center;">DataCite</span><br /><br />![](datacite.png) | DataCite is a global non-profit organization that provides persistent identifiers (DOIs) for research data and other scholarly outputs, helping to improve the discoverability, accessibility, and reuse of research. It collaborates with institutions, researchers, and data centers to make data a first-class research output through the use of metadata and persistent identifiers. | https://datacite.org/ | https://doi.org/10.5438/1dgk-1m22 | 2009 | https://datacite.org/become-a-member/ | https://doi.org/10.5438/vy7h-g464 |
+        | <span style="text-align: center;">ORCID</span><br /><br />![](orcid.png) | ORCID iD (Open Researcher and Contributor ID) is a unique identifier for researchers, used to track their publications and contributions. | https://orcid.org/ | https://orcid.org/0000-0001-2345-6789 | 2012 | https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID | https://info.orcid.org/orcids-self-assessment-of-the-posi-principles/ |
+        
+    design:
+      columns: '1'
 
-  - block: blank               # Karten-Grid (HTML + Go-Template)
-    content: |
-      <style>
-      .providers {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1rem;
-        margin-block: 1.5rem;
-        list-style: none;
-        padding: 0;
-      }
-      .provider-card {
-        background: var(--card-bg, #fff);
-        border: 1px solid #e5e7eb;
-        border-radius: .75rem;
-        padding: 1.25rem;
-        box-shadow: 0 2px 4px rgb(0 0 0 / 5%);
-        transition: transform .15s, box-shadow .15s;
-      }
-      .provider-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 10px rgb(0 0 0 / 8%);
-      }
-      .provider-logo {
-        max-width: 120px;
-        height: auto;
-        margin-bottom: .5rem;
-        object-fit: contain;
-      }
-      .provider-card h3 {
-        margin: 0 0 .25rem;
-        font-size: 1.125rem;
-      }
-      .provider-meta {
-        font-size: .875rem;
-        color: #666;
-        margin-bottom: .5rem;
-        line-height: 1.35;
-      }
-      .provider-links a {
-        display: inline-block;
-        font-size: .75rem;
-        margin-right: .75rem;
-        margin-top: .5rem;
-        text-decoration: none;
-      }
-      .provider-links a:hover {
-        text-decoration: underline;
-      }
-      </style>
-
-      <ul class="providers">
-      {{- range sort .Params.providers "name" }}
-        <li class="provider-card">
-          {{ with .logo }}
-            {{ $img := resources.Get . }}
-            <img class="provider-logo" src="{{ $img.RelPermalink }}" alt="Logo {{ .name }}" loading="lazy" decoding="async">
-          {{ end }}
-          <h3>{{ .name }}</h3>
-          <div class="provider-meta">
-            {{ with .pid_type }}PID-Typ: {{ . }}<br>{{ end }}
-            {{ with .year }}Start: {{ . }}<br>{{ end }}
-          </div>
-          <p>{{ .description }}</p>
-          <div class="provider-links">
-            {{ with .pid_example }}<a href="{{ . }}" target="_blank" rel="noopener">PID-Beispiel ↗</a>{{ end }}
-            {{ with .membership }}<a href="{{ . }}" target="_blank" rel="noopener">Mitglied / Register ↗</a>{{ end }}
-            {{ with .posi }}<a href="{{ . }}" target="_blank" rel="noopener">POSI ↗</a>{{ end }}
-          </div>
-          <a href="{{ .url }}" target="_blank" rel="noopener" style="display:inline-block;margin-top:.75rem;font-weight:600">Website ↗</a>
-        </li>
-      {{- end }}
-      </ul>
-
-  - block: cta                 # Call-to-action
+  - block: markdown
     content:
-      text: Haben wir etwas vergessen? Schick uns Vorschläge!
-      button:
-        label: Kontakt
-        url: /contact/
+      title: PID Providers
+      text: |
+        Persistent identifiers (PIDs) are provided by different organizations, so called PID providers. While often one provider focuses on one type of PID, a provider could have a service range offering several different types of PIDs. Vice versa, one type of PID can be offered by more than one provider, such as in the case of DOIs, but could also be exclusive to one particular provider, such as in the case of ORCID. The following table gives an overview of PIDs and PID providers. Please note that this list is not comprehensive and is a work in progress. We welcome any suggestions for additional PIDs or providers that could be added to this list.
+        
+        | **Provider** | **Description** | **Year started** | **Example for PID** | **Register / Membership Info** | **Alignment with POSI Principles** |
+        |--------------|-----------------|------------------|---------------------|--------------------------------|------------------------------------|
+        | <span style="text-align: center;">[DataCite](https://datacite.org/)</span><br /><br />![](datacite.png) | DataCite is a global non-profit organization that provides persistent identifiers (DOIs) for research data and other scholarly outputs, helping to improve the discoverability, accessibility, and reuse of research. It collaborates with institutions, researchers, and data centers to make data a first-class research output through the use of metadata and persistent identifiers. | 2009 | https://doi.org/10.5438/1dgk-1m22 | [_DataCite: Become a Member_](https://datacite.org/become-a-member/) | [_DataCite’s commitment to The Principles of Open Scholarly Infrastructure_](https://doi.org/10.5438/vy7h-g464) |
+        | <span style="text-align: center;">[ORCID](https://orcid.org/)</span><br /><br />![](orcid.png) | ORCID iD (Open Researcher and Contributor ID) is a unique identifier for researchers, used to track their publications and contributions. | 2012 | https://orcid.org/0000-0001-2345-6789 | [_How do I register for an ORCID ID_](https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID) | [_ORCID's Self-Assessment of the POSI Principles_](https://info.orcid.org/orcids-self-assessment-of-the-posi-principles/) |
+        
+    design:
+      columns: '1'
+
+  - block: collection
+    content:
+      title: PID Providers
+      text: Persistent identifiers (PIDs) are provided by different organizations, so called PID providers. While often one provider focuses on one type of PID, a provider could have a service range offering several different types of PIDs. Vice versa, one type of PID can be offered by more than one provider, such as in the case of DOIs, but could also be exclusive to one particular provider, such as in the case of ORCID. The following table gives an overview of PIDs and PID providers. Please note that this list is not comprehensive and is a work in progress. We welcome any suggestions for additional PIDs or providers that could be added to this list.
+      filters:
+        folders:
+          - providers
+    design:
+      columns: '1'
+      view: showcase
+      flip_alt_rows: false
+
+  - block: collection
+    content:
+      title: PID Providers
+      text: Persistent identifiers (PIDs) are provided by different organizations, so called PID providers. While often one provider focuses on one type of PID, a provider could have a service range offering several different types of PIDs. Vice versa, one type of PID can be offered by more than one provider, such as in the case of DOIs, but could also be exclusive to one particular provider, such as in the case of ORCID. The following table gives an overview of PIDs and PID providers. Please note that this list is not comprehensive and is a work in progress. We welcome any suggestions for additional PIDs or providers that could be added to this list.
+      filters:
+        folders:
+          - providers
+    design:
+      view: compact
+      columns: '1'
+
+  - block: markdown
+    content:
+      title: <h2><img src="/images/datacite.png" alt="DataCite"></h2>
+      text: |
+        DataCite is a global non-profit organization that provides persistent identifiers (DOIs) for research data and other scholarly outputs, helping to improve the discoverability, accessibility, and reuse of research. It collaborates with institutions, researchers, and data centers to make data a first-class research output through the use of metadata and persistent identifiers.
+        
+        **URL**: https://datacite.org/
+        
+        **Example for PID**: https://doi.org/10.5438/1dgk-1m22
+        
+        **Year started**: 2009
+        
+        **Register / Membership Info**: https://datacite.org/become-a-member/
+        
+        **Alignment with POSI Principles**: https://doi.org/10.5438/vy7h-g464
+    design:
+      columns: '2'
+
+  - block: markdown
+    content:
+      title: <h2><img src="/images/orcid.png" alt="ORCID"></h2>
+      text: |
+        ORCID iD (Open Researcher and Contributor ID) is a unique identifier for researchers, used to track their publications and contributions.
+        
+        **URL**: https://orcid.org/
+        
+        **Example for PID**: https://orcid.org/0000-0001-2345-6789
+        
+        **Year started**: 2012
+        
+        **Register / Membership Info**: https://support.orcid.org/hc/en-us/articles/360006897454-How-do-I-register-for-an-ORCID-ID
+        
+        **Alignment with POSI Principles**: https://info.orcid.org/orcids-self-assessment-of-the-posi-principles/
+    design:
+      columns: '2'
+
 ---
