@@ -16,7 +16,9 @@ sections:
         * Do you have any specific challenges you need support for? For example concerning metadata quality and harmonization, interoperability using different PIDs, interoperability of own system with PID provider requirements, training, governance of PIDs (financing, organization requirements)?
         * Do you need support from a specific PID provider? For example concerning metadata interpretation, quality, completeness, reporting?
         * Would you like to present anything at the PID Working Group OpenHour?
-        
+
+        CONTACT FORM IS CURRENTLY UNAVAILABLE! PLEASE USE pid4nfdi@lists.nfdi.de TO CONTACT US.
+
         <!-- Put form here as HTML, because the hugo template does not support custom URLs for contact forms. -->
         <div class="mb-3">
          <form action="https://pid.nfdiform.techfak.de/create" method="post">
