@@ -19,7 +19,7 @@ sections:
         
         <!-- Put form here as HTML, because the hugo template does not support custom URLs for contact forms. -->
         <div class="mb-3">
-         <form action="" method="post">
+         <form action="https://pidprefix.nfdiform.techfak.de/create" method="post">
           <div class="container mt-5">
             <div class="form-group row">
               <label class="col-sm-2 col-form-label">Your name:</label>
@@ -61,6 +61,10 @@ sections:
             <div class="form-group row">
               <label class="col-sm-2 col-form-label">I have read and accept the <a href="/privacy/">privacy policy</a>.</label>
               <input required type="checkbox" id="accept-privacy-policy" name="accept-privacy-policy" class="">
+            </div>
+            <div class="form-group row" style="display: none;">
+              <label for="bl4nk" class="col-sm-2 col-form-label">Bot check:</label>
+              <input type="text" id="bl4nk" name="bl4nk" class="form-control col-sm-10" placeholder="">
             </div>
             <button type="submit" class="btn btn-primary col-sm-2 offset-sm-5">Send</button>
           </div>
