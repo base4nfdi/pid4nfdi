@@ -1,6 +1,6 @@
 ---
 title: Prefix Registration
-date: 2025-04-15
+date: 2025-05-09
 
 type: landing
 
@@ -15,7 +15,7 @@ sections:
         1. Test Prefix: Ideal for experimental purposes. PIDs under test prefixes are resolvable but not persistent, allowing you to explore and test the ePIC PID service without long-term commitments.
         2. Productive Prefix: Designed for long-term use. PIDs under productive prefixes are fully persistent, ensuring the longevity and reliability of your identifiers.
         
-        We offer a limited number of free productive prefixes for your PID use cases during the project period. However, please note that dedicated contracts with GWDG will be necessary to continue PID generation after the PID4NFDI project concludes. For more detailed information on the ePIC PID service, please also check out our [PID4NFDI Cookbook](/pid4nfdi/get-pid/start).
+        We offer free test prefixes (for up to 50.000 PIDs per year) and a limited number of free productive prefixes (for up to 50.000 PIDs per year) for your PID use cases during the project period. However, please note that dedicated contracts with GWDG will be necessary to continue PID generation after the PID4NFDI project concludes, or if more than 50.000 PIDs should be generated. For more detailed information on the ePIC PID service, please also check out our [PID4NFDI Cookbook](/pid4nfdi/get-pid/start).
         
         <!-- Put form here as HTML, because the hugo template does not support custom URLs for contact forms. -->
         <div class="mb-3">
@@ -38,24 +38,17 @@ sections:
               <input required type="text" id="nfdi-affiliation" name="nfdi-affiliation" class="form-control col-sm-10" placeholder="Enter your affiliation within NFDI">
             </div>
             <div class="form-group row">
-              <label class="col-sm-2 col-form-label">Short description of your PID use case:</label>
+              <label class="col-sm-2 col-form-label">Please give a short description of your PID use case:</label>
               <input type="text" id="description" name="description" class="form-control col-sm-10" placeholder="Enter a short description">
             </div>
             <div class="form-group row">
-              <label class="col-sm-2 col-form-label">Would you like to request a test prefix or a productive prefix?</label>
+              <label class="col-sm-2 col-form-label">Select the prefix that you would like to request:</label>
               <select required name="prefix-type" class="form-control col-sm-10">
                 <option value="" selected disabled hidden>Please select</option>
-                <option value="test-prefix">Test prefix</option>
-                <option value="productive-prefix">Productive prefix</option>
-              </select>
-            </div>
-            <div class="form-group row">
-              <label class="col-sm-2 col-form-label">How many PIDs do you plan to register?</label>
-              <select required name="pid-amount" class="form-control col-sm-10">
-                <option value="" selected disabled hidden>Please select</option>
-                <option value="1-49999">1 – 49.999</option>
-                <option value="50000-1000000">50.000 – 1.000.000</option>
-                <option value="1000000+">more than 1.000.000</option>
+                <option value="test-prefix">Test prefix (<50.000 PIDs per year)</option>
+                <option value="productive-prefix">Productive Prefix (<50.000 PIDs per year)</option>
+				<option value="productive-prefix">Productive Prefix (<1.000.000 PIDs per year)</option>
+				<option value="productive-prefix">Productive Prefix (>1.000.000 PIDs per year)</option>
               </select>
             </div>
             <div class="form-group row">
