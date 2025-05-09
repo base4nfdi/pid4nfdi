@@ -36,7 +36,7 @@ publication: 'B.I.P.online'
 event: ''
 
 # Abstract
-abstract: In the presentation, we introduce the two projects PID4NFDI and PID Network Germany that deal with PIDs at the national level, present some initial findings and highlight their benefit for NFDI. PIDs are used and needed along the entire lifecycle of research data: from enabling to connecting. However, a particular focus for the presentation will be laid on harmonising and connecting.
+abstract: 'In the presentation, we introduce the two projects PID4NFDI and PID Network Germany that deal with PIDs at the national level, present some initial findings and highlight their benefit for NFDI. PIDs are used and needed along the entire lifecycle of research data: from enabling to connecting. However, a particular focus for the presentation will be laid on harmonising and connecting.'
 
 # Summary. An optional shortened abstract. (uncomment lines below)
 
