@@ -26,14 +26,14 @@ publishDate: '2024-06-01'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['report']
+publication_types: ['speech']
 
 # Publication name and optional abbreviated publication name (uncomment line below).
 publication: 'B.I.P.online'
 #publication_short: ''
 
 # Event (optional, uncomment lines below)
-#event: ''
+event: ''
 
 # Abstract
 abstract: In the presentation, we introduce the two projects PID4NFDI and PID Network Germany that deal with PIDs at the national level, present some initial findings and highlight their benefit for NFDI. PIDs are used and needed along the entire lifecycle of research data: from enabling to connecting. However, a particular focus for the presentation will be laid on harmonising and connecting.
