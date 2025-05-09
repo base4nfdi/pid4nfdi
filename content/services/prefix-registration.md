@@ -44,7 +44,7 @@ sections:
             <div class="form-group row">
               <label class="col-sm-2 col-form-label">Select the prefix that you would like to request:</label>
               <select required name="prefix-type" class="form-control col-sm-10">
-                <option value="" selected disabled hidden>Please select</option>
+                <option value="selected disabled hidden>Please select</option>
                 <option value="test-prefix">Test prefix (<50.000 PIDs per year)</option>
                 <option value="productive-prefix">Productive Prefix (<50.000 PIDs per year)</option>
 				<option value="productive-prefix">Productive Prefix (<1.000.000 PIDs per year)</option>
