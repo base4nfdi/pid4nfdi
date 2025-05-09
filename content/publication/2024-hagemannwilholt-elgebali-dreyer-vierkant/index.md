@@ -26,7 +26,7 @@ publishDate: '2024-06-01'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['article']
+publication_types: ['report']
 
 # Publication name and optional abbreviated publication name (uncomment line below).
 publication: 'B.I.P.online'
