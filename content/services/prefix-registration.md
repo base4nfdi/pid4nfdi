@@ -15,7 +15,7 @@ sections:
         1. Test Prefix: Ideal for experimental purposes. PIDs under test prefixes are resolvable but not persistent, allowing you to explore and test the ePIC PID service without long-term commitments.
         2. Productive Prefix: Designed for long-term use. PIDs under productive prefixes are fully persistent, ensuring the longevity and reliability of your identifiers.
         
-        We offer free test prefixes (for up to 50.000 PIDs per year) and a limited number of free productive prefixes (for up to 50.000 PIDs per year) for your PID use cases during the project period. However, please note that dedicated contracts with GWDG will be necessary to continue PID generation after the PID4NFDI project concludes, or if more than 50.000 PIDs should be generated. For more detailed information on the ePIC PID service, please also check out our [PID4NFDI Cookbook](/pid4nfdi/get-pid/start).
+        We offer free test prefixes (for up to 50.000 PIDs per year) and a limited number of free productive prefixes (for up to 50.000 PIDs per year) for your PID use cases during the project period. However, please note that dedicated contracts with GWDG will be necessary to continue PID generation after the PID4NFDI project concludes, or if more than 50.000 PIDs should be generated. For more detailed information on the ePIC PID service, please also check out our [PID4NFDI Cookbook](https://pid4nfdi-training.readthedocs.io/en/latest/epic.html).
         
         <!-- Put form here as HTML, because the hugo template does not support custom URLs for contact forms. -->
         <div class="mb-3">
