@@ -32,8 +32,8 @@ sections:
         
         ### Editorial Office
         Responsible for the content according to § 18 Abs. 2 MStV:<br />
-        Dr. Sandra Niemeyer; email: sandra.niemeyer@tib.eu<br />
-        Michael Hohlfeld; email: michael.hohlfeld@tib.eu
+        Antonia Schrader; email: antonia.schrader@os.helmholtz.de<br />
+        Dr. Stephanie Hagemann-Wilholt; email: stephanie.hagemann@tib.eu
         
         ## Privacy and Data Protection
         Please refer to our [privacy policy](/privacy).

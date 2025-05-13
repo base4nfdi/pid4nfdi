@@ -27,7 +27,7 @@ sections:
         Website: www.tib.eu<br />
         
         ### Data Protection Officer
-        You may contact the **Data Protection Officer** at any time:
+        The **Data Protection Officer** of the controller is:
         
         Elke Brehm<br />
         Technische Informationsbibliothek (TIB)<br />
@@ -35,7 +35,6 @@ sections:
         Welfengarten 1 B<br />
         30167 Hannover<br />
         Germany<br />
-        Visiting Address: TIB Conti-Campus, Königsworther Platz 1 B, 30167 Hannover<br />
         Phone: +49 511 762-8138<br />
         Email: datenschutz@tib.eu
         
@@ -130,7 +129,7 @@ sections:
         ### jsDelivr
         
         #### What It Does
-        jsDelivr is built into our website theme and provides some files for the technical operation in the background of our website. It provides some commonly used code snippets directly to you for a smoothly functioning website. For example, think of jsDelivr as a library that ‘lends’ commonly used JavaScript code to your browser. When you visit a website, it borrows this code from the library and stores it on your computer, so you don’t need to download it again the next time you visit a site that uses the same code, unless a newer version of it is available.
+        jsDelivr is built into our website theme and provides some files for the technical operation in the background of our website. It provides commonly used code snippets directly to you for a smoothly functioning website. For example, think of jsDelivr as a library that ‘lends’ commonly used JavaScript code to your browser. When you visit a website, it borrows this code from the library and stores it on your computer, so you don’t need to download it again the next time you visit a site that uses the same code, unless a newer version of it is available.
         
         #### How It Handles Data
         When you visit our website, your browser connects to jsDelivr to retrieve the needed JavaScript code. During this, some data like your IP address and the time of your visit will be processed by jsDelivr. You can find out more about how they handle your data [in their privacy policy](https://www.jsdelivr.com/terms/privacy-policy).
@@ -138,7 +137,7 @@ sections:
         ### Netlify
         
         #### What It Does
-        Netlify is built into our website theme and provides some files for the technical operation in the background of our website. It provides some commonly used code snippets directly to you for a smoothly functioning website. For example, think of Netlify as a library that ‘lends’ commonly used CSS code to your browser. When you visit a website, it borrows this code from the library and stores it on your computer, so you don’t need to download it again the next time you visit a site that uses the same code, unless a newer version of it is available.
+        Netlify is built into our website theme and provides some files for the technical operation in the background of our website. It provides commonly used code snippets directly to you for a smoothly functioning website. For example, think of Netlify as a library that ‘lends’ commonly used CSS code to your browser. When you visit a website, it borrows this code from the library and stores it on your computer, so you don’t need to download it again the next time you visit a site that uses the same code, unless a newer version of it is available.
         
         #### How It Handles Data
         When you visit our website, your browser connects to Netlify to retrieve the needed CSS code. During this, some data like your IP address and the time of your visit will be processed by Netlify. You can find out more about how they handle your data [in their privacy policy](https://www.netlify.com/privacy/).
@@ -146,7 +145,7 @@ sections:
         ### Indico
         
         #### What It Does
-        For organising events like conferences or workshops, we use Indico to handle things like signing up, submitting presentation proposals, and setting up event schedules. Indico collects information to help us keep things organised and ensure everyone gets the right event updates. For example, let’s say you are signing up for a conference through our website. Indico will collect information like your name, email, and institution to help us manage registration. If you submit an abstract, we can also securely share it with reviewers through Indico.
+        For organising events like conferences or workshops, we use Indico to facilitate registration, abstract submissions, and scheduling. Indico collects information to help us organize events efficiently and ensure participants receive appropriate updates. For instance, when registering for a conference through our website, you may be asked to provide details such as your name, email, and institution. If you submit an abstract, we can also securely share it with reviewers through Indico.
         
         #### How It Handles Data
         The data collected by Indico is stored securely, and we do not share it with any third parties unless necessary for the event (for example, giving reviewers access to the submitted abstracts so they can evaluate and provide feedback) or required by law. Indico follows strict data protection standards to safeguard your information, and we regularly ensure these standards are met. For any questions about your event data or to request its deletion, contact the responsible event host. Contact details can be found on the respective Indico event page.
@@ -189,11 +188,7 @@ sections:
         Website: https://www.lfd.niedersachsen.de
         
         ## Data Transfer to Third Countries
-        In case data is transferred to third countries outside the European Economic Area (EEA) that do not provide an adequate level of data protection (as determined by the European Commission), we take additional safeguards, such as:
-        * Implementing standard contractual clauses approved by the European Commission.
-        * Securing explicit consent from users for such transfers.
-        
-        For U.S.-based service providers, we ensure compliance with GDPR through agreements or limit interactions with companies certified under the EU-U.S. Data Privacy Framework (DPF). If such certification is not present, additional safeguards are applied.
+        We do not transfer personal data outside of the European Economic Area (EEA) or to third countries that do not provide an adequate level of data protection as defined under the GDPR. Any data processing within the EU is carried out in compliance with the GDPR to ensure the security and privacy of your personal data. Should a transfer outside the EEA become necessary in the future, we will implement appropriate safeguards to ensure your data remains protected.
         
         ## Security Measures
         We have implemented appropriate technical and organisational measures to ensure the protection of your personal data, including encryption and secure data storage practices. We also regularly review these measures to maintain their effectiveness.
@@ -201,7 +196,7 @@ sections:
         ## Changes to the Privacy Policy
         We reserve the right to amend this privacy policy as necessary, in accordance with the GDPR and future changes regarding our collection and processing of personal data. Any changes will be communicated on this page, and the updated date will be reflected at the end of the policy.
         
-        The privacy was prepared in March 2025 and last reviewed on March 27, 2025.
+        The privacy was prepared in April 2025 and last reviewed on May 13, 2025.
         
     design:
       columns: '1'
