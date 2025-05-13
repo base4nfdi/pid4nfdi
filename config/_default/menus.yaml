@@ -27,6 +27,10 @@ main:
     parent: services
     url: services/metadata-support-assessment
     weight: 10
+  - name: Prefix Registration
+    parent: services
+    url: services/prefix-registration
+    weight: 10
 #  - name: Datatype Registry
 #    parent: services
 #    url: services/datatype-registry
