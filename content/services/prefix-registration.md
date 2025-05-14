@@ -46,9 +46,9 @@ sections:
               <select required name="prefix-type" class="form-control col-sm-10">
                 <option value="selected disabled hidden>Please select</option>
                 <option value="test-prefix">Test prefix (<50.000 PIDs per year)</option>
-                <option value="productive-prefix">Productive Prefix (<50.000 PIDs per year)</option>
-                <option value="productive-prefix">Productive Prefix (<1.000.000 PIDs per year)</option>
-                <option value="productive-prefix">Productive Prefix (>1.000.000 PIDs per year)</option>
+                <option value="productive-prefix-less-50.000)">Productive Prefix (<50.000 PIDs per year)</option>
+                <option value="productive-prefix-less-1.000.000">Productive Prefix (<1.000.000 PIDs per year)</option>
+                <option value="productive-prefix-more-1.000.000">Productive Prefix (>1.000.000 PIDs per year)</option>
               </select>
             </div>
             <div class="form-group row">
