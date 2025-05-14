@@ -32,6 +32,9 @@ sections:
             {{% cta cta_alt_link="./services/metadata-support-assessment" cta_alt_text="Metadata support and assessment" %}}
             </div>
             <div class="col">
+            {{% cta cta_alt_link="./services/prefix-registration" cta_alt_text="Register a prefix" %}}
+            </div>
+            <div class="col">
             {{% cta cta_alt_link="./resources/use-cases" cta_alt_text="Explore use cases" %}}
             </div>
             </div>
