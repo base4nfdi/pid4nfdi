@@ -8,7 +8,7 @@ sections:
     content:
         title: PID4NFDI Focus groups
         #subtitle: 
-        text: |
+		text: |
 		    PID4NFDI warmly invites you to join our focus groups on the integration of Persistent Identifiers (PIDs) within Data Management Plans (DMPs) and Electronic Lab Notebooks (ELNs).
 			These focus groups are designed to collaboratively explore key topics, including but not limited to:
 			
