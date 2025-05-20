@@ -56,7 +56,7 @@ main:
 #   url: community/support
 #   weight: 20
   - name: Use Cases
-    parent: resources
+    parent: community
     url: community/use-cases
     weight: 20
 #  - name: Policies
