@@ -43,9 +43,21 @@ main:
     parent: resources
     url: resources/training-material
     weight: 10
+  - name: Community
+    identifier: community
+    url: community
+    weight: 400
+  - name: Focus Groups
+    parent: community
+    url: community/focus-groups
+    weight: 10
+# - name: Support
+#   parent: community
+#   url: community/support
+#   weight: 20
   - name: Use Cases
     parent: resources
-    url: resources/use-cases
+    url: community/use-cases
     weight: 20
 #  - name: Policies
 #    parent: resources
