@@ -4,13 +4,13 @@ date: 2024-09-09
 type: landing
 
 sections:
-- block: card
+  - block: card
     content:
       items:
       - title: Training Material
-          subtitle: PDF & Video
+        subtitle: PDF & Video
       - title: Advanced PID Usage
-          subtitle: LiaScript Module
+        subtitle: LiaScript Module
 
   
 ---
