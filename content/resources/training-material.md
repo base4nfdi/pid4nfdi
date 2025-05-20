@@ -4,13 +4,15 @@ date: 2024-09-09
 type: landing
 
 sections:
-  - block: markdown
+  - block: card
     content:
-      title: Training Material
-      text: |
-        {{% callout note %}}
-        You will find selected training material on persistent identifiers here soon.
-        {{% /callout %}}
-    design:
-      columns: '1'
+      items:
+      - title: Training Material
+          subtitle: PDF & Video
+          image: /images/training-intro.jpg
+      - title: Advanced PID Usage
+          subtitle: LiaScript Module
+          image: /images/training-advanced.jpg
+
+  
 ---
