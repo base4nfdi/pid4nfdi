@@ -3,8 +3,7 @@ title: Training Material
 date: 2024-09-09
 type: landing
 
-sections:
-  - block: card
+- block: card
     content:
       items:
       - title: Training Material
