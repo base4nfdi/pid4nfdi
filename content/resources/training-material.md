@@ -9,10 +9,8 @@ sections:
       items:
       - title: Training Material
           subtitle: PDF & Video
-          image: /images/training-intro.jpg
       - title: Advanced PID Usage
           subtitle: LiaScript Module
-          image: /images/training-advanced.jpg
 
   
 ---
