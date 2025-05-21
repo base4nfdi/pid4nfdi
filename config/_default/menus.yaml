@@ -91,11 +91,15 @@ main:
     parent: about
     url: about
     weight: 10
+  - name: Services & Roadmap
+    parent: about
+    url: about/service
+    weight: 20  
   - name: Team
     parent: about
     url: about/team
-    weight: 20
+    weight: 30
   - name: Contact
     parent: about
     url: about/contact
-    weight: 30
+    weight: 40
