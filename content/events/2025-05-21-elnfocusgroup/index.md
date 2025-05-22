@@ -56,14 +56,14 @@ slides:
 projects:
 ---
 
-PID4NFDI warmly invites you to join our focus groups on the integration of Persistent Identifiers (PIDs) within Electronic Lab Notebooks (ELNs). More genereal on the focus roups can be found on the dedicated subpage *Focus Groups*[https://pid.services.base4nfdi.de/community/focus-groups/].
+PID4NFDI warmly invites you to join our focus groups on the integration of Persistent Identifiers (PIDs) within Electronic Lab Notebooks (ELNs). More genereal on the focus roups can be found on the dedicated subpage [*Focus Groups*](https://pid.services.base4nfdi.de/community/focus-groups/).
 
 The initial meeting of the focus group took place on **May 21, 2025, 1:00 to 2:30 pm**.
 In the meeting, PID4NFDI presented our two-year plan for the Base4NFDI integration phase, followed by an overview of ELNs by Tilo Mathes of Research Space and an intensive introductions to get to know each other.
 Here are the slides and meeting notes:
-  * General Overview[https://docs.google.com/presentation/d/1P6-_n_WXkJq7GAu6fD5RUVPzZyiQgVT0P4wGPfGRvng/edit?slide=id.g3466c48fe94_0_830#slide=id.g3466c48fe94_0_830] by Jana Böhm
-  * Introduction to ELN[https://doi.org/10.5281/zenodo.15489032] by Tilo Mathes
-  * Meeting Notes[https://docs.google.com/document/d/1iOF6Yn49oMtpk55EDokf5qyQANQBC-T6C0vGPdApqQw/edit?tab=t.0]
+  * [General Overview](https://docs.google.com/presentation/d/1P6-_n_WXkJq7GAu6fD5RUVPzZyiQgVT0P4wGPfGRvng/edit?slide=id.g3466c48fe94_0_830#slide=id.g3466c48fe94_0_830) by Jana Böhm
+  * [Introduction to ELN](https://doi.org/10.5281/zenodo.15489032) by Tilo Mathes
+  * [Meeting Notes](https://docs.google.com/document/d/1iOF6Yn49oMtpk55EDokf5qyQANQBC-T6C0vGPdApqQw/edit?tab=t.0)
 
 
 
