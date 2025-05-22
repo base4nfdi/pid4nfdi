@@ -6,11 +6,11 @@ type: landing
 sections:
   - block: markdown
     content:
-      items:
-      - title: Training Material
-        subtitle: PDF & Video
-      - title: Advanced PID Usage
-        subtitle: LiaScript Module
-
-  
+      title: Training Material
+      text: |
+        {{% callout note %}}
+        You will find selected training material on persistent identifiers here soon.
+        {{% /callout %}}
+    design:
+      columns: '1'
 ---
