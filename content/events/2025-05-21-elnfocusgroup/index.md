@@ -56,13 +56,15 @@ slides:
 projects:
 ---
 
-We would like to set up a **dedicated focus group** on this topic to collectively address important focus areas, including but not limited to: metadata quality and completeness; PID registration and integration into existing platforms; lifecycle integration challenges associated with PIDs; evaluation of existing and development of new training resources and best practice documentation; policy alignment, including meeting funder requirements.
-We invite **everyone interested from NFDI** to participate in and contribute to the focus group, especially if you regularly work with ELNs and their integration in technical systems and infrastructure and/or issues of metadata in ELNs. Different backgrounds, perspectives and levels of expertise will be crucial and are very much welcome.
+PID4NFDI warmly invites you to join our focus groups on the integration of Persistent Identifiers (PIDs) within Electronic Lab Notebooks (ELNs). More genereal on the focus roups can be found on the dedicated subpage *Focus Groups*[https://pid.services.base4nfdi.de/community/focus-groups/].
 
-The initial meeting of the focus group will be held on **May 21, 2025, 1:00 to 2:30 pm**.
-In the meeting, PID4NFDI will introduce our two-year plan in the Base4NFDI integration phase, and together we will define collaborative tasks and establish a clear action plan.
+The initial meeting of the focus group took place on **May 21, 2025, 1:00 to 2:30 pm**.
+In the meeting, PID4NFDI presented our two-year plan for the Base4NFDI integration phase, followed by an overview of ELNs by Tilo Mathes of Research Space and an intensive introductions to get to know each other.
+Here are the slides and meeting notes:
+  * General Overview[https://docs.google.com/presentation/d/1P6-_n_WXkJq7GAu6fD5RUVPzZyiQgVT0P4wGPfGRvng/edit?slide=id.g3466c48fe94_0_830#slide=id.g3466c48fe94_0_830] by Jana Böhm
+  * Introduction to ELN[https://doi.org/10.5281/zenodo.15489032] by Tilo Mathes
+  * Meeting Notes[https://docs.google.com/document/d/1iOF6Yn49oMtpk55EDokf5qyQANQBC-T6C0vGPdApqQw/edit?tab=t.0]
 
-✉️ If you are interested in participating, please **register** via the following link:
-https://gfz-de.zoom-x.de/meeting/register/n_6QhwZfREu_HvBKQSFRCg 
 
-We really look forward to your participation and valuable contributions. If you have any questions or require further information, please feel free to contact us via pid4nfdi@lists.nfdi.de.
+
+We truly appreciate your ongoing engagement in the focus groups. Your contributions are essential, and we hope these collective efforts will lead to both knowledge sharing and tangible, community-driven outputs. If you have any questions or require further information, please feel free to contact us via pid4nfdi@lists.nfdi.de.
