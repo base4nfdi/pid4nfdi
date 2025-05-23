@@ -51,7 +51,7 @@ main:
     parent: community
     url: community/focus-groups
     weight: 10
- -  name: Support
+  - name: Support
     parent: community
     url: community/support
     weight: 20
