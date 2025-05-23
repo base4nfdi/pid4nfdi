@@ -51,10 +51,10 @@ main:
     parent: community
     url: community/focus-groups
     weight: 10
-# - name: Support
-#   parent: community
-#   url: community/support
-#   weight: 20
+ -  name: Support
+    parent: community
+    url: community/support
+    weight: 20
   - name: Use Cases
     parent: community
     url: community/use-cases
