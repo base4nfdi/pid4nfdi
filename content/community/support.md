@@ -18,7 +18,7 @@ sections:
       text: |
         The event can be equated with an "Open House" – an informal gathering where the project invites you to learn more about its mission. It is an opportunity to foster engagement and interact with the project in a casual, drop-in manner. During the Open Hour, the project's work is showcased, and the community is engaged. The Open Hours are designed to be accessible to everyone, regardless of background or connection to the project. 
         
-        The events are held on a bi-monthly basis at different times on different days. The duration is one hour and will be announced via NFDI mailing lists and Rocket.chat a few weeks in advance.
+        The events are held on a bi-monthly basis at different times on different days. The event will last one hour and will be announced via NFDI mailing lists and Rocket.chat a few weeks in advance, **together with the access link to the Zoom room**.
         
         The upcoming meetings are on 
         * **Monday, July 28 at 1 pm,** 
