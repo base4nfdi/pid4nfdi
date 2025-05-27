@@ -33,7 +33,7 @@ publication: 'Zenodo'
 event: '2nd Base4NFDI Services Roadshow, Online, May 22, 2025 (Session 2)'
 
 # Abstract
-abstract: 'Presentation on the project 'PID4NFDI' by Sara El-Gebali (Datacite) at the 2nd roadshow of Basic services of the NFDI. All talks were recorded and will be published via YouTube.'
+abstract:'Presentation on the project 'PID4NFDI' by Sara El-Gebali (Datacite) at the 2nd roadshow of Basic services of the NFDI. All talks were recorded and will be published via YouTube.'
 
 # Summary. An optional shortened abstract. (uncomment lines below)
 #summary: ''
