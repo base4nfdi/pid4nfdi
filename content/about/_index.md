@@ -6,7 +6,7 @@ type: landing
 sections:
   - block: markdown
     content:
-        title: About PID4NFDI - Torsten
+        title: About PID4NFDI
         subtitle: Persistent Identifier Services for the German National Research Data Infrastructure (NFDI)
         text: |
             PID4NFDI is a basic service for persistent identifiers in development for the German National Research Data Infrastructure ([Nationale Forschungsdaten&shy;infrastruktur – NFDI](https://www.nfdi.de/?lang=en)). PID4NFDI is part of [Base4NFDI](https://base4nfdi.de/) and is currently in its integration phase, the second of three [service development phases](https://base4nfdi.de/process).
