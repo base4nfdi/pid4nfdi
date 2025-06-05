@@ -5,7 +5,6 @@
 
 
 title: PID4NFDI # Website name
-googleAnalytics: ""
 baseURL: 'https://pid.services.base4nfdi.de' #'https://base4nfdi.github.io/pid4nfdi' # Website URL
 
 
@@ -27,8 +26,7 @@ removePathAccents: true
 
 enableGitInfo: false
 summaryLength: 30
-pagination:
- pagerSize: 10
+paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
