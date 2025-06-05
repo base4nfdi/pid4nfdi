@@ -21,9 +21,11 @@ marketing:
  seo:
    site_type: Organization
    local_business_type: ''
-   org_name: ''
-   description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
-   twitter: 'GetResearchDev'
+   org_name: 'PID4NFDI'
+   description: 'Persistent Identifier Services for the German National Research Data Infrastructure (NFDI)'
+   bluesky: 'https://bsky.app/profile/pid4nfdi.bsky.social'
+   linkedin: 'https://www.linkedin.com/showcase/pid4nfdi/'
+   mastodon: 'https://nfdi.social/@pid4nfdi'
  analytics:
    enable: false
  verification:
