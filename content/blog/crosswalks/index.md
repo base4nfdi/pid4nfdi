@@ -82,10 +82,7 @@ An ontology defines:
 It uses **RDF, RDFS, and OWL** to formalize this. Once you do that, machines can understand the structure and the meaning. This is great for automated reasoning, quality checks, and linking with other systems.
 
 ### PID Landscape Survey and Stakeholder Requirements
-
-As one of the initial activities, PID4NFDI conducted an extensive **survey on the PID Service Landscape in NFDI** in April and May 2024. The survey aimed to evaluate the current level of PID adoption and integration among NFDI consortia and to understand their future needs in order to develop a PID service that aligns with the evolving requirements of the NFDI community. The [results have now been published](https://doi.org/10.5281/zenodo.14652295) as a report. It contains a summary of the results with drawn conclusions. The [survey question catalog](https://doi.org/10.5281/zenodo.14327774) has also been published as supplementary material.
-
-Further insights regarding PID implementation and stakeholder requirements in NFDI were gathered at the **PID4NFDI Stakeholder Workshop** [held in November 2024](../../events/2024-pid4nfdistakeholderworkshop/). It provided a forum for representatives from NFDI consortia and sections, national and international initiatives and projects, and other interested parties to share their perspectives on challenges, current practices and potential improvements in PID services. Our [published report summarizes the workshop’s presentations and discussions](https://doi.org/10.5281/zenodo.14232461).
+fgrefgdrrgr
 
 ### Guides and Training
 
