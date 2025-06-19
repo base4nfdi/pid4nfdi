@@ -1,0 +1,25 @@
+{{/* site_head.html – angepasste Version ohne Netlify Identity, mit custom SCSS */}}
+
+{{ $custom := resources.Get "scss/custom.scss" | toCSS | minify | fingerprint }}
+{{ $template := resources.Get "scss/template.scss" | toCSS | minify | fingerprint }}
+
+<link rel="stylesheet" href="{{ $custom.RelPermalink }}">
+<link rel="stylesheet" href="{{ $template.RelPermalink }}">
+
+{{ if site.Params.features.math.enable }}
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" />
+{{ end }}
+
+{{ if site.Params.features.syntax_highlighter.enable }}
+  {{ $light := "css/libs/chroma/github-light.min.css" }}
+  {{ $dark := "css/libs/chroma/dracula.min.css" }}
+  <link rel="stylesheet" href="{{ $light | relURL }}" title="hl-light" media="print" onload='this.media="all"' />
+  <link rel="stylesheet" href="{{ $dark | relURL }}" title="hl-dark" media="print" onload='this.media="all"' disabled />
+{{ end }}
+
+{{/* Matomo ist in custom_js.html enthalten – hier also nicht nochmal nötig */}}
+
+{{/* Netlify-Widget entfernt – vorher stand hier: <script src="https://identity.netlify.com/... */}}
+
