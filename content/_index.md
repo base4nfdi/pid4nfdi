@@ -35,7 +35,7 @@ sections:
             {{% cta cta_alt_link="./services/prefix-registration" cta_alt_text="Register a prefix" %}}
             </div>
             <div class="col">
-            {{% cta cta_alt_link="./resources/use-cases" cta_alt_text="Explore use cases" %}}
+            {{% cta cta_alt_link="./community/use-cases" cta_alt_text="Explore use cases" %}}
             </div>
             </div>
             {{< cta cta_alt_link="./about/contact" cta_alt_text="Other questions? Contact us!">}}
