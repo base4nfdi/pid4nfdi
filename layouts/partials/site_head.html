@@ -20,8 +20,6 @@
   <link rel="stylesheet" href="{{ $dark | relURL }}" title="hl-dark" media="print" onload='this.media="all"' disabled />
 {{ end }}
 
-{{ partialCached "functions/script-generator.html" . }}
-
 {{- range site.Params.features.custom_js -}}
   <script src="{{ . | relURL }}"></script>
 {{- end -}}
