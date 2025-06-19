@@ -1,7 +1,11 @@
-{{/* Hugo Blox default site_head.html – angepasst, ohne Netlify Identity */}}
+{{/* Hugo Blox site_head.html – angepasst an deine SCSS-Dateien */}}
 
-{{- $styles := resources.Match "scss/wowchemy*.scss" | resources.Concat "scss/bundle.scss" | toCSS | resources.Minify | fingerprint -}}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{- $bundle := slice
+    (resources.Get "scss/template.scss")
+    (resources.Get "scss/custom.scss")
+  | resources.Concat "scss/bundle.scss"
+  | toCSS | resources.Minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $bundle.RelPermalink }}">
 
 {{ if site.Params.features.math.enable }}
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"></script>
@@ -12,8 +16,8 @@
 {{ if site.Params.features.syntax_highlighter.enable }}
   {{ $light := "css/libs/chroma/github-light.min.css" }}
   {{ $dark := "css/libs/chroma/dracula.min.css" }}
-  <link rel="stylesheet" href="{{ $light | relURL }}" title="hl-light" media="print" onload='this.media="all"'>
-  <link rel="stylesheet" href="{{ $dark | relURL }}" title="hl-dark" media="print" onload='this.media="all"' disabled>
+  <link rel="stylesheet" href="{{ $light | relURL }}" title="hl-light" media="print" onload='this.media="all"' />
+  <link rel="stylesheet" href="{{ $dark | relURL }}" title="hl-dark" media="print" onload='this.media="all"' disabled />
 {{ end }}
 
 {{ partialCached "functions/script-generator.html" . }}
@@ -22,5 +26,5 @@
   <script src="{{ . | relURL }}"></script>
 {{- end -}}
 
-{{/* WICHTIG: Netlify Identity Widget wurde entfernt! */}}
+{{/* Netlify Identity Widget entfernt */}}
 {{/* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */}}
