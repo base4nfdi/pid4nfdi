@@ -51,7 +51,7 @@ sections:
         * [PID4NFDI on LinkedIn](https://www.linkedin.com/showcase/pid4nfdi/)
         
         ## Funding
-        This project is funded as part of [Base4NFDI](https://base4nfdi.de/). Grant number: [521466146](https://gepris.dfg.de/gepris/projekt/521466146)
+        This project is funded as part of [Base4NFDI](https://base4nfdi.de/). Grant number: [521453681](https://base4nfdi.de/projects/pid4nfdi)
         
         ## Base4NFDI
         
