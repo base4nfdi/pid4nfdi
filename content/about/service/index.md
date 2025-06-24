@@ -6,7 +6,7 @@ type: landing
 sections:
   - block: markdown
     content:
-        title: Services & Roadmap
+        title: Roadmap & Frequently Asked Questions
         subtitle: What the PID Coordination Hub Can Do for You – Now and in the Future
         text: |
             The questions and answers below reflect the types of support, services, and guidance the <a href="https://pid.services.base4nfdi.de/" target="_blank" rel="noopener"> PID Coordination Hub </a> **currently offers or aims to offer** during the integration phase (2025–2026)
