@@ -62,7 +62,7 @@ Introduction sentence
 
 DataCite metadata is structured data in JSON. It tells us things like:
 
-| <span style="color:green;">{ <br> "title": "Climate Data 2024",<br>"creator": "Alice Smith",<br>"publicationYear": "2024" <br> } </span> |
+ <span style="color:green;">{     <br> "title": "Climate Data 2024",    <br>"creator": "Alice Smith",    <br>"publicationYear": "2024" <br> } </span> 
 
 This is useful, but only humans (or systems programmed specifically for this format) know what these fields mean.
 
@@ -128,7 +128,7 @@ Let’s say you want to expose a DataCite record in schema.org so Google Dataset
 ✅ This is a schema.org JSON-LD representation of a dataset. <br>
 🟢 It reflects metadata from DataCite fields, translated into schema.org terms.
 
-<span style="color:green;">{ “@type”: “Dataset”,<br>“name”: “Climate Data 2024”,<br>“author”: {<br>   >“name”: “Alice Smith”<br>},<br>“datePublished”: “2024”<br>}</span>
+<span style="color:green;">{ “@type”: “Dataset”,<br>“name”: “Climate Data 2024”,<br>“author”: {<br>   “name”: “Alice Smith”<br>},<br>“datePublished”: “2024”<br>}</span>
 
 The crosswalk can be:
 * A table
@@ -137,7 +137,7 @@ The crosswalk can be:
 
 It’s what enables the **conversion** of a DataCite JSON record into the JSON-LD snippet
 
-Now your data is:
+Now your data is: <br>
 ✅ Machine-readable <br>
 ✅ Interoperable <br>
 ✅ Findable on the web
@@ -199,7 +199,7 @@ While the **DataCite metadata schema** is highly structured, it lacks formal sem
 ### Why Use an Ontology for DataCite?
 
 #### From Structure to Meaning
-* **Metadata Schema** (e.g., DataCite JSON): says "This field is called creator and its value is a name."
+* **Metadata Schema (e.g., DataCite JSON)**: says "This field is called creator and its value is a name."
 * **Ontology (RDF/OWL)**: expresses "This Dataset must be linked to a Person as a creator, who may have an ORCID, and may be affiliated with an institution that has a country of operation."
 
 #### Benefits
@@ -215,9 +215,9 @@ If an author is affiliated with an institution located in France, the system can
 
 | Example mappings | 
 |---------------------|
-| <span style="color: green;">ex:hasTitle owl:equivalentProperty dct:title . /span> |
-| <span style="color: green;">ex:hasCreator owl:equivalentProperty foaf:maker . /span> |
-| <span style="color: green;">ex:Dataset owl:equivalentClass schema:Dataset . /span> |
+| <span style="color: green;">ex:hasTitle owl:equivalentProperty dct:title . </span> |
+| <span style="color: green;">ex:hasCreator owl:equivalentProperty foaf:maker . </span> |
+| <span style="color: green;">ex:Dataset owl:equivalentClass schema:Dataset . </span> |
 
 **4. Machine Interoperability** Supports intelligent agents, recommendation engines, and automated workflows.
 
@@ -252,7 +252,7 @@ Use SKOS when you want:
 * Multilingual support
 
 Example: <br> 
- <span style="color: green;">ex:marineBiology a  skos:Concept ;<br>    skos:prefLabel "Marine Biology"@en ;<br>    skos:broader ex:biology . /span> 
+ <span style="color: green;">ex:marineBiology a  skos:Concept ;<br>    skos:prefLabel "Marine Biology"@en ;<br>    skos:broader ex:biology . </span> 
 
 
 SKOS does **not** support logical constraints or inference, unlike OWL.
