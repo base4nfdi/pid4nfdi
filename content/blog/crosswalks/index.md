@@ -5,13 +5,13 @@ title: "Background"
 subtitle: ""
 summary: "Background of Crosswalks etc."
 authors: ["sara"]
-tags: ["PID4NFDI", "project news", "NFDI", "Base4NFDI"]
+tags: ["PID4NFDI", "information", "NFDI", "Base4NFDI"]
 categories: []
 date: 2025-06-19
 #lastmod: 2025-06-19
 
 # Draft?
-draft: true
+draft: false
 
 # Show publish date?
 show_date: true
