@@ -11,7 +11,7 @@ date: 2025-06-19
 #lastmod: 2025-06-19
 
 # Draft?
-draft: false
+draft: true
 
 # Show publish date?
 show_date: true
