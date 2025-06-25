@@ -54,7 +54,7 @@ image:
 projects: []
 ---
 
-It has been an eventful and fruitful first year for PID4NFDI, the basic service for persistent identifiers in development for [NFDI](https://www.nfdi.de/), the German National Research Data Infrastructure. PID4NFDI completed its first [service development phase](https://base4nfdi.de/process), the initialisation phase, at the end of 2024 and now heads into a second term, the two-year integration phase running in 2025 and 2026. In this blog post, we review and summarise PID4NFDI’s activities and outputs from the initialisation phase and preview what’s to come in the next two years.
+Introduction sentence
 
 <!--more-->
 
@@ -64,7 +64,9 @@ DataCite metadata is structured data in JSON. It tells us things like:
 
 {
   "title": "Climate Data 2024",
+  
   "creator": "Alice Smith",
+  
   "publicationYear": "2024"
 }
 
@@ -81,39 +83,186 @@ An ontology defines:
 
 It uses **RDF, RDFS, and OWL** to formalize this. Once you do that, machines can understand the structure and the meaning. This is great for automated reasoning, quality checks, and linking with other systems.
 
-### PID Landscape Survey and Stakeholder Requirements
-fgrefgdrrgr
 
-### Guides and Training
+## 🔗 3. Align Concepts with Mappings
 
-As a practical guide designed to help individuals and organizations to get started with PID registration and usage, PID4NFDI created the [**PID4NFDI Cookbook**](https://pid4nfdi-training.readthedocs.io/en/latest/). It provides support for understanding what PIDs are, why they are important for long-term access and citation of digital resources, and how to integrate them into your workflows. Also check out our [overview of PID services and providers](../../get-pid/services-provider/).
+But DataCite isn’t the only standard. Others, like [DCAT](https://www.w3.org/TR/vocab-dcat-3/), [schema.org](https://schema.org), [Dublin Core](https://dublincore.org), and [Wikidata](https://wikidata.org), also define things like title, creator, and publicationYear.
+To make DataCite metadata understandable to those systems, we create **mappings**.
 
-PID4NFDI plans a modular, multi-level training approach to promote the effective use of PIDs across NFDI. The [**PID4NFDI Training Concept**](https://doi.org/10.5281/zenodo.14267399) describes a roadmap for the development of according training offers and support services.
+Mappings say:
+* DataCite creator = foaf:maker or schema:author
+* DataCite title = dct:title or schema:name
 
-### Use Case Analyses
+They use statements like:
+None
+ex:hasCreator owl:equivalentProperty schema:author .
 
-Four different **PID use cases within NFDI** have been analysed by PID4NFDI in close collaboration with stakeholders from the respective consortia. Two of the use case analyses focus on an evaluation of the metadata quality and completeness (in the consortia FAIRagro and for the StrainInfo service within NFDI4Microbiota), while one takes a closer look at an example of PID adoption in the Text+ consortium and another one focuses on a PID registration service for dataset elements as offered by KonsortSWD. The use case analyses have been published as individual reports:
-- [FAIRagro Metadata Analysis](https://doi.org/10.5281/zenodo.14506202)
-- [StrainInfo Metadata Analysis](https://doi.org/10.5281/zenodo.14357800)
-- [PID Adoption in the Text+ Consortium using the Example of SUB Göttingen](https://doi.org/10.5281/zenodo.14327691)
-- [KonsortSWD Persistent Identifier Registration Service for Dataset Elements](https://doi.org/10.5281/zenodo.14327770)
+So if a tool understands schema:author, it can now understand DataCite’s creator field too.
 
-### Technical Implementation and Metadata Interoperability
+#ä 🔁 4. Transform Records with Crosswalks
+A **crosswalk** is a recipe for transforming a full record from one format/schema into another.
+Think of it like a conversion chart:
 
-To support and enhance technical implementation of PIDs and metadata interoperability, PID4NFDI has published a **concept for metadata interoperability, harmonization and technical integration of PID infrastructure**. A [recently published report](https://doi.org/10.5281/zenodo.14506138) presents the conceptual framework, which integrates insights from community surveys, interviews with use case partners, and extensive engagement with NFDI consortia members.
+| **DataCite Field** | **schema.org Equivalent** |
+            |---------------|-----------------|
+            | title | name |
+            | creator.name | author.name |
+            | publicationYear | datePublished |
 
-As an accompanying resource, a **catalogue of metadata standards relevant to NFDI** was developed. The [catalogue itself](https://docs.google.com/spreadsheets/d/1mWpqGqsl_y17YI2-9XE8RFucIUy-qJtQ64bI0OvcrL0/edit?gid=103618958#gid=103618958) (currently made available as a spreadsheet Google Docs) lists discipline-specific and generic metadata standards and is [supplemented by a document](https://doi.org/10.5281/zenodo.14512768) which introduces, describes and contextualises the catalogue, and links to the actual catalogue itself.
+This allows you to:
+* Export DataCite metadata in schema.org JSON-LD
+* Harvest and reuse metadata in another system (e.g., a library catalog or web search engine)
 
-You can find out more about PIDs and metadata in our [metadata guide](../../services/metadata-support-assessment/).
+## 🚀 Putting It All Together
+Here’s how they all relate:
 
-### Governance, Business Models, Licensing
+| **Role** | **What it does** | **How it helps with DataCite** |
+            |---------------|-----------------|
+            | **Ontology** | Describes what the data means using concepts, logic, and relationships | Helps machines understand and reason over DataCite metadata |
+            | **Mapping** | Aligns concepts in DataCite to other vocabularies (like schema.org or Dublin Core) | Enables linking and integration with other systems |
+            | **Crosswalk** | Translates complete records from one metadata format into another | Makes DataCite metadata usable in external formats like schema.org JSON-LD |
 
-Another task of PID4NFDI is the analysis and documentation of governance, business, and license models of various PID providers and types. Complementing our [overview of PID services and providers](../../get-pid/services-provider/) and similar upcoming support resources, a **companion document outlining the conceptual and practical foundations for evaluating and selecting PID providers** [was published](https://doi.org/10.5281/zenodo.14328204). It provides context for the overview of the current landscape of PID providers and types, and focuses on the principles of openness, sustainability, and governance as defined by the Principles of Open Scholarly Infrastructure (POSI).
+**Ontologies define meaning; mappings align that meaning across systems.**
 
-As groundwork for a future governance structure for integrating PID services in NFDI, a **concept for sustainable PID registration workflows** that align with the NFDI’s governance and funding structure was developed and also [recently published](https://doi.org/10.5281/zenodo.14267446). It outlines framework conditions for an efficient and sustainable PID management within NFDI, the development of a PID selection and integration framework and the subsequent tasks for the PID Coordination Hub as the central point of contact for all questions related to PIDs within NFDI.
+## 🧩 Example in Action
 
-## Outlook
+Let’s say you want to expose a DataCite record in schema.org so Google Dataset Search can find it:
+1. **Ontology**: Define that your resource is a Dataset, and creator is a Person.
+2. **Mapping**: Link your creator field to schema:author.
+3. **Crosswalk**: Use a table to translate the JSON fields:
 
-After PID4NFDI’s initialisation phase and [another successful funding proposal](../../blog/pid4nfdi-funding-integration-phase/), starting with 2025, PID4NFDI has now progressed to the second phase of [Base4NFDI’s iterative development phase model for service candidates](https://base4nfdi.de/process). In this integration phase, running for two years, we will further enhance PID integration within NFDI consortia, considering varying provider maturity levels and community adoption. We will focus on supporting consortia infrastructure services to integrate PIDs throughout the research data lifecycle, using Data Management Plans (DMPs) and Electronic Lab Notebooks (ELNs) as pilot implementations. Special emphasis will be placed on the integration of PIDs for entities for which PID registration is still emerging, such as research instruments, material samples, highly granular data, as well as projects and awards. Our goal is to boost the impact of PIDs by improving metadata quality and interoperability through technical, organisational, and strategic measures. Furthermore, governance guidelines, outreach efforts, and an extended, modular training concept will promote PID awareness and adoption across disciplines. This approach will be prototyped collaboratively with NFDI consortium partners, ensuring broad applicability within the NFDI framework. These efforts will together form the _PID Coordination Hub_, which will be a central entry point for users of the PID4NFDI service portfolio.
+✅ This is a schema.org JSON-LD representation of a dataset.
+🟢 It reflects metadata from DataCite fields, translated into schema.org terms.
 
-The PID4NFDI service team is looking forward to two more years of fruitful collaborations and discussions and to contributing in furthering the developments of the PID landscape in NFDI and beyond.
+None
+{
+  "@type": "Dataset",
+  "name": "Climate Data 2024",
+  "author": {
+    "name": "Alice Smith"
+  },
+  "datePublished": "2024"
+}
+
+The crosswalk can be:
+* A table
+* A script or mapping file (e.g., XSLT, SPARQL CONSTRUCT, or Python script)
+* An ontology alignment (owl:equivalentProperty)
+
+It’s what enables the **conversion** of a DataCite JSON record into the JSON-LD snippet
+
+Now your data is:
+✅ Machine-readable
+✅ Interoperable
+✅ Findable on the web
+
+## Understanding Crosswalks and Mappings
+
+Crosswalks and mappings play a critical role in making metadata **interoperable** across different schemas, domains, and systems. While ontologies formalize the **semantics** of a single schema, crosswalks and mappings are about **connecting concepts** between multiple schemas.
+
+**A crosswalk** is a structured mapping between elements in two or more metadata standards. It shows how a field or concept in one schema (e.g., DataCite) aligns with one in another (e.g., Dublin Core, schema.org, MARC).
+
+Mappings can be:
+* **Exact** (e.g., DataCite:title is equivalent to dct:title)
+* **Close** (e.g., creatorName maps to foaf:name, though with some nuance)
+* **One-to-many** (e.g., a complex DataCite creator object may map to multiple elements in another schema)
+
+**Why Crosswalks & Mappings Matter**
+* **Interoperability**: They allow metadata from one system to be interpreted and used in another.
+* **Aggregation**: Services like Europeana or OpenAIRE rely on mappings to bring together data from multiple sources.
+* **Conversion & Exchange**: Enables tools to export/import data in different formats (e.g., JSON-LD, XML, RDF)
+* **Schema Alignment**: Helps unify different vocabularies under common terms (e.g., aligning DataCite and schema.org for dataset indexing by search engines).
+
+**Common Mapping Targets for DataCite**
+
+ | **DataCite Field**             | **Target Vocabulary Term**                                              |
+|----------------------|--------------------------------------------------------|
+| identifier           | dct:identifier                                         |
+| creator              | foaf:Person, schema:creator                            |
+| title                | dct:title, schema:name                                 |
+| publicationYear      | dct:issued, schema:datePublished                       |
+| resourceType         | dcat:Dataset, bibo:Document                            |
+
+
+Mappings can be formalized using semantic web technologies:
+* <span style="color: light green;">owl:equivalentProperty or owl:equivalentClass /span> for exact semantic alignment
+* skos:exactMatch, skos:closeMatch, and skos:relatedMatch for vocabulary-level mapping
+
+Crosswalks can also be maintained in structured formats like spreadsheets, RDF, JSON-LD, or XSLT depending on the application context.
+
+## Understanding Ontologies in the context of DataCite
+
+An **ontology** defines the **concepts, relationships, constraints, and logical rules** that describe a particular domain. Unlike a traditional metadata schema that primarily captures structure and formatting, an ontology captures **semantic meaning**. This enables **automated reasoning, data integration**, and **intelligent querying** across systems.
+
+In practice, an ontology allows you to:
+
+* **Define classes** (e.g., Dataset, Person, Organization)
+* **Specify properties** (e.g., hasAuthor, hasPublicationYear)
+* **Declare relationships** (e.g., a Dataset is authored by a Person)
+* **Add logic and constraints** (e.g., every Dataset must have at least one title)
+
+### Metadata Schema vs Ontology
+
+| **Feature** | **Metadata Schema** | **Ontology** |
+|--------------|---------------------|--------------|
+| Purpose | Structural – defines fields and formats | Semantic – defines meaning, logic, and relationships |
+| Example (DataCite) | JSON structure without formal semantics | OWL representation with reasoning support |
+
+While the **DataCite metadata schema** is highly structured, it lacks formal semantics. It defines fields like <span style="color: green;">creator</span>, <span style="color: green;">title</span>, and <span style="color: green;">publicationYear</span>, but it does not describe their interrelationships or logical constraints in a machine-interpretable way.
+
+### Why Use an Ontology for DataCite?
+
+#### From Structure to Meaning
+* **Metadata Schema** (e.g., DataCite JSON): says "This field is called creator and its value is a name."
+* **Ontology (RDF/OWL)**: expresses "This Dataset must be linked to a Person as a creator, who may have an ORCID, and may be affiliated with an institution that has a country of operation."
+
+#### Benefits
+**1. Semantic Search** Enables concept-based search:
+"Find all works authored by researchers affiliated with EU institutions."
+Even if the institution names vary, ontologies allow reasoning over geographic and organizational relationships.
+**2. Reasoning** Lets machines infer new facts:
+If an author is affiliated with an institution located in France, the system can infer the author is a French researcher, unless appropriate constraints are added.
+**3. Knowledge Graph Integration** Ontologies support linking to external vocabularies like:
+* dct:title, dct:identifier
+* foaf:Person, schema:Dataset
+* owl:sameAs for external identifiers like ORCID, ROR
+
+| Example mappings | 
+|---------------------|
+| ex:hasTitle owl:equivalentProperty dct:title . |
+| ex:hasCreator owl:equivalentProperty foaf:maker . |
+| ex:Dataset owl:equivalentClass schema:Dataset . |
+
+**4. Machine Interoperability** Supports intelligent agents, recommendation engines, and automated workflows.
+
+### How RDF, RDFS, OWL, and SKOS Compare
+
+| **Language** | **What it Does** | **Why Use It for DataCite** |
+|--------------|------------------|----------------------------|
+| RDF          | Language | Foundation layer to model metadata as a graph |
+| RDFS         | What it Does | Defines the roles and types of metadata elements |
+| OWL          | Stores data as triples | Enables validation, reasoning, AI integration |
+| SKOS         | Adds class/property structure | Ideal for tagging, browsing, subject vocabularies |
+
+### JSON vs RDF/RDFS/OWL - Example Comparison
+
+| **Concept** | **DataCite JSON** | **Explanation (JSON)** | **RDF** | **Explanation (RDF)** | **RDFS** | **Explanation (RDFS)** | **OWL** | **Explanation (OWL)** |
+|--------------|-------------------|------------------------|---------|-----------------------|----------|------------------------|---------|------------------------|
+| Creator | "creators": [{"name": "Smith, Alice"}] | Lists the dataset's creator using a simple string value. ex:Dataset123 ex:hasCreator ex:AliceSmith | Links the dataset to a named individual as a resource. ex:hasCreator rdfs:domain ex:Dataset ; rdfs:range ex:Person | Declares that hasCreator links datasets to persons. Restriction: someValuesFrom ex:Person | Adds logic: every dataset must have at least one creator of type person. |  |  |  |
+| Creator ORCID | "nameIdentifier": "https://orcid.org/..." | Specifies a string ORCID ID attached to the creator. ex:AliceSmith ex:hasORCID "https://orcid.org/..." | Connects the person to their ORCID using a data property. ex:hasORCID rdfs:range xsd:anyURI | Declares the expected type of ORCID values (URI strings). ex:AliceSmith owl:sameAs <https://orcid.org/...> | Semantically links the individual to their global ORCID identity. |  |  |  |
+
+### SKOS: A Lightweight Alternative
+
+**SKOS** (Simple Knowledge Organization System) is used to model controlled vocabularies, taxonomies, and thesauri.
+
+Use SKOS when you want:
+* Subject tagging (e.g., marine biology)
+* Simple hierarchies (broader/narrower concepts)
+* Multilingual support
+
+| Example: | 
+| -------- |
+| ex:marineBiology a skos:Concept ;<br>  skos:prefLabel "Marine Biology"@en ;<br>  skos:broader ex:biology . |
+
+
+SKOS does **not** support logical constraints or inference, unlike OWL.
