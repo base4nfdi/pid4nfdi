@@ -62,13 +62,7 @@ Introduction sentence
 
 DataCite metadata is structured data in JSON. It tells us things like:
 
-{
-  "title": "Climate Data 2024",
-  
-  "creator": "Alice Smith",
-  
-  "publicationYear": "2024"
-}
+| <span style="color:green;">{ <br> "title": "Climate Data 2024",<br>"creator": "Alice Smith",<br>"publicationYear": "2024" <br> } </span> |
 
 This is useful, but only humans (or systems programmed specifically for this format) know what these fields mean.
 
@@ -99,15 +93,15 @@ Mappings say:
 
 So if a tool understands schema:author, it can now understand DataCite’s creator field too.
 
-#ä 🔁 4. Transform Records with Crosswalks
+## 🔁 4. Transform Records with Crosswalks
 A **crosswalk** is a recipe for transforming a full record from one format/schema into another.
 Think of it like a conversion chart:
 
-| **DataCite Field** | **schema.org Equivalent** |
-            |---------------|-----------------|
-            | title | name |
-            | creator.name | author.name |
-            | publicationYear | datePublished |
+| **DataCite Field**     | **schema.org Equivalent** |
+|------------------------|---------------------------|
+| title                  | name                      |
+| creator.name           | author.name               |
+| publicationYear        | datePublished             |
 
 This allows you to:
 * Export DataCite metadata in schema.org JSON-LD
@@ -131,10 +125,10 @@ Let’s say you want to expose a DataCite record in schema.org so Google Dataset
 2. **Mapping**: Link your creator field to schema:author.
 3. **Crosswalk**: Use a table to translate the JSON fields:
 
-✅ This is a schema.org JSON-LD representation of a dataset.
+✅ This is a schema.org JSON-LD representation of a dataset. <br>
 🟢 It reflects metadata from DataCite fields, translated into schema.org terms.
 
-| <span style="color:green;">{ “@type”: “Dataset”,<br>“name”: “Climate Data 2024”,<br>“author”: {<br>   “name”: “Alice Smith”<br>},<br>“datePublished”: “2024”<br>}</span> |
+<span style="color:green;">{ “@type”: “Dataset”,<br>“name”: “Climate Data 2024”,<br>“author”: {<br>   >“name”: “Alice Smith”<br>},<br>“datePublished”: “2024”<br>}</span>
 
 The crosswalk can be:
 * A table
@@ -144,8 +138,8 @@ The crosswalk can be:
 It’s what enables the **conversion** of a DataCite JSON record into the JSON-LD snippet
 
 Now your data is:
-✅ Machine-readable
-✅ Interoperable
+✅ Machine-readable <br>
+✅ Interoperable <br>
 ✅ Findable on the web
 
 ## Understanding Crosswalks and Mappings
@@ -167,18 +161,18 @@ Mappings can be:
 
 **Common Mapping Targets for DataCite**
 
- | **DataCite Field**             | **Target Vocabulary Term**                                              |
-|----------------------|--------------------------------------------------------|
-| identifier           | dct:identifier                                         |
-| creator              | foaf:Person, schema:creator                            |
-| title                | dct:title, schema:name                                 |
-| publicationYear      | dct:issued, schema:datePublished                       |
-| resourceType         | dcat:Dataset, bibo:Document                            |
+| **DataCite Field** | **Target Vocabulary Term** |
+|----------------------|----------------------------|
+| identifier           | <span style="color:green;">dct:identifier</span> |
+| creator              | <span style="color:green;">foaf:Person, schema:creator</span> |
+| title                | <span style="color:green;">dct:title, schema:name</span> |
+| publicationYear      | <span style="color:green;">dct:issued, schema:datePublished</span> |
+| resourceType         | <span style="color:green;">dcat:Dataset, bibo:Document</span> |
 
 
 Mappings can be formalized using semantic web technologies:
-* <span style="color: green;">owl:equivalentProperty or owl:equivalentClass /span> for exact semantic alignment
-* <span style="color: green;">skos:exactMatch, skos:closeMatch, and skos:relatedMatch /span> for vocabulary-level mapping
+* <span style="color: green;">owl:equivalentProperty or owl:equivalentClass</span> for exact semantic alignment
+* <span style="color: green;">skos:exactMatch, skos:closeMatch, and skos:relatedMatch</span> for vocabulary-level mapping
 
 Crosswalks can also be maintained in structured formats like spreadsheets, RDF, JSON-LD, or XSLT depending on the application context.
 
@@ -215,9 +209,9 @@ Even if the institution names vary, ontologies allow reasoning over geographic a
 **2. Reasoning** Lets machines infer new facts:
 If an author is affiliated with an institution located in France, the system can infer the author is a French researcher, unless appropriate constraints are added. <br>
 **3. Knowledge Graph Integration** Ontologies support linking to external vocabularies like:
-* <span style="color: green;">dct:title, dct:identifier /span> 
-* <span style="color: green;">foaf:Person, schema:Dataset /span> 
-* <span style="color: green;">owl:sameAs /span> for external identifiers like ORCID, ROR
+* <span style="color: green;">dct:title, dct:identifier</span>
+* <span style="color: green;">foaf:Person, schema:Dataset</span>
+* <span style="color: green;">owl:sameAs</span> for external identifiers like ORCID, ROR
 
 | Example mappings | 
 |---------------------|
@@ -257,9 +251,8 @@ Use SKOS when you want:
 * Simple hierarchies (broader/narrower concepts)
 * Multilingual support
 
-| Example: | 
-| -------- |
-| <span style="color: green;">ex:marineBiology a  skos:Concept ;<br>    skos:prefLabel "Marine Biology"@en ;<br>    skos:broader ex:biology . /span> |
+Example: <br> 
+ <span style="color: green;">ex:marineBiology a  skos:Concept ;<br>    skos:prefLabel "Marine Biology"@en ;<br>    skos:broader ex:biology . /span> 
 
 
 SKOS does **not** support logical constraints or inference, unlike OWL.
