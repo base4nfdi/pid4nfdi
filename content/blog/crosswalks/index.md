@@ -93,9 +93,9 @@ Mappings say:
 * DataCite creator = foaf:maker or schema:author
 * DataCite title = dct:title or schema:name
 
-They use statements like:
-None
-ex:hasCreator owl:equivalentProperty schema:author .
+| They use statements like:                    |
+|--------------------------|
+| <span style="color: green;">ex:hasCreator owl:equivalentProperty schema:author .</span> |
 
 So if a tool understands schema:author, it can now understand DataCite’s creator field too.
 
@@ -116,11 +116,11 @@ This allows you to:
 ## 🚀 Putting It All Together
 Here’s how they all relate:
 
-| **Role** | **What it does** | **How it helps with DataCite** |
-            |---------------|-----------------|
-            | **Ontology** | Describes what the data means using concepts, logic, and relationships | Helps machines understand and reason over DataCite metadata |
-            | **Mapping** | Aligns concepts in DataCite to other vocabularies (like schema.org or Dublin Core) | Enables linking and integration with other systems |
-            | **Crosswalk** | Translates complete records from one metadata format into another | Makes DataCite metadata usable in external formats like schema.org JSON-LD |
+| **Role**       | **What it does** | **How it helps with DataCite** |
+|----------------|-------------------|------------------------------|
+| **Ontology**   | Describes what the data means using concepts, logic, and relationships | Helps machines understand and reason over DataCite metadata |
+| **Mapping**    | Aligns concepts in DataCite to other vocabularies (like schema.org or Dublin Core) | Enables linking and integration with other systems |
+| **Crosswalk**  | Translates complete records from one metadata format into another | Makes DataCite metadata usable in external formats like schema.org JSON-LD |
 
 **Ontologies define meaning; mappings align that meaning across systems.**
 
@@ -134,15 +134,7 @@ Let’s say you want to expose a DataCite record in schema.org so Google Dataset
 ✅ This is a schema.org JSON-LD representation of a dataset.
 🟢 It reflects metadata from DataCite fields, translated into schema.org terms.
 
-None
-{
-  "@type": "Dataset",
-  "name": "Climate Data 2024",
-  "author": {
-    "name": "Alice Smith"
-  },
-  "datePublished": "2024"
-}
+| <span style="color:green;">{ “@type”: “Dataset”,<br>“name”: “Climate Data 2024”,<br>“author”: {<br>   “name”: “Alice Smith”<br>},<br>“datePublished”: “2024”<br>}</span> |
 
 The crosswalk can be:
 * A table
@@ -185,8 +177,8 @@ Mappings can be:
 
 
 Mappings can be formalized using semantic web technologies:
-* <span style="color: light green;">owl:equivalentProperty or owl:equivalentClass /span> for exact semantic alignment
-* skos:exactMatch, skos:closeMatch, and skos:relatedMatch for vocabulary-level mapping
+* <span style="color: green;">owl:equivalentProperty or owl:equivalentClass /span> for exact semantic alignment
+* <span style="color: green;">skos:exactMatch, skos:closeMatch, and skos:relatedMatch /span> for vocabulary-level mapping
 
 Crosswalks can also be maintained in structured formats like spreadsheets, RDF, JSON-LD, or XSLT depending on the application context.
 
@@ -219,19 +211,19 @@ While the **DataCite metadata schema** is highly structured, it lacks formal sem
 #### Benefits
 **1. Semantic Search** Enables concept-based search:
 "Find all works authored by researchers affiliated with EU institutions."
-Even if the institution names vary, ontologies allow reasoning over geographic and organizational relationships.
+Even if the institution names vary, ontologies allow reasoning over geographic and organizational relationships. <br>
 **2. Reasoning** Lets machines infer new facts:
-If an author is affiliated with an institution located in France, the system can infer the author is a French researcher, unless appropriate constraints are added.
+If an author is affiliated with an institution located in France, the system can infer the author is a French researcher, unless appropriate constraints are added. <br>
 **3. Knowledge Graph Integration** Ontologies support linking to external vocabularies like:
-* dct:title, dct:identifier
-* foaf:Person, schema:Dataset
-* owl:sameAs for external identifiers like ORCID, ROR
+* <span style="color: green;">dct:title, dct:identifier /span> 
+* <span style="color: green;">foaf:Person, schema:Dataset /span> 
+* <span style="color: green;">owl:sameAs /span> for external identifiers like ORCID, ROR
 
 | Example mappings | 
 |---------------------|
-| ex:hasTitle owl:equivalentProperty dct:title . |
-| ex:hasCreator owl:equivalentProperty foaf:maker . |
-| ex:Dataset owl:equivalentClass schema:Dataset . |
+| <span style="color: green;">ex:hasTitle owl:equivalentProperty dct:title . /span> |
+| <span style="color: green;">ex:hasCreator owl:equivalentProperty foaf:maker . /span> |
+| <span style="color: green;">ex:Dataset owl:equivalentClass schema:Dataset . /span> |
 
 **4. Machine Interoperability** Supports intelligent agents, recommendation engines, and automated workflows.
 
@@ -246,10 +238,15 @@ If an author is affiliated with an institution located in France, the system can
 
 ### JSON vs RDF/RDFS/OWL - Example Comparison
 
-| **Concept** | **DataCite JSON** | **Explanation (JSON)** | **RDF** | **Explanation (RDF)** | **RDFS** | **Explanation (RDFS)** | **OWL** | **Explanation (OWL)** |
+<div style="overflow-x:auto;">
+<table>
+  | **Concept** | **DataCite JSON** | **Explanation (JSON)** | **RDF** | **Explanation (RDF)** | **RDFS** | **Explanation (RDFS)** | **OWL** | **Explanation (OWL)** |
 |--------------|-------------------|------------------------|---------|-----------------------|----------|------------------------|---------|------------------------|
-| Creator | "creators": [{"name": "Smith, Alice"}] | Lists the dataset's creator using a simple string value. ex:Dataset123 ex:hasCreator ex:AliceSmith | Links the dataset to a named individual as a resource. ex:hasCreator rdfs:domain ex:Dataset ; rdfs:range ex:Person | Declares that hasCreator links datasets to persons. Restriction: someValuesFrom ex:Person | Adds logic: every dataset must have at least one creator of type person. |  |  |  |
-| Creator ORCID | "nameIdentifier": "https://orcid.org/..." | Specifies a string ORCID ID attached to the creator. ex:AliceSmith ex:hasORCID "https://orcid.org/..." | Connects the person to their ORCID using a data property. ex:hasORCID rdfs:range xsd:anyURI | Declares the expected type of ORCID values (URI strings). ex:AliceSmith owl:sameAs <https://orcid.org/...> | Semantically links the individual to their global ORCID identity. |  |  |  |
+| Creator | "<span style="color:green;">"creators": [{"name": "Smith, Alice"}]</span> | Lists the dataset's creator using a simple string value. ex:Dataset123 ex:hasCreator ex:AliceSmith | Links the dataset to a named individual as a resource. ex:hasCreator rdfs:domain ex:Dataset ; rdfs:range ex:Person | Declares that hasCreator links datasets to persons. Restriction: someValuesFrom ex:Person | Adds logic: every dataset must have at least one creator of type person. |  |  |  |
+| Creator ORCID | "<span style="color:green;">"nameIdentifier": "https://orcid.org/..."</span>" | Specifies a string ORCID ID attached to the creator. ex:AliceSmith ex:hasORCID "https://orcid.org/..." | Connects the person to their ORCID using a data property. ex:hasORCID rdfs:range xsd:anyURI | Declares the expected type of ORCID values (URI strings). ex:AliceSmith owl:sameAs <https://orcid.org/...> | Semantically links the individual to their global ORCID identity. |  |  |  |
+</table>
+</div>
+
 
 ### SKOS: A Lightweight Alternative
 
@@ -262,7 +259,7 @@ Use SKOS when you want:
 
 | Example: | 
 | -------- |
-| ex:marineBiology a skos:Concept ;<br>  skos:prefLabel "Marine Biology"@en ;<br>  skos:broader ex:biology . |
+| <span style="color: green;">ex:marineBiology a  skos:Concept ;<br>    skos:prefLabel "Marine Biology"@en ;<br>    skos:broader ex:biology . /span> |
 
 
 SKOS does **not** support logical constraints or inference, unlike OWL.
