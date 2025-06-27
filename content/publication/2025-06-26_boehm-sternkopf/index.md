@@ -64,8 +64,8 @@ featured: false
 
 # Custom links (optional, uncomment lines below)
 # links:
-#   - name: Custom Link
-#     url: http://example.org
+# - name: Custom Link
+#   url: http://example.org
 
 # Featured image (optional, uncomment lines below)
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -77,6 +77,8 @@ featured: false
 # Associated Projects (optional, uncomment lines below)
 #   Associate this publication with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
+#   E.g. `internal-project` references `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
 #projects:
 #  - example
 
@@ -84,8 +86,10 @@ featured: false
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
-slides: example
+#   Otherwise, set `slides: ""`.
+#slides: example
 
 share: false
 
+---
 ---
