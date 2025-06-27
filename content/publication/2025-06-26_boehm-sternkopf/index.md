@@ -24,14 +24,14 @@ publishDate: '2025-06-26'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['document']
+publication_types: ['poster']
 
 # Publication name and optional abbreviated publication name (uncomment line below).
 publication: 'Zenodo'
 #publication_short: ''
 
 # Event (optional, uncomment lines below)
-event: 'Text+ Plenary, Göttingen, June 16 to 17 to, 2025'
+event: 'Text+ Plenary, Göttingen, June 16 to 17, 2025'
 
 # Abstract
 abstract: 'This poster was presented at the Text+ Plenary 2025 in Göttingen to showcase the PID Coordination Hub of PID4NFDI.'
@@ -77,7 +77,6 @@ featured: false
 # Associated Projects (optional, uncomment lines below)
 #   Associate this publication with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #projects:
 #  - example
 
