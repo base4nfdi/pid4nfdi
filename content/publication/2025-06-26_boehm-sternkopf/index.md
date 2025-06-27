@@ -8,8 +8,8 @@ draft: false
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - jana
-  - sonja
+- jana
+- sonja
 
 # Author notes (optional, uncomment line below)
 #author_notes:
@@ -44,10 +44,10 @@ doi: '10.5281/zenodo.15745970'
 
 # Tags (site-wide tags)
 tags:
-  - persistent identifier
-  - PIDs
-  - PID4NFDI
-  - FAIR
+- persistent identifier
+- PIDs
+- PID4NFDI
+- FAIR
 
 # Display this page in the Featured widget?
 featured: false
