@@ -1,5 +1,5 @@
 ---
-title: "Bridging Gaps in PID Adoption: PID4NFDI's Coordination Hub"
+title: 'Bridging Gaps in PID Adoption: PID4NFDI\u0027s Coordination Hub'
 
 # Draft?
 draft: false
