@@ -91,4 +91,8 @@ featured: false
 
 share: false
 
+<<<<<<< Updated upstream:content/publication/2025-boehm-sternkopf/index.md
 ---
+=======
+---
+>>>>>>> Stashed changes:content/publication/2025-06-26_boehm-sternkopf/index.md
