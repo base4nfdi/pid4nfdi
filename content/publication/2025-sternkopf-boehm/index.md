@@ -1,5 +1,5 @@
 ---
-title: 'Bridging Gaps in PID Adoption: PID4NFDI's Coordination Hub'
+title: 'Bridging Gaps in PID Adoption: PID4NFDI''s Coordination Hub'
 
 # Draft?
 draft: false
@@ -8,8 +8,8 @@ draft: false
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - jana
-  - sonja
+- sonja
+- jana
 
 # Author notes (optional, uncomment line below)
 #author_notes:
@@ -19,19 +19,19 @@ authors:
 date: '2025-06-26'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-06-26'
+publishDate: '2025-06-30'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['document']
+publication_types: ['speech']
 
 # Publication name and optional abbreviated publication name (uncomment line below).
 publication: 'Zenodo'
 #publication_short: ''
 
 # Event (optional, uncomment lines below)
-event: 'Text+ Plenary, Göttingen, June 16 to 17, 2025'
+event: 'Text+ Plenary, Göttingen, 17.06.2025'
 
 # Abstract
 abstract: 'This poster was presented at the Text+ Plenary 2025 in Göttingen to showcase the PID Coordination Hub of PID4NFDI.'
@@ -40,14 +40,14 @@ abstract: 'This poster was presented at the Text+ Plenary 2025 in Göttingen to 
 #summary: ''
 
 # DOI
-doi: '10.5281/zenodo.15745970'
+doi: '10.5281/zenodo.15745971'
 
 # Tags (site-wide tags)
 tags:
-  - persistent identifier
-  - PIDs
-  - PID4NFDI
-  - FAIR
+- persistent identifier
+- PIDs
+- PID4NFDI
+- FAIR
 
 # Display this page in the Featured widget?
 featured: false
@@ -91,5 +91,4 @@ featured: false
 
 share: false
 
----
 ---

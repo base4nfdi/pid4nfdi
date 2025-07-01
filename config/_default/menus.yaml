@@ -97,7 +97,7 @@ main:
     weight: 10
   - name: Roadmap & FAQs
     parent: about
-    url: about/service/roadmapFAQs
+    url: about/roadmap-faqs
     weight: 20  
   - name: Team
     parent: about

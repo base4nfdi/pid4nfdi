@@ -1,42 +1,57 @@
 ---
 title: Privacy Policy
-date: 2025-03-27
+date: 2025-07-01
 type: landing
 
 sections:
   - block: markdown
     content:
       title: Privacy Policy
-      subtitle: What Data is Collected, How Your Data is Used, and Your Rights Concerning Data Protection
       text: |
-        This privacy policy informs you about the type, scope, and purpose of the processing of personal data on this website.
+        Data protection is of high priority for the Technische Informationsbibliothek (TIB). As a general rule, the use of TIB’s services does not require the provision of any personal data. However, the processing of personal data may be required where a data subject wants to use special services via the TIB’s web pages. Where the processing of personal data is required and where there is no legal basis for such processing, we shall obtain the data subject’s consent.
         
-        Personal data includes all data that can be related to you personally, e.g. name, address, e-mail, or user behaviour. Regarding the terms used, we refer to the definitions in Art. 4 of the General Data Protection Regulation (GDPR).
+        The processing of personal data, such as for example the data subject’s name, address, email address, or telephone number shall always be carried out in accordance with the General Data Protection Regulation (GDPR) and the state and institution-specific data protection rules and regulations applicable to the TIB. This privacy statement serves to inform the public about the nature, scope and purpose of the personal data we collect, use and process, as well as of the rights data subjects are entitled to.
         
-        ## Responsible Data Controller and Contact of Data Protection Officer
+        The terms used in this privacy statement are to be understood within the meaning of the European General Data Protection Regulation (GDPR).
         
-        ### Data Controller
-        The responsible **Data Controller** (according to Art. 4(7) GDPR) is:
+        ## Name and Address of the Controller
+        
+        The controller under data protection law shall be:
         
         Technische Informationsbibliothek (TIB)<br />
         Welfengarten 1 B<br />
         30167 Hannover<br />
-        Germany<br />
+        Germany
+        
         Phone: +49 511 762-8989<br />
         Email: information@tib.eu<br />
-        Website: www.tib.eu<br />
+        Website: www.tib.eu
         
-        ### Data Protection Officer
-        The **Data Protection Officer** of the controller is:
+        ## Name and Address of the Data Protection Officer
+        
+        The data protection officer of the controller shall be:
         
         Elke Brehm<br />
+        Phone: +49 511 762-8138<br />
+        Email: datenschutz@tib.eu
+        
+        **Postal Address:**<br />
         Technische Informationsbibliothek (TIB)<br />
         Data Protection Officer<br />
         Welfengarten 1 B<br />
         30167 Hannover<br />
-        Germany<br />
-        Phone: +49 511 762-8138<br />
-        Email: datenschutz@tib.eu
+        Germany
+        
+        **Visiting Address:**<br />
+        TIB Conti-Campus<br />
+        Königsworther Platz 1 B<br />
+        30167 Hannover
+        
+        Any data subject may contact our data protection officer directly regarding any and all questions and suggestions regarding data protection at any time.
+        
+        ## Contact Possibility via the Web Pages
+        
+        The TIB’s web pages contain information and forms that enable quick electronic contacting via contact form or by email providing name and email address also for customers not registered with the TIB. The indication of name and email address is necessary to establish contact following clarification of the data subject’s concerns. The personal data transmitted by the data subject to the TIB via email or via a contact form are automatically stored internally and only for the purpose of processing or contacting the data subject.
         
         ## Scope of the Processing of Personal Data
         In accordance with applicable laws, we process personal data to the minimal extent necessary for providing our services, improving functionality, and ensuring compliance with legal obligations.
@@ -47,8 +62,9 @@ sections:
         * **Legal Obligations (Art. 6(1c))**: When processing is necessary to fulfill legal responsibilities.
         * **Legitimate Interests (Art. 6(1f))**: When processing is necessary for our legitimate interests, such as ensuring the security of our digital infrastructure, provided this does not override your fundamental rights and freedoms.
         
-        ## Retention and Deletion of Personal Data
-        We retain personal data only for as long as necessary to achieve the purpose for which it was collected or as mandated by legal retention requirements. Once the retention period expires or the data is no longer needed, we take steps to securely delete or anonymise the data to prevent identification.
+        ## Routine Deletion and Blocking of Personal Data
+        
+        The TIB processes and stores the data subject’s personal data only for the period necessary to achieve the purpose of such storage and in accordance with the General Data Protection Regulation and the country and institution-specific data protection regulations applicable to the TIB. Thereafter, the personal data will routinely be blocked or deleted in accordance with the statutory provisions.
         
         ## Using the Website for Informational Purposes
         If you visit our website solely for informational purposes, you may do so without providing any personal data. However, for technical reasons, certain server log data is automatically transmitted by your browser and processed by us. This data may include:
@@ -65,12 +81,6 @@ sections:
         To ensure the proper functioning of our website, user engagement tracking, and content delivery, we work with external service providers for data processing tasks. These providers may collect and analyse user data, such as IP addresses, browser information, and access logs, in compliance with data protection regulations. For example, this data may be used to host the website, monitor user interactions, and gather statistics on page visits or content engagement. All third-party data processing is done transparently, and we implement contracts to ensure that data processing complies with GDPR requirements. The external data processing services are listed below with explanations/examples.
         
         Each of these tools helps us improve your experience on the website, but you always have control over your data. If you have any questions about these services or your privacy, please reach out to our data protection officer.
-        
-        ### Contact via Email
-        Our website provides the option to reach out to our project team or specific team members via email. Depending on the team, you may contact them via their personal email addresses or through a dedicated mailing list. If you choose to contact us through these email addresses or mailing lists, we will collect and process your personal data, such as your name and email address, solely to manage your inquiry or request. This processing is carried out in accordance with Art. 6(1e) of the GDPR, which allows us to process personal data to respond to your communication effectively. Please note that some teams may use multiple mailing list services or email applications to manage communications, and your data will only be used for the inquiry, not shared beyond that.
-        
-        ### Contact via Contact Form
-        Our website provides the option to reach out to us via a structured [contact form](/about/contact/). If you choose to contact us through this contact form, we will collect and process your personal data, such as your name and email address, solely to manage your inquiry or request. This processing is carried out in accordance with Art. 6(1e) of the GDPR, which allows us to process personal data to respond to your communication effectively. A ticket system is used to manage incoming inquiries, very similar to an email which you sent which is then received by the email server and email application of the recipient. Likewise, your data will only be used for the inquiry, not shared beyond that.
         
         ### Web Analytics via Matomo <!-- de.NBI version --->
         We use Matomo, a privacy-focused open-source web analytics software, to analyse the usage of our website and improve its content. This section explains how we collect and process anonymised usage statistics through Matomo, ensuring that your privacy is protected.
@@ -95,15 +105,15 @@ sections:
         #### Storage and Deletion of Data
         The anonymised data is stored on the servers of the Center for Biotechnology (CeBiTec) at Bielefeld University as part of the de.NBI project. The data is not shared with third parties or combined with other datasets. It is retained only for as long as necessary for the purposes outlined above, and it is deleted once no longer required.
         
-        <!--
-        #### Matomo Cookies / not applicable as use of cookies is deactivated for Matomo for PID4NFDI
+        <!-- section not applicable as use of cookies is deactivated for Matomo for PID4NFDI
+        #### Matomo Cookies
         We use Matomo cookies to anonymously track how you use our website, helping us improve your experience. These cookies include:
         * The _\_pk\_id_ cookie, which stores an anonymous user ID for 13 months.
         * The _\_pk\_ref_ cookie, which records where you came from (the referrer URL) for 6 months.
         * The _\_pk\_ses_ cookie, a session cookie that lasts for 30 minutes and temporarily stores your visit data.
-        --->
         
         These cookies are only used for web analytics on our site and are not shared with other websites. When you return to the website, the validity of these cookies is renewed. Once they expire, they are automatically deleted. For example, after 13 months, the _\_pk\_id_ cookie will no longer store your user ID and will be removed. Most importantly, we do not track you across other websites or domains; these cookies are used only on this site for the purposes mentioned above.
+        --->
         
         #### Your Rights and Option to Object
         As we do not collect personal data while using Matomo, you do not need to exercise rights such as access, correction, or deletion of personal data. However, if you prefer to opt out of data collection, you can disable Matomo tracking by enabling the _Do Not Track_ feature in your browser settings, and no data is collected by the tool at all.
@@ -141,14 +151,6 @@ sections:
         
         #### How It Handles Data
         When you visit our website, your browser connects to Netlify to retrieve the needed CSS code. During this, some data like your IP address and the time of your visit will be processed by Netlify. You can find out more about how they handle your data [in their privacy policy](https://www.netlify.com/privacy/).
-        
-        ### Indico
-        
-        #### What It Does
-        For organising events like conferences or workshops, we use Indico to facilitate registration, abstract submissions, and scheduling. Indico collects information to help us organize events efficiently and ensure participants receive appropriate updates. For instance, when registering for a conference through our website, you may be asked to provide details such as your name, email, and institution. If you submit an abstract, we can also securely share it with reviewers through Indico.
-        
-        #### How It Handles Data
-        The data collected by Indico is stored securely, and we do not share it with any third parties unless necessary for the event (for example, giving reviewers access to the submitted abstracts so they can evaluate and provide feedback) or required by law. Indico follows strict data protection standards to safeguard your information, and we regularly ensure these standards are met. For any questions about your event data or to request its deletion, contact the responsible event host. Contact details can be found on the respective Indico event page.
         
         ## Your Rights under GDPR
         As a data subject, the General Data Protection Regulation (GDPR) grants you specific rights regarding the processing of your personal data. These rights (Art. 15-21 GDPR) ensure transparency, control, and fairness. You may exercise them at any time, as outlined below:
@@ -193,10 +195,23 @@ sections:
         ## Security Measures
         We have implemented appropriate technical and organisational measures to ensure the protection of your personal data, including encryption and secure data storage practices. We also regularly review these measures to maintain their effectiveness.
         
+        ## Collection of General Data and Information (Logfiles)
+        
+        Whenever a data subject calls the TIB web pages, these pages automatically collect information in so-called server log files, which your browser automatically transmits to the TIB. This is:
+        * Browser type and browser version
+        * Operating system used
+        * Referrer URL
+        * Hostname of the accessing computer
+        * IP address
+        * Internet service provider of the accessing system
+        * Time of the server request
+        
+        As a general rule, this data is not attributable to a particular person. This data will not be merged with other data sources. Collecting the information is a technical necessity to display the website and ensure its stability and security (legal basis is art. 6 par. 1 f EU GDPR).
+        
         ## Changes to the Privacy Policy
         We reserve the right to amend this privacy policy as necessary, in accordance with the GDPR and future changes regarding our collection and processing of personal data. Any changes will be communicated on this page, and the updated date will be reflected at the end of the policy.
         
-        The privacy was prepared in April 2025 and last reviewed on May 13, 2025.
+        The privacy was prepared in April 2025 and last reviewed on July 1, 2025.
         
     design:
       columns: '1'

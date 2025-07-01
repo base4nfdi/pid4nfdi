@@ -51,12 +51,10 @@ sections:
                 <option value="productive-prefix-more-1.000.000">Productive Prefix (>1.000.000 PIDs per year)</option>
               </select>
             </div>
-            <!--
             <div class="form-group row">
               <label class="col-sm-2 col-form-label">I have read and accept the <a href="/privacy/">privacy policy</a>.</label>
               <input required type="checkbox" id="accept-privacy-policy" name="accept-privacy-policy" class="">
             </div>
-            -->
             <div class="form-group row" style="display: none;">
               <label for="bl4nk" class="col-sm-2 col-form-label">Bot check:</label>
               <input type="text" id="bl4nk" name="bl4nk" class="form-control col-sm-10" placeholder="">
