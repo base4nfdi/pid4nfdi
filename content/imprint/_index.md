@@ -1,6 +1,6 @@
 ---
 title: Imprint
-date: 2025-03-27
+date: 2025-07-01
 type: landing
 
 sections:
@@ -43,12 +43,6 @@ sections:
         
         ## Copyright
         All content on this website, including text, images, and other media, is protected by copyright laws, and hence reproduction, editing, and distribution outside the limits of copyright law require written permission from the author or creator. The exception is material which is clearly marked as licensed with an open content license, such as a [Creative Commons](https://creativecommons.org/) license. In these cases, the respective material (text, images, other media) can be used by third parties according to the conditions as stated by the respective license.
-        
-        ## Accounts on Social Media
-        The imprint is also valid for the following social media accounts:
-        * [PID4NFDI on Mastodon (nfdi.social)](https://nfdi.social/@pid4nfdi)
-        * [PID4NFDI on Bluesky](https://bsky.app/profile/pid4nfdi.bsky.social)
-        * [PID4NFDI on LinkedIn](https://www.linkedin.com/showcase/pid4nfdi/)
         
         ## Funding
         This project is funded as part of [Base4NFDI](https://base4nfdi.de/). Grant number: [521453681](https://base4nfdi.de/projects/pid4nfdi)

@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-date: 2025-03-27
+date: 2025-07-01
 type: landing
 
 sections:
@@ -13,7 +13,7 @@ sections:
         This accessibility statement applies to _pid.services.base4nfdi.de_ and its sub-pages.
         
         ## Compliance Status
-        This website is partially compliant with the Web Content Accessibility Guidelines (WCAG) 2.1 and the applicable European Standard EN 301 549 V2.1.2 (2018) due to the non-compliances and exemptions listed below. These websites are mostly compatible with the requirements of the harmonized European standard EN 301 549 V2.1.2 (08-2018) and WCAG 2.1 (Web Content Accessibility Guidelines). Identified non-compliances and exemptions are listed below.
+        This website is partially compliant with the Web Content Accessibility Guidelines (WCAG) 2.1 and the applicable European Standard EN 301 549 V2.1.2 (2018) due to the non-compliances and exemptions listed below. Identified non-compliances and exemptions are listed below.
         
         ## Non-Accessible Content
         * Some content is integrated into this website from a third-party source (for example, via frames) over which we do not have full authority and control. This content may be non-accessible or become non-accessible at any point in the future.
@@ -23,7 +23,7 @@ sections:
         * Some content may be non-accessible for screen readers and other assistive technology as the respective tests may have not been performed comprehensively for all scenarios.
         
         ## Preparation of this Accessibility Statement
-        The statement was prepared in April 2025 and last reviewed on May 13, 2025.
+        The statement was prepared in April 2025 and last reviewed on July 1, 2025.
         
         The assessment is based on self-assessment.
         
