@@ -63,12 +63,12 @@ In the meeting, Sara El-Gebali, Metadata Specialist at DataCite, gave a presenta
   *How does PID metadata (e.g., DOIs, ORCIDs, IGSNs) flow into or out of your tool? Please describe your current or desired data lineage for PID metadata.
   *How would you characterize an entry in your system? Would you call it an ELN entry, a collection, a project, a report, or something else? 
   
-Sara slides and the meeting notes can be found here:
+Sara slides and the meeting notes can be found here:  
   * [Backstory of the implementation of PIDs into ELNs](https://docs.google.com/presentation/d/1L5pBUOvkvrizyI1sADyJU9k2D7VSoDqFGPtBGRyeTfo/edit?usp=sharing)
   * [Meeting Notes](https://docs.google.com/document/d/1iOF6Yn49oMtpk55EDokf5qyQANQBC-T6C0vGPdApqQw/edit?pli=1&tab=t.0#heading=h.x1fywokciu4n)
 
 The next meeting will take place on **August 14, 2025, from 10:00 a.m. to 11:30 a.m.** If you would like to **join**, please contact Antonia Schrader at antonia.schrader@os.helmholtz.de for access details.
-#The Agenda can be found  [here](https://docs.google.com/document/d/1iOF6Yn49oMtpk55EDokf5qyQANQBC-T6C0vGPdApqQw/edit?tab=t.0#heading=h.x1fywokciu4n).
+# The Agenda can be found  [here](https://docs.google.com/document/d/1iOF6Yn49oMtpk55EDokf5qyQANQBC-T6C0vGPdApqQw/edit?tab=t.0#heading=h.x1fywokciu4n).
 
 
 We truly appreciate your ongoing engagement in the focus groups. Your contributions are essential, and we hope these collective efforts will lead to both knowledge sharing and tangible, community-driven outputs. If you have any questions or require further information, please feel free to contact us via pid4nfdi@lists.nfdi.de.
