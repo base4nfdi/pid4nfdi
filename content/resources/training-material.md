@@ -154,7 +154,7 @@ sections:
           </div>
 
           <div class="pid-card">
-            <h3>🏷️ <a href="https://docs.ror.org" target="_blank">ROR Documentation</a></h3>
+            <h3>🏷️ <a href="https://ror.readme.io/docs/basics" target="_blank">ROR Basics</a></h3>
             <p>Documentation and API details for the Research Organization Registry (EN)</p>
           </div>
 
