@@ -215,7 +215,7 @@ sections:
           </div>
 
           <div class="pid-card">
-            <h3>🧑‍🏫 <a href="https://training.nfdi4ing.de/" target="_blank">NFDI4Ing Training Platform</a></h3>
+            <h3>🧑‍🏫 <a href="https://education.nfdi4ing.de/startpage.html#/" target="_blank">NFDI4Ing Training Platform</a></h3>
             <p>German-language platform for RDM and PID-related training materials (DE)</p>
           </div>
 
