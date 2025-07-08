@@ -81,7 +81,7 @@ sections:
           </div>
 
           <div class="pid-card">
-            <h3>🇩🇪 <a href="https://www.tib.eu/en/research-development/project-overview/doi-service" target="_blank">In drei Schritten zur DOI – TIB</a></h3>
+            <h3>🇩🇪 <a href="https://wiki.tib.eu/confluence/spaces/pid/pages/147892950/Schnelleinstieg" target="_blank">In drei Schritten zur DOI – TIB</a></h3>
             <p>Step-by-step guide to DOI registration via DataCite (DE)</p>
           </div>
 
