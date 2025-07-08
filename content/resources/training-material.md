@@ -191,6 +191,11 @@ sections:
             <p>Online community for sharing questions, answers, and discussions about PIDs (EN)</p>
           </div>
 
+          <div class="pid-card">
+            <h3>🌐 <a href="https://eosc.eu/roadmap-category-level-1/persistent-identifiers/" target="_blank">EOSC Macro‑Roadmap – Persistent Identifiers (PIDs)</a></h3>
+            <p>Collected contributions on PIDs in the EOSC context (EN)</p>
+          </div>
+
         </div>
 
         <h2 class="pid-section-heading">🔬 Domain-specific Use Cases & Models</h2>
@@ -214,11 +219,7 @@ sections:
             <p>German-language platform for RDM and PID-related training materials (DE)</p>
           </div>
 
-          <div class="pid-card">
-            <h3>🌐 <a href="https://eosc.eu/tag/persistent-identifiers/" target="_blank">PID Archives – EOSC</a></h3>
-            <p>Collected contributions on PIDs in the EOSC context (EN)</p>
-          </div>
-
+          
         </div>
 
     design:
