@@ -2,7 +2,7 @@
 title: PID Selection Tool
 type: page
 layout: page
-draft: true
+draft: false
 _build:
   list: never             # Nicht in Listen (z. B. Menüs, Übersichtseiten)
   render: always          # Aber rendern, wenn direkt aufgerufen
