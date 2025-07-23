@@ -9,8 +9,8 @@ event_url: https://events.hifis.net/event/2908/
 
 location: Helmholtz Association Headquarter, Anna-Louisa-Karsch-Straße 2, 10178 Berlin
 
-summary: 'The PID4NFDI team invites you to participate in our 'Metadata & PID Workflows' workshop, which is a joint event for ELN and DMP tools. The workshop will take place from 22 to 23 September (lunch to lunch) in Berlin.'
-abstract: 'The PID4NFDI team invites you to participate in our 'Metadata & PID Workflows' workshop, which is a joint event for ELN and DMP tools. The workshop will take place from 22 to 23 September (lunch to lunch) in Berlin.'
+summary: 'The PID4NFDI team invites you to participate in our Metadata & PID Workflows workshop, which is a joint event for ELN and DMP tools. The workshop will take place from 22 to 23 September (lunch to lunch) in Berlin.'
+abstract: 'The PID4NFDI team invites you to participate in our Metadata & PID Workflows workshop, which is a joint event for ELN and DMP tools. The workshop will take place from 22 to 23 September (lunch to lunch) in Berlin.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
