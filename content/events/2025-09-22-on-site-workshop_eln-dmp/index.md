@@ -13,7 +13,7 @@ summary: 'The PID4NFDI team invites you to participate in our Metadata & PID Wor
 abstract: 'The PID4NFDI team invites you to participate in our Metadata & PID Workflows workshop, which is a joint event for ELN and DMP tools. The workshop will take place from 22 to 23 September (lunch to lunch) in Berlin.'
 
 # Talk start and end times.
-#End time can optionally be hidden by prefixing the line with `#`.
+#   End time can optionally be hidden by prefixing the line with `#`.
 date: '2025-09-22T10:00:00Z'
 date_end: '2025-09-23T1:00:00Z'
 all_day: false
