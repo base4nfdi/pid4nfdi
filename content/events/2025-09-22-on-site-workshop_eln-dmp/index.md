@@ -1,13 +1,13 @@
 ---
 draft: false
 
-title:Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools
+title: Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools
 subtitle:
 
-event:Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools, On-site workshop
-event_url:https://events.hifis.net/event/2908/
+event: Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools, On-site workshop
+event_url: https://events.hifis.net/event/2908/ 
 
-location:Helmholtz Association Headquarter, Anna-Louisa-Karsch-Straße 2, 10178 Berlin
+location: Helmholtz Association Headquarter, Anna-Louisa-Karsch-Straße 2, 10178 Berlin
 
 summary: 'The PID4NFDI team invites you to participate in our Metadata & PID Workflows workshop, which is a joint event for ELN and DMP tools. The workshop will take place from 22 to 23 September (lunch to lunch) in Berlin.'
 abstract: 'The PID4NFDI team invites you to participate in our Metadata & PID Workflows workshop, which is a joint event for ELN and DMP tools. The workshop will take place from 22 to 23 September (lunch to lunch) in Berlin.'
