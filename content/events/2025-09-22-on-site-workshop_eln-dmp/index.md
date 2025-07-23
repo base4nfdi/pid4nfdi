@@ -59,24 +59,24 @@ projects:
 **Unlock the Future of Research Data! Join the Metadata & PID Workflows Workshop, hosted by PID4NFDI!**
 Get ready to dive deep into the world of Metadata & PID Workflows at our Joint Workshop for ELN and DMP Tools! This is your chance to collaboratively explore how to set up DMP and ELN tool to support Metadata & PID Workflows.
 
-This workshop brings together ELN and DMP tool developers, metadata specialists, and key stakeholders from NFDI consortia to:
-✅ Validate and Extend the Metadata Framework.
-🎯 Align on PID Integration Use Cases.
-✨ Define Metadata Completeness & Quality.
+This workshop brings together ELN and DMP tool developers, metadata specialists, and key stakeholders from NFDI consortia to:  
+✅ Validate and Extend the Metadata Framework.  
+🎯 Align on PID Integration Use Cases.  
+✨ Define Metadata Completeness & Quality.  
 
 ## Who Should Attend?
 This workshop is tailor-made for:
-🛠️ Developers and technical architects of ELN and DMP tools.
-🔍 Metadata and interoperability experts from NFDI consortia.
-🌱 Representatives from incubator projects focused on ELN/DMP integration.
+🛠️ Developers and technical architects of ELN and DMP tools.  
+🔍 Metadata and interoperability experts from NFDI consortia.  
+🌱 Representatives from incubator projects focused on ELN/DMP integration.  
 
 ## Event Details at a Glance:
-🗓️ Date: **September 22-23, 2025** (lunch to lunch)!
-📍 Location: Helmholtz Association Headquarter, Anna-Louisa-Karsch-Straße 2, 10178 Berlin.
-🤝 Host: PID4NFDI: A basic service for the NFDI, funded as part of Base4NFDI.
-❗ Limited Spots! To ensure an interactive and productive environment, the workshop is **limited to 20 people**.
-❗ **Registration is OPEN NOW!** Don't miss out on this unique opportunity. Registration will **close on September 10, 2025**, or once all places have been taken, whichever comes first.
-Visit https://events.hifis.net/event/2908/ to register and be part of this vital conversation.
+🗓️ Date: **September 22-23, 2025** (lunch to lunch)!  
+📍 Location: Helmholtz Association Headquarter, Anna-Louisa-Karsch-Straße 2, 10178 Berlin.  
+🤝 Host: PID4NFDI: A basic service for the NFDI, funded as part of Base4NFDI.  
+❗ Limited Spots! To ensure an interactive and productive environment, the workshop is **limited to 20 people**.  
+❗ **Registration is OPEN NOW!** Don't miss out on this unique opportunity. Registration will **close on September 10, 2025**, or once all places have been taken, whichever comes first.  
+Visit https://events.hifis.net/event/2908/ to register and be part of this vital conversation.  
 
 
 ### We can't wait to collaborate with you in Berlin! See you there! 👋
