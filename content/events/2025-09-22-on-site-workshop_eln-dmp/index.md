@@ -1,10 +1,10 @@
 ---
 draft: false
 
-title: Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools
+title: 'Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools'
 subtitle:
 
-event: Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools, On-site workshop
+event: 'Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools, On-site workshop'
 event_url: https://events.hifis.net/event/2908/ 
 
 location: Helmholtz Association Headquarter, Anna-Louisa-Karsch-Straße 2, 10178 Berlin
