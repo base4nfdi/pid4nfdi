@@ -1,19 +1,19 @@
 ---
 draft: false
 
-title: Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools
+title:Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools
 subtitle:
 
-event: Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools, On-site workshop
-event_url: https://events.hifis.net/event/2908/
+event:Metadata & PID Workflows: Joint Workshop for ELN and DMP Tools, On-site workshop
+event_url:https://events.hifis.net/event/2908/
 
-location: Helmholtz Association Headquarter, Anna-Louisa-Karsch-Straße 2, 10178 Berlin
+location:Helmholtz Association Headquarter, Anna-Louisa-Karsch-Straße 2, 10178 Berlin
 
 summary: 'The PID4NFDI team invites you to participate in our Metadata & PID Workflows workshop, which is a joint event for ELN and DMP tools. The workshop will take place from 22 to 23 September (lunch to lunch) in Berlin.'
 abstract: 'The PID4NFDI team invites you to participate in our Metadata & PID Workflows workshop, which is a joint event for ELN and DMP tools. The workshop will take place from 22 to 23 September (lunch to lunch) in Berlin.'
 
 # Talk start and end times.
-#   End time can optionally be hidden by prefixing the line with `#`.
+#End time can optionally be hidden by prefixing the line with `#`.
 date: '2025-09-22T10:00:00Z'
 date_end: '2025-09-23T1:00:00Z'
 all_day: false
@@ -42,17 +42,17 @@ url_slides: ''
 url_video: ''
 
 # Markdown Slides (optional).
-#   Associate this talk with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
+#Associate this talk with Markdown slides.
+#Simply enter your slide deck's filename without extension.
+#E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
+#Otherwise, set `slides = ""`.
 slides:
 
 # Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
+#Associate this post with one or more of your projects.
+#Simply enter your project's folder or file name without extension.
+#E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
+#Otherwise, set `projects = []`.
 projects:
 ---
 
