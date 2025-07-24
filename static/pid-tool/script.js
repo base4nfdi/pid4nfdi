@@ -198,7 +198,7 @@ function toggleHelp(btn) {
 
 function showResults() {
   saveAnswers();
-  fetch('pid-expert-scores.json')
+  fetch('/pid-tool/pid-expert-scores.json')
     .then(res => res.json())
     .then(expertScores => {
       const rawScores = calculateWahlOMatScores(answers, expertScores);
