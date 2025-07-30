@@ -25,8 +25,8 @@ function applyProfileAndContinue() {
 
 function loadQuestions() {
 Promise.all([
-  fetch('/pid-tool/config.json?v=' + Date.now()).then(res => res.json()),
-  fetch('/pid-tool/pid-expert-scores.json?v=' + Date.now()).then(res => res.json())
+  fetch('/pidtool/config.json?v=' + Date.now()).then(res => res.json()),
+  fetch('/pidtool/pid-expert-scores.json?v=' + Date.now()).then(res => res.json())
 
 ])
 .then(([data, scores]) => {
@@ -198,7 +198,7 @@ function toggleHelp(btn) {
 
 function showResults() {
   saveAnswers();
-  fetch('/pid-tool/pid-expert-scores.json')
+  fetch('/pidtool/pid-expert-scores.json')
     .then(res => res.json())
     .then(expertScores => {
       const rawScores = calculateWahlOMatScores(answers, expertScores);
