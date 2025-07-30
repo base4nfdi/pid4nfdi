@@ -6,37 +6,42 @@ let profile = "standard";
 let answers = {}; // Speicher für ausgewählte Antworten
 
 function startTool() {
-  selectedEntities = Array.from(document.querySelectorAll('#entity-selection input[type="checkbox"]:checked'))
-                          .map(cb => cb.value);
+  // kein entity-selection mehr nötig
   document.getElementById('section-intro').style.display = 'none';
-  profile = "standard";
-  loadQuestions();
-}
-
-function applyProfileAndContinue() {
-  profile = "standard";
-  document.getElementById('pidtool-intro').style.display = 'none';
-  document.getElementById('entity-selection').style.display = 'none';
-  document.getElementById('section-profile').style.display = 'none';
-  selectedEntities = Array.from(document.querySelectorAll('#entity-selection input[type="checkbox"]:checked'))
-                          .map(cb => cb.value);
+  profile = "standard";  // Default-Profil für diese Version
+  selectedEntities = []; // leer, da keine Auswahl
   loadQuestions();
 }
 
 function loadQuestions() {
-Promise.all([
-  fetch('/pidtool/config.json?v=' + Date.now()).then(res => res.json()),
-  fetch('/pidtool/pid-expert-scores.json?v=' + Date.now()).then(res => res.json())
+  Promise.all([
+    fetch('/pidtool/config.json?v=' + Date.now()).then(res => {
+      if (!res.ok) throw new Error(`Failed to load config.json (${res.status})`);
+      return res.json();
+    }),
+    fetch('/pidtool/pid-expert-scores.json?v=' + Date.now()).then(res => {
+      if (!res.ok) throw new Error(`Failed to load pid-expert-scores.json (${res.status})`);
+      return res.json();
+    })
+  ])
+  .then(([data, scores]) => {
+    expertScores = scores;
+    organizeSections(data.questions);
+    showSection(currentSection);
+  })
+  .catch(err => {
+    console.error("❌ Fetch failed:", err);
 
-])
-.then(([data, scores]) => {
-  expertScores = scores;
-  organizeSections(data.questions);
-  showSection(currentSection);
-})
-.catch(err => {
-  console.error("❌ Fetch failed:", err);
-});
+    const container = document.getElementById('question-container');
+    container.style.display = 'block';
+    container.innerHTML = `
+      <div class="error-message">
+        ⚠️ Error: Unable to load required files.<br>
+        Please check if <code>config.json</code> and <code>pid-expert-scores.json</code> 
+        are available in <code>/pidtool/</code>.
+      </div>
+    `;
+  });
 }
 
 function organizeSections(questions) {
@@ -98,9 +103,12 @@ function showSection(index) {
     showResults();
     return;
   }
-  if (index === 0) {
-    document.getElementById('pidtool-intro').style.display = 'none';
-    document.getElementById('entity-selection').style.display = 'none';
+ if (index === 0) {
+    const intro = document.getElementById('pidtool-intro');
+    if (intro) intro.style.display = 'none';
+
+    const entitySel = document.getElementById('entity-selection');
+    if (entitySel) entitySel.style.display = 'none';
   }
   updateProgressBar(index);
   const container = document.getElementById('question-container');
