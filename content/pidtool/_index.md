@@ -11,8 +11,8 @@ _build:
 
 <!-- Load the tool's styles and scripts -->
 <div id="pidtool-container">
-  <script src="/pid-tool/script.js"></script>
-  <link rel="stylesheet" href="/pid-tool/style.css">
+  <script src="/pidtool/script.js"></script>
+  <link rel="stylesheet" href="/pidtool/style.css">
 </div>
 
 <!-- Initial intro and entity selection page -->
