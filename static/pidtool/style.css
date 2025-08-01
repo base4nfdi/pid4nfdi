@@ -142,3 +142,9 @@ body { font-family: sans-serif; padding: 20px; }
   font-weight: bold;
   font-size: 1em;
 }
+
+.importance-option {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #444;
+}
