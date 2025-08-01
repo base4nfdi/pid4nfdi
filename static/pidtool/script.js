@@ -13,6 +13,14 @@ function startTool() {
   loadQuestions();
 }
 
+function toggleImportance(questionIndex) {
+  if (!answers[questionIndex]) {
+    answers[questionIndex] = { value: null, important: false };
+  }
+  const checkbox = document.getElementById(`important-${questionIndex}`);
+  answers[questionIndex].important = checkbox.checked;
+}
+
 function loadQuestions() {
   Promise.all([
     fetch('/pidtool/config.json?v=' + Date.now()).then(res => {
@@ -121,27 +129,41 @@ function showSection(index) {
   questionsBySection[sectionName].forEach(q => {
     const div = document.createElement('div');
     div.className = 'question';
-    const selectedValue = answers[q.index];
+    const selectedValue = answers[q.index] ? answers[q.index].value : null;
     div.innerHTML = `
   <p><strong>${q.text}</strong><button class="more-info-btn" onclick="toggleHelp(this)">More info</button></p>
   <div class="help-text">${q.help}</div>
-  <div class="likert">
-    ${[1, 3, 5].map(i => `
+   <div class="likert">
+    ${(
+      q.options || [
+        { value: 1, label: "Disagree" },
+        { value: 3, label: "Neutral" },
+        { value: 5, label: "Agree" }
+      ]
+    ).map(opt => `
       <label>
-        <input type="radio" name="q${q.index}" value="${i}" ${selectedValue == i ? 'checked' : ''} onchange="updateMiniBars(${q.index}, ${i}, this)">
-        ${{
-          1: 'Disagree',
-          3: 'Neutral',
-          5: 'Agree'
-        }[i]}
+        <input type="radio" name="q${q.index}" value="${opt.value}" ${selectedValue == opt.value ? 'checked' : ''} onchange="updateMiniBars(${q.index}, ${opt.value}, this)">
+        ${opt.label}
       </label>
     `).join('')}
   </div>
   <div class="mini-bar-wrapper" id="mini-bars-${q.index}"></div>
 `;
+    // Wichtigkeits-Option hinzufügen
+    const importanceDiv = document.createElement('div');
+    importanceDiv.classList.add('importance-option');
+    importanceDiv.innerHTML = `
+      <label>
+        <input type="checkbox" id="important-${q.index}" onchange="toggleImportance(${q.index})"
+        ${answers[q.index] && answers[q.index].important ? 'checked' : ''}>
+        This statement is especially important for me
+      </label>
+    `;
+    div.appendChild(importanceDiv);
 
     section.appendChild(div);
   });
+
   const nav = document.createElement('div');
   nav.className = 'nav-buttons';
   if (index > 0) {
@@ -179,8 +201,18 @@ function updateMiniBars(questionIndex, value, inputElement) {
 function saveAnswers() {
   document.querySelectorAll('input[type="radio"]:checked').forEach(input => {
     const index = parseInt(input.name.substring(1));
-    answers[index] = parseInt(input.value);
+    if (!answers[index]) answers[index] = {};
+    answers[index].value = parseInt(input.value);
   });
+
+  document.querySelectorAll('input[type="checkbox"][id^="important-"]').forEach(checkbox => {
+    const index = parseInt(checkbox.id.replace('important-', ''));
+    if (!answers[index]) answers[index] = {};
+    answers[index].important = checkbox.checked;
+  });
+  // Debug-Ausgabe
+  console.clear();
+console.table(answers);
 }
 
 function calculateWahlOMatScores(answers, expertScores) {
@@ -188,10 +220,11 @@ function calculateWahlOMatScores(answers, expertScores) {
   for (let pid in expertScores) {
     let sum = 0;
     expertScores[pid].forEach((expertValue, index) => {
-      const userValue = answers[index];
-      if (userValue !== undefined) {
-        const diff = expertValue - userValue;
-        sum += diff * diff;
+      const userAnswer = answers[index];
+      if (userAnswer && userAnswer.value !== undefined) {
+        const diff = expertValue - userAnswer.value;
+        let weight = userAnswer.important ? 2 : 1; // doppelte Gewichtung
+        sum += weight * (diff * diff);
       }
     });
     results[pid] = sum;
