@@ -132,3 +132,19 @@ body { font-family: sans-serif; padding: 20px; }
   border-radius: 3px;
 }
 
+.error-message {
+  color: #b00020;              /* kräftiges Rot */
+  background-color: #ffe6e6;   /* hellroter Hintergrund */
+  border: 2px solid #b00020;
+  border-radius: 6px;
+  padding: 1em;
+  margin: 1em 0;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.importance-option {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #444;
+}
