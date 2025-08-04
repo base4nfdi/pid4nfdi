@@ -78,6 +78,8 @@ function createMiniScoreBars(questionIndex, userValue) {
 
   for (let pid in expertScores) {
     const expertValue = expertScores[pid][questionIndex];
+    console.log("PID:", pid, "QIndex:", questionIndex, 
+            "ExpertValue:", expertValue, "UserValue:", userValue);
     if (expertValue === undefined) continue;
 
     const distance = Math.abs(expertValue - userValue);
@@ -147,7 +149,7 @@ function showSection(index) {
       ]
     ).map(opt => `
       <label>
-        <input type="radio" name="q${q.index}" value="${opt.value}" ${selectedValue == opt.value ? 'checked' : ''} onchange="updateMiniBars(${q.index}, ${opt.value}, this)">
+        <input type="radio" name="q${q.index}" value="${opt.value}" ${selectedValue == opt.value ? 'checked' : ''} onchange="updateMiniBars(${q.index}, this.value, this)">
         ${opt.label}
       </label>
     `).join('')}

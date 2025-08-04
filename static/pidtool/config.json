@@ -12,9 +12,9 @@
       "text": "I want to work with a PID provider with transparent information on governance, fees and membership models.",
       "help": "Transparency about how a PID provider is governed, financed, and structured helps build trust and supports long-term planning. Institutions need to understand what they are committing to - including contracts, costs, and membership models. It’s also helpful to know what is planned for the coming years: Does the provider publish a roadmap? Are future developments openly communicated? Providers like DataCite and Wikidata typically offer insight into governance structures, pricing, and future directions. For systems like ePIC, ARK, or Handle, transparency varies depending on the specific service provider and may require direct inquiries to clarify contractual or financial terms.",
       "options": [
-        { "value": 1, "label": "Don't need" },
-        { "value": 3, "label": "Neutral" },
-        { "value": 5, "label": "Need" }
+        { "value": 0, "label": "Don't need" },
+        { "value": 1, "label": "Neutral" },
+        { "value": 2, "label": "Need" }
       ]
     },
     {
