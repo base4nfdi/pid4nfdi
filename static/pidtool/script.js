@@ -81,7 +81,8 @@ function createMiniScoreBars(questionIndex, userValue) {
     if (expertValue === undefined) continue;
 
     const distance = Math.abs(expertValue - userValue);
-    const score = ((2 - distance) / 2) * 100; // Skala 0–100
+    const maxDiff = 2; // bei Skala von 0 bis 2
+    const score = ((maxDiff - distance) / maxDiff) * 100;
 
     const barWrapper = document.createElement("div");
     barWrapper.className = "mini-score";
@@ -92,7 +93,11 @@ function createMiniScoreBars(questionIndex, userValue) {
 
     const bar = document.createElement("div");
     bar.className = "mini-bar";
-    bar.style.width = `${score}%`;
+
+    const minWidth = 20; // immer sichtbar
+    const maxWidth = 200; // volle Länge
+    const scaledWidth = minWidth + (score / 100) * (maxWidth - minWidth);
+    bar.style.width = `${scaledWidth}px`;
     bar.style.backgroundColor = score >= 70 ? 'green' : score >= 40 ? 'orange' : 'red';
 
     barWrapper.appendChild(label);
@@ -136,9 +141,9 @@ function showSection(index) {
    <div class="likert">
     ${(
       q.options || [
-        { value: 1, label: "Disagree" },
-        { value: 3, label: "Neutral" },
-        { value: 5, label: "Agree" }
+        { value: 0, label: "Disagree" },
+        { value: 1, label: "Neutral" },
+        { value: 2, label: "Agree" }
       ]
     ).map(opt => `
       <label>
@@ -146,6 +151,9 @@ function showSection(index) {
         ${opt.label}
       </label>
     `).join('')}
+  </div>
+  <div class="skip-option">
+    <button type="button" class="clear-btn" data-q="${q.index}" onclick="skipAnswer(${q.index})" style="${selectedValue === null ? 'display:none;' : ''}">Clear</button>
   </div>
   <div class="mini-bar-wrapper" id="mini-bars-${q.index}"></div>
 `;
@@ -195,6 +203,29 @@ function updateMiniBars(questionIndex, value, inputElement) {
   wrapper.innerHTML = ''; // vorherige Balken löschen
   const miniBars = createMiniScoreBars(questionIndex, value);
   wrapper.appendChild(miniBars);
+  // Skip-Button einblenden
+  const skipBtn = document.querySelector(`.skip-option button[data-q="${questionIndex}"]`);
+  if (skipBtn) skipBtn.style.display = 'inline';
+}
+
+function skipAnswer(questionIndex) {
+  // Auswahl im Speicher löschen
+  if (answers[questionIndex]) {
+    delete answers[questionIndex];
+  }
+
+  // Alle Radios der Frage zurücksetzen
+  document.querySelectorAll(`input[name="q${questionIndex}"]`).forEach(radio => {
+    radio.checked = false;
+  });
+
+  // Mini-Bar Anzeige leeren
+  const wrapper = document.getElementById(`mini-bars-${questionIndex}`);
+  if (wrapper) wrapper.innerHTML = '';
+
+  // Clear-Button ausblenden
+  const skipBtn = document.querySelector(`.skip-option button[data-q="${questionIndex}"]`);
+  if (skipBtn) skipBtn.style.display = 'none';
 }
 
 
@@ -232,6 +263,71 @@ function calculateWahlOMatScores(answers, expertScores) {
   return results;
 }
 
+function calculateNormalizedSectionScores(answers, expertScores, questionsBySection) {
+  let sectionScores = {};   // { section: { pid: sum } }
+  let sectionMax = {};      // { section: maxPossibleScore }
+
+  // durch alle Sections iterieren
+  for (let section in questionsBySection) {
+    sectionScores[section] = {};
+    sectionMax[section] = 0;
+
+    questionsBySection[section].forEach(q => {
+      const userAnswer = answers[q.index];
+      if (!userAnswer || userAnswer.value === undefined) return;
+
+      for (let pid in expertScores) {
+        const expertValue = expertScores[pid][q.index];
+        if (expertValue === undefined) continue;
+
+        const diff = expertValue - userAnswer.value;
+        let weight = userAnswer.important ? 2 : 1; // doppelte Gewichtung
+        const score = weight * (diff * diff);
+
+        if (!sectionScores[section][pid]) sectionScores[section][pid] = 0;
+        sectionScores[section][pid] += score;
+      }
+
+      // maximale mögliche Punkte für diese Frage berechnen
+      const maxDiff = 2; // // von "0" bis "2" → max Differenz = 2
+      const maxForQuestion = maxDiff * maxDiff * (userAnswer.important ? 2 : 1);
+      sectionMax[section] += maxForQuestion;
+    });
+  }
+
+  // Debug-Ausgabe: rohe Section-Scores
+  console.log("📊 Raw Section Scores:");
+  console.table(sectionScores);
+  console.log("📈 Section Max Values:");
+  console.table(sectionMax);
+
+  // Normalisierung: jede Section gibt gleich viel Gewicht
+  let finalScores = {};
+  const totalSections = Object.keys(sectionScores).length;
+
+  for (let section in sectionScores) {
+    console.log(`🔎 Normalizing Section: ${section}`);
+    for (let pid in sectionScores[section]) {
+      const normalized = 1 - (sectionScores[section][pid] / (sectionMax[section] || 1));
+      if (!finalScores[pid]) finalScores[pid] = 0;
+      finalScores[pid] += normalized;
+
+      console.log(`PID: ${pid}, Section: ${section}, Normalized: ${normalized.toFixed(3)}`);
+    }
+  }
+
+  // Durchschnitt über alle Sections
+  for (let pid in finalScores) {
+    finalScores[pid] = Math.round((finalScores[pid] / totalSections) * 100);
+  }
+
+  // Debug-Ausgabe: Endwerte
+  console.log("✅ Final Normalized Scores:");
+  console.table(finalScores);
+
+  return finalScores;
+}
+
 function toggleHelp(btn) {
   const helpText = btn.parentElement.nextElementSibling;
   helpText.style.display = helpText.style.display === 'block' ? 'none' : 'block';
@@ -242,13 +338,8 @@ function showResults() {
   fetch('/pidtool/pid-expert-scores.json')
     .then(res => res.json())
     .then(expertScores => {
-      const rawScores = calculateWahlOMatScores(answers, expertScores);
-      const maxScore = Math.max(...Object.values(rawScores));
-      let scores = {};
-      for (let pid in rawScores) {
-        scores[pid] = Math.round((1 - rawScores[pid] / (maxScore || 1)) * 100);
-      }
-      displayResults(scores);
+      const scores = calculateNormalizedSectionScores(answers, expertScores, questionsBySection);
+  displayResults(scores);
     })
     .catch(err => console.error("❌ Failed to load expert scores:", err));
   document.getElementById('question-container').style.display = 'none';
@@ -260,7 +351,6 @@ function displayResults(scores) {
     "DataCite DOI": "DOIs from DataCite are widely used for research data and publications.",
     "ePIC handle": "ePIC handles are used in European research infrastructures and built on the Handle system.",
     "URN:NBN": "URN:NBN is typically used for long-term preservation in national libraries.",
-    "Handle": "Handles are flexible identifiers used in institutional repositories.",
     "ARK": "ARKs are often used in museums and archives for persistent referencing.",
     "Wikidata ID": "Wikidata IDs are part of a linked data ecosystem and good for semantic referencing."
   };
