@@ -100,7 +100,7 @@ function createMiniScoreBars(questionIndex, userValue) {
     const maxWidth = 200; // volle Länge
     const scaledWidth = minWidth + (score / 100) * (maxWidth - minWidth);
     bar.style.width = `${scaledWidth}px`;
-    bar.style.backgroundColor = score >= 70 ? 'green' : score >= 40 ? 'orange' : 'red';
+    bar.style.backgroundColor = score >= 60 ? 'green' : score >= 40 ? 'orange' : 'red';
 
     barWrapper.appendChild(label);
     barWrapper.appendChild(bar);
@@ -425,9 +425,14 @@ function displayResults(scores) {
   backButton.style.marginBottom = "3em";
   backButton.onclick = () => {
     document.getElementById('section-results').style.display = 'none';
-    showSection(currentSection - 1);
-  };
-  resultDiv.appendChild(backButton);
+     if (currentSection > 0) {
+    currentSection--;
+  }
+  
+  showSection(currentSection);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+resultDiv.appendChild(backButton);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
