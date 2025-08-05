@@ -2,111 +2,117 @@
   "questions": [
     {
       "id": 1,
-      "section": "Governance and Integration Strategy",
-      "text": "I want a PID with a strong, long-term commitment to persistence by the PID provider. ",
-      "help": "Persistence is the core promise of a PID - but it’s not guaranteed by the technology alone. It depends on long-term organizational and financial commitment. Systems like DataCite DOIs, ePIC handles, and URN:NBN are backed by stable institutions/organizations that explicitly commit to maintaining resolvability over time. Handles and ARKs can also support persistence, but this varies with the implementation. Wikidata IDs are maintained by a large community under the Wikimedia Foundation, offering stability through collective stewardship."
+      "section": "Persistence and Costs",
+      "text": "It is important for us that the PID provider demonstrates a strong, long-term commitment to persistence.",
+      "help": "Persistence is the core promise of a PID - but it’s not guaranteed by the technology alone. It depends on long-term organizational and financial commitment. Systems like DataCite DOIs, ePIC Handles, and URN:NBN are backed by stable institutions/organizations that explicitly commit to maintaining resolvability over time. ARKs can also support persistence, but this varies with the implementation. Wikidata IDs are maintained by a large community under the Wikimedia Foundation, offering stability through collective stewardship."
     },
     {
       "id": 2,
-      "section": "Governance and Integration Strategy",
-      "text": "I want to work with a PID provider with transparent information on governance, fees and membership models.",
-      "help": "Transparency about how a PID provider is governed, financed, and structured helps build trust and supports long-term planning. Institutions need to understand what they are committing to - including contracts, costs, and membership models. It’s also helpful to know what is planned for the coming years: Does the provider publish a roadmap? Are future developments openly communicated? Providers like DataCite and Wikidata typically offer insight into governance structures, pricing, and future directions. For systems like ePIC, ARK, or Handle, transparency varies depending on the specific service provider and may require direct inquiries to clarify contractual or financial terms.",
-      "options": [
-        { "value": 0, "label": "Don't need" },
-        { "value": 1, "label": "Neutral" },
-        { "value": 2, "label": "Need" }
-      ]
+      "section": "Persistence and Costs",
+      "text": "It is important for us that we have the possibility to delete our PIDs.",
+      "help": "While many PID systems are designed for long-term reference and persistence, some use cases - especially during early research phases or for internal workflows - may require the option to delete or deactivate PIDs. ARKs support flexible lifecycles, including deletion. Wikidata IDs can also be removed under certain conditions. In contrast, DataCite DOIs, ePIC Handles, and URN:NBNs are designed to be permanent and generally do not support deletion once a PID is registered. Whether deletion is allowed depends on the provider’s policies and the intended role of the PID. However, instead of deleting a PID, it is good practice to set a tombstone for an object that is not available anymore, such that at least the metadata is still available." 
     },
     {
       "id": 3,
-      "section": "Governance and Integration Strategy",
-      "text": "I need a PID provider that offers cost-effective options for registering large numbers of PIDs.",
-      "help": "When registering many PIDs - for example, for datasets, samples, or archival materials - costs can quickly accumulate. Some PID providers, such as ePIC or Wikidata, offer consortium-based or free models that support large-scale usage. Others, like DataCite DOIs, have tiered pricing or institutional membership models. Choosing a cost-effective provider is especially important when you plan to register many PIDs over time."
+      "section": "Persistence and Costs",
+      "text": "It is important for us that we can assign PIDs with zero cost.",
+      "help": "Assigning PIDs always involves some form of cost. This is because running the infrastructure that maintains persistent resolution services and ensures the long-term availability of PIDs requires ongoing technical support, hosting, and operational resources. Wikidata IDs and URNs are typically assigned free of charge for institutions minting those identifiers. ARKs are also free identifiers. However, the issuing institution must implement and maintain the ARK infrastructure itself, which entails hidden costs such as technical setup, server hosting, and personnel time. ePIC Handles and DataCite DOIs are not free. They generally require annual membership fees, prefix registration fees, or per-identifier fees but provide the technical infrastructure and hosting of PIDs and its metadata."
     },
     {
       "id": 4,
-      "section": "Governance and Integration Strategy",
-      "text": "I need additional services offered by the PID provider (on top of simple registration).",
-      "help": "Some PID providers go beyond basic registration by offering added-value services such as metadata search portals, visual dashboards, citation tracking, metadata enrichment, or integration support. These services can enhance the usability, visibility, and impact of registered resources. DataCite, for example, provides usage stats, citation tracking, and GraphQL APIs. Wikidata supports rich semantic linking, and some ARK providers offer templates or UI tools. If these extras are important to your workflow or reporting needs, choosing a provider with a strong service portfolio can make a significant difference."
+      "section": "Persistence and Costs",
+      "text": "It is important for us that the PID provider offers cost-effective options for registering large numbers of PIDs.",
+      "help": "When registering many PIDs (e.g. more than 100k identifiers per year) - for example, for datasets, samples, archival materials, or high-granular entities - costs can quickly accumulate. Some PID providers, such as URN:NBN and ARK, offer free models that support large-scale usage. Others, like DataCite DOIs and ePIC Handles, have tiered pricing or institutional membership models, which scale more or less strongly with the total number of PIDs registered and end up at different pre-defined upper cost bounds. Wikidata IDs require that each entry must have structured data and purpose within the knowledge graph, so those identifiers are not intended for bulk registration.Choosing a cost-effective provider is especially important when you plan to register many PIDs over time."
     },
     {
       "id": 5,
-      "section": "Governance and Integration Strategy",
-      "text": "I want to have the possibility to delete my PID.",
-      "help": "While many PID systems are designed for long-term reference and persistence, some use cases - especially during early research phases or for internal workflows - may require the option to delete or deactivate PIDs. ARKs support flexible lifecycles, including deletion. Wikidata IDs can also be removed under certain conditions. In contrast, DataCite DOIs, ePIC handles, and URN:NBNs are designed to be permanent and generally do not support deletion once a PID is registered. Whether deletion is allowed depends on the provider’s policies and the intended role of the PID."
+      "section": "Persistence and Costs",
+      "text": "It is important for us that the PID provider offers additional services on top of simple PID registration, such as metadata tooling, statistics, and visualisation.",
+      "help": "Some PID providers, such as DataCite DOI, offer a range of services on top of simple PID registration. These additional services may include: \n - Extensive metadata tooling for enriching and managing PID-related metadata. \n - Statistics and visualizations to track PID usage, citations, and connections. \n These enhanced services provide features that can improve discovery, management, and outreach. Other PID providers (such as ePIC Handles, URN:NBN, ARK, Wikidata ID) do not offer similar extensive metadata tooling features."
     },
     {
       "id": 6,
-      "section": "Governance and Integration Strategy",
-      "text": "I want to have the possibility to test the PID service before committing to a PID provider.",
-      "help": "Before adopting a PID system, it can be valuable to test how it fits into your workflows - technically, administratively, or in terms of support. Some providers offer sandbox environments, trial accounts, or test prefixes that allow you to register and resolve test PIDs without long-term commitments. For example, DataCite and ePIC offer test environments upon request. ARKs and Handles can often be tested via local installations or demo servers. Wikidata, by contrast, allows immediate PID creation in its live environment - but without a separate test space. For URN:NBN, testing may require prior agreements and coordination with national libraries, and self-service options are typically not available."
+      "section": "Persistence and Costs",
+      "text": "It is more important for us to be able to register PIDs at a low cost than being provided with additional services from the PID provider such as metadata tooling, statistics, and visualisation.",
+      "help": "It is important to consider the trade-off between cost and the additional services offered by a PID provider. Providers with extensive additional tooling (DataCite DOIs) typically charge higher fees to cover these enhanced offerings. If your primary goal is to assign PIDs at the lowest possible cost, you should be aware that PID providers offering fewer add-on services (such as ePIC Handles, URN:NBN, ARK, Wikidata ID) generally provide more cost-effective options."
     },
     {
       "id": 7,
-      "section": "Governance and Integration Strategy",
-      "text": "I want a PID provider that provides extensive training material and support.",
-      "help": "Training resources and user support can make a big difference, especially during onboarding or when integrating PIDs into institutional workflows. DataCite offers extensive documentation, webinars, community calls, and helpdesk support. Wikidata has rich community-driven guides and discussion forums. ARKs and Handles are supported through technical documentation and user communities, but formal training is often limited. ePIC provides some documentation, but the depth and accessibility vary by national partner. URN:NBN systems usually depend on national libraries, where training and support may be limited or targeted to specific institutional partners."
+      "section": "Purpose",
+      "text": "It is important for us that our identifiers are globally recognized in scholarly publishing with stable citation practices.",
+      "help": "If it is important for your institution that the identifiers used are globally recognized in scholarly publishing with stable citation practices, DataCite DOIs are the most suitable choice. They have strong, well-established support across publishers, citation styles, and research indexing services. Other identifiers such as ePIC Handles, ARKs, and URNs offer persistence and local or regional recognition but lack the universal acceptance and integration needed for formal scholarly citation. Wikidata IDs are useful for open data linking but are not designed or accepted as scholarly citation identifiers."
     },
     {
       "id": 8,
-      "section": "Metadata & Interoperability",
-      "text": "I want a PID that comes with open metadata for re-use.",
-      "help": "Persistent Identifiers (PIDs) are most valuable when the metadata describing the identified object is openly accessible, machine-readable, and available for reuse - e.g., through registries, catalogs, or aggregation services. This openness improves visibility, enables automated linking, supports citation tracking, and fosters interoperability. Many PID infrastructures - such as those supporting DOIs, ePIC Handles, ARKs, IGSNs, and Wikidata IDs - encourage or provide mechanisms for open metadata. In some cases, metadata is explicitly released under a public domain dedication like CC0 to remove legal barriers to reuse. However, licensing practices vary between PID providers and communities, so it’s important to check the specific metadata policies of the system in use."
+      "section": "Purpose",
+      "text": "It is important for us that my PID supports early PID adoption (especially, a PID should be minted before publishing the digital object).",
+      "help": "Early PID adoption means assigning persistent identifiers at the earliest stages of research asset creation, often while data is being generated or processed, before formal publication. Assigning PIDs early facilitates collaboration by enabling referencing of in-progress datasets or materials, allows early metadata capture, and ensures persistent connection between related outputs through the research workflow. ePIC Handles, ARKs, and DataCite DOIs support early PID assignment in the research data lifecycle, including pre-publication phases. In comparison, URNs and Wikidata IDs are assigned when the digital object is published."
     },
     {
       "id": 9,
-      "section": "Metadata & Interoperability",
-      "text": "Do you prefer a PID provider that comes with a standardised metadata schema, or a PID system that allows flexible configuration of metadata?",
-      "help": "Many PID providers (e.g., DataCite DOIs, URN:NBN, …) define a metadata schema that needs to be adopted when working with the PID Provider. A standardized metadata schema fixes a limited number of pre-defined fields that are to be filled in by the user when registering a PID. Standardized metadata schemas enable interoperability between systems and metadata harvesting. It is often possible to extend a standardized metadata schema with domain specific fields as part of the repository metadata. Other PID Providers (e.g., ePIC, ARK, …) do not fix the metadata schema in advance. The service administrator can define the metadata schema that defines the fields for the end user according to his needs. Flexibility supports adjusting to use case specific needs of different domains or workflows."
+      "section": "Purpose",
+      "text": "It is important for us that the PID provider supports cataloging, archiving, and stable referencing within national or academic library infrastructures.",
+      "help": "URNs are specialized persistent identifiers designed primarily for use by national libraries and archival institutions. It provides stable, location-independent naming of digital and physical resources that often lack other standard identifiers like ISBN or ISSN. URNs supports comprehensive cataloging and long-term archival needs by uniquely identifying materials such as digitized manuscripts, reports, cultural heritage objects, and institutional publications within library collections."
     },
     {
       "id": 10,
-      "section": "Metadata & Interoperability",
-      "text": "I want to use a PID provider that allows entry of discipline- or object-specific metadata.",
-      "help": "DDiscipline- or object-specific metadata improves precision in discovery of the research resources. However, specific metadata do not necessarily need to be part of the PID, as they can also be part of the repository and be indexed there."
+      "section": "Purpose",
+      "text": "It is important for us that the PID integrates into a standardized knowledge base that powers connected research.",
+      "help": "Wikidata IDs are integral parts of a large, openly editable, and richly structured knowledge base. Each Wikidata ID (QID) uniquely identifies an entity (which could be a person, place, concept, event, or object) and connects it with a web of detailed data. Unlike DataCite DOIs, ePIC Handles, URNs, and ARKs that serve primarily as stable resource locators, Wikidata IDs enable integration within a dynamic semantic network of linked information."
     },
     {
       "id": 11,
       "section": "Metadata & Interoperability",
-      "text": "I want a PID that comes with machine-readable metadata.",
-      "help": "Machine-readablility means that metadata is structured in a way that computers can automatically process and understand them (for example, if metadata are expressed as JSON, XML, …). Machine-readable metadata enables machines to perform tasks such as data discovery, automation, and indexing. In contrast, human-readable metadata are designed for people to easily understand and interpret metadata. Machine readable metadata and human readable metadata are complementary (rather than mutually exclusive), as many PID providers provide both."
+      "text": "It is important for us to have the possibility of private/non-open metadata in the PID.",
+      "help": "PID providers such as ARK and ePIC allow local installations of PID infrastructure with the possibility to close off metadata completely from the public, such that metadata do not leave the internal systems. Access control policies can restrict the access to ARK metadata that are returned by the locally installed resolver to logged-in or internal user groups. In ePIC PIDs, individual metadata fields can be configured to be only visible to restricted users. For DataCite DOIs, URNs, and Wikidata IDs, this is generally not possible."
     },
     {
       "id": 12,
       "section": "Metadata & Interoperability",
-      "text": "I want a PID that provides human-readable metadata on a landing page.",
-      "help": "Landing pages with human-readable metadata support the understanding and reuse of a research entity by humans. Landing pages are often provided by the repository which contains the research entity and serves as the entry point for humans to receive information (metadata) about the resource, such as citation infos, descriptions, and the link to the resource itself. "
+      "text": "It is important for us that the PID provider allows entry of discipline- or resource-specific metadata.",
+      "help": "Discipline- or resource-specific metadata improves precision in discovery of the research resources. However, discipline-specific metadata do not necessarily need to be part of the PID, as they can also be part of the repository. Some PID providers such as ePIC and ARK allow the entry of discipline specific metadata in the PID because all fields in the schema can be flexibly defined. Other PID providers have either a standardized schema focussing on bibliographic metadata where discipline-specific metadata cannot be entered directly (DataCite DOI) or are not at all designed to carry rich metadata in the PID itself (URNs). Wikidata IDs include rich, structured, and semantic metadata, allowing detailed discipline- or resource-specific information."
     },
     {
       "id": 13,
       "section": "Metadata & Interoperability",
-      "text": "I want my digital research entity to be machine actionable.",
-      "help": "Machine actionability refers to information or digital objects being structured and defined in a way that enables computers to automatically read, interpret, and take actions based on that information, with minimal or no human intervention. In practical terms, this means: The data is not just readable by machines (like text in a CSV), but also described with metadata that a machine understands what the data is and how it should be processed. If you require your data to be machine actionable, you should consider to publish them as FAIR digital objects (FDOs). FDOs specify their types and possible operations in a standardized way, so machines can not only read what an object is, but also what can be done with it (e.g., which APIs or transformations are valid)."
+      "text": "It is important for us to work with a PID provider with a widely used/recognized standardized metadata schema.",
+      "help": "Working with a PID provider that mandates a widely adopted and standardized metadata schema can be beneficial because it ensures consistency in how data is described and shared across different systems and organizations. This uniformity enables interoperability, supports automated processing and research workflows, and enhances metadata quality and compliance with regulations. DataCite defines a widely used, standardized metadata schema for research data and scholarly outputs. The other PID providers either give the possibility of flexible metadata configurations (ePIC, ARK) or apply different standards (URNs), depending on the external library catalogs, archives, or domain-specific repositories in use. Wikidata IDs provides a flexible, semantic knowledge base model rather than a traditional metadata schema."
     },
     {
       "id": 14,
-      "section": "Technical Implementation",
-      "text": "I want to have a PID that points directly to a research entity (not to a landing page)",
-      "help": "Different PIDs by default may resolve to different kinds of resources. Some PIDs resolve to landing pages with human readable metadata, others resolve to a set of machine readable metadata or directly to the research entity (e.g., a file). Some PID systems (such as DOI, URN:NBN) require that the PID resolves to a landing page which must contain human-readable metadata. URN:NBNs point to a landing page where you can publish or edit the metadata for an object. Other PID types (e.g. ePIC PID) are allowed to resolve to whatever URL the user requires. Resolving directly to an object may be reasonable if, for example, many (high-granular) data are generated during the research process which might not be published in the end, but still receive a PID that points to the raw data."
+      "section": "Metadata & Interoperability",
+      "text": "We prefer a PID provider that enables flexible configuration of metadata fields over one that offers a standardized metadata schema.",
+      "help": "Some PID providers (e.g., DataCite DOIs) define a metadata schema that needs to be adopted when working with the PID Provider. A standardized metadata schema fixes a limited number of pre-defined fields that are to be filled in by the user when registering a PID. Standardized metadata schemas enable interoperability between systems and metadata harvesting. It is often possible to extend a standardized metadata schema with domain specific fields as part of the repository metadata. Other PID Providers (e.g., ePIC, ARK) do not fix the metadata schema in advance. The service administrator can define the metadata schema that defines the fields for the end user according to his needs. Flexibility supports adjusting to use case specific needs of different domains or workflows. URNs themselves are purely identifier schemes that do not define or mandate any metadata schema. Metadata associated with URN-identified resources is managed externally in library catalogs, archives, or domain-specific repositories, using independent metadata standards. For Wikidata IDs, the user can choose between a set of pre-defined metadata schemas."
     },
     {
       "id": 15,
-      "section": "Technical Implementation",
-      "text": "I want to use a PID provider that offers an API to register PIDs.",
-      "help": "Many PID providers offer APIs such that PID registration and management can be automated as part of the publishing workflow in a repository."
+      "section": "Technical Features & Training",
+      "text": "It is important for us to have the option to self-host our PID resolver/infrastructure in-house.",
+      "help": "Self-hosting provides higher performance and more technical options but requires technical capacity. Self-hosting can make sense if performance is critical, for example, if lots of PIDs should be registered within a very short time frame. The closer the client to the server, the more performant is PID registration. Self-hosting can also make sense if a PID service should follow a specific technical setup (e.g., a specific database-engine under the Handle System, which fits a specific purpose, or more RAM for fast queries). Another reason could be specialized solutions for user management. For ePIC, ARKs and URNs, there is the option to self-host the PID resolver/infrastructure. Other providers such as DataCite and Wikidata IDs are centrally managed and do not provide the option of self-hosting."
     },
     {
       "id": 16,
-      "section": "Technical Implementation",
-      "text": "I want to use a PID provider that offers manual PID registration.",
-      "help": "Providing a user interface or formular manual registration can support flexibility and individual workflows. Using a user interface for PID registration gives the possibility to decouple PID management from a repository: For example, the research resource can be stored at any URL determined by the user (independent of a research repository) and all metadata can be entered directly without a repository in between."
+      "section": "Technical Features & Training",
+      "text": "It is important for us that we can expose our research entity as a FAIR Digital Object.",
+      "help": "A FAIR Digital Object (FDO) is a digital entity uniquely identified by a PID that resolves to a machine-readable information record containing metadata, type information, and mechanisms for retrieving associated data and operations. FDOs specify their metadata and possible operations in a standardized way, so machines can not only read what an object is, but also what can be done with it. FDOs reach technical interoperability by following the FDO specification, which allows multiple technological implementations as long as they are compliant with the FDO requirements (e.g., resolution into a structured information record containing metadata). ePICs and ARKs are generally suited to implement FDOs, as they resolve into a structured information record that can be flexibly filled with FDO-complient metadata. However, there are already much more advancements in adapting Handles for FDOs in comparison to ARKs."
     },
     {
       "id": 17,
-      "section": "Technical Implementation",
-      "text": "I want to use existing plugins for registering PIDs to ease integration in our own system.",
-      "help": "Plugins and tools can simplify integration and reduce effort."
+      "section": "Technical Features & Training",
+      "text": "It is important for us to have the freedom to choose what kind of location our PIDs resolve to (that is, our PIDs should not just resolve to human-readable landing pages, but some PIDs should also resolve to digital resources directly, or to machine-readable metadata records).",
+      "help": "Different PIDs by default may resolve to different kinds of resources. Some PIDs resolve to landing pages with human readable metadata, others resolve to a set of machine readable metadata or directly to the research entity (e.g., a file). Some PID systems (such as DataCite DOIs, Wikidata IDs) require that the PID resolves to a landing page which must contain human-readable metadata. Other PID types (e.g. ePIC PID, ARKs, URNs) are allowed to resolve to whatever URL the user requires. Resolving directly to an object may be reasonable if, for example, many (high-granular) data are generated during the research process which might not be published in the end, but still receive a PID that points to the raw data."
+    },
+    {
+      "id": 18,
+      "section": "Technical Features & Training",
+      "text": "It is important for us that the PID provider offers extensive training material.",
+      "help": "Training resources and user support can make a big difference, especially during onboarding or when integrating PIDs into institutional workflows. DataCite offers extensive documentation, webinars, community calls, and helpdesk support. Wikidata has rich community-driven guides and discussion forums. ARKs and Handles are supported through technical documentation and user communities, but additional training offers are limited. ePIC provides technical documentation, but the depth and accessibility vary by national partner. URN systems usually depend on national libraries, where training and support may be limited or targeted to specific institutional partners."
+    },
+    {
+      "id": 19,
+      "section": "Technical Features & Training",
+      "text": "It is important for me to have the possibility to test the PID service before committing to a PID provider.",
+      "help": "Before adopting a PID system, it can be valuable to test how it fits into your workflows - technically, administratively, or in terms of support. Some providers offer sandbox environments, trial accounts, or test prefixes that allow you to register and resolve test PIDs without long-term commitments. For example, DataCite and ePIC offer test environments upon request. ARKs and Handles can often be tested via local installations or demo servers. Wikidata, by contrast, allows immediate PID creation in its live environment - but without a separate test space. For URN:NBN, testing may require prior agreements and coordination with national libraries, and self-service options are typically not available."
     }
-   
   ]
 }
