@@ -13,36 +13,36 @@ sections:
     design:
       columns: '1'
 
-  - block: markdown
-    content:
-      title: <h2>PID-Checker (NFDI4Energy)</h2>
-      #subtitle: <h3>...</h3>
-      text: |
-        The PID Service is a web-based tool developed within TIB. It automatically checks and reports on the resolvability and status of Class IRIs, which can follow PID patterns in ontologies. It supports both scheduled, large-scale analysis of registered ontologies and on-demand checks for any ontology file available online in <span style="color: green;">.ttl</span> or <span style="color: green;">owl format</span>.  
-        <h3>Main Features</h3>
-         * Batch PID Checking: Every two weeks, the service checks the ontologies from the NFDI4ING and NFDI4Energy collections (hosted by the TIB Terminology Service) for PID resolvability and status. Results are stored for reporting and monitoring.<br>
-         * On-Demand PID Checking: Users can submit a link to any ontology file (in <span style="color: green;">.ttl</span> or <span style="color: green;">owl format</span>, e.g., from a Git repository) for immediate analysis. The results remain available for about one hour before they are automatically deleted.<br>
-         * Detailed Reports: The service provides statistics such as the number of IRIs checked, how many are not working, PID pattern usage, and general ontology metadata.<br>
-         * Result Downloads: Users can download the analysis results as CSV or Excel files — either for entire ontologies or just for filtered results. It is also possible to download results for a single ontology.<br>
-         * Progress Tracking: For large external files, users receive a task ID and can track the progress and results asynchronously.  
-         * REST API Access: All features can be accessed via a documented REST API.<br>
+- block: markdown
+   content:
+     title: <h2>PID-Checker (NFDI4Energy)</h2>
+     #subtitle: <h3>...</h3>
+     text: |
+       The PID Service is a web-based tool developed within TIB. It automatically checks and reports on the resolvability and status of Class IRIs, which can follow PID patterns in ontologies. It supports both scheduled, large-scale analysis of registered ontologies and on-demand checks for any ontology file available online in <span style="color: green;">.ttl</span> or <span style="color: green;">owl format</span>.
+       <h3>Main Features</h3>
+       * Batch PID Checking: Every two weeks, the service checks the ontologies from the NFDI4ING and NFDI4Energy collections (hosted by the TIB Terminology Service) for PID resolvability and status. Results are stored for reporting and monitoring.<br>
+       * On-Demand PID Checking: Users can submit a link to any ontology file (in <span style="color: green;">.ttl</span> or <span style="color: green;">owl format</span>, e.g., from a Git repository) for immediate analysis. The results remain available for about one hour before they are automatically deleted.<br>
+       * Detailed Reports: The service provides statistics such as the number of IRIs checked, how many are not working, PID pattern usage, and general ontology metadata.<br>
+       * Result Downloads: Users can download the analysis results as CSV or Excel files — either for entire ontologies or just for filtered results. It is also possible to download results for a single ontology.<br>
+       * Progress Tracking: For large external files, users receive a task ID and can track the progress and results asynchronously.<br>
+       * REST API Access: All features can be accessed via a documented REST API.<br>
 
-        <h3>How it relates to Persistent Identifiers (PIDs)</h3>  
-        The service supports the FAIR data principles by checking that PIDs used in ontologies are working and maintained. It helps ontology developers and users ensure that PIDs are reliable, which is essential for data reuse and long-term accessibility.  
+       <h3>How it relates to Persistent Identifiers (PIDs)</h3>
+       The service supports the FAIR data principles by checking that PIDs used in ontologies are working and maintained. It helps ontology developers and users ensure that PIDs are reliable, which is essential for data reuse and long-term accessibility.
 
-        <h3>Target Audience</h3>
-         * Ontology developers and curators  
-         * Researchers or users interested in the quality and stability of PIDs in semantic resources  
+       <h3>Target Audience</h3>
+       * Ontology developers and curators
+       * Researchers or users interested in the quality and stability of PIDs in semantic resources
 
-        <h3>Conditions of Use</h3>  
-         * The service is currently open to all users.  
-         * It is provided by TIB as part of the NFDI4Energy project.  
-        
-        The tool is still under active development. If you notice any issues or have feature requests, feel free to create an issue in the repository or contact us by email — we’d be happy to help.  
+       <h3>Conditions of Use</h3>
+       * The service is currently open to all users.
+       * It is provided by TIB as part of the NFDI4Energy project.
+      
+       The tool is still under active development. If you notice any issues or have feature requests, feel free to create an issue in the repository or contact us by email — we’d be happy to help.
 
-        {{% cta cta_alt_link="https://terminology.nfdi4ing.de/ts/sandbox/pidChecker" cta_alt_text="Link to Service" %}}
-    design:
-      columns: '2'
+       {{% cta cta_alt_link="https://terminology.nfdi4ing.de/ts/sandbox/pidChecker" cta_alt_text="Link to Service" %}}
+   design:
+     columns: '2'
 
   - block: markdown
     content:
