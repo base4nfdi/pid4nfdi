@@ -31,12 +31,12 @@ sections:
         The service supports the FAIR data principles by checking that PIDs used in ontologies are working and maintained. It helps ontology developers and users ensure that PIDs are reliable, which is essential for data reuse and long-term accessibility.  
 
         <h3>Target Audience</h3>  
-       * Ontology developers and curators  
-       * Researchers or users interested in the quality and stability of PIDs in semantic resources  
+        * Ontology developers and curators  
+        * Researchers or users interested in the quality and stability of PIDs in semantic resources  
 
         <h3>Conditions of Use</h3>  
-       * The service is currently open to all users.  
-       * It is provided by TIB as part of the NFDI4Energy project.  
+        * The service is currently open to all users.  
+        * It is provided by TIB as part of the NFDI4Energy project.  
         
         The tool is still under active development. If you notice any issues or have feature requests, feel free to create an issue in the repository or contact us by email — we’d be happy to help.  
 
@@ -68,11 +68,11 @@ sections:
       text: |
         PIDA is a service providing unique persistent URLs (PURLs) for referencing digital assets on the web. Using our service will help you to ensure that your digital assets remain findable and can be accessed reliably by both humans and machines in the long term. The service provides content negotiation and is thus ideally suited to be used for the development of ontologies.  
         Some of PIDA’s key features are:
-       * provides persistent and globally unique identifiers (PURLs)  
-       * easy to create and update  
-       * supports content negotiation (i.e. HTML, OWL, TTL, RDF)  
-       * secure https communications protocol  
-       * persistent for 10+ years  
+        * provides persistent and globally unique identifiers (PURLs)  
+        * easy to create and update  
+        * supports content negotiation (i.e. HTML, OWL, TTL, RDF)  
+        * secure https communications protocol  
+        * persistent for 10+ years  
 
         PIDA is a service provided by Hub Information and the FAIR Data Commons of the [Helmholtz Metadata Collaboration (HMC)](https://helmholtz-metadaten.de/en), an incubator platform of the Helmholtz Association within the framework of the Information and Data Science strategic initiative. It is developed, deployed and maintained by the [Institute for Advanced Simulation - Materials Data Science and Informatics (IAS-9)](https://fz-juelich.de/ias/ias-9/EN/Home/home_node.html) of the Forschungszentrum Jülich GmbH. PIDA service was started in August 2022.  
         PIDA can be used free of charge by academic (and non commercial) projects. 
