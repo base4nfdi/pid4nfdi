@@ -22,7 +22,7 @@ sections:
        <h3>Main Features</h3>
        * Batch PID Checking: Every two weeks, the service checks the ontologies from the NFDI4ING and NFDI4Energy collections (hosted by the TIB Terminology Service) for PID resolvability and status. Results are stored for reporting and monitoring.
        * On-Demand PID Checking: Users can submit a link to any ontology file (in <span style="color: green;">.ttl</span> or <span style="color: green;">owl format</span>, e.g., from a Git repository) for immediate analysis. The results remain available for about one hour before they are automatically deleted.
-       * Detailed Reports: The service provides statistics such as the number of IRIs checked, how many are not working, PID pattern usage, and general ontology metadata.<br>
+       * Detailed Reports: The service provides statistics such as the number of IRIs checked, how many are not working, PID pattern usage, and general ontology metadata.
        * Result Downloads: Users can download the analysis results as CSV or Excel files — either for entire ontologies or just for filtered results. It is also possible to download results for a single ontology.<br>
        * Progress Tracking: For large external files, users receive a task ID and can track the progress and results asynchronously.<br>
        * REST API Access: All features can be accessed via a documented REST API.<br>
