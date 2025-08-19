@@ -53,7 +53,12 @@ sections:
         The pid4cat service builds upon existing PID infrastructure, i.e., it assigns [ePIC PIDs](https://www.pidconsortium.net/) based on the [Handle System](https://www.handle.net/). pid4cat enables partner organizations to manage their own sub-namespaces while maintaining a consistent approach to identifier creation and metadata management.  
         
         Key features of the pid4cat service include:  
-         * low cost per PID for partner organizations  
+         * Catalysis Research: PID assignment for resources from catalysis research
+         * Distributed management: Partner organizations can manage their own namespaces
+         * Cost-efficient: low cost per PID for partner organizations
+         * Rich metadata: Support for comprehensive, structured identifier-related metadata
+         * Interoperability: Compatible with existing PID systems and linked data principles
+         * Community standards: Alignment with catalysis research community standards and practices
         
         The pid4cat service has been developed within NFDI4Cat and is provided and managed by the HLRS (High Performance Computing Center Stuttgart). The service is made available to end-users (researchers from the catalysis research community) via partner organizations. To become a partner organization and provide a PID issuing service (e.g., repository) for your researchers, organizations have to apply to become a Sub-Name Assigning Authority in pid4cat. Details on the application process can be found [here](https://nfdi4cat.github.io/pid4cat-model/latest/getting-started/).
 
