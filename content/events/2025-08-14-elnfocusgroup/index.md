@@ -57,13 +57,13 @@ projects:
 ---
 
 
-The last meeting of the focus group took place on August 14, 2025. In the meeting, Frederik Springer, project member from the TIB, shared an overview on the research tool for PIDs for instruments (PIDInst), which he developed in the course of the project, to facilitate the discovery of instrument PIDs and related metadata.  
+The last meeting of the focus group took place on 14 August 2025. During the meeting, Frederik Springer, a project member from the TIB, presented an overview of the PIDInst research tool, which he had developed during the project to facilitate the discovery of instrument PIDs and related metadata.
 
 Frederik's slides and the meeting notes can be found here:
-# (Slides)[https://docs.google.com/presentation/d/1H_v3AQxBYm6J_REnJnLsCgN_-k20DNJY/edit?usp=sharing&ouid=106676367050893327372&rtpof=true&sd=true]
-# (Meeting notes)[https://docs.google.com/document/d/1iOF6Yn49oMtpk55EDokf5qyQANQBC-T6C0vGPdApqQw/edit?tab=t.0#heading=h.4wrd07ff6app]
+# [Slides](https://docs.google.com/presentation/d/1H_v3AQxBYm6J_REnJnLsCgN_-k20DNJY/edit?usp=sharing&ouid=106676367050893327372&rtpof=true&sd=true)
+# [Meeting notes](https://docs.google.com/document/d/1iOF6Yn49oMtpk55EDokf5qyQANQBC-T6C0vGPdApqQw/edit?tab=t.0#heading=h.4wrd07ff6app)
 
-The focus group will next meet in Berlin for an on-site workshop on 22 to 23 September 2025. More information is available (here)[https://pid.services.base4nfdi.de/events/2025-09-22-on-site-workshop_eln-dmp/].
+The focus group will next meet in Berlin for an on-site workshop on 22 to 23 September 2025. More information is available [here](https://pid.services.base4nfdi.de/events/2025-09-22-on-site-workshop_eln-dmp/).
 
 
 We truly appreciate your ongoing engagement in the focus groups. Your contributions are essential, and we hope these collective efforts will lead to both knowledge sharing and tangible, community-driven outputs. If you have any questions or require further information, please feel free to contact us via pid4nfdi@lists.nfdi.de.
