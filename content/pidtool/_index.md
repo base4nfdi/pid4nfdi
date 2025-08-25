@@ -31,7 +31,27 @@ _build:
     </p>
   </div>
 
-
+<!-- PID volume pre-question (no scoring; just a switch used later in JS) -->
+<div id="pid-volume-block" class="question" style="margin: 1rem 0 1.25rem 0;">
+  <label><strong>How many PIDs do you plan to register?</strong></label>
+  <div class="likert" style="margin-top: .5rem;">
+    <label>
+      <input type="radio" name="pid-volume" value="lt100k">
+      less than 100,000
+    </label>
+    <label>
+      <input type="radio" name="pid-volume" value="gt100k">
+      more than 100,000
+    </label>
+    <label>
+      <input type="radio" name="pid-volume" value="unknown" checked>
+      I don’t know
+    </label>
+  </div>
+  <p style="font-size:.9rem;color:#666;margin:.4rem 0 0;">
+    This does not affect your answers; it only fine-tunes one rule for DataCite.
+  </p>
+</div>
 
   
 <!-- taken out for the moment - might come in later again
