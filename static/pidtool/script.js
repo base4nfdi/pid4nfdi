@@ -7,38 +7,36 @@ let questionsBySection = {};
 let profile = "standard";
 let answers = {}; // Speicher für ausgewählte Antworten
 
-// Neue Skalen-Konstanten
-const LIKERT_USER_MAX = 3;    // User wählt 0..3 (don't need ... very important)
-const LIKERT_EXPERT_MAX = 2;  // Expert-Scores bleiben vorerst 0..2 (aus JSON)
+// Skalen
+const LIKERT_USER_MAX = 3;    // User 0..3 (Don’t need … Very important)
+const LIKERT_EXPERT_MAX = 5;  // Expert 1..5
 
-// Pre-question state (lt100k | gt100k | unknown)
-let plannedPidVolume = "unknown";
+// Normalisierung NUR für Mini-Bars (0..1)
+function user01(v)   { v = Number(v); return (v - 0) / (LIKERT_USER_MAX - 0); }  // 0..3 -> 0..1
+function expert01(v) { v = Number(v); return (v - 1) / (LIKERT_EXPERT_MAX - 1); } // 1..5 -> 0..1
 
-// Map Frage-ID -> Index (so dass wir gezielt Statement 3 treffen)
-let qIndexById = {};
-
-// Provider-Schlüssel für DataCite in deinen JSONs
+// Pre-question
+let plannedPidVolume = "unknown";     // "lt100k" | "gt100k" | "unknown"
+let qIndexById = {};                  // Frage-ID -> Index
 const DATACITE_KEY = "DataCite DOI";
 
-// Fallback-Optionen für das UI (links -> rechts: 0, 1, 2, 3)
+// Likert-UI (links->rechts: 0..3)
 const LIKERT_OPTIONS_DEFAULT = [
   { value: 0, label: "Don’t need that" },
   { value: 1, label: "Somewhat important" },
   { value: 2, label: "Important" },
   { value: 3, label: "Very important" }
-  ];
+];
+
 function startTool() {
-  // kein entity-selection mehr nötig
   document.getElementById('section-intro').style.display = 'none';
-  profile = "standard";  // Default-Profil für diese Version
-  selectedEntities = []; // leer, da keine Auswahl
+  profile = "standard";
+  selectedEntities = [];
   loadQuestions();
 }
 
 function toggleImportance(questionIndex) {
-  if (!answers[questionIndex]) {
-    answers[questionIndex] = { value: null, important: false };
-  }
+  if (!answers[questionIndex]) answers[questionIndex] = { value: null, important: false };
   const checkbox = document.getElementById(`important-${questionIndex}`);
   answers[questionIndex].important = checkbox.checked;
 }
@@ -57,17 +55,18 @@ function loadQuestions() {
   .then(([data, scores]) => {
     expertScores = scores;
     organizeSections(data.questions);
-    // Build id -> index map (IDs kommen aus config.json; fallback in organizeSections gesetzt)
-  qIndexById = {};
-  data.questions.forEach((q, idx) => {
-    const id = q.id ?? (idx + 1);
-    qIndexById[id] = idx;
-  });
+
+    // Map ID -> Index
+    qIndexById = {};
+    data.questions.forEach((q, idx) => {
+      const id = q.id ?? (idx + 1);
+      qIndexById[id] = idx;
+    });
+
     showSection(currentSection);
   })
   .catch(err => {
     console.error("❌ Fetch failed:", err);
-
     const container = document.getElementById('question-container');
     container.style.display = 'block';
     container.innerHTML = `
@@ -100,33 +99,31 @@ function updateProgressBar(index) {
 }
 
 function clampExpert(v) {
-  if (v < 0) return 0;
-  if (v > LIKERT_EXPERT_MAX) return LIKERT_EXPERT_MAX;
+  if (v < 1) return 1; // min 1
+  if (v > LIKERT_EXPERT_MAX) return LIKERT_EXPERT_MAX; // 5
   return v;
 }
 
 /**
- * Only adjust DataCite for Statement 3 based on plannedPidVolume.
- * - If <100k  → +1 (capped)
- * - If >100k  → -1 (floored)
- * - If unknown → no change
+ * DataCite & Statement 3 Regel:
+ * - <100k  → +1 (geclamped)
+ * - >100k  → -1 (geclamped)
+ * - unknown → keine Änderung
  */
 function getEffectiveExpertScore(providerName, qIndex) {
   let base = expertScores?.[providerName]?.[qIndex];
-  if (base == null) return base; // undefined stays undefined
+  if (base == null) return base;
 
-  // Target question: ID = 3 -> find its index
   const idxStmt3 = qIndexById?.[3];
   if (providerName === DATACITE_KEY && qIndex === idxStmt3) {
     if (plannedPidVolume === "lt100k") {
       base = clampExpert(base + 1);
     } else if (plannedPidVolume === "gt100k") {
       base = clampExpert(base - 1);
-    } // unknown -> no change
+    }
   }
   return base;
 }
-
 
 function createMiniScoreBars(questionIndex, userValue) {
   userValue = Number(userValue);
@@ -135,13 +132,12 @@ function createMiniScoreBars(questionIndex, userValue) {
 
   for (let pid in expertScores) {
     const expertValue = getEffectiveExpertScore(pid, questionIndex);
-    console.log("PID:", pid, "QIndex:", questionIndex, 
-            "ExpertValue:", expertValue, "UserValue:", userValue);
     if (expertValue === undefined) continue;
 
-    const distance = Math.abs(Number(expertValue) - userValue);
-    const maxDiff = Math.max(LIKERT_USER_MAX, LIKERT_EXPERT_MAX); // 3
-    const score = ((maxDiff - distance) / maxDiff) * 100;
+    const u = user01(userValue);       // 0..1
+    const e = expert01(expertValue);   // 0..1
+    const distance = Math.abs(e - u);  // 0..1
+    const score = (1 - distance) * 100;
 
     const barWrapper = document.createElement("div");
     barWrapper.className = "mini-score";
@@ -153,8 +149,8 @@ function createMiniScoreBars(questionIndex, userValue) {
     const bar = document.createElement("div");
     bar.className = "mini-bar";
 
-    const minWidth = 20; // immer sichtbar
-    const maxWidth = 200; // volle Länge
+    const minWidth = 20;
+    const maxWidth = 200;
     const scaledWidth = minWidth + (score / 100) * (maxWidth - minWidth);
     bar.style.width = `${scaledWidth}px`;
     bar.style.backgroundColor = score >= 60 ? 'green' : score >= 40 ? 'orange' : 'red';
@@ -167,52 +163,54 @@ function createMiniScoreBars(questionIndex, userValue) {
   return container;
 }
 
-
-
 function showSection(index) {
   const sections = Object.keys(questionsBySection);
   if (index >= sections.length) {
     showResults();
     return;
   }
- if (index === 0) {
+  if (index === 0) {
     const intro = document.getElementById('pidtool-intro');
     if (intro) intro.style.display = 'none';
-
     const entitySel = document.getElementById('entity-selection');
     if (entitySel) entitySel.style.display = 'none';
   }
+
   updateProgressBar(index);
+
   const container = document.getElementById('question-container');
   container.innerHTML = '';
   container.style.display = 'block';
+
   const sectionName = sections[index];
   const section = document.createElement('section');
   section.className = 'question-section';
   section.innerHTML = `<h2>${sectionName}</h2>`;
+
   questionsBySection[sectionName].forEach(q => {
     const div = document.createElement('div');
     div.className = 'question';
     const selectedValue = answers[q.index] ? answers[q.index].value : null;
+
     div.innerHTML = `
-  <p><strong>${q.text}</strong><button class="more-info-btn" onclick="toggleHelp(this)">More info</button></p>
-  <div class="help-text">${q.help}</div>
-   <div class="likert">
-    ${((q.options && Array.isArray(q.options) ? q.options : LIKERT_OPTIONS_DEFAULT)
-  .sort((a, b) => a.value - b.value) // stellt 0→3 sicher, auch wenn q.options vorhanden ist
-).map(opt => `
-      <label>
-        <input type="radio" name="q${q.index}" value="${opt.value}" ${selectedValue == opt.value ? 'checked' : ''} onchange="updateMiniBars(${q.index}, this.value, this)">
-        ${opt.label}
-      </label>
-    `).join('')}
-  </div>
-  <div class="skip-option">
-    <button type="button" class="clear-btn" data-q="${q.index}" onclick="skipAnswer(${q.index})" style="${selectedValue === null ? 'display:none;' : ''}">Clear</button>
-  </div>
-  <div class="mini-bar-wrapper" id="mini-bars-${q.index}"></div>
-`;
-    // Wichtigkeits-Option hinzufügen
+      <p><strong>${q.text}</strong><button class="more-info-btn" onclick="toggleHelp(this)">More info</button></p>
+      <div class="help-text">${q.help}</div>
+      <div class="likert">
+        ${((q.options && Array.isArray(q.options) ? q.options : LIKERT_OPTIONS_DEFAULT)
+          .sort((a, b) => a.value - b.value)
+        ).map(opt => `
+          <label>
+            <input type="radio" name="q${q.index}" value="${opt.value}" ${selectedValue == opt.value ? 'checked' : ''} onchange="updateMiniBars(${q.index}, this.value, this)">
+            ${opt.label}
+          </label>
+        `).join('')}
+      </div>
+      <div class="skip-option">
+        <button type="button" class="clear-btn" data-q="${q.index}" onclick="skipAnswer(${q.index})" style="${selectedValue === null ? 'display:none;' : ''}">Clear</button>
+      </div>
+      <div class="mini-bar-wrapper" id="mini-bars-${q.index}"></div>
+    `;
+
     const importanceDiv = document.createElement('div');
     importanceDiv.classList.add('importance-option');
     importanceDiv.innerHTML = `
@@ -250,39 +248,31 @@ function showSection(index) {
   };
   nav.appendChild(nextBtn);
   section.appendChild(nav);
+
   container.appendChild(section);
 }
 
-function updateMiniBars(questionIndex, value, inputElement) {
+function updateMiniBars(questionIndex, value) {
   const wrapper = document.getElementById(`mini-bars-${questionIndex}`);
-  wrapper.innerHTML = ''; // vorherige Balken löschen
+  wrapper.innerHTML = '';
   const miniBars = createMiniScoreBars(questionIndex, Number(value));
   wrapper.appendChild(miniBars);
-  // Skip-Button einblenden
+
   const skipBtn = document.querySelector(`.skip-option button[data-q="${questionIndex}"]`);
   if (skipBtn) skipBtn.style.display = 'inline';
 }
 
 function skipAnswer(questionIndex) {
-  // Auswahl im Speicher löschen
-  if (answers[questionIndex]) {
-    delete answers[questionIndex];
-  }
+  if (answers[questionIndex]) delete answers[questionIndex];
 
-  // Alle Radios der Frage zurücksetzen
-  document.querySelectorAll(`input[name="q${questionIndex}"]`).forEach(radio => {
-    radio.checked = false;
-  });
+  document.querySelectorAll(`input[name="q${questionIndex}"]`).forEach(r => r.checked = false);
 
-  // Mini-Bar Anzeige leeren
   const wrapper = document.getElementById(`mini-bars-${questionIndex}`);
   if (wrapper) wrapper.innerHTML = '';
 
-  // Clear-Button ausblenden
   const skipBtn = document.querySelector(`.skip-option button[data-q="${questionIndex}"]`);
   if (skipBtn) skipBtn.style.display = 'none';
 }
-
 
 function saveAnswers() {
   document.querySelectorAll('input[type="radio"]:checked').forEach(input => {
@@ -296,93 +286,51 @@ function saveAnswers() {
     if (!answers[index]) answers[index] = {};
     answers[index].important = checkbox.checked;
   });
-  // Debug-Ausgabe
+
   console.clear();
-console.table(answers);
+  console.table(answers);
 }
 
-function calculateWahlOMatScores(answers, expertScores) {
-  let results = {};
-  for (let pid in expertScores) {
+// Einfaches, section-unabhängiges Scoring:
+// Σ (effectiveExpert(1..5) * user(0..3) * weight) → pro PID relativ zu eigenem Max (→ 0..100)
+function calculateSimplePercentScores(answers, expertScores) {
+  const resultsRaw = {};
+  const resultsMax = {};
+  const providers = Object.keys(expertScores);
+
+  const answeredIndexes = Object.keys(answers)
+    .map(k => parseInt(k, 10))
+    .filter(i => Number.isInteger(i) && answers[i]?.value != null);
+
+  if (answeredIndexes.length === 0) {
+    const zeroed = {};
+    providers.forEach(pid => { zeroed[pid] = 0; });
+    return zeroed;
+  }
+
+  providers.forEach(pid => {
     let sum = 0;
-    expertScores[pid].forEach((expertValue, index) => {
-      const userAnswer = answers[index];
-      if (userAnswer && userAnswer.value !== undefined) {
-        const diff = expertValue - userAnswer.value;
-        let weight = userAnswer.important ? 2 : 1; // doppelte Gewichtung
-        sum += weight * (diff * diff);
-      }
+    let maxSum = 0;
+
+    answeredIndexes.forEach(qIndex => {
+      const userVal = Number(answers[qIndex].value) || 0; // 0..3
+      const weight = (answers[qIndex].important ? 2 : 1);
+      const eff = getEffectiveExpertScore(pid, qIndex);
+      if (eff == null) return;
+
+      sum += eff * userVal * weight;
+      maxSum += LIKERT_EXPERT_MAX * LIKERT_USER_MAX * weight; // 5 * 3 * weight
     });
-    results[pid] = sum;
-  }
-  return results;
-}
 
-function calculateNormalizedSectionScores(answers, expertScores, questionsBySection) {
-  let sectionScores = {};   // { section: { pid: sum } }
-  let sectionMax = {};      // { section: maxPossibleScore }
+    resultsRaw[pid] = sum;
+    resultsMax[pid] = Math.max(1, maxSum);
+  });
 
-  // durch alle Sections iterieren
-  for (let section in questionsBySection) {
-    sectionScores[section] = {};
-    sectionMax[section] = 0;
-
-    questionsBySection[section].forEach(q => {
-      const userAnswer = answers[q.index];
-      if (!userAnswer || userAnswer.value === undefined) return;
-
-      for (let pid in expertScores) {
-        const expertValue = getEffectiveExpertScore(pid, q.index);
-        if (expertValue === undefined) continue;
-
-        const effective = getEffectiveExpertScore(pid, index);
-        if (effective == null) return; // safety
-        const diff = effective - userAnswer.value;
-        let weight = userAnswer.important ? 2 : 1; // doppelte Gewichtung
-        const score = weight * (diff * diff);
-
-        if (!sectionScores[section][pid]) sectionScores[section][pid] = 0;
-        sectionScores[section][pid] += score;
-      }
-
-      // maximale mögliche Punkte für diese Frage berechnen
-      const maxDiff = Math.max(LIKERT_USER_MAX, LIKERT_EXPERT_MAX); // 3
-      const maxForQuestion = maxDiff * maxDiff * (userAnswer.important ? 2 : 1);
-      sectionMax[section] += maxForQuestion;
-    });
-  }
-
-  // Debug-Ausgabe: rohe Section-Scores
-  console.log("📊 Raw Section Scores:");
-  console.table(sectionScores);
-  console.log("📈 Section Max Values:");
-  console.table(sectionMax);
-
-  // Normalisierung: jede Section gibt gleich viel Gewicht
-  let finalScores = {};
-  const totalSections = Object.keys(sectionScores).length;
-
-  for (let section in sectionScores) {
-    console.log(`🔎 Normalizing Section: ${section}`);
-    for (let pid in sectionScores[section]) {
-      const normalized = 1 - (sectionScores[section][pid] / (sectionMax[section] || 1));
-      if (!finalScores[pid]) finalScores[pid] = 0;
-      finalScores[pid] += normalized;
-
-      console.log(`PID: ${pid}, Section: ${section}, Normalized: ${normalized.toFixed(3)}`);
-    }
-  }
-
-  // Durchschnitt über alle Sections
-  for (let pid in finalScores) {
-    finalScores[pid] = Math.round((finalScores[pid] / totalSections) * 100);
-  }
-
-  // Debug-Ausgabe: Endwerte
-  console.log("✅ Final Normalized Scores:");
-  console.table(finalScores);
-
-  return finalScores;
+  const percent = {};
+  providers.forEach(pid => {
+    percent[pid] = Math.round((resultsRaw[pid] / resultsMax[pid]) * 100);
+  });
+  return percent;
 }
 
 function toggleHelp(btn) {
@@ -392,13 +340,10 @@ function toggleHelp(btn) {
 
 function showResults() {
   saveAnswers();
-  fetch('/pidtool/pid-expert-scores.json')
-    .then(res => res.json())
-    .then(expertScores => {
-      const scores = calculateNormalizedSectionScores(answers, expertScores, questionsBySection);
+  // expertScores ist bereits global geladen – kein Re-Fetch nötig.
+  const scores = calculateSimplePercentScores(answers, expertScores);
   displayResults(scores);
-    })
-    .catch(err => console.error("❌ Failed to load expert scores:", err));
+
   document.getElementById('question-container').style.display = 'none';
   document.getElementById('section-results').style.display = 'block';
 }
@@ -409,16 +354,18 @@ function displayResults(scores) {
     "ePIC handle": "ePIC handles are used in European research infrastructures and built on the Handle system.",
     "URN:NBN": "URN:NBN is typically used for long-term preservation in national libraries.",
     "ARK": "ARKs are often used in museums and archives for persistent referencing.",
-    "Wikidata ID": "Wikidata IDs are part of a linked data ecosystem and good for semantic referencing."
   };
+
   const resultDiv = document.getElementById("results");
   resultDiv.innerHTML = "";
+
   if (selectedEntities.length > 0) {
     const entityDiv = document.createElement("div");
     entityDiv.className = "selected-entities";
     entityDiv.innerHTML = `<p><strong>Your selected object types:</strong> ${selectedEntities.join(', ')}</p>`;
     resultDiv.appendChild(entityDiv);
   }
+
   const sortedPIDs = Object.keys(scores).sort((a, b) => scores[b] - scores[a]);
   for (let pid of sortedPIDs) {
     const score = scores[pid];
@@ -436,6 +383,7 @@ function displayResults(scores) {
     `;
     resultDiv.appendChild(card);
   }
+
   const exportBtn = document.createElement('button');
   exportBtn.textContent = "Download results";
   exportBtn.onclick = () => {
@@ -455,6 +403,7 @@ function displayResults(scores) {
     URL.revokeObjectURL(url);
   };
   resultDiv.appendChild(exportBtn);
+
   const infoText = document.createElement("div");
   infoText.className = "result-info";
   infoText.innerHTML = `
@@ -467,6 +416,7 @@ function displayResults(scores) {
     <a href="https://pid4nfdi-training.readthedocs.io/en/latest/" target="_blank">PID4NFDI Cookbook</a>.</p>
   `;
   resultDiv.appendChild(infoText);
+
   const contactNote = document.createElement("div");
   contactNote.className = "result-contact-note";
   contactNote.innerHTML = `
@@ -474,32 +424,29 @@ function displayResults(scores) {
     please <a href="https://pid.services.base4nfdi.de/about/contact/" target="_blank">contact us</a>.</p>
   `;
   resultDiv.appendChild(contactNote);
+
   const backButton = document.createElement('button');
   backButton.textContent = "Back to questions";
   backButton.style.marginTop = "2em";
   backButton.style.marginBottom = "3em";
   backButton.onclick = () => {
     document.getElementById('section-results').style.display = 'none';
-     if (currentSection > 0) {
-    currentSection--;
-  }
-  
-  showSection(currentSection);
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
-resultDiv.appendChild(backButton);
+    if (currentSection > 0) currentSection--;
+    showSection(currentSection);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  resultDiv.appendChild(backButton);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log("📦 DOM fully loaded");
 
-  // Hook for the pre-question (single choice)
+  // Pre-question listener
   document.querySelectorAll('input[name="pid-volume"]').forEach(r => {
     r.addEventListener('change', () => {
       plannedPidVolume = r.value; // "lt100k" | "gt100k" | "unknown"
-      // Optional: if results are visible, recompute
-      // If you have a central recompute function, call it here.
-      // Otherwise, results will be influenced on next render (mini-bars & final scores).
+      // optional: aktuell geöffnete Section neu rendern:
+      // showSection(currentSection);
     });
   });
 });
