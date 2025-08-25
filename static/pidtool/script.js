@@ -1,3 +1,5 @@
+console.log("PID Tool build stamp:", "2025-08-25 16:18 CET", "commit", "abc1234");
+
 let expertScores = {};
 let selectedEntities = [];
 let currentSection = 0;
