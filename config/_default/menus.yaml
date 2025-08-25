@@ -59,10 +59,10 @@ main:
     parent: community
     url: community/use-cases
     weight: 20
-# - name: Consortia services
-#   parent: community
-#   url: community/consortia-services
-#   weight: 30
+  - name: Consortia services
+    parent: community
+    url: community/consortia-services
+    weight: 30
 #  - name: Policies
 #    parent: resources
 #    url: resources/policies
