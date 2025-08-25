@@ -192,3 +192,41 @@ body { font-family: sans-serif; padding: 20px; }
   flex-grow: 0;          /* verhindert, dass Balken sich strecken */
   display: inline-block; /* JS-width greift sicher */
 }
+
+/* macht die ganze Kachel klickbar und fokussierbar */
+.likert label {
+  position: relative;
+  border: 1px solid #dbe1ea;
+  transition: background .15s ease, border-color .15s ease, transform .05s ease;
+}
+
+/* Radio unsichtbar, aber fokussierbar & klickbar */
+.likert label input[type="radio"] {
+  position: absolute;
+  inset: 0;          /* füllt das ganze Label */
+  opacity: 0;        /* bleibt fokussierbar */
+  cursor: pointer;
+}
+
+/* Hover-Feedback */
+.likert label:hover {
+  background: #f5f8fc;
+}
+
+/* aktiver Klick */
+.likert label:active {
+  transform: translateY(1px);
+}
+
+/* gewählte Option (kein Farbwechsel-Drama, nur dezent) */
+.likert label:has(input:checked) {
+  background: #e8f0ff;
+  border-color: #4f7cff;
+  box-shadow: 0 0 0 2px rgba(79,124,255,.15) inset;
+}
+
+/* Tastaturfokus sichtbar machen */
+.likert label:has(input:focus-visible) {
+  outline: 2px solid #4f7cff;
+  outline-offset: 2px;
+}

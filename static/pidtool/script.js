@@ -5,6 +5,17 @@ let questionsBySection = {};
 let profile = "standard";
 let answers = {}; // Speicher für ausgewählte Antworten
 
+// Neue Skalen-Konstanten
+const LIKERT_USER_MAX = 3;    // User wählt 0..3 (don't need ... very important)
+const LIKERT_EXPERT_MAX = 2;  // Expert-Scores bleiben vorerst 0..2 (aus JSON)
+
+// Fallback-Optionen für das UI (links -> rechts: 0, 1, 2, 3)
+const LIKERT_OPTIONS_DEFAULT = [
+  { value: 0, label: "Don’t need that" },
+  { value: 1, label: "Somewhat important" },
+  { value: 2, label: "Important" },
+  { value: 3, label: "Very important" }
+  ];
 function startTool() {
   // kein entity-selection mehr nötig
   document.getElementById('section-intro').style.display = 'none';
@@ -73,6 +84,7 @@ function updateProgressBar(index) {
 
 
 function createMiniScoreBars(questionIndex, userValue) {
+  userValue = Number(userValue);
   const container = document.createElement("div");
   container.className = "statement-scores";
 
@@ -82,8 +94,8 @@ function createMiniScoreBars(questionIndex, userValue) {
             "ExpertValue:", expertValue, "UserValue:", userValue);
     if (expertValue === undefined) continue;
 
-    const distance = Math.abs(expertValue - userValue);
-    const maxDiff = 2; // bei Skala von 0 bis 2
+    const distance = Math.abs(Number(expertValue) - userValue);
+    const maxDiff = Math.max(LIKERT_USER_MAX, LIKERT_EXPERT_MAX); // 3
     const score = ((maxDiff - distance) / maxDiff) * 100;
 
     const barWrapper = document.createElement("div");
@@ -141,13 +153,9 @@ function showSection(index) {
   <p><strong>${q.text}</strong><button class="more-info-btn" onclick="toggleHelp(this)">More info</button></p>
   <div class="help-text">${q.help}</div>
    <div class="likert">
-    ${(
-      q.options || [
-        { value: 0, label: "Disagree" },
-        { value: 1, label: "Neutral" },
-        { value: 2, label: "Agree" }
-      ]
-    ).map(opt => `
+    ${((q.options && Array.isArray(q.options) ? q.options : LIKERT_OPTIONS_DEFAULT)
+  .sort((a, b) => a.value - b.value) // stellt 0→3 sicher, auch wenn q.options vorhanden ist
+).map(opt => `
       <label>
         <input type="radio" name="q${q.index}" value="${opt.value}" ${selectedValue == opt.value ? 'checked' : ''} onchange="updateMiniBars(${q.index}, this.value, this)">
         ${opt.label}
@@ -203,7 +211,7 @@ function showSection(index) {
 function updateMiniBars(questionIndex, value, inputElement) {
   const wrapper = document.getElementById(`mini-bars-${questionIndex}`);
   wrapper.innerHTML = ''; // vorherige Balken löschen
-  const miniBars = createMiniScoreBars(questionIndex, value);
+  const miniBars = createMiniScoreBars(questionIndex, Number(value));
   wrapper.appendChild(miniBars);
   // Skip-Button einblenden
   const skipBtn = document.querySelector(`.skip-option button[data-q="${questionIndex}"]`);
@@ -291,7 +299,7 @@ function calculateNormalizedSectionScores(answers, expertScores, questionsBySect
       }
 
       // maximale mögliche Punkte für diese Frage berechnen
-      const maxDiff = 2; // // von "0" bis "2" → max Differenz = 2
+      const maxDiff = Math.max(LIKERT_USER_MAX, LIKERT_EXPERT_MAX); // 3
       const maxForQuestion = maxDiff * maxDiff * (userAnswer.important ? 2 : 1);
       sectionMax[section] += maxForQuestion;
     });
