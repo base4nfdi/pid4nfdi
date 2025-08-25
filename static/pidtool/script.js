@@ -11,6 +11,15 @@ let answers = {}; // Speicher für ausgewählte Antworten
 const LIKERT_USER_MAX = 3;    // User wählt 0..3 (don't need ... very important)
 const LIKERT_EXPERT_MAX = 2;  // Expert-Scores bleiben vorerst 0..2 (aus JSON)
 
+// Pre-question state (lt100k | gt100k | unknown)
+let plannedPidVolume = "unknown";
+
+// Map Frage-ID -> Index (so dass wir gezielt Statement 3 treffen)
+let qIndexById = {};
+
+// Provider-Schlüssel für DataCite in deinen JSONs
+const DATACITE_KEY = "DataCite DOI";
+
 // Fallback-Optionen für das UI (links -> rechts: 0, 1, 2, 3)
 const LIKERT_OPTIONS_DEFAULT = [
   { value: 0, label: "Don’t need that" },
@@ -48,6 +57,12 @@ function loadQuestions() {
   .then(([data, scores]) => {
     expertScores = scores;
     organizeSections(data.questions);
+    // Build id -> index map (IDs kommen aus config.json; fallback in organizeSections gesetzt)
+  qIndexById = {};
+  data.questions.forEach((q, idx) => {
+    const id = q.id ?? (idx + 1);
+    qIndexById[id] = idx;
+  });
     showSection(currentSection);
   })
   .catch(err => {
@@ -84,6 +99,34 @@ function updateProgressBar(index) {
   if (bar) bar.style.width = progress + '%';
 }
 
+function clampExpert(v) {
+  if (v < 0) return 0;
+  if (v > LIKERT_EXPERT_MAX) return LIKERT_EXPERT_MAX;
+  return v;
+}
+
+/**
+ * Only adjust DataCite for Statement 3 based on plannedPidVolume.
+ * - If <100k  → +1 (capped)
+ * - If >100k  → -1 (floored)
+ * - If unknown → no change
+ */
+function getEffectiveExpertScore(providerName, qIndex) {
+  let base = expertScores?.[providerName]?.[qIndex];
+  if (base == null) return base; // undefined stays undefined
+
+  // Target question: ID = 3 -> find its index
+  const idxStmt3 = qIndexById?.[3];
+  if (providerName === DATACITE_KEY && qIndex === idxStmt3) {
+    if (plannedPidVolume === "lt100k") {
+      base = clampExpert(base + 1);
+    } else if (plannedPidVolume === "gt100k") {
+      base = clampExpert(base - 1);
+    } // unknown -> no change
+  }
+  return base;
+}
+
 
 function createMiniScoreBars(questionIndex, userValue) {
   userValue = Number(userValue);
@@ -91,7 +134,7 @@ function createMiniScoreBars(questionIndex, userValue) {
   container.className = "statement-scores";
 
   for (let pid in expertScores) {
-    const expertValue = expertScores[pid][questionIndex];
+    const expertValue = getEffectiveExpertScore(pid, questionIndex);
     console.log("PID:", pid, "QIndex:", questionIndex, 
             "ExpertValue:", expertValue, "UserValue:", userValue);
     if (expertValue === undefined) continue;
@@ -289,10 +332,12 @@ function calculateNormalizedSectionScores(answers, expertScores, questionsBySect
       if (!userAnswer || userAnswer.value === undefined) return;
 
       for (let pid in expertScores) {
-        const expertValue = expertScores[pid][q.index];
+        const expertValue = getEffectiveExpertScore(pid, q.index);
         if (expertValue === undefined) continue;
 
-        const diff = expertValue - userAnswer.value;
+        const effective = getEffectiveExpertScore(pid, index);
+        if (effective == null) return; // safety
+        const diff = effective - userAnswer.value;
         let weight = userAnswer.important ? 2 : 1; // doppelte Gewichtung
         const score = weight * (diff * diff);
 
@@ -447,4 +492,14 @@ resultDiv.appendChild(backButton);
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log("📦 DOM fully loaded");
+
+  // Hook for the pre-question (single choice)
+  document.querySelectorAll('input[name="pid-volume"]').forEach(r => {
+    r.addEventListener('change', () => {
+      plannedPidVolume = r.value; // "lt100k" | "gt100k" | "unknown"
+      // Optional: if results are visible, recompute
+      // If you have a central recompute function, call it here.
+      // Otherwise, results will be influenced on next render (mini-bars & final scores).
+    });
+  });
 });
