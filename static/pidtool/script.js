@@ -286,21 +286,26 @@ function calculateSimplePercentScores(answers, expertScores) {
   }
 
   providers.forEach(pid => {
-    let sum = 0;
-    let maxSum = 0;
+  let sum = 0;
+  let maxSum = 0;
 
-    answeredIndexes.forEach(qIndex => {
-      const userVal = Number(answers[qIndex].value) || 0; // 0..3
-      const eff = getEffectiveExpertScore(pid, qIndex);
-if (eff == null) return;
+  answeredIndexes.forEach(qIndex => {
+    const userVal = Number(answers[qIndex].value);
+    if (!(userVal > 0)) return; // 0 behandeln wie "nicht gewertet"
 
-sum += eff * userVal;
-maxSum += LIKERT_EXPERT_MAX * LIKERT_USER_MAX;
-    });
+    const eff = getEffectiveExpertScore(pid, qIndex);
+    if (eff == null) return;
 
-    resultsRaw[pid] = sum;
-    resultsMax[pid] = Math.max(1, maxSum);
+    // Zähler: expert * user
+    sum += eff * userVal;
+
+    // Nenner: nur für >0-Antworten
+    maxSum += LIKERT_EXPERT_MAX * LIKERT_USER_MAX; // 5 * 3
   });
+
+  resultsRaw[pid] = sum;
+  resultsMax[pid] = Math.max(1, maxSum);
+});
 
   const percent = {};
   providers.forEach(pid => {
