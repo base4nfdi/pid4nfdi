@@ -35,12 +35,6 @@ function startTool() {
   loadQuestions();
 }
 
-function toggleImportance(questionIndex) {
-  if (!answers[questionIndex]) answers[questionIndex] = { value: null, important: false };
-  const checkbox = document.getElementById(`important-${questionIndex}`);
-  answers[questionIndex].important = checkbox.checked;
-}
-
 function loadQuestions() {
   Promise.all([
     fetch('/pidtool/config.json?v=' + Date.now()).then(res => {
@@ -211,17 +205,6 @@ function showSection(index) {
       <div class="mini-bar-wrapper" id="mini-bars-${q.index}"></div>
     `;
 
-    const importanceDiv = document.createElement('div');
-    importanceDiv.classList.add('importance-option');
-    importanceDiv.innerHTML = `
-      <label>
-        <input type="checkbox" id="important-${q.index}" onchange="toggleImportance(${q.index})"
-        ${answers[q.index] && answers[q.index].important ? 'checked' : ''}>
-        This statement is especially important for me
-      </label>
-    `;
-    div.appendChild(importanceDiv);
-
     section.appendChild(div);
   });
 
@@ -281,12 +264,6 @@ function saveAnswers() {
     answers[index].value = parseInt(input.value);
   });
 
-  document.querySelectorAll('input[type="checkbox"][id^="important-"]').forEach(checkbox => {
-    const index = parseInt(checkbox.id.replace('important-', ''));
-    if (!answers[index]) answers[index] = {};
-    answers[index].important = checkbox.checked;
-  });
-
   console.clear();
   console.table(answers);
 }
@@ -314,12 +291,11 @@ function calculateSimplePercentScores(answers, expertScores) {
 
     answeredIndexes.forEach(qIndex => {
       const userVal = Number(answers[qIndex].value) || 0; // 0..3
-      const weight = (answers[qIndex].important ? 2 : 1);
       const eff = getEffectiveExpertScore(pid, qIndex);
-      if (eff == null) return;
+if (eff == null) return;
 
-      sum += eff * userVal * weight;
-      maxSum += LIKERT_EXPERT_MAX * LIKERT_USER_MAX * weight; // 5 * 3 * weight
+sum += eff * userVal;
+maxSum += LIKERT_EXPERT_MAX * LIKERT_USER_MAX;
     });
 
     resultsRaw[pid] = sum;
