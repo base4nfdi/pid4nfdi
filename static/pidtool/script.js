@@ -11,6 +11,9 @@ let answers = {}; // Speicher für ausgewählte Antworten
 const LIKERT_USER_MAX = 3;    // User 0..3 (Don’t need … Very important)
 const LIKERT_EXPERT_MAX = 5;  // Expert 1..5
 
+// Anzeige-Modus: 'percent' | 'rawProduct' | 'expertOnly'
+const SCORE_DISPLAY = 'rawProduct';
+
 // Normalisierung NUR für Mini-Bars (0..1)
 function user01(v)   { v = Number(v); return (v - 0) / (LIKERT_USER_MAX - 0); }  // 0..3 -> 0..1
 function expert01(v) { v = Number(v); return (v - 1) / (LIKERT_EXPERT_MAX - 1); } // 1..5 -> 0..1
@@ -128,9 +131,10 @@ function createMiniScoreBars(questionIndex, userValue) {
     const expertValue = getEffectiveExpertScore(pid, questionIndex);
     if (expertValue === undefined) continue;
 
-    const u = user01(userValue);       // 0..1
-    const e = expert01(expertValue);   // 0..1
-    const distance = Math.abs(e - u);  // 0..1
+    const u = Math.max(0, Math.min(1, user01(userValue)));     // 0..1
+    const e01 = expert01(expertValue);                          // kann <0 sein, wenn expert=0
+    const e = Math.max(0, Math.min(1, e01));                    // clamp 0..1
+    const distance = Math.abs(e - u);
     const score = (1 - distance) * 100;
 
     const barWrapper = document.createElement("div");
@@ -268,50 +272,77 @@ function saveAnswers() {
   console.table(answers);
 }
 
-// Einfaches, section-unabhängiges Scoring:
-// Σ (effectiveExpert(1..5) * user(0..3) * weight) → pro PID relativ zu eigenem Max (→ 0..100)
-function calculateSimplePercentScores(answers, expertScores) {
-  const resultsRaw = {};
-  const resultsMax = {};
-  const providers = Object.keys(expertScores);
+/* =========================
+   SCORING-MODI
+   ========================= */
 
-  const answeredIndexes = Object.keys(answers)
+// nur Antworten mit userVal > 0 werten
+function getScoredIndexes(answers) {
+  return Object.keys(answers)
     .map(k => parseInt(k, 10))
-    .filter(i => Number.isInteger(i) && answers[i]?.value != null);
+    .filter(i => Number.isInteger(i) && Number(answers[i]?.value) > 0);
+}
 
-  if (answeredIndexes.length === 0) {
-    const zeroed = {};
-    providers.forEach(pid => { zeroed[pid] = 0; });
-    return zeroed;
+// A) Prozent-Modus (wie vorher, aber user=0 ignoriert)
+function calculatePercentScores(answers, expertScores) {
+  const providers = Object.keys(expertScores);
+  const scored = getScoredIndexes(answers);
+  if (scored.length === 0) {
+    const zeroed = {}; providers.forEach(pid => zeroed[pid] = 0); return zeroed;
   }
 
+  const resultsRaw = {}, resultsMax = {};
   providers.forEach(pid => {
-  let sum = 0;
-  let maxSum = 0;
-
-  answeredIndexes.forEach(qIndex => {
-    const userVal = Number(answers[qIndex].value);
-    if (!(userVal > 0)) return; // 0 behandeln wie "nicht gewertet"
-
-    const eff = getEffectiveExpertScore(pid, qIndex);
-    if (eff == null) return;
-
-    // Zähler: expert * user
-    sum += eff * userVal;
-
-    // Nenner: nur für >0-Antworten
-    maxSum += LIKERT_EXPERT_MAX * LIKERT_USER_MAX; // 5 * 3
+    let sum = 0, maxSum = 0;
+    scored.forEach(qIndex => {
+      const userVal = Number(answers[qIndex].value);
+      const eff = getEffectiveExpertScore(pid, qIndex);
+      if (eff == null) return;
+      sum += eff * userVal;
+      maxSum += LIKERT_EXPERT_MAX * LIKERT_USER_MAX; // 5 * 3
+    });
+    resultsRaw[pid] = sum;
+    resultsMax[pid] = Math.max(1, maxSum);
   });
 
-  resultsRaw[pid] = sum;
-  resultsMax[pid] = Math.max(1, maxSum);
-});
+  const out = {};
+  providers.forEach(pid => out[pid] = Math.round((resultsRaw[pid] / resultsMax[pid]) * 100));
+  return out;
+}
 
-  const percent = {};
+// B) Rohprodukt: Σ(expert * user)
+function calculateRawProductScores(answers, expertScores) {
+  const providers = Object.keys(expertScores);
+  const scored = getScoredIndexes(answers);
+  const out = {};
   providers.forEach(pid => {
-    percent[pid] = Math.round((resultsRaw[pid] / resultsMax[pid]) * 100);
+    let sum = 0;
+    scored.forEach(qIndex => {
+      const userVal = Number(answers[qIndex].value);
+      const eff = getEffectiveExpertScore(pid, qIndex);
+      if (eff == null) return;
+      sum += eff * userVal;
+    });
+    out[pid] = sum;
   });
-  return percent;
+  return out;
+}
+
+// C) Nur Expertenpunkte: Σ(expert) (nur wenn user>0)
+function calculateExpertOnlyScores(answers, expertScores) {
+  const providers = Object.keys(expertScores);
+  const scored = getScoredIndexes(answers);
+  const out = {};
+  providers.forEach(pid => {
+    let sum = 0;
+    scored.forEach(qIndex => {
+      const eff = getEffectiveExpertScore(pid, qIndex);
+      if (eff == null) return;
+      sum += eff;
+    });
+    out[pid] = sum;
+  });
+  return out;
 }
 
 function toggleHelp(btn) {
@@ -321,8 +352,16 @@ function toggleHelp(btn) {
 
 function showResults() {
   saveAnswers();
-  // expertScores ist bereits global geladen – kein Re-Fetch nötig.
-  const scores = calculateSimplePercentScores(answers, expertScores);
+
+  let scores;
+  if (SCORE_DISPLAY === 'rawProduct') {
+    scores = calculateRawProductScores(answers, expertScores);
+  } else if (SCORE_DISPLAY === 'expertOnly') {
+    scores = calculateExpertOnlyScores(answers, expertScores);
+  } else {
+    scores = calculatePercentScores(answers, expertScores);
+  }
+
   displayResults(scores);
 
   document.getElementById('question-container').style.display = 'none';
@@ -337,6 +376,8 @@ function displayResults(scores) {
     "ARK": "ARKs are often used in museums and archives for persistent referencing.",
   };
 
+  const unit = (SCORE_DISPLAY === 'percent') ? '%' : ' pts';
+
   const resultDiv = document.getElementById("results");
   resultDiv.innerHTML = "";
 
@@ -348,18 +389,36 @@ function displayResults(scores) {
   }
 
   const sortedPIDs = Object.keys(scores).sort((a, b) => scores[b] - scores[a]);
+
+  // Für nicht-Prozent-Ansichten die Balkenbreite relativ zum Maximum skalieren
+  let maxVal = 0;
+  if (SCORE_DISPLAY !== 'percent') {
+    sortedPIDs.forEach(pid => { if (scores[pid] > maxVal) maxVal = scores[pid]; });
+    if (maxVal <= 0) maxVal = 1; // Schutz gegen Division durch 0
+  }
+
   for (let pid of sortedPIDs) {
     const score = scores[pid];
-    const color = score >= 70 ? "green" : score >= 40 ? "orange" : "red";
+
+    // Farbe:
+    const color = (SCORE_DISPLAY === 'percent')
+      ? (score >= 70 ? "green" : score >= 40 ? "orange" : "red")
+      : "green"; // bei Rohpunkten/ExpertOnly einfach neutral grün
+
+    // Balkenbreite:
+    const barWidth = (SCORE_DISPLAY === 'percent')
+      ? Math.max(0, Math.min(100, score))
+      : Math.round((score / maxVal) * 100);
+
     const card = document.createElement("div");
     card.className = "result-card";
     card.style.borderLeft = `10px solid ${color}`;
     card.innerHTML = `
       <h3>${pid}</h3>
       <div class="score-bar-container">
-        <div class="score-bar" style="width: ${score}%; background-color: ${color};"></div>
+        <div class="score-bar" style="width: ${barWidth}%; background-color: ${color};"></div>
       </div>
-      <p>Score: ${score}</p>
+      <p>Score: ${score}${unit}</p>
       <p class="pid-description">${pidDescriptions[pid] || ''}</p>
     `;
     resultDiv.appendChild(card);
@@ -371,7 +430,7 @@ function displayResults(scores) {
     let text = "PID Selection Tool – Your Results\n\n";
     text += "Selected entities: " + selectedEntities.join(', ') + "\n\n";
     for (let pid of sortedPIDs) {
-      text += `${pid}\nScore: ${scores[pid]}\nDescription: ${pidDescriptions[pid] || ''}\n\n`;
+      text += `${pid}\nScore: ${scores[pid]}${unit}\nDescription: ${pidDescriptions[pid] || ''}\n\n`;
     }
     text += "\nNote: Complementary PID systems such as ORCID and ROR are recommended for persons and institutions.\n";
     text += "More info: https://pid4nfdi-training.readthedocs.io/en/latest/";
