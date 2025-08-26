@@ -69,7 +69,7 @@ function loadQuestions() {
     container.innerHTML = `
       <div class="error-message">
         ⚠️ Error: Unable to load required files.<br>
-        Please check if <code>config.json</code> and <code>pid-expert-scores.json</code> 
+        Please check if <code>config.json</code> and <code>pid-expert-scores.json</code>
         are available in <code>/pidtool/</code>.
       </div>
     `;
@@ -138,9 +138,9 @@ function createMiniScoreBars(questionIndex /*, userValue (nicht mehr benötigt) 
     if (expertValue === undefined || expertValue === null) continue;
 
     // 1..5 → 0..1; Werte außerhalb (z.B. 0) auf 0 clampen, >5 auf 1
-    const e01 = (Number(expertValue) - 1) / (LIKERT_EXPERT_MAX - 1); // 1..5 → 0..1
-    const e = Math.max(0, Math.min(1, e01));
-    const score = e * 100; // 0..100
+    //const e01 = (Number(expertValue) - 1) / (LIKERT_EXPERT_MAX - 1); // 1..5 → 0..1
+    //const e = Math.max(0, Math.min(1, e01));
+    //const score = e * 100; // 0..100
 
     const barWrapper = document.createElement("div");
     barWrapper.className = "mini-score";
@@ -155,7 +155,8 @@ function createMiniScoreBars(questionIndex /*, userValue (nicht mehr benötigt) 
     // Balkenbreite rein aus Expert-Score
     const minWidth = 12;  // etwas kleineres Minimum reicht hier
     const maxWidth = 200;
-    const scaledWidth = minWidth + (score / 100) * (maxWidth - minWidth);
+    //const scaledWidth = minWidth + (score / 100) * (maxWidth - minWidth);
+    const scaledWidth = minWidth + (expertValue) * (maxWidth-minWidth) / 5
     bar.style.width = `${scaledWidth}px`;
 
     // Farbe leicht nach Score abstufen (optional)
@@ -461,11 +462,11 @@ function displayResults(scores) {
   infoText.className = "result-info";
   infoText.innerHTML = `
     <hr>
-    <p><strong>Note:</strong> This tool focuses on object-related Persistent Identifiers. 
-    We recommend also integrating complementary PID systems such as 
-    <a href="https://orcid.org" target="_blank">ORCID</a> for persons and 
+    <p><strong>Note:</strong> This tool focuses on object-related Persistent Identifiers.
+    We recommend also integrating complementary PID systems such as
+    <a href="https://orcid.org" target="_blank">ORCID</a> for persons and
     <a href="https://ror.org" target="_blank">ROR</a> for institutions.</p>
-    <p>For more guidance, see our 
+    <p>For more guidance, see our
     <a href="https://pid4nfdi-training.readthedocs.io/en/latest/" target="_blank">PID4NFDI Cookbook</a>.</p>
   `;
   resultDiv.appendChild(infoText);
@@ -473,7 +474,7 @@ function displayResults(scores) {
   const contactNote = document.createElement("div");
   contactNote.className = "result-contact-note";
   contactNote.innerHTML = `
-    <p>If you have further questions about the results or how to use the tool, 
+    <p>If you have further questions about the results or how to use the tool,
     please <a href="https://pid.services.base4nfdi.de/about/contact/" target="_blank">contact us</a>.</p>
   `;
   resultDiv.appendChild(contactNote);
