@@ -160,8 +160,8 @@ function createMiniScoreBars(questionIndex /*, userValue (nicht mehr benötigt) 
     bar.style.width = `${scaledWidth}px`;
 
     // Farbe leicht nach Score abstufen (optional)
-    bar.style.backgroundColor = score >= 80 ? 'green'
-                              : score >= 50 ? 'orange'
+    bar.style.backgroundColor = expertValue >= 4 ? 'green'
+                              : expertValue >= 2 ? 'orange'
                               : 'red';
 
     // Tooltip mit Rohwert
