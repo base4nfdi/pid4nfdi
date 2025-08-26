@@ -156,7 +156,7 @@ function createMiniScoreBars(questionIndex /*, userValue (nicht mehr benötigt) 
     const minWidth = 12;  // etwas kleineres Minimum reicht hier
     const maxWidth = 200;
     //const scaledWidth = minWidth + (score / 100) * (maxWidth - minWidth);
-    const scaledWidth = minWidth + (expertValue) * (maxWidth-minWidth) / 5
+    const scaledWidth = minWidth + (expertValue) * (maxWidth-minWidth) / 5;
     bar.style.width = `${scaledWidth}px`;
 
     // Farbe leicht nach Score abstufen (optional)
