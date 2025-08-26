@@ -286,7 +286,7 @@ function saveAnswers() {
     answers[index].value = parseInt(input.value);
   });
 
-  console.clear();
+  // console.clear();
   console.table(answers);
 }
 
