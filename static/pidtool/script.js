@@ -153,7 +153,7 @@ function createMiniScoreBars(questionIndex /*, userValue (nicht mehr benötigt) 
     bar.className = "mini-bar";
 
     // Balkenbreite rein aus Expert-Score
-    const minWidth = 12;  // etwas kleineres Minimum reicht hier
+    const minWidth = 4;  // etwas kleineres Minimum reicht hier
     const maxWidth = 200;
     //const scaledWidth = minWidth + (score / 100) * (maxWidth - minWidth);
     const scaledWidth = minWidth + (expertValue) * (maxWidth-minWidth) / 5;
