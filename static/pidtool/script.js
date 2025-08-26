@@ -122,20 +122,25 @@ function getEffectiveExpertScore(providerName, qIndex) {
   return base;
 }
 
-function createMiniScoreBars(questionIndex, userValue) {
-  userValue = Number(userValue);
+function createMiniScoreBars(questionIndex /*, userValue (nicht mehr benötigt) */) {
   const container = document.createElement("div");
   container.className = "statement-scores";
 
-  for (let pid in expertScores) {
-    const expertValue = getEffectiveExpertScore(pid, questionIndex);
-    if (expertValue === undefined) continue;
+  // Optional: kleine Überschrift/Legende
+  // const legend = document.createElement("div");
+  // legend.className = "mini-score-legend";
+  // legend.textContent = "Expert scores for this statement";
+  // container.appendChild(legend);
 
-    const u = Math.max(0, Math.min(1, user01(userValue)));     // 0..1
-    const e01 = expert01(expertValue);                          // kann <0 sein, wenn expert=0
-    const e = Math.max(0, Math.min(1, e01));                    // clamp 0..1
-    const distance = Math.abs(e - u);
-    const score = (1 - distance) * 100;
+  for (let pid in expertScores) {
+    // Effektiven Expert-Score (inkl. DataCite-Regel) holen
+    const expertValue = getEffectiveExpertScore(pid, questionIndex);
+    if (expertValue === undefined || expertValue === null) continue;
+
+    // 1..5 → 0..1; Werte außerhalb (z.B. 0) auf 0 clampen, >5 auf 1
+    const e01 = (Number(expertValue) - 1) / (LIKERT_EXPERT_MAX - 1); // 1..5 → 0..1
+    const e = Math.max(0, Math.min(1, e01));
+    const score = e * 100; // 0..100
 
     const barWrapper = document.createElement("div");
     barWrapper.className = "mini-score";
@@ -147,11 +152,19 @@ function createMiniScoreBars(questionIndex, userValue) {
     const bar = document.createElement("div");
     bar.className = "mini-bar";
 
-    const minWidth = 20;
+    // Balkenbreite rein aus Expert-Score
+    const minWidth = 12;  // etwas kleineres Minimum reicht hier
     const maxWidth = 200;
     const scaledWidth = minWidth + (score / 100) * (maxWidth - minWidth);
     bar.style.width = `${scaledWidth}px`;
-    bar.style.backgroundColor = score >= 60 ? 'green' : score >= 40 ? 'orange' : 'red';
+
+    // Farbe leicht nach Score abstufen (optional)
+    bar.style.backgroundColor = score >= 80 ? 'green'
+                              : score >= 50 ? 'orange'
+                              : 'red';
+
+    // Tooltip mit Rohwert
+    bar.title = `Expert: ${expertValue} / ${LIKERT_EXPERT_MAX}`;
 
     barWrapper.appendChild(label);
     barWrapper.appendChild(bar);
