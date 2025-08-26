@@ -202,7 +202,10 @@ function showSection(index) {
   questionsBySection[sectionName].forEach(q => {
     const div = document.createElement('div');
     div.className = 'question';
-    const selectedValue = answers[q.index] ? answers[q.index].value : null;
+
+    // FIXME: might need to change back
+    // const selectedValue = answers[q.index] ? answers[q.index].value : null;
+    const selectedValue = answers[q.index] ? answers[q.index].value : 1;
 
     div.innerHTML = `
       <p><strong>${q.text}</strong><button class="more-info-btn" onclick="toggleHelp(this)">More info</button></p>
