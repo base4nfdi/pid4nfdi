@@ -33,7 +33,7 @@ _build:
 
 <!-- PID volume pre-question (no scoring; just a switch used later in JS) -->
 <div id="pid-volume-block" class="question" style="margin: 1rem 0 1.25rem 0;">
-  <label><strong>How many PIDs do you plan to register?</strong></label>
+  <label><strong>How many PIDs do you plan to register per year?</strong></label>
   <div class="likert" style="margin-top: .5rem;">
     <label>
       <input type="radio" name="pid-volume" value="lt100k">

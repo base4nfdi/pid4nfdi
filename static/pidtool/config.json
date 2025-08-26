@@ -9,8 +9,8 @@
     {
       "id": 2,
       "section": "Persistence and Costs",
-      "text": "It is important for us that the PID provider allows different persistence policies for different use-cases.",
-      "help": "While many PID systems are designed for long-term reference and persistence, some use cases - especially during early research phases or for internal workflows - may require the option to delete or deactivate PIDs. ARKs support flexible lifecycles, including deletion and the definition of a persistence policy (e.g., how long a identifier will be available) for the PIDs of a use-case. In contrast, DataCite DOIs, ePIC Handles, and URN:NBN:DE are designed to be permanent and generally do not support deletion. Instead, it is possible and considered good practice to set a tombstone for an object that is not available anymore, such that at least the metadata is still available. Whether different persistence policies and deletion are allowed depends on the provider’s policies and the intended role of the PID." 
+      "text": "It is important for us that the PID system allows flexible PID lifecycles, including deletion or deactivation where appropriate.",
+      "help": "While many PID systems are designed for long-term reference and persistence, some use cases - especially during early research phases or for internal workflows - may require the option to delete or deactivate PIDs. ARKs support flexible lifecycles, including deletion and the definition of a persistence policy (e.g., how long a identifier will be available) for the PIDs of a use-case. In contrast, DataCite DOIs, ePIC Handles, and URN:NBN:DE are designed to be permanent and generally do not support deletion. Instead, it is possible and considered good practice to set a tombstone for an object that is not available anymore, such that at least the metadata is still available. Whether different persistence policies and deletion are allowed depends on the provider’s policies and the intended role of the PID."
     },
     {
       "id": 3,
@@ -45,7 +45,7 @@
     {
       "id": 8,
       "section": "Metadata & Interoperability",
-      "text": "It is important for us to work with a PID provider that offers full control on the PID metadata, That is, we can define all metadata fields ourselves, including whether the fields are openly accessible/private, mandatory/optional).",
+      "text": "It is important for us to work with a PID provider that offers full control on the PID metadata. That is, we can define all metadata fields ourselves, including whether the fields are openly accessible/private, mandatory/optional.",
       "help": "Some PID providers (e.g., DataCite DOIs) define a metadata schema that needs to be adopted when working with the PID Provider. A standardized metadata schema fixes a limited number of pre-defined fields that are to be filled in by the user when registering a PID. Standardized metadata schemas enable interoperability between systems and metadata harvesting. Other PID Providers (e.g., ePIC, ARK) do not fix the metadata schema in advance. The service administrator can define the metadata schema that defines the fields for the end user according to his needs. Flexibility supports adjusting to use-case specific needs of different domains or workflows. Not only the fields themselves can be freely defined, but also whether metadata fields should be mandatory or optional and whether they should be publicly available or private to restricted sets of users. URN:NBN:DEs  themselves are pure identifier schemes that do not define or mandate any metadata schema. Metadata associated with URN-identified resources is managed externally in library catalogs, archives, or domain-specific repositories, using independent metadata standards."
     },
     {
