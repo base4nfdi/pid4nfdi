@@ -277,13 +277,25 @@ function skipAnswer(questionIndex) {
 }
 
 function saveAnswers() {
-  document.querySelectorAll('input[type="radio"]:checked').forEach(input => {
+  // document.querySelectorAll('input[type="radio"]:checked').forEach(input => {
+  //   const index = parseInt(input.name.substring(1));
+  //   if (!answers[index]) answers[index] = {};
+  //   answers[index].value = parseInt(input.value);
+  // });
+  document.querySelectorAll('input[type="radio"]').forEach(input => {
     console.log("--- Save answer ---");
     console.log(input);
     console.log("--");
     const index = parseInt(input.name.substring(1));
     if (!answers[index]) answers[index] = {};
-    answers[index].value = parseInt(input.value);
+
+    // Get the point of the question. If the question was not answered, give it 1 point by default
+    if (input.checked) {
+      answers[index].value = parseInt(input.value);
+    }
+    else {
+      answers[index].value = 1;
+    }
   });
 
   // console.clear();
