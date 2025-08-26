@@ -283,18 +283,18 @@ function saveAnswers() {
   //   answers[index].value = parseInt(input.value);
   // });
   document.querySelectorAll('input[type="radio"]').forEach(input => {
-    console.log("--- Save answer ---");
-    console.log(input);
-    console.log("--");
     const index = parseInt(input.name.substring(1));
-    if (!answers[index]) answers[index] = {};
 
-    // Get the point of the question. If the question was not answered, give it 1 point by default
+    // Give every question 1 point by default
+    if (!answers[index]) {
+      answers[index] = {
+        value: 1,
+      };
+    }
+
+    // If the question was answered, get its point
     if (input.checked) {
       answers[index].value = parseInt(input.value);
-    }
-    else {
-      answers[index].value = 1;
     }
   });
 
