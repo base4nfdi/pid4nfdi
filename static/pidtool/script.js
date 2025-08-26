@@ -278,6 +278,9 @@ function skipAnswer(questionIndex) {
 
 function saveAnswers() {
   document.querySelectorAll('input[type="radio"]:checked').forEach(input => {
+    console.log("--- Save answer ---");
+    console.log(input);
+    console.log("--");
     const index = parseInt(input.name.substring(1));
     if (!answers[index]) answers[index] = {};
     answers[index].value = parseInt(input.value);
