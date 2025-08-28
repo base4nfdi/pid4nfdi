@@ -3,7 +3,7 @@
     {
       "id": 1,
       "section": "Persistence and Costs",
-      "text": "It is important for us that the PID provider demonstrates a strong, long-term commitment to persistence.",
+      "text": "1. It is important for us that the PID provider demonstrates a strong, long-term commitment to persistence.",
       "help": " 1. Persistence is the core promise of a PID - but it’s not guaranteed by the technology alone. It depends on long-term organizational and financial commitment. Systems like DataCite DOIs, ePIC Handles, and URN:NBN:DE are backed by stable institutions/organizations that explicitly commit to maintaining resolvability over time. ARKs can also support persistence, but this varies with the implementation, especially as ARKs need to be hosted by the assigning institution (at least this is currently the case in Germany)."
     },
     {
