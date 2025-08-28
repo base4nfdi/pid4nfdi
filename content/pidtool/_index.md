@@ -27,7 +27,7 @@ The tool works by asking you to evaluate a series of 14 short statements, such a
 </p>
 
 <p>
-After completing the statements, the tool compares your selections with evaluations prepared for four different PID services: <strong>DataCite DOI</strong>, <strong>ePIC Handles (GWDG)</strong>, <strong>URN:NBN</strong>, and <strong>ARK</strong>. These evaluations were developed by PID4NFDI in cooperation with experts from the field to reflect how well each PID provider aligns with the various statements.
+After completing the statements, the tool compares your selections with evaluations prepared for four different PID services: <strong>DataCite DOI</strong>, <strong>ePIC Handles (GWDG)</strong>, <strong>URN:NBN</strong>, and <strong>ARK</strong>. These evaluations were developed by PID4NFDI in cooperation with experts from the field to reflect how well each PID service aligns with the various statements.
 </p>
 
 <p>
