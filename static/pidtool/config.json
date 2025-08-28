@@ -22,7 +22,7 @@
       "id": 4,
       "section": "Purpose",
       "text": "4. It is important for us that our identifiers are globally recognized in scholarly publishing with stable citation practices.",
-      "help": "If it is important for your institution that the identifiers used are globally recognized in scholarly publishing with stable citation practices, DataCite DOIs are the most suitable choice. They have strong, well-established support across publishers, citation styles, and research indexing services. Other identifiers such as ePIC Handles, ARKs, and URNs offer persistence and but are not as universally accepted and integrated for formal scholarly citation."
+      "help": "If it is important for your institution that the identifiers used are globally recognized in scholarly publishing with stable citation practices, DataCite DOIs are the most suitable choice. They have strong, well-established support across publishers, citation styles, and research indexing services. Other identifiers such as ePIC Handles, ARKs, and URNs offer persistence but are not as universally accepted and integrated for formal scholarly citation."
     },
     {
       "id": 5,
