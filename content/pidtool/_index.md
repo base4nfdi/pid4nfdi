@@ -19,16 +19,26 @@ _build:
 <div id="section-intro">
   <div id="pidtool-intro">
     <p>
-      This tool helps you select a suitable Persistent Identifier (PID) system based on your use case.
-      Answering a few short questions will generate a recommendation based on your needs for governance,
-      metadata, technical features, and community practices.
-    </p>
-    <p>  The process takes just a few minutes. Your selections remain visible as you move between sections.
-      At the end, you'll receive a color-coded recommendation for different PID types.
-    </p>
-    <p>
-      This is a beta version for early feedback at the UC4B 2025 in Aachen.
-    </p>
+The PID Selection Tool is designed for individuals or groups such as infrastructure managers who want to set up or optimize a service, repository, or research infrastructure that assigns persistent identifiers (PIDs). It helps you explore which PID provider may best fit your specific needs.
+</p>
+
+<p>
+The tool works by asking you to evaluate a series of 14 short statements, such as <em>“It is important for us that the PID provider demonstrates a strong, long-term commitment to persistence.”</em> For each statement, you can indicate whether you <strong>don’t need that</strong>, find that <strong>somewhat important</strong>, <strong>important</strong>, or <strong>very important</strong>. If a statement does not apply or you don’t know, you may skip it. Your responses remain visible as you progress through the sections. You can also go back. The process takes just a few minutes. At the end, you'll receive a ranking for different PID types according to your preferences.
+</p>
+
+<p>
+After completing the statements, the tool compares your selections with evaluations prepared for four different PID systems: <strong>DataCite DOI</strong>, <strong>ePIC Handles (GWDG)</strong>, <strong>URN:NBN</strong>, and <strong>ARK</strong>. These evaluations were developed by PID4NFDI in cooperation with experts from the field to reflect how well each PID provider aligns with the various statements.
+</p>
+
+<p>
+This is a beta version for early feedback at the UC4B 2025 in Aachen.
+</p>
+
+<p>
+Disclaimer: Some of the statements are evaluated based on local circumstances.
+</p>
+
+
   </div>
 
 <!-- PID volume pre-question (no scoring; just a switch used later in JS) -->
