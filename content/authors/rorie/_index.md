@@ -46,7 +46,7 @@ highlight_name: true
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Project Team Members
+  - Alumi
 ---
 
-Rorie works at DataCite and is a project team member of PID4NFDI.
+Rorie was a project team member of PID4NFDI from January 2024 to September 2025.
