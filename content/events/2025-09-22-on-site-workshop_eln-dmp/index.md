@@ -74,10 +74,12 @@ This workshop is tailor-made for:
 * 🗓️ Date: **September 22-23, 2025** (lunch to lunch)!  
 * 📍 Location: Helmholtz Association Headquarter, Anna-Louisa-Karsch-Straße 2, 10178 Berlin.  
 * 🤝 Host: PID4NFDI: A basic service for the NFDI, funded as part of Base4NFDI.  
-* ❗ Limited Spots! To ensure an interactive and productive environment, the workshop is **limited to 20 people**.  
-* ❗ **Registration is OPEN NOW!** Don't miss out on this unique opportunity. Registration will **close on September 10, 2025**, or once all places have been taken, whichever comes first.  
+* ❗ Registration for on-site participation is now closed, but you are welcome to join the lighting talk sessions on Days 1 and 2 of the workshop, which will be **streamed online via Zoom**. Register in advance to receive the access information. 
 
-### Visit https://events.hifis.net/event/2908/ to register and be part of this vital conversation.  
+The conference's language will be English. Snacks and drinks will be available during the event.
+The Timetable is subject to change before the event.
+
+### Visit https://events.hifis.net/event/2908/registrations/ to register and be part of this vital conversation.  
 
 
 ### We can't wait to collaborate with you in Berlin! See you there! 👋
