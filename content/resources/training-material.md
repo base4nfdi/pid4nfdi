@@ -53,13 +53,33 @@ sections:
           </div>
 
           <div class="pid-card">
-            <h3>🎥 <a href="https://fdm-nds-haw.hawk.de/de" target="_blank">Video: Was sind PIDs?</a></h3>
-            <p>Introductory video from the Lower Saxony FDM network (DE)</p>
+            <h3>🎥 <a href="https://doi.org/10.5281/zenodo.14888190" target="_blank">Video: Was sind PIDs?</a></h3>
+            <p>Introductory video (DE) — alt.: former landing page via FDM NDS/HAWK</p>
           </div>
 
           <div class="pid-card">
             <h3>📚 <a href="https://www.zotero.org/groups/5597931/pid4nfdi/library" target="_blank">PID4NFDI Zotero Group Library</a></h3>
             <p>Living collection of PID-related literature maintained by the PID4NFDI consortium (EN/DE)</p>
+          </div>
+
+          <div class="pid-card">
+            <h3>🏛️ <a href="https://tanc-ahrc.github.io/PIDResources/" target="_blank">Developing Identifiers for Heritage Collections</a></h3>
+            <p>Guide from the AHRC/TANC project on implementing identifiers in heritage contexts (EN)</p>
+          </div>
+
+          <div class="pid-card">
+            <h3>🎥 <a href="https://doi.org/10.5446/48030" target="_blank">The Power of PIDs: enabling connections across the research lifecycle</a></h3>
+            <p>Recorded talk on end-to-end PID connections (EN) — alt.: <a href="https://zenodo.org/record/5028301" target="_blank">slides @ Zenodo</a></p>
+          </div>
+
+          <div class="pid-card">
+            <h3>🏫 <a href="https://campus.dariah.eu/resource/posts/introduction-to-persistent-identifiers" target="_blank">Introduction to Persistent Identifiers (DARIAH-Campus)</a></h3>
+            <p>Beginner-friendly introduction with examples (EN) — alt. stable id: <a href="https://campus.dariah.eu/id/4uEjJqTVxczKYmJyc3w9n" target="_blank">permalink</a></p>
+          </div>
+
+          <div class="pid-card">
+            <h3>📄 <a href="https://www.bodleian.ox.ac.uk/sites/default/files/bodreader/documents/media/iskills-oa-introduction-persistent-identifiers.pdf" target="_blank">Introduction to Persistent Identifiers (Bodleian iSkills)</a></h3>
+            <p>Slide handout introducing PIDs in scholarly communication (EN)</p>
           </div>
 
         </div>
@@ -92,7 +112,7 @@ sections:
 
           <div class="pid-card">
             <h3>🍳 <a href="https://faircookbook.elixir-europe.org/" target="_blank">FAIR Cookbook – Life Sciences</a></h3>
-            <p>Practical guide for implementing FAIR principles in the life sciences, with PID references (EN)</p>
+            <p>Practical recipes for implementing FAIR principles in the life sciences, with PID references (EN)</p>
           </div>
 
           <div class="pid-card">
@@ -117,7 +137,12 @@ sections:
 
           <div class="pid-card">
             <h3>🎓 <a href="https://doi.org/10.5446/37823" target="_blank">Findability of Research Data and Software Through PIDs</a></h3>
-            <p>Video presentation on using PIDs and FAIR repositories to improve findability (EN)</p>
+            <p>Recorded presentation on using PIDs & FAIR repositories to improve findability (EN)</p>
+          </div>
+
+          <div class="pid-card">
+            <h3>🛠️ <a href="https://www.pid-network.de/en/news/events/online-seminar-zu-pids-fuer-instrumente" target="_blank">Online seminar on PIDs for instruments</a></h3>
+            <p>Seminar on instrument PIDs (EN/DE) — event DOI: <a href="https://doi.org/10.25798/zvca-d585" target="_blank">10.25798/zvca-d585</a></p>
           </div>
 
         </div>
@@ -126,7 +151,7 @@ sections:
         <p>
           Resources from specific PID providers and infrastructure operators. Covers technical usage, metadata, APIs, and workflows.
           <ul>
-            <li>DataCite, ePIC, ROR, ORCID</li>
+            <li>DataCite, ePIC, ROR, ORCID, ARK</li>
             <li>APIs, Fabrica, repositories</li>
             <li>Metadata schemas and implementation</li>
           </ul>
@@ -149,8 +174,23 @@ sections:
           </div>
 
           <div class="pid-card">
+            <h3>💻 <a href="https://github.com/EUDAT-Training/B2SAFE-B2STAGE-Training/blob/master/07a-Working-with-PIDs_CURL.md" target="_blank">Working with PIDs (CURL)</a></h3>
+            <p>Hands-on tutorial from EUDAT B2SAFE/B2STAGE on PID usage with CURL (EN)</p>
+          </div>
+
+          <div class="pid-card">
+            <h3>🧰 <a href="https://github.com/EUDAT-Training/B2SAFE-B2STAGE-Training/blob/master/07c-Working-with-PIDs_B2HANDLE.md" target="_blank">Working with Persistent Identifiers – Hands-on</a></h3>
+            <p>Practical training on using the B2HANDLE service (EN)</p>
+          </div>
+
+          <div class="pid-card">
             <h3>🧾 <a href="https://doc.pidconsortium.eu/" target="_blank">ePIC API Documentation</a></h3>
-            <p>API documentation for implementing persistent identifiers with ePIC (EN)</p>
+            <p>API docs for implementing persistent identifiers with ePIC (EN)</p>
+          </div>
+
+          <div class="pid-card">
+            <h3>📘 <a href="https://docs.eudat.eu/b2inst/" target="_blank">B2INST User Guide</a></h3>
+            <p>Guide for PID registration and management with EUDAT B2INST (EN)</p>
           </div>
 
           <div class="pid-card">
@@ -161,6 +201,16 @@ sections:
           <div class="pid-card">
             <h3>🎓 <a href="https://info.orcid.org/de/Video-Tutorials/" target="_blank">ORCID Video Tutorials</a></h3>
             <p>German-language video tutorials on ORCID (DE)</p>
+          </div>
+
+          <div class="pid-card">
+            <h3>🎥 <a href="https://youtu.be/-RkMGFCGRic" target="_blank">Getting Started with ARK Persistent Identifiers</a></h3>
+            <p>Introductory ARK video tutorial (EN)</p>
+          </div>
+
+          <div class="pid-card">
+            <h3>🖥️ <a href="https://arks-stg.cdlib.org/assets/documents/2023/06/ARK-Training-Tutorial-IIIF-2023-slides.pdf" target="_blank">ARK Training Tutorial (IIIF 2023)</a></h3>
+            <p>3-hour tutorial slide deck on ARKs (EN)</p>
           </div>
 
         </div>
@@ -192,8 +242,18 @@ sections:
           </div>
 
           <div class="pid-card">
-            <h3>🌐 <a href="https://eosc.eu/roadmap-category-level-1/persistent-identifiers/" target="_blank">EOSC Macro‑Roadmap – Persistent Identifiers (PIDs)</a></h3>
+            <h3>🌐 <a href="https://eosc.eu/roadmap-category-level-1/persistent-identifiers/" target="_blank">EOSC Macro-Roadmap – Persistent Identifiers (PIDs)</a></h3>
             <p>Collected contributions on PIDs in the EOSC context (EN)</p>
+          </div>
+
+          <div class="pid-card">
+            <h3>🎮 <a href="https://dans.knaw.nl/en/dans-data-game/" target="_blank">DANS Data Game</a></h3>
+            <p>Interactive game for research data & PID awareness (EN) — data: <a href="https://doi.org/10.5281/zenodo.10523390" target="_blank">Zenodo</a></p>
+          </div>
+
+          <div class="pid-card">
+            <h3>🧬 <a href="https://tess.elixir-europe.org/materials" target="_blank">ELIXIR TeSS – Life Sciences Training Materials</a></h3>
+            <p>Searchable catalogue of training materials including PIDs in life science contexts (EN)</p>
           </div>
 
         </div>
@@ -219,7 +279,6 @@ sections:
             <p>German-language platform for RDM and PID-related training materials (DE)</p>
           </div>
 
-          
         </div>
 
     design:
