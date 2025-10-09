@@ -56,7 +56,7 @@ slides:
 projects:
 ---
 
-Digital research tools like Electronic Lab Notebooks (ELNs) and Data Management Planning (DMP) systems are critical for early-stage metadata capture and documenting research processes. These tools increasingly support Persistent Identifier (PID) workflows, either by referencing existing identifiers or enabling PID registration for core research entities like datasets, samples, instruments, methods, and projects.
+Digital research tools like **Electronic Lab Notebooks (ELNs)** and **Data Management Planning (DMP)** systems are critical for early-stage metadata capture and documenting research processes. These tools increasingly support Persistent Identifier (PID) workflows, either by referencing existing identifiers or enabling PID registration for core research entities like datasets, samples, instruments, methods, and projects.
 
 Capturing rich metadata at the earliest stages of research can:
 
@@ -68,18 +68,18 @@ The workshop was hosted by PID4NFDI. The project supports the development of sus
 
 This workshop gathered ELN and DMP tool developers, metadata specialists, and stakeholders from NFDI consortia to:  
 
-* Validate and Extend the Metadata Framework
+* **Validate and Extend the Metadata Framework**
   * Review the metadata your tools currently capture for key research entities (e.g., samples, datasets, instruments).
 
-* Enable Seamless PID Workflows
+* **Enable Seamless PID Workflows**
   * Explore practical use cases for integrating PIDs (e.g., ePICs, DOIs, IGSNs) directly into your workflows.
 
-* Define and Measure Metadata Completeness
+* **Define and Measure Metadata Completeness**
   * Establish a shared understanding of what constitutes “good enough” metadata for your infrastructure.
   * Develop quality indicators, completeness thresholds, and scoring or validation mechanisms to guide users.
 
-* Explore Interoperability Solutions
-  * Discover how TS4NFDI tools can connect your solutions with others to enable smooth cross-system data flows.
+* **Explore Interoperability Solutions**
+  * Discover how  [TS4NFDI](https://terminology.services.base4nfdi.de/) tools can connect your solutions with others to enable smooth cross-system data flows.
   * Identify opportunities to develop and test your use cases as incubator projects supported by both PID4NFDI and TS4NFDI.
 
 Target group were developers and technical architects of ELN and DMP tools. Metadata and interoperability experts from NFDI consortia, and representatives from incubator projects focusing on ELN/DMP integration.
