@@ -30,9 +30,14 @@ The tool works by asking you to evaluate a series of 14 short statements, such a
 After completing the statements, the tool compares your selections with evaluations prepared for four different PID services: <strong>DataCite DOI</strong>, <strong>ePIC Handles (GWDG)</strong>, <strong>URN:NBN</strong>, and <strong>ARK</strong>. These evaluations were developed by PID4NFDI in cooperation with experts from the field to reflect how well each PID service aligns with the various statements.
 </p>
 
-<p>
-This is a beta version for early feedback at the UC4B 2025 in Aachen.
-</p>
+<div class="result-info">
+  <p><strong>Note:</strong> This tool focuses on <em>object-related</em> Persistent Identifiers.
+  We recommend also integrating complementary PID systems such as
+  <a href="https://orcid.org" target="_blank" rel="noopener">ORCID</a> for persons and
+  <a href="https://ror.org" target="_blank" rel="noopener">ROR</a> for institutions.</p>
+  <p>For more guidance, see our
+  <a href="https://pid4nfdi-training.readthedocs.io/en/latest/" target="_blank" rel="noopener">PID4NFDI Cookbook</a>.</p>
+</div>
 
 
   </div>
