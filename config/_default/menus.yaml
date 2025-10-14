@@ -57,7 +57,7 @@ main:
     weight: 20
   - name: Use Cases
     parent: community
-    url: community/use-cases
+    url: community/use-cases-tiles
     weight: 20
   - name: Consortia services
     parent: community
@@ -98,7 +98,7 @@ main:
   - name: Roadmap & FAQs
     parent: about
     url: about/roadmap-faqs
-    weight: 20  
+    weight: 20
   - name: Team
     parent: about
     url: about/team
