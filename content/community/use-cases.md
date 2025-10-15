@@ -71,14 +71,14 @@ sections:
           </div>
         
           <div class="pid-card" data-type="Connection metadata" data-provider="DataCite" data-domain="Photon- and neutron sciences" data-lang="Instruments" >
-            <h2>DOIs for Instruments at the Helmholtz-Zentrum Berlin</h2>
+            <h2>Instruments at the Helmholtz-Zentrum Berlin</h2>
             <h5> <span style="background-color:lightskyblue;"> &nbsp connection metadata &nbsp </span></h5>
             <p>The Helmholtz Zentrum Berlin für Materialien und Energie (HZB) operates the BESSY II synchrotron radiation source and, until the end of 2019, operated the BER II neutron source. The synchrotron radiation of BESSY II (respectively neutrons at BER II) are directed through beamlines to experiment stations, where researchers can examine the interaction of the radiation with a sample, resulting in recorded measurements. The HZB registers DOIs via DataCite for its beamlines and experiment stations to uniquely identify these devices. Researchers can use the DOIs to link their publication data to the devices they have used to generate their measurements.</p>
             <p>&nbsp</p>
             <h5>Resource types:&nbsp instruments</h5>
             <h5>PID Providers: &nbsp &nbsp DataCite</h5>
             <h5>Research Field: &nbsp photon- and neutron sciences</h5>   
-            <h2> <a href="" target="_blank">Learn more</a></h2>
+            <h2> <a href="https://pid.services.base4nfdi.de/community/use-cases/instruments-at-hzb/" target="_blank">Learn more</a></h2>
           </div>
 
           <div class="pid-card" data-type="Metadata analysis" data-provider="DataCite,IGSN" data-domain="Agrosystem research" data-lang="Samples" >
