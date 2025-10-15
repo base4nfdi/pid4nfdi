@@ -21,9 +21,8 @@ sections:
             
   - block: markdown
     content:
-        #title: DOIs for Instruments at the Helmholtz-Zentrum Berlin
         text: |
-            ## Which Devices get PIDs?
+            ## Which Devices Get PIDs?
           
             The HZB has registered DOIs via DataCite for the beamlines of BER II and the beamlines and experiment stations of BESSY II. In the case of BESSY II, the process of registering DOIs for all beamlines and experiment stations has started but is not yet complete, simply due to staffing capacity issues. Currently, there are 24 instrument DOIs already registered, including 15 beamlines of BER II, 5 beamlines of BESSY II and 4 experiment stations of BESSY II. As there are a total of 43 beamlines and 58 experiment stations at BESSY II, more DOIs are planned to be registered at a later stage.
             
@@ -33,13 +32,14 @@ sections:
 
   - block: markdown
     content:
-        #title: DOIs for Instruments at the Helmholtz-Zentrum Berlin
         text: |
             ## PID Registration Workflow
           
             Research instruments are registered and curated by HZB instrument scientists within the HZB instrument database IGAMA. Instruments in this database are assigned a DataCite DOI as needed. The main motivation for assigning DOIs is to interlink research outputs, whereas the database's main purpose is to allow users to find technical information about the instrument and to apply for experimental time. 
             
             Unlike many other services which assign PIDs, the PID registration for instruments at HZB is carried out centrally by a single employee, in consultation with the library and the scientists responsible for the instruments. It is very important to centrally coordinate the registration of instruments which are often reused by various researchers. Otherwise, if researchers were encouraged to assign PIDs to used instruments themselves, one instrument could end up with lots of different PIDs.
+          
+            ![PID workflow](/images/use-cases/instruments-hzb/pid_workflow.jpg)
 
             Figure 1: Instrument DOI registration workflow
 
@@ -49,7 +49,6 @@ sections:
 
   - block: markdown
     content:
-        #title: DOIs for Instruments at the Helmholtz-Zentrum Berlin
         text: |
             ## Example PID: The E2 Flat-Cone-Diffractometer
           
@@ -65,7 +64,6 @@ sections:
 
   - block: markdown
     content:
-        #title: DOIs for Instruments at the Helmholtz-Zentrum Berlin
         text: |
             ## Metadata and Curation
 
@@ -77,9 +75,8 @@ sections:
 
   - block: markdown
     content:
-        #title: DOIs for Instruments at the Helmholtz-Zentrum Berlin
         text: |
-            ## Cross-Linking Instruments: Good practice Examples
+            ## Cross-Linking Instruments: Good Practice Examples
 
             As the main motivation behind assigning PIDs for the instruments was to interlink the instrument PIDs with corresponding research outputs, we present examples of good practice to show how this is carried out. 
 
@@ -90,9 +87,9 @@ sections:
             2. <ins>Instrument → Research output</ins>: The PID metadata of the instrument contains a reference to the research output connected to this instrument.   
 
             We discuss the different options in the following.  
+          
   - block: markdown
     content:
-        #title: DOIs for Instruments at the Helmholtz-Zentrum Berlin
         text: |
             ### Connecting a Dataset PID to an Instrument PID
           
@@ -110,6 +107,8 @@ sections:
 
             In this case, linking the dataset to the instrument often simply does not work out properly.
  
+            <img src="/images/use-cases/instruments-hzb/link_data.jpg" alt="dataset" width="800"/>
+
             Figure 2: Connecting a dataset to an instrument via DataCite *relatedIdentifiers* (solid line). The dashed line represents the connection from the instrument to the dataset, which is not implemented by the HZB use-case because it does not scale. 
 
             <ins>Instrument → Dataset</ins>
@@ -120,7 +119,6 @@ sections:
  
   - block: markdown
     content:
-        #title: DOIs for Instruments at the Helmholtz-Zentrum Berlin
         text: |
           ### Connecting a Related Journal Article PID to an Instrument PID
           
@@ -133,6 +131,8 @@ sections:
           <ins>Journal Article → Instrument</ins>
           
           The other way around, it is good practice to formally cite the instrument PID from the journal article in the list of references. Since the example PID 10.5542/NI000001 was chronologically registered after the journal article 10.17815/jlsrf-4-110 was written, it was not possible to formally cite the instrument from the journal article. Nonetheless, we have included how such a citation would be realised in Figure 3 for completeness. 
+
+          <img src="/images/use-cases/instruments-hzb/link_journal_article.jpg" alt="journal_article" width="800"/>
 
           Figure 3: Connecting a journal article to an instrument via DataCite *relatedIdentifiers* and formal citation.   
 
@@ -150,12 +150,13 @@ sections:
           <ins>Instrument → Publication</ins>
 
           The publication may be linked from the instrument via *relatedIdentifiers*. However, there would be the same scalability issue as with the Instrument → Dataset connection above.
+          
+          <img src="/images/use-cases/instruments-hzb/link_publication.jpg" alt="publication" width="800"/>
 
           Figure 4: Connecting a publication to an instrument via formal citation (solid line). The dashed line represents the connection from the instrument to the publication. 
 
   - block: markdown
     content:
-        #title: DOIs for Instruments at the Helmholtz-Zentrum Berlin
         text: |
           ## Main Takeaways
           
@@ -175,7 +176,6 @@ sections:
 
   - block: markdown
     content:
-        #title: DOIs for Instruments at the Helmholtz-Zentrum Berlin
         text: |
           ## References
           
