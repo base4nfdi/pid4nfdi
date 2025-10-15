@@ -78,7 +78,7 @@ sections:
             <h5>Resource types:&nbsp instruments</h5>
             <h5>PID Providers: &nbsp &nbsp DataCite</h5>
             <h5>Research Field: &nbsp photon- and neutron sciences</h5>   
-            <h2> <a href="https://zenodo.org/records/14327770" target="_blank">Learn more</a></h2>
+            <h2> <a href="" target="_blank">Learn more</a></h2>
           </div>
 
           <div class="pid-card" data-type="Metadata analysis" data-provider="DataCite,IGSN" data-domain="Agrosystem research" data-lang="Samples" >
