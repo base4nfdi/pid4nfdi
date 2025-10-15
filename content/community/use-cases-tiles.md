@@ -29,16 +29,19 @@ sections:
           
           <select id="f-provider" aria-label="Provider">
             <option value="">Provider</option>
-            <option>DataCite</option><option>ePIC</option><option>IGSN</option>
+            <option>DataCite</option>
+            <option>ePIC</option>
+            <option>IGSN</option>
           </select>
           
           <select id="f-domain" aria-label="Domain">
             <option value="">Discipline</option>
             <option>Agrosystem research</option>
+            <option>Biodiversity</option>
             <option>Generic</option>
             <option>Humanities</option>
             <option>Microbiology</option>
-            <option>Photon- and neutron physics</option>
+            <option>Photon- and neutron sciences</option>
             <option>Social sciences</option>
           </select>
           
@@ -56,9 +59,9 @@ sections:
         </div>
 
          <div class="use-case-card-grid">
-          <div class="pid-card" data-type="Large numbers of PIDs" data-provider="ePIC" data-domain="Social Sciences" data-lang="Dataset elements" >
+          <div class="pid-card" data-type="Large numbers of PIDs,High-granular data" data-provider="ePIC" data-domain="Social Sciences" data-lang="Dataset elements" >
             <h2>PID Service for Dataset Elements (Konsort SWD)</h2>
-            <h5> <span style="background-color:gold;"> high-granular data</span> &nbsp <span style="background-color:sandybrown;">large numbers of PIDs</span></h5>            
+            <h5> <span style="background-color:gold;"> &nbsp high-granular data &nbsp</span> &nbsp <span style="background-color:sandybrown;"> &nbsp large numbers of PIDs &nbsp </span></h5>            
             <p>The purpose of this analysis is to showcase PID integration in a new PID service that is being developed within the KonsortSWD consortium. This service aims to reference elements below the dataset, study, or publication level via PID, enhancing FAIRness of low-granular dataset elements and fulfilling requirements such as handling a large number of PIDs.</p>
             <p>&nbsp</p>
             <h5>Resource types:&nbsp dataset elements</h5>
@@ -67,20 +70,20 @@ sections:
             <h2> <a href="https://zenodo.org/records/14327770" target="_blank">Learn more</a></h2>
           </div>
         
-          <div class="pid-card" data-type="Connection metadata" data-provider="DataCite" data-domain="Photon- and neutron physics" data-lang="Instruments" >
+          <div class="pid-card" data-type="Connection metadata" data-provider="DataCite" data-domain="Photon- and neutron sciences" data-lang="Instruments" >
             <h2>DOIs for Instruments at the Helmholtz-Zentrum Berlin</h2>
-            <h5> <span style="background-color:lightskyblue;"> connection metadata</span></h5>
+            <h5> <span style="background-color:lightskyblue;"> &nbsp connection metadata &nbsp </span></h5>
             <p>The Helmholtz Zentrum Berlin für Materialien und Energie (HZB) operates the BESSY II synchrotron radiation source and, until the end of 2019, operated the BER II neutron source. The synchrotron radiation of BESSY II (respectively neutrons at BER II) are directed through beamlines to experiment stations, where researchers can examine the interaction of the radiation with a sample, resulting in recorded measurements. The HZB registers DOIs via DataCite for its beamlines and experiment stations to uniquely identify these devices. Researchers can use the DOIs to link their publication data to the devices they have used to generate their measurements.</p>
             <p>&nbsp</p>
             <h5>Resource types:&nbsp instruments</h5>
             <h5>PID Providers: &nbsp &nbsp DataCite</h5>
-            <h5>Research Field: &nbsp photon- and neutron physics</h5>   
+            <h5>Research Field: &nbsp photon- and neutron sciences</h5>   
             <h2> <a href="https://zenodo.org/records/14327770" target="_blank">Learn more</a></h2>
           </div>
 
-          <div class="pid-card" data-type="Metadata analysis" data-provider="DataCite" data-domain="Agrosystem research" data-lang="Samples" >
+          <div class="pid-card" data-type="Metadata analysis" data-provider="DataCite,IGSN" data-domain="Agrosystem research" data-lang="Samples" >
             <h2>Genebank Information System (FAIRAgro)</h2>
-            <h5> <span style="background-color:plum;"> metadata analysis </span></h5>
+            <h5> <span style="background-color:plum;"> &nbsp metadata analysis &nbsp </span></h5>
             <p>The purpose of this analysis is to showcase PID integration within the Text+ consortium using the example of the SUB Göttingen. The report focuses on two well-integratied and long-running repositories (DARIAH-DE and TextGrid) for text-based research data from the humanities. We give details on different types of integrated PIDs, metadata quality handling, interaction with major infrastructures such as DARIAH and CLARIN, and describe new requirements and developments such as improved user input interfaces.</p>
             <p>&nbsp</p>         
             <h5>Resource types:&nbsp seeds, samples</h5>
@@ -89,9 +92,9 @@ sections:
             <h2> <a href="https://zenodo.org/records/14506202" target="_blank">Learn more</a></h2>
           </div>
         
-          <div class="pid-card" data-type="General" data-provider="ePIC" data-domain="Humanities" data-lang="Text-based" >
+          <div class="pid-card" data-type="General" data-provider="DataCite,ePIC" data-domain="Humanities" data-lang="Text-based" >
             <h2>PID Adoption at SUB Göttingen (Text+)</h2>
-            <h5> <span style="background-color:lightsteelblue;"> general </span></h5>
+            <h5> <span style="background-color:lightsteelblue;"> &nbsp general &nbsp </span></h5>
             <p>The purpose of this analysis is to showcase PID integration within the Text+ consortium using the example of the SUB Göttingen. The report focuses on two well-integratied and long-running repositories (DARIAH-DE and TextGrid) for text-based research data from the humanities. We give details on different types of integrated PIDs, metadata quality handling, interaction with major infrastructures such as DARIAH and CLARIN, and describe new requirements and developments such as improved user input interfaces.</p>
             <p>&nbsp</p>         
             <h5>Resource types:&nbsp text-based research data</h5>
@@ -100,9 +103,9 @@ sections:
             <h2> <a href="https://zenodo.org/records/14327691" target="_blank">Learn more</a></h2>
           </div>
         
-          <div class="pid-card" data-type="Metadata analysis" data-provider="DataCite" data-domain="Microbiology" data-lang="Strains" >
+          <div class="pid-card" data-type="Metadata analysis" data-provider="DataCite" data-domain="Microbiology,Biodiversity" data-lang="Strains" >
             <h2>StrainInfo (NFDI4Microbiota)</h2>
-            <h5> <span style="background-color:plum;"> metadata analysis </span></h5>
+            <h5> <span style="background-color:plum;"> &nbsp metadata analysis &nbsp </span></h5>
             <p>The purpose of this analysis is a comprehensive evaluation of the metadata quality and completeness for the StrainInfo service. StrainInfo, operated by the Leibniz Institute DSMZ – German Collection of Microorganisms and Cell Cultures GmbH, is an integral part of the NFDI4Microbiota consortium. This analysis, conducted by DataCite, highlights the current state of metadata in StrainInfo, offering insights into its alignment with persistent identifier and metadata best practices.</p>
             <p>&nbsp</p>         
             <h5>Resource types:&nbsp microbial strains</h5>
@@ -133,7 +136,9 @@ sections:
             function matches(card, sel, key){
               const val = sel.value?.trim();
               if(!val) return true;
-              return (card.dataset[key]||'').toLowerCase() === val.toLowerCase();
+              if (!card.dataset[key]) return false;
+              const cardValues = card.dataset[key].toLowerCase().split(',');
+              return cardValues.includes(val.toLowerCase());
             }
             function matchesSearch(card, term){
               if(!term) return true;
