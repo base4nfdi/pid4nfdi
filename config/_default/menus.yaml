@@ -23,6 +23,10 @@ main:
     identifier: services
     url: services
     weight: 300
+  - name: Instruments
+    parent: services
+    url: services/instruments
+    weight: 10
   - name: Metadata Support and Assessment
     parent: services
     url: services/metadata-support-assessment
