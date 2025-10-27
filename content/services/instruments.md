@@ -9,23 +9,46 @@ sections:
         title: Persistent Identification of Instruments
         text: |
           A Persistent Identifier (PID) for Instruments is a globally unique and enduring reference assigned to scientific instruments, such as sensors, microscopes, or telescopes. It is used for the identification of individual physical devices, not to categorize model types in general. These PIDs ensure that instruments are unambiguously identifiable across various platforms and over time, facilitating data provenance, reproducibility, and proper attribution in research.
-          As part of the PID4NFDI project, we are providing the NFDI and the broader research community with two tools for creating, managing and exploring instrument PIDs:
-          
-          - [B2INST]({{<ref "#B2INST" >}}): Assign PIDs to your research instruments.
 
-          - [Federated Search]({{<ref "#federated" >}}): Explore the PID graph for instruments, which contains instrument PIDs registered with both DataCite and B2INST.
+          <br/>
 
-          To learn more about persistent identification of instruments, please check out our [PID4NFDI Cookbook](https://pid4nfdi-training.readthedocs.io/en/latest/pidinst.html) for a comprehensive summary.
+          ## 📚 Resources 
           
-      #, and our two use-case reports which give insights into how PIDs for instruments are implemented for two real-world examples. 
+          The following resources provide you with useful information on how to register and manage instrument PIDs.
+    
+          - **Comprehensive Summary**: The [PID4NFDI Cookbook](https://pid4nfdi-training.readthedocs.io/en/latest/pidinst.html) is a good starting point to get an overview of instrument PIDs and how to get them.
+    
+          - **Use-Case reports**: Our use-case reports give insights into how PIDs for instruments are implemented in two real-world examples. 
+    
+            - Use-case: DataCite DOIs for instruments at the Helmholtz Zentrum Berlin für Materialien und Energie *[coming soon]* 
+            
+            - Use-case: Assigning ePIC PIDs via B2INST for instruments at the NFDI4Earth Sensor Management System *[coming soon]* 
+    
+          - **Recommendations and examples for instrument metadata**: To make optimal use of instrument PIDs, it is crucial to fill in the metadata fields carefully. This is not always easy, especially as there did not exist much guidance on this topic so far. 
+            
+            - Recommendations: Linking instrument PIDs to other research entities *[coming soon]*
+            
+            - Recommendations: Optimal use of DataCite metadata fields for instruments *[coming soon]*
+
+          <br/>      
+
+          ## ⚙️ Tools 
           
-      #- [instruments at the Helmholtz Zentrum Berlin für Materialien und Energie](https://pid.services.base4nfdi.de/community/use-cases/instruments-at-hzb/) (DataCite DOIs)
-          
-      #- instruments at the NFDI4Earth Sensor Management System (ePIC PIDs with B2INST)
+          As part of the PID4NFDI project, we are providing tools for the NFDI and the broader research community for creating, managing and exploring instrument PIDs:
+      
+          - [B2INST]({{<ref "#B2INST" >}}) and [DataCite]({{<ref "#DataCite" >}}): Assign PIDs to your research instruments.
+
+          - [Federated Search]({{<ref "#federated" >}}): Explore instruments registered with either DataCite or B2INST, find connections to other research outputs or examine instrument metadata statistics.
+
+          <br/>
+
+          ## 💬 Support
+
+          If you have questions about instrument registration or would like to set up a consultation meeting regarding instrument registration at your institution, please contact us at pid4nfdi@lists.nfdi.de or via our [contact form](https://pid.services.base4nfdi.de/about/contact/). 
 
   - block: markdown
     content:
-        title: B2INST
+        title: B2INST 
         subtitle: Create and Manage Instrument PIDs
         text: |
           ## {#B2INST}
@@ -37,11 +60,30 @@ sections:
 
           - If you would like to assign PIDs for many instruments at your institution, you have the possibility to implement an automated workflow which uses the B2INST API to automatically assign instrument PIDs.
 
-          B2INST adopts the [PIDINST metadata schema](https://doi.org/10.15497/RDA00070). Communities can be used to extend the PIDINST metadata schema with further metadata fields that are relevant for your use-case. If you have questions about instrument registration or would like to set up a consultation meeting regarding instrument registration at your institution, please contact us at pid4nfdi@lists.nfdi.de or via our [contact form](https://pid.services.base4nfdi.de/about/contact/). 
+          B2INST adopts the [PIDINST metadata schema](https://doi.org/10.15497/RDA00070). Communities can be used to extend the PIDINST metadata schema with further metadata fields that are relevant for your use-case.  
 
-          ## [Open Tool](https://b2inst.gwdg.de/)
+          ## [Open B2INST](https://b2inst.gwdg.de/)
     design:
-      columns: 1   
+      columns: 1 
+      
+  - block: markdown
+    content:
+        title: DataCite 
+        subtitle: Create and Manage Instrument PIDs
+        text: |
+          ## {#DataCite}
+          
+          DataCite enables the registration of DOIs for instruments using its generic metadata schema, either through the Fabrica registration interface or via the REST API. The specific [ResourceType “Instrument”](https://datacite-metadata-schema.readthedocs.io/en/4.6/appendices/appendix-1/resourceTypeGeneral/#instrument) was introduced in schema version 4.5 with metadata requirements [mapped](https://datacite-metadata-schema.readthedocs.io/en/4.6/mappings/pidinst/) to the PIDInst metadata schema. 
+
+          Registering instrument DOIs allows the inclusion of provenance information on instruments and facilitates seamless linking to related resources, such as research data, publications, or other instruments via PIDs.
+
+          Access to DataCite services requires [membership](https://datacite.org/become-a-member/#Types-of-Membership) of DataCite or a [DataCite consortium](https://projects.tib.eu/pid-service/en/tib-doi-konsortium/become-a-member/).
+
+          ## [More Information](https://support.datacite.org/docs/can-i-register-a-doi-for-an-instrument)
+         
+
+    design:
+      columns: 1 
       
   - block: markdown
     content:
@@ -69,7 +111,7 @@ sections:
           
           Figure 3: Clicking on a node opens a tab with the landing page of the resource (Try it out [here](https://search.pidinst.org/connections/10.71929/rubin/2571927))
 
-          ## [Open Tool](https://search.pidinst.org/)
+          ## [Open Federated Search](https://search.pidinst.org/)
     design:
       columns: 1
 ---
