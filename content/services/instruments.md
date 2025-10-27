@@ -32,7 +32,7 @@ sections:
 
           <br/>      
 
-          ## ⚙️ Tools 
+          ## ⚙️ Services and Tools 
           
           As part of the PID4NFDI project, we are providing tools for the NFDI and the broader research community for creating, managing and exploring instrument PIDs:
       
