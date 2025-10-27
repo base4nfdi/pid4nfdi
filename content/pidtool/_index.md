@@ -18,25 +18,34 @@ _build:
 <!-- Initial intro and entity selection page -->
 <div id="section-intro">
   <div id="pidtool-intro">
-    <p>
-The PID Selection Tool is designed for individuals or groups such as infrastructure managers who want to set up or optimize a service, repository, or research infrastructure that assigns persistent identifiers (PIDs). It helps you explore which PID service may best fit your specific needs.
+
+        <p>
+The <strong>PID Selection Tool</strong> is designed for individuals or groups – such as <strong>repository and infrastructure managers</strong> – who plan to integrate <em>Persistent Identifiers (PIDs)</em> into an existing or new research service, repository, or tool. It supports the decision-making process by helping you explore which PID system best fits your specific use case and integration goals.
 </p>
 
 <p>
-The tool works by asking you to evaluate a series of 14 short statements, such as <em>“It is important for us that the PID service demonstrates a strong, long-term commitment to persistence.”</em> For each statement, you can indicate whether you <strong>don’t need that</strong>, find that <strong>somewhat important</strong>, <strong>important</strong>, or <strong>very important</strong>. If a statement does not apply or you don’t know, you may skip it. Your responses remain visible as you progress through the sections. You can also go back. The process takes just a few minutes. At the end, you'll receive a ranking for different PID services according to your preferences.
+The tool guides you through <strong>14 short statements</strong> divided into four thematic sections: <em>Persistence and Costs</em>, <em>Purpose</em>, <em>Metadata &amp; Interoperability</em>, and <em>Technical Setup and Training</em>. Each statement reflects a typical requirement or consideration when selecting PID services – for example, “It is important for us that the PID service demonstrates a strong, long-term commitment to persistence.” 
 </p>
 
 <p>
-After completing the statements, the tool compares your selections with evaluations prepared for four different PID services: <strong>DataCite DOI</strong>, <strong>ePIC Handles (GWDG)</strong>, <strong>URN:NBN</strong>, and <strong>ARK</strong>. These evaluations were developed by PID4NFDI in cooperation with experts from the field to reflect how well each PID service aligns with the various statements.
+For each statement, you can indicate whether you <strong>don’t need that</strong>, find that <strong>somewhat important</strong>, <strong>important</strong>, or <strong>very important</strong>. If a statement does not apply or you don’t know, you may skip it. Your responses remain visible as you progress through the sections, and you can also go back to adjust them. The process takes just a few minutes.
+</p>
+
+<p>
+After completing the statements, the tool compares your selections with expert evaluations prepared for several PID services. Based on these comparisons, you will receive a <strong>ranking and visual overview</strong> showing how well each PID service aligns with your preferences.
+</p>
+
+<p>
+Currently, the tool covers four <em>object-related</em> PID services – <strong>DataCite DOI</strong>, <strong>ePIC Handles (GWDG)</strong>, <strong>URN:NBN</strong>, and <strong>ARK</strong> – with evaluations developed by PID4NFDI in cooperation with experts from the field.
 </p>
 
 <div class="result-info">
-  <p><strong>Note:</strong> This tool focuses on <em>object-related</em> Persistent Identifiers.
-  We recommend also integrating complementary PID systems such as
+  <p><strong>Note:</strong> Alongside these object-related PID services, we recommend also integrating complementary PID systems such as
   <a href="https://orcid.org" target="_blank" rel="noopener">ORCID</a> for persons and
   <a href="https://ror.org" target="_blank" rel="noopener">ROR</a> for institutions.</p>
-  <p>For more guidance, see our
-  <a href="https://pid4nfdi-training.readthedocs.io/en/latest/" target="_blank" rel="noopener">PID4NFDI Cookbook</a>.</p>
+
+  <p>If you are generally interested in PIDs or want to learn more about the broader PID ecosystem – including identifiers such as ORCID, ROR, or Wikidata – we recommend our
+  <a href="https://pid4nfdi-training.readthedocs.io/en/latest/" target="_blank" rel="noopener">PID4NFDI Cookbook</a>, which provides background knowledge and further training materials.</p>
 </div>
 
 
