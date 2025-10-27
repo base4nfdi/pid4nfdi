@@ -16,14 +16,18 @@ sections:
           
           The following resources provide you with useful information on how to register and manage instrument PIDs.
     
-          - **Comprehensive Summary**: The [PID4NFDI Cookbook](https://pid4nfdi-training.readthedocs.io/en/latest/pidinst.html) is a good starting point to get an overview of instrument PIDs and how to get them.
-    
+          - **Comprehensive Summary**: The [PID4NFDI Cookbook](https://pid4nfdi-training.readthedocs.io/en/latest/pidinst.html) is a good starting point to get an overview of instrument PIDs and how to register them.
+          
+           <hr style="height:0px; visibility:hidden;" />
+
           - **Use-Case reports**: Our use-case reports give insights into how PIDs for instruments are implemented in two real-world examples. 
     
             - Use-case: [DataCite DOIs for instruments at the Helmholtz Zentrum Berlin für Materialien und Energie](https://pid.services.base4nfdi.de/community/use-cases/instruments-at-hzb/)  
             
             - Use-case: Assigning ePIC PIDs via B2INST for instruments at the NFDI4Earth Sensor Management System *[coming soon]* 
     
+          <hr style="height:0px; visibility:hidden;" />
+
           - **Recommendations and examples for instrument metadata**: To make optimal use of instrument PIDs, it is crucial to fill in the metadata fields carefully. This is not always easy, especially as there did not exist much guidance on this topic so far. 
             
             - Recommendations: Linking instrument PIDs to other research entities *[coming soon]*
