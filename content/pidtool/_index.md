@@ -19,7 +19,7 @@ _build:
 <div id="section-intro">
   <div id="pidtool-intro">
 
-        <p>
+<p>
 The <strong>PID Selection Tool</strong> is designed for individuals or groups – such as <strong>repository and infrastructure managers</strong> – who plan to integrate <em>Persistent Identifiers (PIDs)</em> into an existing or new research service, repository, or tool. It supports the decision-making process by helping you explore which PID system best fits your specific use case and integration goals.
 </p>
 
@@ -43,6 +43,8 @@ Currently, the tool covers four <em>object-related</em> PID services – <strong
   <p><strong>Note:</strong> Alongside these object-related PID services, we recommend also integrating complementary PID systems such as
   <a href="https://orcid.org" target="_blank" rel="noopener">ORCID</a> for persons and
   <a href="https://ror.org" target="_blank" rel="noopener">ROR</a> for institutions.</p>
+
+  <p>You can skip questions, but the results are getting better, the more questions are answered.</p>
 
   <p>If you are generally interested in PIDs or want to learn more about the broader PID ecosystem – including identifiers such as ORCID, ROR, or Wikidata – we recommend our
   <a href="https://pid4nfdi-training.readthedocs.io/en/latest/" target="_blank" rel="noopener">PID4NFDI Cookbook</a>, which provides background knowledge and further training materials.</p>
