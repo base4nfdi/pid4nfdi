@@ -20,7 +20,7 @@ sections:
     
           - **Use-Case reports**: Our use-case reports give insights into how PIDs for instruments are implemented in two real-world examples. 
     
-            - Use-case: DataCite DOIs for instruments at the Helmholtz Zentrum Berlin für Materialien und Energie *[coming soon]* 
+            - Use-case: [DataCite DOIs for instruments at the Helmholtz Zentrum Berlin für Materialien und Energie](https://pid.services.base4nfdi.de/community/use-cases/instruments-at-hzb/)  
             
             - Use-case: Assigning ePIC PIDs via B2INST for instruments at the NFDI4Earth Sensor Management System *[coming soon]* 
     
