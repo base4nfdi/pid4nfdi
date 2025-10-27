@@ -94,13 +94,13 @@ sections:
         text: |
             ## Connecting a Dataset PID to an Instrument PID
           
-            <ins>Dataset --> Instrument</ins>
+            <ins>Dataset → Instrument</ins>
           
             Raw data is analyzed and processed until it ends up in a dataset which is ready for publication. Researchers whose publication data are based on raw data recorded at BER II or BESSY II have the possibility to publish their data in collaboration with HZB. In this case, the data are published at the HZB Data Service and receive a DataCite DOI. During the publication process, metadata is curated by HZB staff. As part of the curation process, the link to the instrument DOI is entered into the DOI metadata of the publication dataset.
 
             This way, it is possible to make sure that the instrument PID is entered into the DOI metadata of the publication data. However, this is an idealized workflow where curation ensures that an instrument PID is entered. Often, datasets are uploaded to external repositories. Then, there might be no clear way how datasets are connected to the PID of the generating instrument because of three reasons:
 
-            - The researcher is not aware that the instrument has a PID which he can use.
+            - The researcher is not aware that the instrument has a PID which can be used.
 
             - The external repository does not provide fields to enter an instrument PID.
 
@@ -173,7 +173,7 @@ sections:
           
             - Non-Scalability: Linking dataset or publication PIDs centrally in the instrument PID often does not scale because this would require quite some effort for collecting datasets and publications and updating instrument metadata records. Hence, it becomes even more important to encourage researchers to link their research outputs to the instrument PID.
           
-            - Missing metadata fields: If you run a repository for research data, consider supplying a metadata field to the user where he can enter an instrument PID. Make sure that the instrument PID is correctly ingested to DataCite in the backend.
+            - Missing metadata fields: If you run a repository for research data, consider supplying a metadata field to the users where they can enter an instrument PID. Make sure that the instrument PID is correctly ingested to DataCite in the backend.
 
   - block: markdown
     content:
