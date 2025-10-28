@@ -31,7 +31,6 @@ sections:
             <option value="">Provider</option>
             <option>DataCite</option>
             <option>ePIC</option>
-            <option>IGSN</option>
           </select>
           
           <select id="f-domain" aria-label="Domain">
@@ -47,6 +46,7 @@ sections:
           
           <select id="f-lang" aria-label="Language">
             <option value="">Resource Type</option>
+            <option>Datasets</option>
             <option>Dataset elements</option>
             <option>Instruments</option>
             <option>Samples</option>
@@ -67,7 +67,7 @@ sections:
             <h5>Resource types:&nbsp dataset elements</h5>
             <h5>PID Providers: &nbsp &nbsp ePIC</h5>
             <h5>Research Field: &nbsp social sciences</h5>   
-            <h2> <a href="https://zenodo.org/records/14327770" target="_blank">Learn more</a></h2>
+            <h2> <a href="https://doi.org/10.5281/zenodo.14327770" target="_blank">Learn more</a></h2>
           </div>
         
           <div class="pid-card" data-type="Connection metadata" data-provider="DataCite" data-domain="Photon- and neutron sciences" data-lang="Instruments" >
@@ -81,15 +81,15 @@ sections:
             <h2> <a href="https://pid.services.base4nfdi.de/community/use-cases/instruments-at-hzb/" target="_blank">Learn more</a></h2>
           </div>
 
-          <div class="pid-card" data-type="Metadata analysis" data-provider="DataCite,IGSN" data-domain="Agrosystem research" data-lang="Samples" >
+          <div class="pid-card" data-type="Metadata analysis" data-provider="DataCite" data-domain="Agrosystem research" data-lang="Datasets" >
             <h2>Genebank Information System (FAIRAgro)</h2>
             <h5> <span style="background-color:plum;"> &nbsp metadata analysis &nbsp </span></h5>
             <p>The purpose of this analysis is to showcase PID integration within the Text+ consortium using the example of the SUB Göttingen. The report focuses on two well-integratied and long-running repositories (DARIAH-DE and TextGrid) for text-based research data from the humanities. We give details on different types of integrated PIDs, metadata quality handling, interaction with major infrastructures such as DARIAH and CLARIN, and describe new requirements and developments such as improved user input interfaces.</p>
             <p>&nbsp</p>         
-            <h5>Resource types:&nbsp seeds, samples</h5>
-            <h5>PID Providers: &nbsp &nbsp DataCite, IGSN</h5>
+            <h5>Resource types:&nbsp datasets</h5>
+            <h5>PID Providers: &nbsp &nbsp DataCite</h5>
             <h5>Research Field: &nbsp agrosystem research</h5>   
-            <h2> <a href="https://zenodo.org/records/14506202" target="_blank">Learn more</a></h2>
+            <h2> <a href="https://doi.org/10.5281/zenodo.14506202" target="_blank">Learn more</a></h2>
           </div>
         
           <div class="pid-card" data-type="General" data-provider="DataCite,ePIC" data-domain="Humanities" data-lang="Text-based" >
@@ -100,7 +100,7 @@ sections:
             <h5>Resource types:&nbsp text-based research data</h5>
             <h5>PID Providers: &nbsp &nbsp DataCite, ePIC</h5>
             <h5>Research Field: &nbsp humanities</h5>   
-            <h2> <a href="https://zenodo.org/records/14327691" target="_blank">Learn more</a></h2>
+            <h2> <a href="https://doi.org/10.5281/zenodo.14327691" target="_blank">Learn more</a></h2>
           </div>
         
           <div class="pid-card" data-type="Metadata analysis" data-provider="DataCite" data-domain="Microbiology,Biodiversity" data-lang="Strains" >
@@ -111,7 +111,7 @@ sections:
             <h5>Resource types:&nbsp microbial strains</h5>
             <h5>PID Providers: &nbsp &nbsp DataCite</h5>
             <h5>Research Field: &nbsp microbiology, biodiversity</h5>   
-            <h2> <a href="https://zenodo.org/records/14357800" target="_blank">Learn more</a></h2>
+            <h2> <a href="https://doi.org/10.5281/zenodo.14357800" target="_blank">Learn more</a></h2>
           </div>    
         </div>
         
