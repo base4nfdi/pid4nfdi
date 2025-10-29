@@ -62,26 +62,26 @@ sections:
 #  - block: collection
 #    content:
 #      title: Latest Blog Posts
-      subtitle:
-      text:
-      count: 3
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-        folders:
-          - blog
-      offset: 0
-      order: desc
-    design:
-      view: compact
-      columns: '2'
+#      subtitle:
+#      text:
+#      count: 3
+#      filters:
+#        author: ''
+#        category: ''
+#        exclude_featured: false
+#        publication_type: ''
+#        tag: ''
+#        folders:
+#          - blog
+#      offset: 0
+#      order: desc
+#    design:
+#      view: compact
+#      columns: '2'
 
   - block: collection
     content:
-        title: Upcoming & Recent Events
+        title: Recent & Upcoming Events
         text:
         count: 3
         filters:
