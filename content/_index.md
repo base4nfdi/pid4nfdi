@@ -59,9 +59,9 @@ sections:
     design:
         columns: '2'
 
-  - block: collection
-    content:
-      title: Latest Blog Posts
+#  - block: collection
+#    content:
+#      title: Latest Blog Posts
       subtitle:
       text:
       count: 3
@@ -81,7 +81,7 @@ sections:
 
   - block: collection
     content:
-        title: Upcoming Events
+        title: Upcoming & Recent Events
         text:
         count: 3
         filters:
