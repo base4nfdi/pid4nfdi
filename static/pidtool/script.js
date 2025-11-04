@@ -454,25 +454,59 @@ function displayResults(scores) {
     resultDiv.appendChild(card);
   }
 
-  const exportBtn = document.createElement('button');
-  exportBtn.textContent = "Download results";
-  exportBtn.onclick = () => {
-    let text = "PID Selection Tool – Your Results\n\n";
-    text += "Selected entities: " + selectedEntities.join(', ') + "\n\n";
-    for (let pid of sortedPIDs) {
-      text += `${pid}\nScore: ${scores[pid]}${unit}\nDescription: ${pidDescriptions[pid] || ''}\n\n`;
-    }
-    text += "\nNote: Complementary PID systems such as ORCID and ROR are recommended for persons and institutions.\n";
-    text += "More info: https://pid4nfdi-training.readthedocs.io/en/latest/";
-    const blob = new Blob([text], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'pid-selection-results.txt';
-    a.click();
-    URL.revokeObjectURL(url);
+// Export-Button neu erzeugen, dann Handler setzen
+const exportBtn = document.createElement('button');
+exportBtn.textContent = "Download results";
+exportBtn.onclick = () => {
+  // Helper: alle Fragen als flaches, nach index sortiertes Array
+  const questions = Object.values(questionsBySection)
+    .flat()
+    .sort((a, b) => a.index - b.index);
+
+  // Helper: Wert → Label (fällt zurück auf Standard-Likert)
+  const valueToLabel = (q, v) => {
+    const opts = (q.options && Array.isArray(q.options) ? q.options : LIKERT_OPTIONS_DEFAULT)
+      .sort((a, b) => a.value - b.value);
+    const found = opts.find(o => Number(o.value) === Number(v));
+    return found ? found.label : '';
   };
-  resultDiv.appendChild(exportBtn);
+
+  let text = "PID Selection Tool – Your Results\n\n";
+  text += `Build: 2025-08-25 16:18 CET (commit abc1234)\n`;
+  text += `Score display: ${SCORE_DISPLAY}\n`;
+  text += `Planned PID volume: ${plannedPidVolume}\n`;
+  text += `Selected entities: ${selectedEntities.join(', ') || '—'}\n\n`;
+
+  // Scores
+  text += "=== Scores ===\n";
+  for (let pid of sortedPIDs) {
+    text += `${pid}\n  Score: ${scores[pid]}${unit}\n  Description: ${pidDescriptions[pid] || ''}\n\n`;
+  }
+
+  // Antworten (direkt anhängen)
+  text += "=== Your answers ===\n";
+  questions.forEach(q => {
+    const ans = answers[q.index]?.value;
+    const label = (ans == null) ? '' : valueToLabel(q, ans);
+    text += `Q${q.id} [${q.section}]\n`;
+    text += `  ${q.text}\n`;
+    text += `  Answer: ${ans == null ? 'Skipped' : ans} ${label ? '(' + label + ')' : ''}\n\n`;
+  });
+
+  // Hinweise
+  text += "Note: This tool focuses on object-related Persistent Identifiers.\n";
+  text += "Complementary systems like ORCID (persons) and ROR (institutions) are recommended.\n";
+  text += "More info: https://pid4nfdi-training.readthedocs.io/en/latest/\n";
+
+  const blob = new Blob([text], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'pid-selection-results.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+};
+resultDiv.appendChild(exportBtn);
 
   const infoText = document.createElement("div");
   infoText.className = "result-info";
