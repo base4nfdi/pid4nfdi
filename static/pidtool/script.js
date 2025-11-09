@@ -1,3 +1,6 @@
+//import jsonQuestions from '/pidtool/config.json' assert { type: 'json' };
+//console.log(jsonQuestions);
+
 console.log("PID Tool build stamp:", "2025-08-25 16:18 CET", "commit", "abc1234");
 
 let expertScores = {};
@@ -380,6 +383,116 @@ function toggleHelp(btn) {
   helpText.style.display = helpText.style.display === 'block' ? 'none' : 'block';
 }
 
+// function to generate the texts that are displayed together with the scores when the results of the PID tool are shown
+function generate_feedback_texts(answers, expertScores) {
+
+  // feedback texts
+  const feedback = {
+    "DataCite DOI": [
+      "DataCite shows a strong long-term commitment to persistence.",
+      "",
+      "Especially for large numbers of PIDs, DataCite is not as cheap as ePIC and URN:NBN.",
+      "DataCite’s identifiers are globally recognized in scholarly publishing.",
+      "DataCite supports early PID adoption.",
+      "",
+      "DataCite does not sufficiently supports cataloging, archiving, and stable referencing within national or academic library infrastructures.",
+      "DataCite does not offer full control on the PID metadata because it has a standardized schema.",
+      "DataCite mandates a widely used/recognized standardized metadata schema.",
+      "DataCite offers additional metadata services on top of simple PID registration, such as metadata tooling, statistics, and visualisation.",
+      "Using DataCite, PIDs are only allowed to resolve to landing pages (not to other locations such as the resource directly).",
+      "DataCite does not offer the option to self-host the PID resolver/infrastructure in-house.",
+      "DataCite hosts the PID resolver/infrastructure for you.",
+      "DataCite offers extensive training material."
+    ],
+    "ePIC handle":[
+      "ePIC shows a strong long-term commitment to persistence.",
+      "",
+      "ePIC is comparably cheap, especially for large numbers of PIDs.",
+      "",
+      "ePIC supports early PID adoption.",
+      "ePICs are highly suitable for assigning PIDs to high-granular entities.",
+      "ePIC does not sufficiently supports cataloging, archiving, and stable referencing within national or academic library infrastructures.",
+      "ePIC offers full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
+      "ePIC does not provide a widely used/recognized standardized metadata schema.",
+      "ePIC does not offer any additional metadata services on top of simple PID registration.",
+      "ePIC PIDs can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
+      "With ePIC, you have the option to self-host the PID resolver/infrastructure in-house.",
+      "ePIC hosts the PID resolver/infrastructure for you.",
+      "ePIC does not offer as extensive training material as other providers."
+    ],
+    "URN:NBN": [
+      "URN:NBN:DE shows a strong long-term commitment to persistence.",
+      "",
+      "URN:NBN:DE is the cheapest of the providers.",
+      "",
+      "URN:NBN:DE does not sufficiently support early PID adoption.",
+      "URN:NBN:DE are not suitable for assigning PIDs to high-granular entities.",
+      "URN:NBN:DE mainly focuses on cataloging, archiving, and stable referencing within national or academic library infrastructures.",
+      "URN:NBN:DE does not offer full control on the PID metadata.",
+      "",
+      "URN:NBN:DE does not offer any additional metadata services on top of simple PID registration.",
+      "URN:NBN:DE can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
+      "With URN:NBN:DE, you have the option to self-host the PID resolver/infrastructure in-house.",
+      "URN:NBN:DE hosts the PID resolver/infrastructure for you.",
+      "URN:NBN:DE does not offer as extensive training material as other providers."
+    ],
+    "ARK":[
+      "",
+      "ARKs strongly support flexible PID lifecycles, including deletion or deactivation where appropriate",
+      "ARKs are comparably expensive because PID infrastructre needs to be self-hosted.",
+      "",
+      "ARKs support early PID adoption.",
+      "ARKs are highly suitable for assigning PIDs to high-granular entities.",
+      "ARKs do not sufficiently support cataloging, archiving, and stable referencing within national or academic library infrastructures.",
+      "ARKs offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
+      "ARKs do not provide a widely used/recognized standardized metadata schema.",
+      "ARK does not offer any additional metadata services on top of simple PID registration.",
+      "ARKs can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
+      "With ARK, you can self-host the PID resolver/infrastructure in-house.",
+      "ARK does not host the PID resolver/infrastructure for you.",
+      "ARK offers extensive training material."
+    ]
+  }
+
+  const providers = Object.keys(expertScores);
+  const scored = getScoredIndexes(answers);
+
+  // objects to be generated
+  let feedback_texts_advantages = {};
+  let feedback_texts_disadvantages = {};
+
+  // provide a text element for each PID provider...
+  providers.forEach(pid => {
+    let provider_text_advantages = [];
+    let provider_text_disadvantages = [];
+    //let i = 1;
+
+    // ... and for each question
+    scored.forEach(qIndex => {
+      // check that the user finds this feature important or very important (2 or 3)
+      const userVal = Number(answers[qIndex].value);
+      if (userVal >= 2 ) {
+        // check whether the PID provider supports or not supports the feature
+        const expertVal = expertScores[pid][qIndex];
+        if (expertVal >= 4) {
+          provider_text_advantages.push(feedback[pid][qIndex])
+        }
+        else if (expertVal <= 1){
+          provider_text_disadvantages.push(feedback[pid][qIndex])
+        }
+        else {
+          // do nothing
+        }
+      }
+      //i++;
+    });
+    // append the texts to the result array
+    feedback_texts_advantages[pid] = provider_text_advantages;
+    feedback_texts_disadvantages[pid] = provider_text_disadvantages;
+  });
+  return [feedback_texts_advantages, feedback_texts_disadvantages];
+}
+
 function showResults() {
   saveAnswers();
 
@@ -392,13 +505,16 @@ function showResults() {
     scores = calculatePercentScores(answers, expertScores);
   }
 
-  displayResults(scores);
+  // generate text for the scores
+  const [feedback_texts_advantages, feedback_texts_disadvantages] = generate_feedback_texts(answers, expertScores);
+
+  displayResults(scores, feedback_texts_advantages, feedback_texts_disadvantages);
 
   document.getElementById('question-container').style.display = 'none';
   document.getElementById('section-results').style.display = 'block';
 }
 
-function displayResults(scores) {
+function displayResults(scores, feedback_texts_advantages, feedback_texts_disadvantages) {
   const pidDescriptions = {
     "DataCite DOI": "DOIs from DataCite are widely used for research data and publications.",
     "ePIC handle": "ePIC handles are used in European research infrastructures and built on the Handle system.",
@@ -440,6 +556,20 @@ function displayResults(scores) {
       ? Math.max(0, Math.min(100, score))
       : Math.round((score / maxVal) * 100);
 
+    // print advantages list in html
+    let advantages_output_HTML = "<ul>";
+    for (i = 0; i < feedback_texts_advantages[pid].length; ++i) {
+        advantages_output_HTML += `<li>${feedback_texts_advantages[pid][i]}</li>`
+    }
+    advantages_output_HTML += "</ul>"
+
+    // print advantages list in html
+    let disadvantages_output_HTML = "<ul>";
+    for (i = 0; i < feedback_texts_disadvantages[pid].length; ++i) {
+        disadvantages_output_HTML += `<li>${feedback_texts_disadvantages[pid][i]}</li>`
+    }
+    disadvantages_output_HTML += "</ul>"
+
     const card = document.createElement("div");
     card.className = "result-card";
     card.style.borderLeft = `10px solid ${color}`;
@@ -450,7 +580,12 @@ function displayResults(scores) {
       </div>
       <p>Score: ${score}${unit}</p>
       <p class="pid-description">${pidDescriptions[pid] || ''}</p>
-    `;
+      <p></p>
+      <p>Advantages with respect to your input:</p>
+      ${advantages_output_HTML}
+      <p>Disdvantages with respect to your input:</p>
+      ${disadvantages_output_HTML}
+      `;
     resultDiv.appendChild(card);
   }
 
