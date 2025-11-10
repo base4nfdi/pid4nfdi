@@ -24,40 +24,48 @@ sections:
         <!-- Filter bar -->
         <div id="pid-filter" class="pid-filter not-prose">
           <input id="pid-search" type="search" placeholder="Search title/desc…" aria-label="Search">
+
           <select id="f-type" aria-label="Type">
             <option value="">Type</option>
             <option>Intro</option><option>Guide</option><option>Hands-on</option>
             <option>Docs/API</option><option>Slides</option><option>Video</option><option>Tool</option>
           </select>
+
           <select id="f-provider" aria-label="Provider">
             <option value="">Provider</option>
             <option>DataCite</option><option>ePIC</option><option>EUDAT</option>
             <option>ROR</option><option>ORCID</option><option>ARK</option>
             <option>DARIAH</option><option>AHRC/TANC</option><option>CERN</option>
-            <option>ELIXIR</option><option>NFDI4Ing</option>
+            <option>ELIXIR</option><option>NFDI4Ing</option><option>PID4NFDI</option>
+            <option>Community</option>
           </select>
+
           <select id="f-domain" aria-label="Domain">
             <option value="">Domain</option>
             <option>Generic</option><option>Life Sciences</option><option>Heritage</option>
-            <option>Engineering</option>
+            <option>Engineering</option><option>Social Sciences</option>
           </select>
+
           <select id="f-lang" aria-label="Language">
             <option value="">Language</option>
             <option>EN</option><option>DE</option>
           </select>
+
           <select id="f-year" aria-label="Year">
             <option value="">Year</option>
             <option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option>
           </select>
+
           <button id="pid-clear" type="button">Clear</button>
           <span id="pid-count" aria-live="polite"></span>
         </div>
 
+        <!-- Wider grid like Use Cases -->
         <div class="pid-card-grid">
 
           <div class="pid-card" data-type="Intro" data-provider="Community" data-domain="Generic" data-lang="EN" data-year="2021">
             <h3>📘 <a href="https://doi.org/10.5281/zenodo.4574566" target="_blank">PIDs 101: A Beginners' Guide to Persistent Identifiers</a></h3>
-            <p>Introductory slide deck for those new to persistent identifiers (EN)</p>
+            <p>This introductory presentation offers a clear and engaging overview of persistent identifiers (PIDs) — what they are, how they work, and why they matter. It explains how PIDs uniquely and permanently identify people, places, and research outputs, supporting interoperability, discovery, and FAIR data. With practical examples from ORCID, ROR, DataCite, and Crossref, it shows how connected PIDs create a trustworthy and transparent research ecosystem (EN)</p>
           </div>
 
           <div class="pid-card" data-type="Slides" data-provider="PID4NFDI" data-domain="Generic" data-lang="EN" data-year="2025">
@@ -191,7 +199,13 @@ sections:
         </p>
         <div class="pid-card-grid">
 
-          <div class="pid-card" data-type="Guide" data-provider="DataCite" data-domain="Generic" data-lang="EN">
+          <div class="pid-card"
+            data-type="Guide"
+            data-provider="DataCite"
+            data-domain="Generic"
+            data-lang="EN"
+            data-year="2024"
+            data-more="/training/datacite-getting-started/">
             <h3>📘 <a href="https://support.datacite.org/docs/getting-started" target="_blank">Getting Started – DataCite</a></h3>
             <p>Introductory guide to working with DOIs and metadata via DataCite (EN)</p>
           </div>
@@ -248,143 +262,221 @@ sections:
 
         </div>
 
-        <h2 class="pid-section-heading">🧰 Tools, Platforms & Interactive Resources</h2>
-        <p>
-          Tools and online platforms that support PID usage, decision-making, and community discussions.
-          <ul>
-            <li>PID selection tools</li>
-            <li>Community platforms</li>
-            <li>Self-assessment resources</li>
-          </ul>
-        </p>
-        <div class="pid-card-grid">
-
-          <div class="pid-card" data-type="Tool" data-provider="Community" data-domain="Generic" data-lang="EN">
-            <h3>🎯 <a href="https://www.pidwijzer.nl/en/pid_results/new#tab-1" target="_blank">PID Guide – pidwijzer.nl</a></h3>
-            <p>Interactive tool for selecting PID systems based on use case (EN)</p>
-          </div>
-
-          <div class="pid-card" data-type="Tool" data-provider="ELIXIR" data-domain="Life Sciences" data-lang="EN">
-            <h3>🧬 <a href="https://tess.elixir-europe.org/materials" target="_blank">ELIXIR TeSS – Life Sciences Training Materials</a></h3>
-            <p>Searchable catalogue of training materials including PIDs in life science contexts (EN)</p>
-          </div>
-
-          <div class="pid-card" data-type="Tool" data-provider="Community" data-domain="Generic" data-lang="EN">
-            <h3>💬 <a href="https://www.pidforum.org" target="_blank">The PID Forum</a></h3>
-            <p>Online community for sharing questions, answers, and discussions about PIDs (EN)</p>
-          </div>
-
-          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
-            <h3>🌐 <a href="https://eosc.eu/roadmap-category-level-1/persistent-identifiers/" target="_blank">EOSC Macro-Roadmap – Persistent Identifiers (PIDs)</a></h3>
-            <p>Collected contributions on PIDs in the EOSC context (EN)</p>
-          </div>
-
-          <div class="pid-card" data-type="Tool" data-provider="Community" data-domain="Generic" data-lang="EN">
-            <h3>🎮 <a href="https://dans.knaw.nl/en/dans-data-game/" target="_blank">DANS Data Game</a></h3>
-            <p>Interactive game for research data & PID awareness (EN) — data: <a href="https://doi.org/10.5281/zenodo.10523390" target="_blank">Zenodo</a></p>
-          </div>
-
-          <div class="pid-card" data-type="Tool" data-provider="ARDC" data-domain="Generic" data-lang="EN">
-            <h3>🧰 <a href="https://ardc.edu.au/resource-hub/" target="_blank">ARDC Resource Hub</a></h3>
-            <p>Collection of training and documentation on PID systems (EN)</p>
-          </div>
-
-        </div>
-
-        <h2 class="pid-section-heading">🔬 Domain-specific Use Cases & Models</h2>
-        <p>
-          Examples and models tailored to specific research communities or disciplines. Shows how PIDs are applied in specialized contexts.
-          <ul>
-            <li>Community-specific workflows</li>
-            <li>Discipline-adapted PID models</li>
-            <li>Integrating PIDs into domain infrastructures</li>
-          </ul>
-        </p>
-        <div class="pid-card-grid">
-
-          <div class="pid-card" data-type="Guide" data-provider="NFDI4Ing" data-domain="Engineering" data-lang="DE">
-            <h3>🧑‍🏫 <a href="https://education.nfdi4ing.de/startpage.html#/" target="_blank">NFDI4Ing Training Platform</a></h3>
-            <p>German-language platform for RDM and PID-related training materials (DE)</p>
-          </div>
-
-          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Engineering" data-lang="EN">
-            <h3>⚗️ <a href="https://nfdi4cat.github.io/pid4cat-model/latest/" target="_blank">pid4cat – PID Model for Catalysis</a></h3>
-            <p>FAIR PID model for research data in catalysis, based on Handle (EN)</p>
-          </div>
-
-        </div>
-
-        <!-- minimal CSS for filters -->
+        <!-- Styles (filters, wide grid, badges + buttons) -->
         <style>
           .pid-filter { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin:1rem 0 1.5rem }
           .pid-filter input, .pid-filter select { padding:.4rem .6rem; border:1px solid #e3e3e3; border-radius:.5rem }
           .pid-filter button { padding:.4rem .7rem; border:1px solid #ccc; border-radius:.5rem; background:#fff; cursor:pointer }
-          .pid-card-grid .pid-card[hidden]{ display:none !important }
           #pid-count { margin-left:auto; font-size:.9rem; opacity:.8 }
+
+          .pid-card-grid {
+            display: grid !important;
+            gap: 1.5rem !important;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)) !important;
+            width: 100% !important;
+          }
+          .pid-card-grid .pid-card[hidden]{ display:none !important }
+
+          .pid-card {
+            padding: 1.2rem 1.3rem;
+            border:1px solid #e8e8e8; border-radius:12px; background:#fff;
+            box-shadow: 0 1px 0 rgba(0,0,0,.02);
+            transition: transform .08s ease, box-shadow .12s ease, border-color .12s ease;
+          }
+          .pid-card:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.06); border-color:#ddd; }
+          .pid-card h3 { font-size: 1.25rem; line-height:1.25; margin:.1rem 0 .5rem; }
+
+          .pid-badges { display:flex; flex-wrap:wrap; gap:.4rem; margin:.2rem 0 .7rem; }
+          .pid-badge { display:inline-block; padding:.18rem .5rem; border-radius:.55rem; font-size:.8rem; font-weight:500;
+                       background:#f3f4f6; border:1px solid #e5e7eb; color:#222; }
+
+          .pid-badge.type-intro    { background:#d1ecf1; border-color:#bee5eb; }
+          .pid-badge.type-guide    { background:#fff3cd; border-color:#ffeeba; }
+          .pid-badge.type-slides   { background:#e2e3e5; border-color:#d6d8d9; }
+          .pid-badge.type-video    { background:#f8d7da; border-color:#f5c6cb; }
+          .pid-badge.type-hands-on,
+          .pid-badge.type-tool     { background:#d4edda; border-color:#c3e6cb; }
+          .pid-badge.type-docs-api { background:#cce5ff; border-color:#b8daff; }
+
+          .pid-badge.provider-datacite { background:#b3e5fc; border-color:#81d4fa; }
+          .pid-badge.provider-epic     { background:#ffe0b2; border-color:#ffcc80; }
+          .pid-badge.provider-eudat    { background:#e1f5fe; border-color:#b3e5fc; }
+          .pid-badge.provider-ark      { background:#e1bee7; border-color:#ce93d8; }
+          .pid-badge.provider-orcid    { background:#c8e6c9; border-color:#a5d6a7; }
+          .pid-badge.provider-ror      { background:#ffccbc; border-color:#ffab91; }
+          .pid-badge.provider-community{ background:#eee; border-color:#ddd; }
+          .pid-badge.provider-pid4nfdi { background:#e8f5e9; border-color:#c8e6c9; }
+
+          .pid-badge.lang-en { background:#e0f7fa; border-color:#b2ebf2; }
+          .pid-badge.lang-de { background:#fce4ec; border-color:#f8bbd0; }
+
+          .pid-actions { display:flex; gap:.5rem; margin:.4rem 0 .6rem; }
+          .pid-btn-more, .pid-btn-open{
+            display:inline-block;
+            padding:.35rem .7rem;
+            border:1px solid #e0e0e0;
+            border-radius:.5rem;
+            font-size:.85rem;
+            text-decoration:none;
+            transition:all .15s ease;
+            line-height:1.1;
+          }
+          .pid-btn-more:hover, .pid-btn-open:hover{
+            border-color:#cfcfcf;
+            transform: translateY(-1px);
+          }
+          .pid-btn-open{ border-color:#d9e8ff; background:#f5faff; }
+          .pid-btn-open:hover{ border-color:#bcd6ff; }
+
+          .container:has(.pid-card-grid),
+          .universal-wrapper:has(.pid-card-grid) { max-width: 1400px; }
         </style>
 
-        <!-- tiny filtering script -->
+        <!-- Script: filters + URL sync + auto-badges + action buttons -->
         <script>
           (function(){
             const q = s => document.querySelector(s);
             const qa = s => Array.from(document.querySelectorAll(s));
             const cards = qa('.pid-card-grid .pid-card');
-            const search = q('#pid-search'), ftype = q('#f-type'), fprov = q('#f-provider'), fdom = q('#f-domain'), flang = q('#f-lang'), fyear = q('#f-year');
+
+            const search = q('#pid-search'),
+                  ftype  = q('#f-type'),
+                  fprov  = q('#f-provider'),
+                  fdom   = q('#f-domain'),
+                  flang  = q('#f-lang'),
+                  fyear  = q('#f-year');
             const clearBtn = q('#pid-clear'), counter = q('#pid-count');
 
-            function matches(card, sel, key){
-              const val = sel.value?.trim();
+            // filtering helpers
+            const has = (card, sel, key) => {
+              const val = sel?.value?.trim();
               if(!val) return true;
-              return (card.dataset[key]||'').toLowerCase() === val.toLowerCase();
-            }
-            function matchesSearch(card, term){
+              const raw = (card.dataset[key] || '').toLowerCase();
+              const arr = raw.split(',').map(s=>s.trim()).filter(Boolean);
+              return arr.includes(val.toLowerCase());
+            };
+            const matchesSearch = (card, term) => {
               if(!term) return true;
-              const t = term.toLowerCase();
-              const text = (card.textContent || '').toLowerCase();
-              return text.includes(t);
-            }
+              return (card.textContent || '').toLowerCase().includes(term.toLowerCase());
+            };
+
             function apply(){
               const term = search.value.trim().toLowerCase();
               let visible = 0;
               cards.forEach(card=>{
-                const ok = matches(card, ftype, 'type')
-                      && matches(card, fprov, 'provider')
-                      && matches(card, fdom, 'domain')
-                      && matches(card, flang, 'lang')
-                      && matches(card, fyear, 'year')
-                      && matchesSearch(card, term);
+                const ok = has(card, ftype, 'type')
+                        && has(card, fprov, 'provider')
+                        && has(card, fdom, 'domain')
+                        && has(card, flang, 'lang')
+                        && has(card, fyear, 'year')
+                        && matchesSearch(card, term);
                 card.hidden = !ok;
                 if(ok) visible++;
               });
               counter.textContent = visible + ' shown / ' + cards.length + ' total';
-              const params = new URLSearchParams();
-              if(ftype.value) params.set('type', ftype.value);
-              if(fprov.value) params.set('provider', fprov.value);
-              if(fdom.value) params.set('domain', fdom.value);
-              if(flang.value) params.set('lang', flang.value);
-              if(fyear.value) params.set('year', fyear.value);
-              if(search.value) params.set('q', search.value);
-              const qs = params.toString();
-              history.replaceState(null,'', qs ? ('?'+qs) : location.pathname);
+
+              const p = new URLSearchParams();
+              if(ftype.value) p.set('type', ftype.value);
+              if(fprov.value) p.set('provider', fprov.value);
+              if(fdom.value)  p.set('domain', fdom.value);
+              if(flang.value) p.set('lang', flang.value);
+              if(fyear.value) p.set('year', fyear.value);
+              if(search.value) p.set('q', search.value);
+              history.replaceState(null,'', p.toString() ? ('?'+p.toString()) : location.pathname);
             }
-            function restoreFromURL(){
+
+            function restore(){
               const p = new URLSearchParams(location.search);
-              if(p.get('type')) ftype.value = p.get('type');
+              if(p.get('type'))     ftype.value = p.get('type');
               if(p.get('provider')) fprov.value = p.get('provider');
-              if(p.get('domain')) fdom.value = p.get('domain');
-              if(p.get('lang')) flang.value = p.get('lang');
-              if(p.get('year')) fyear.value = p.get('year');
-              if(p.get('q')) search.value = p.get('q');
+              if(p.get('domain'))   fdom.value  = p.get('domain');
+              if(p.get('lang'))     flang.value = p.get('lang');
+              if(p.get('year'))     fyear.value = p.get('year');
+              if(p.get('q'))        search.value= p.get('q');
             }
+
             [search, ftype, fprov, fdom, flang, fyear].forEach(el=>el.addEventListener('input', apply));
-            clearBtn.addEventListener('click', ()=>{
-              [search, ftype, fprov, fdom, flang, fyear].forEach(el=>el.value='');
-              apply();
+            clearBtn.addEventListener('click', ()=>{ [search, ftype, fprov, fdom, flang, fyear].forEach(el=>el.value=''); apply(); });
+
+            // auto-badges
+            const cls = {
+              type: v => 'type-' + v.toLowerCase().replace(/\s+/g,'-'),
+              provider: v => 'provider-' + v.toLowerCase().replace(/\s+/g,'-'),
+              lang: v => 'lang-' + v.toLowerCase()
+            };
+            cards.forEach(card=>{
+              const box = document.createElement('div');
+              box.className = 'pid-badges';
+              ['type','provider','lang'].forEach(key=>{
+                const raw = card.dataset[key];
+                if(!raw) return;
+                raw.split(',').map(s=>s.trim()).filter(Boolean).forEach(val=>{
+                  const tag = document.createElement('span');
+                  tag.className = `pid-badge ${cls[key](val)}`;
+                  tag.textContent = val;
+                  box.appendChild(tag);
+                });
+              });
+              const h = card.querySelector('h2,h3') || card.firstChild;
+              if(h && h.nextSibling) h.parentNode.insertBefore(box, h.nextSibling);
+              else card.insertBefore(box, card.firstChild);
             });
-            restoreFromURL(); apply();
+
+          // action buttons: "More info" + "Open resource" (unterhalb des Beschreibungstexts)
+        function contentInsertionPoint(card){
+          // Bevorzugt: letztes P/UL/OL innerhalb der Karte
+          const candidates = card.querySelectorAll('p, ul, ol');
+          if(candidates.length) return candidates[candidates.length - 1];
+          // Fallback: Badge-Zeile, sonst Überschrift
+          return card.querySelector('.pid-badges') || card.querySelector('h2, h3');
+        }
+
+          cards.forEach(card=>{
+            const titleLink = card.querySelector('h2 a, h3 a');
+            const more = card.dataset.more;
+            if(!more && !titleLink) return;
+
+            // Button-Zeile anlegen oder finden
+            let row = card.querySelector('.pid-actions');
+            if(!row){
+              row = document.createElement('div');
+              row.className = 'pid-actions';
+              const after = contentInsertionPoint(card);
+              if(after && after.parentNode){
+                // Nach dem gefundenen Knoten einfügen
+                after.insertAdjacentElement('afterend', row);
+              } else {
+                card.appendChild(row);
+              }
+            }
+
+            // "More info" nur, wenn data-more vorhanden
+            if(more && !card.querySelector('.pid-btn-more')){
+              const moreBtn = document.createElement('a');
+              moreBtn.className = 'pid-btn-more';
+              moreBtn.href = more;
+              moreBtn.textContent = 'More info →';
+              moreBtn.setAttribute('aria-label','More information');
+              row.appendChild(moreBtn);
+            }
+
+            // "Open resource" nur, wenn Titellink existiert
+            if(titleLink && !card.querySelector('.pid-btn-open')){
+              const openBtn = document.createElement('a');
+              openBtn.className = 'pid-btn-open';
+              openBtn.href = titleLink.href;
+              openBtn.target = '_blank';
+              openBtn.rel = 'noopener';
+              openBtn.textContent = 'Open resource ↗';
+              openBtn.setAttribute('aria-label','Open resource in new tab');
+              row.appendChild(openBtn);
+            }
+          });
+
+
+            restore(); apply();
           })();
         </script>
-
     design:
       spacing:
         padding: ["pt-4", "pb-4"]

@@ -302,8 +302,29 @@ video {
   font-size:.78rem; 
   background:#f3f4f6; 
   border:1px solid #e5e7eb;
+  color: #222;
+  font-weight: 500;
 }
 
+/* === By type === */
+.pid-badge.type-intro      { background-color: #d1ecf1; border-color: #bee5eb; }
+.pid-badge.type-guide      { background-color: #fff3cd; border-color: #ffeeba; }
+.pid-badge.type-slides     { background-color: #e2e3e5; border-color: #d6d8d9; }
+.pid-badge.type-video      { background-color: #f8d7da; border-color: #f5c6cb; }
+.pid-badge.type-hands-on,
+.pid-badge.type-tool       { background-color: #d4edda; border-color: #c3e6cb; }
+.pid-badge.type-docs-api   { background-color: #cce5ff; border-color: #b8daff; }
+
+/* === By provider === */
+.pid-badge.provider-datacite { background-color: #b3e5fc; border-color: #81d4fa; }
+.pid-badge.provider-epic     { background-color: #ffe0b2; border-color: #ffcc80; }
+.pid-badge.provider-ark      { background-color: #e1bee7; border-color: #ce93d8; }
+.pid-badge.provider-orcid    { background-color: #c8e6c9; border-color: #a5d6a7; }
+.pid-badge.provider-ror      { background-color: #ffccbc; border-color: #ffab91; }
+
+/* === By language === */
+.pid-badge.lang-en { background-color: #e0f7fa; border-color: #b2ebf2; }
+.pid-badge.lang-de { background-color: #fce4ec; border-color: #f8bbd0; }
   .flip-card {
 	background-color: transparent;
 	width: 250px;
