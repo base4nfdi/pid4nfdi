@@ -24,7 +24,7 @@ function expert01(v) { v = Number(v); return (v - 1) / (LIKERT_EXPERT_MAX - 1); 
 // Pre-question
 let plannedPidVolume = "unknown";     // "lt100k" | "gt100k" | "unknown"
 let qIndexById = {};                  // Frage-ID -> Index
-const DATACITE_KEY = "DataCite DOI";
+const DATACITE_KEY = "DataCite DOIs";
 
 // Likert-UI (links->rechts: 0..3)
 const LIKERT_OPTIONS_DEFAULT = [
@@ -388,69 +388,69 @@ function generate_feedback_texts(answers, expertScores) {
 
   // feedback texts
   const feedback = {
-    "DataCite DOI": [
-      "DataCite shows a strong long-term commitment to persistence.",
+    "DataCite DOIs": [
+      "...show a strong long-term commitment to persistence.",
       "",
-      "Especially for large numbers of PIDs, DataCite is not as cheap as ePIC and URN:NBN.",
-      "DataCite’s identifiers are globally recognized in scholarly publishing.",
-      "DataCite supports early PID adoption.",
+      "...are not as cost-efficient as URN:NBN:DE and ePIC, especially for large numbers of PIDs.",
+      "...are globally recognized in scholarly publishing with stable citation practices.",
+      "...support early PID adoption.",
       "",
-      "DataCite does not sufficiently supports cataloging, archiving, and stable referencing within national or academic library infrastructures.",
-      "DataCite does not offer full control on the PID metadata because it has a standardized schema.",
-      "DataCite mandates a widely used/recognized standardized metadata schema.",
-      "DataCite offers additional metadata services on top of simple PID registration, such as metadata tooling, statistics, and visualisation.",
-      "Using DataCite, PIDs are only allowed to resolve to landing pages (not to other locations such as the resource directly).",
-      "DataCite does not offer the option to self-host the PID resolver/infrastructure in-house.",
-      "DataCite hosts the PID resolver/infrastructure for you.",
-      "DataCite offers extensive training material."
+      "...do not sufficiently supports cataloging, archiving, and stable referencing within national or academic library infrastructures.",
+      "...do not offer full control on the PID metadata because they have a standardized schema.",
+      "...comply to the widely used/recognized standardized DataCite metadata schema.",
+      "...offer additional metadata services on top of simple PID registration, such as metadata tooling, statistics, and visualisation.",
+      "...are only allowed to resolve to landing pages (not to other locations such as the resource directly).",
+      "...do not offer the option to self-host the PID resolver/infrastructure in-house.",
+      "...hosts the PID resolver/infrastructure for you.",
+      "...offer extensive training material."
     ],
-    "ePIC handle":[
-      "ePIC shows a strong long-term commitment to persistence.",
+    "ePIC Handles":[
+      "...show a strong long-term commitment to persistence.",
       "",
-      "ePIC is comparably cheap, especially for large numbers of PIDs.",
+      "...are comparably cost-efficient, especially for large numbers of PIDs.",
       "",
-      "ePIC supports early PID adoption.",
-      "ePICs are highly suitable for assigning PIDs to high-granular entities.",
-      "ePIC does not sufficiently supports cataloging, archiving, and stable referencing within national or academic library infrastructures.",
-      "ePIC offers full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
-      "ePIC does not provide a widely used/recognized standardized metadata schema.",
-      "ePIC does not offer any additional metadata services on top of simple PID registration.",
-      "ePIC PIDs can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
-      "With ePIC, you have the option to self-host the PID resolver/infrastructure in-house.",
-      "ePIC hosts the PID resolver/infrastructure for you.",
-      "ePIC does not offer as extensive training material as other providers."
+      "...support early PID adoption.",
+      "...are highly suitable for assigning PIDs to high-granular entities.",
+      "...do not sufficiently support cataloging, archiving, and stable referencing within national or academic library infrastructures.",
+      "...offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
+      "...do not provide a widely used/recognized standardized metadata schema.",
+      "...do not offer any additional metadata services on top of simple PID registration.",
+      "...can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
+      "...give you the option to self-host the PID resolver/infrastructure in-house.",
+      "...hosts the PID resolver/infrastructure for you.",
+      "...do not offer as extensive training material as other providers."
     ],
-    "URN:NBN": [
-      "URN:NBN:DE shows a strong long-term commitment to persistence.",
+    "URN:NBNs": [
+      "...show a strong long-term commitment to persistence.",
       "",
-      "URN:NBN:DE is the cheapest of the providers.",
+      "...are the most cost-efficient of the PIDs.",
       "",
-      "URN:NBN:DE does not sufficiently support early PID adoption.",
-      "URN:NBN:DE are not suitable for assigning PIDs to high-granular entities.",
-      "URN:NBN:DE mainly focuses on cataloging, archiving, and stable referencing within national or academic library infrastructures.",
-      "URN:NBN:DE does not offer full control on the PID metadata.",
+      "...do not sufficiently support early PID adoption.",
+      "...are not suitable for assigning PIDs to high-granular entities.",
+      "...mainly focus on cataloging, archiving, and stable referencing within national or academic library infrastructures.",
+      "...do not offer full control on the PID metadata.",
       "",
-      "URN:NBN:DE does not offer any additional metadata services on top of simple PID registration.",
-      "URN:NBN:DE can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
-      "With URN:NBN:DE, you have the option to self-host the PID resolver/infrastructure in-house.",
-      "URN:NBN:DE hosts the PID resolver/infrastructure for you.",
-      "URN:NBN:DE does not offer as extensive training material as other providers."
+      "...do not offer any additional metadata services on top of simple PID registration.",
+      "...can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
+      "...give you the option to self-host the PID resolver/infrastructure in-house.",
+      "...host the PID resolver/infrastructure for you.",
+      "...do not offer as extensive training material as other providers."
     ],
-    "ARK":[
+    "ARKs":[
       "",
-      "ARKs strongly support flexible PID lifecycles, including deletion or deactivation where appropriate",
-      "ARKs are comparably expensive because PID infrastructre needs to be self-hosted.",
+      "...strongly support flexible PID lifecycles, including deletion or deactivation where appropriate",
+      "...are comparably expensive because PID infrastructure needs to be self-hosted.",
       "",
-      "ARKs support early PID adoption.",
-      "ARKs are highly suitable for assigning PIDs to high-granular entities.",
-      "ARKs do not sufficiently support cataloging, archiving, and stable referencing within national or academic library infrastructures.",
-      "ARKs offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
-      "ARKs do not provide a widely used/recognized standardized metadata schema.",
-      "ARK does not offer any additional metadata services on top of simple PID registration.",
-      "ARKs can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
-      "With ARK, you can self-host the PID resolver/infrastructure in-house.",
-      "ARK does not host the PID resolver/infrastructure for you.",
-      "ARK offers extensive training material."
+      "...support early PID adoption.",
+      "...are highly suitable for assigning PIDs to high-granular entities.",
+      "...do not sufficiently support cataloging, archiving, and stable referencing within national or academic library infrastructures.",
+      "...offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
+      "...do not provide a widely used/recognized standardized metadata schema.",
+      "...do not offer any additional metadata services on top of simple PID registration.",
+      "...can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
+      "...give you the opportunity to self-host the PID resolver/infrastructure in-house.",
+      "...resolver/infrastructure must be self-hosted by you.",
+      "...offer extensive training material."
     ]
   }
 
@@ -516,10 +516,10 @@ function showResults() {
 
 function displayResults(scores, feedback_texts_advantages, feedback_texts_disadvantages) {
   const pidDescriptions = {
-    "DataCite DOI": "DOIs from DataCite are widely used for research data and publications.",
-    "ePIC handle": "ePIC handles are used in European research infrastructures and built on the Handle system.",
-    "URN:NBN": "URN:NBN is typically used for long-term preservation in national libraries.",
-    "ARK": "ARKs are often used in museums and archives for persistent referencing.",
+    "DataCite DOIs": "DOIs from DataCite are widely used for research data and publications.",
+    "ePIC Handles": "ePIC Handles are used in European research infrastructures and built on the Handle system.",
+    "URN:NBNs": "URN:NBN is typically used for long-term preservation in national libraries.",
+    "ARKs": "ARKs are often used in museums and archives for persistent referencing.",
   };
 
   const unit = (SCORE_DISPLAY === 'percent') ? '%' : ' pts';
@@ -581,9 +581,9 @@ function displayResults(scores, feedback_texts_advantages, feedback_texts_disadv
       <p>Score: ${score}${unit}</p>
       <p class="pid-description">${pidDescriptions[pid] || ''}</p>
       <p></p>
-      <p>Advantages with respect to your input:</p>
+      <p>Advantages with respect to your input: ${pid}...</p>
       ${advantages_output_HTML}
-      <p>Disdvantages with respect to your input:</p>
+      <p>Disdvantages with respect to your input: ${pid}...</p>
       ${disadvantages_output_HTML}
       `;
     resultDiv.appendChild(card);
