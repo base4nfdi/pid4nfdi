@@ -155,11 +155,11 @@ function createMiniScoreBars(questionIndex, userValue) {
     const minWidth = 4;  // etwas kleineres Minimum reicht hier
     const maxWidth = 600;
     const scaledWidth = minWidth + (expert_times_user)/15.0 * maxWidth;
-    //bar widths:
-    //expert 5, user 0: 4
-    //expert 5, user 1: 204
-    //expert 5, user 2: 404
-    //expert 5, user 3: 604
+    /**bar widths:
+    expert 5, user 0: 4
+    expert 5, user 1: 204
+    expert 5, user 2: 404
+    expert 5, user 3: 604 **/
     bar.style.width = `${scaledWidth}px`;
 
     // Farbe leicht nach Score abstufen (optional)
@@ -580,10 +580,14 @@ function displayResults(scores, feedback_texts_advantages, feedback_texts_disadv
       <p>Score: ${score}${unit}</p>
       <p class="pid-description">${pidDescriptions[pid] || ''}</p>
       <p></p>
-      <p>Advantages with respect to your input: ${pid}...</p>
-      ${advantages_output_HTML}
-      <p>Disdvantages with respect to your input: ${pid}...</p>
-      ${disadvantages_output_HTML}
+      <details>
+        <summary>View Details</summary></br>
+       <span style="color:green;">+</span> <u>Advantages with respect to your choice: ${pid}...</u>
+        ${advantages_output_HTML}
+
+        <span style="color:red;">&ndash;</span> <u>Disdvantages with respect to your choice: ${pid}...</u>
+        ${disadvantages_output_HTML}
+      </details>
       `;
     resultDiv.appendChild(card);
   }

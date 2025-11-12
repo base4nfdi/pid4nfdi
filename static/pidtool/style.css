@@ -109,7 +109,6 @@ body { font-family: sans-serif; padding: 20px; }
   font-style: italic;
 }
 
-
 .statement-scores {
   margin-top: 0.5em;
   font-size: 0.8em;
@@ -230,4 +229,14 @@ body { font-family: sans-serif; padding: 20px; }
 .likert label:has(input:focus-visible) {
   outline: 2px solid #4f7cff;
   outline-offset: 2px;
+}
+
+/* Style for the foldable results */
+details {
+  border: 1px solid #ccc; /* Rand der Box */
+  background-color: #f0f0f0; /* Hintergrundfarbe */
+  padding: 10px; /* Innenabstand */
+  margin-bottom: 15px; /* Außenabstand */
+  font-size: 0.95rem;
+  color: #333;
 }
