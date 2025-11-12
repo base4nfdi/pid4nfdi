@@ -119,7 +119,7 @@ body { font-family: sans-serif; padding: 20px; }
   align-items: center;
   gap: 0.5em;
   margin-bottom: 2px;
-  max-width: 400px; /* optional */
+  max-width: 800px; /* optional */
 }
 
 .mini-score-label {

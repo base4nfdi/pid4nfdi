@@ -125,7 +125,7 @@ function getEffectiveExpertScore(providerName, qIndex) {
   return base;
 }
 
-function createMiniScoreBars(questionIndex /*, userValue (nicht mehr benötigt) */) {
+function createMiniScoreBars(questionIndex, userValue) {
   const container = document.createElement("div");
   container.className = "statement-scores";
 
@@ -139,11 +139,7 @@ function createMiniScoreBars(questionIndex /*, userValue (nicht mehr benötigt) 
     // Effektiven Expert-Score (inkl. DataCite-Regel) holen
     const expertValue = getEffectiveExpertScore(pid, questionIndex);
     if (expertValue === undefined || expertValue === null) continue;
-
-    // 1..5 → 0..1; Werte außerhalb (z.B. 0) auf 0 clampen, >5 auf 1
-    //const e01 = (Number(expertValue) - 1) / (LIKERT_EXPERT_MAX - 1); // 1..5 → 0..1
-    //const e = Math.max(0, Math.min(1, e01));
-    //const score = e * 100; // 0..100
+    const expert_times_user = expertValue*userValue
 
     const barWrapper = document.createElement("div");
     barWrapper.className = "mini-score";
@@ -155,11 +151,15 @@ function createMiniScoreBars(questionIndex /*, userValue (nicht mehr benötigt) 
     const bar = document.createElement("div");
     bar.className = "mini-bar";
 
-    // Balkenbreite rein aus Expert-Score
+    // Barwidth
     const minWidth = 4;  // etwas kleineres Minimum reicht hier
-    const maxWidth = 200;
-    //const scaledWidth = minWidth + (score / 100) * (maxWidth - minWidth);
-    const scaledWidth = minWidth + (expertValue) * (maxWidth-minWidth) / 5;
+    const maxWidth = 600;
+    const scaledWidth = minWidth + (expert_times_user)/15.0 * maxWidth;
+    //bar widths:
+    //expert 5, user 0: 4
+    //expert 5, user 1: 204
+    //expert 5, user 2: 404
+    //expert 5, user 3: 604
     bar.style.width = `${scaledWidth}px`;
 
     // Farbe leicht nach Score abstufen (optional)
@@ -167,9 +167,8 @@ function createMiniScoreBars(questionIndex /*, userValue (nicht mehr benötigt) 
                               : expertValue >= 2 ? 'orange'
                               : 'red';
 
-    // Tooltip mit Rohwert
-    bar.title = `Expert: ${expertValue} / ${LIKERT_EXPERT_MAX}`;
-
+    // Tooltip with raw value for expert score, user score and expert*user score
+    bar.title = `Expert: ${expertValue} / ${LIKERT_EXPERT_MAX}     User: ${userValue} / ${LIKERT_USER_MAX}\nStatement Score for ${pid}: ${expertValue}*${userValue}=${expert_times_user}`;
     barWrapper.appendChild(label);
     barWrapper.appendChild(bar);
     container.appendChild(barWrapper);
