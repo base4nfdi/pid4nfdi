@@ -1,6 +1,6 @@
 ---
 title: support
-date: 2025-05-23
+date: 2025-12-04
 type: landing
 
 sections:
@@ -20,10 +20,11 @@ sections:
         
         The events are held on a bi-monthly basis at different times on different days. The event will last one hour and will be announced via NFDI mailing lists and Rocket.chat a few weeks in advance, **together with the access link to the Zoom room**.
         
-        The upcoming meetings are on 
-        * **Wednesday, October 1st at 9:30 am,** 
-        * **Thursday, November 25 at 1 pm, and** 
-        * **an event at the end of January 2026.**
+        The upcoming meetings in 2026 are on 
+        * **Thursday, February 12 at 1 pm,** 
+        * **Wednesdy, May 13 at 1 pm,** 
+        * **Monday, September 7 at 11 am, and**
+        * **Tuesday, December 1st, at 2 pm**
 
     design:
       columns: '2'
