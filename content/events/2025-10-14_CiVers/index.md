@@ -14,8 +14,8 @@ event_url: https://www.dainst.org/blogs/noslug/253
 #  postcode: '10178'
 #  country: Germany
 
-summary: PID4NFDI participated in a workshop entitled 'CiVers: Versionierte Webzitation leicht gemacht', which took place in Berlin on October 14, 2025.
-abstract: 'PID4NFDI participated in a workshop entitled 'CiVers: Versionierte Webzitation leicht gemacht', which took place in Berlin on October 14, 2025.'
+summary: PID4NFDI participated in a workshop entitled "CiVers: Versionierte Webzitation leicht gemacht", which took place in Berlin on October 14, 2025.
+abstract: 'PID4NFDI participated in a workshop entitled "CiVers: Versionierte Webzitation leicht gemacht", which took place in Berlin on October 14, 2025.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -61,4 +61,4 @@ slides:
 projects:
 ---
 
-PID4NFDI participated in a workshop entitled 'CiVers: Versionierte Webzitation leicht gemacht', which took place in Berlin on October 14, 2025. Torsten Kahlert from TIB gave a talk on metadata quality. His slides can be found [here](https://docs.google.com/presentation/d/1eO8G-IP2-AsQVYQPzFwP09JXODmDhoCL4N0HJFGP-68/edit?slide=id.g389cbc5b3e5_0_0#slide=id.g389cbc5b3e5_0_0).
+PID4NFDI participated in a workshop entitled "CiVers: Versionierte Webzitation leicht gemacht", which took place in Berlin on October 14, 2025. Torsten Kahlert from TIB gave a talk on metadata quality. His slides can be found [here](https://docs.google.com/presentation/d/1eO8G-IP2-AsQVYQPzFwP09JXODmDhoCL4N0HJFGP-68/edit?slide=id.g389cbc5b3e5_0_0#slide=id.g389cbc5b3e5_0_0).
