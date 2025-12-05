@@ -38,7 +38,7 @@ share: false
 featured: false
 
 image:
-  caption: 'Image credit: [EOSC](https://eosc.eu/)'
+  caption: 'Image credit: [NFDI4Culture](https://nfdi4culture.de/events/details/culture-community-plenary-5-in-mainz.html)'
   focal_point: Right
 
 url_code: ''
