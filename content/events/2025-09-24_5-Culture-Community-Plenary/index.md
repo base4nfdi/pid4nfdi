@@ -19,8 +19,8 @@ abstract: 'The team of PID4NFDI participated in the 5th Culture Community Plenar
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2024-10-21T13:00:00Z'
-date_end: '2024-10-23T16:00:00Z'
+date: '2025-09-24T13:00:00Z'
+date_end: '2025-09-25T16:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
