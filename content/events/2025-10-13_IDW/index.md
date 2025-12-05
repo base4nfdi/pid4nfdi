@@ -15,7 +15,7 @@ event_url: https://idw2025.org/
 #  country: Germany
 
 summary: PID4NFDI participated in the International Data Week 2025, which took place online and in Brisbane, Australia from October 13 to 16, 2025.
-abstract: 'The team of PID4NFDI participated in PID4NFDI participated in the International Data Week 2025, which took place in Brisbane, Australia from October 13 to 16, 2025.
+abstract: 'The team of PID4NFDI participated in PID4NFDI participated in the International Data Week 2025, which took place in Brisbane, Australia from October 13 to 16, 2025.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
