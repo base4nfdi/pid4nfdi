@@ -1,7 +1,7 @@
 ---
 draft: false
 
-title: PID4NFDI @ CiVers: Versionierte Webzitation leicht gemacht
+title: PID4NFDI @ "CiVers: Versionierte Webzitation leicht gemacht"
 
 event: CiVers: Versionierte Webzitation leicht gemacht
 event_url: https://www.dainst.org/blogs/noslug/253
