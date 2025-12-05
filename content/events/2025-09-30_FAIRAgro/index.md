@@ -14,7 +14,7 @@ event_url: https://fairagro.net/plenary-2025-die-agenda/
 #  postcode: '10178'
 #  country: Germany
 
-summary: PID4NFDI took part at the FAIRagro Plenary 2025 in Berlin.
+summary: PID4NFDI participated in the FAIRagro Plenary 2025, which took place in Berlin from 30 September to 1 October 2025.
 abstract: 'The team of PID4NFDI participated in FAIRagro Plenary 2025, which took place in Berlin from 30th September to 01st October 2025.'
 
 # Talk start and end times.
