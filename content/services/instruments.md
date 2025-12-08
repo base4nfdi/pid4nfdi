@@ -115,6 +115,8 @@ sections:
           
           Figure 3: Clicking on a node opens a tab with the landing page of the resource (Try it out [here](https://search.pidinst.org/connections/10.71929/rubin/2571927))
 
+          If you are interested in a detailed explanation of the tool's features and/or the motivation for its provision, you can find our report on it as a deliverable within the PID4NFDI integration phase [here](https://zenodo.org/records/17734216).          
+
           ## [Open Federated Search](https://search.pidinst.org/)
     design:
       columns: 1
