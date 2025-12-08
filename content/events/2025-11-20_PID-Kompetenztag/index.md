@@ -26,7 +26,7 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: '2025-11-20T00:00:00Z'
 
-tags: ["PID-Konsortiumstag"]["TIB"]
+tags: ["PID-Konsortiumstag", "TIB"]
 
 # Show author bio?
 profile: false
@@ -61,4 +61,4 @@ slides:
 projects:
 ---
 
-ID4NFDI participated in the PID-Konsortiumstag 2025, held online on November 20, 2025. Torsten Kahlert and Frederik Springer from TIB gave a presentation on the project as a whole, as well as on PIDs for instruments. The slides can be found [here](https://projects.tib.eu/pid-service/tib-doi-konsortium/workshops/).
+PID4NFDI participated in the PID-Konsortiumstag 2025, held online on November 20, 2025. Torsten Kahlert and Frederik Springer from TIB gave a presentation on the project as a whole, as well as on PIDs for instruments. The slides can be found [here](https://projects.tib.eu/pid-service/tib-doi-konsortium/workshops/).
