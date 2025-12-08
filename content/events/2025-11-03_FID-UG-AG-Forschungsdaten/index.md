@@ -26,7 +26,7 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: '2025-11-03T00:00:00Z'
 
-tags: ["workshop"]["FID"]["metadata quality"]
+tags: ["workshop", "FID", "metadata quality"]
 
 # Show author bio?
 profile: false
