@@ -1,7 +1,7 @@
 ---
 draft: false
 
-title: "PID4NFDI @ PID-Konsortiumstag 2025
+title: "PID4NFDI @ PID-Konsortiumstag 2025"
 
 event: PID-Konsortiumstag 2025
 event_url: https://projects.tib.eu/pid-service/tib-doi-konsortium/workshops/
