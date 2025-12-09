@@ -1,10 +1,10 @@
 ---
 draft: false
 
-title: "RDA-Germany Conference 2026"
+title: "deRSE26 - 6th Conference for Research Software Engineering in Germany"
 
-event: RDA-Germany Conference 2026
-event_url: https://indico.desy.de/event/50156/
+event: deRSE26
+event_url: https://events.hifis.net/event/2945/
 
 #location: H4 Hotel Alexanderplatz
 #address:
@@ -14,19 +14,19 @@ event_url: https://indico.desy.de/event/50156/
 #  postcode: '10178'
 #  country: Germany
 
-summary: From February 24 to 25, 2026, the RDA Germany conference will once again take place on the Telegrafenberg in Potsdam at the GFZ.
-abstract: 'From February 24 to 25, 2026, the RDA Germany conference will once again take place on the Telegrafenberg in Potsdam at the GFZ.'
+summary: From March 3 to 5, 2026, the deRSE26 - 6th Conference for Research Software Engineering in Germany will take place in Stuttgart.
+abstract: 'From March 3 to 5, 2026, the deRSE26 - 6th Conference for Research Software Engineering in Germany will take place in Stuttgart.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2026-02-24T13:00:00Z'
-date_end: '2026-02-25T16:00:00Z'
+date: '2026-03-03T13:00:00Z'
+date_end: '2026-03-05T16:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
 publishDate: '2025-11-20T00:00:00Z'
 
-tags: ["RDA"]
+tags: ["deRSE"]
 
 # Show author bio?
 profile: false
@@ -38,7 +38,7 @@ share: false
 featured: false
 
 image:
-  caption: 'Image credit: [RDA-Deutschland](https://www.rda-deutschland.de/)'
+  caption: 'Image credit: [deRSE](https://de-rse.org/de/index.html)'
   focal_point: Right
 
 url_code: ''
@@ -61,4 +61,4 @@ slides:
 projects:
 ---
 
-From February 24 to 25, 2026, the RDA Germany conference will once again take place on the Telegrafenberg in Potsdam at the GFZ. Further details can be found on the [conference website](https://indico.desy.de/event/50156/).
+The deRSE26 – 6th Conference for Research Software Engineering in Germany will take place in Stuttgart from 3 to 5 March 2026. Further details can be found on the [conference website](https://events.hifis.net/event/2945/).
