@@ -61,4 +61,4 @@ slides:
 projects:
 ---
 
-On November 3rd, 2025, PID4NFDI and the Arbeitsgemeinschaft der Fachinformationsdienste (FID) Working group Research Data organised a joint workshop on metadata quality. Sara El-Gebali, DataCites metadata specialist, gave a talk on "Interoperability through Persistent Identifiers Metadata". Her slides can be found [here](https://docs.google.com/presentation/d/1XXhzkMvFrRStpidhMGngtJ4SAwIwR7AIHj2dAAyV1d8/edit?slide=id.g39e310eaeb0_0_1229#slide=id.g39e310eaeb0_0_1229).
+On November 3rd, 2025, PID4NFDI and the Arbeitsgemeinschaft der Fachinformationsdienste (FID) Working group Research Data organised a joint workshop on metadata quality. Sara El-Gebali, DataCites metadata specialist, gave a talk on "Interoperability through Persistent Identifiers Metadata". Her slides can be found [here](https://doi.org/10.5281/zenodo.17864643).
