@@ -1,10 +1,10 @@
 ---
 draft: false
 
-title: "PID4NFDI @ PID-Konsortiumstag 2025"
+title: "RDA-Germany Conference 2026"
 
-event: PID-Konsortiumstag 2025
-event_url: https://projects.tib.eu/pid-service/tib-doi-konsortium/workshops/
+event: RDA-Germany Conference 2026
+event_url: https://indico.desy.de/event/50156/
 
 #location: H4 Hotel Alexanderplatz
 #address:
@@ -14,19 +14,19 @@ event_url: https://projects.tib.eu/pid-service/tib-doi-konsortium/workshops/
 #  postcode: '10178'
 #  country: Germany
 
-summary: PID4NFDI participated in the PID-Konsortiumstag 2025, held online on November 20, 2025.
-abstract: 'PID4NFDI participated in the PID-Konsortiumstag 2025, held online on November 20, 2025.'
+summary: From February 24 to 25, 2026, the RDA Germany conference will once again take place on the Telegrafenberg in Potsdam at the GFZ.
+abstract: 'From February 24 to 25, 2026, the RDA Germany conference will once again take place on the Telegrafenberg in Potsdam at the GFZ.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2025-11-20T13:00:00Z'
-date_end: '2025-11-20T16:00:00Z'
+date: '2026-02-24T13:00:00Z'
+date_end: '2026-02-25T16:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
 publishDate: '2025-11-20T00:00:00Z'
 
-tags: ["PID-Konsortiumstag", "TIB"]
+tags: ["RDA"]
 
 # Show author bio?
 profile: false
@@ -38,7 +38,7 @@ share: false
 featured: false
 
 image:
-  caption: 'Image credit: [PID-Kompetenzzentrum](https://projects.tib.eu/pid-service/)'
+  caption: 'Image credit: [RDA-Deutschland](https://www.rda-deutschland.de/)'
   focal_point: Right
 
 url_code: ''
@@ -61,4 +61,4 @@ slides:
 projects:
 ---
 
-PID4NFDI participated in the PID-Konsortiumstag 2025, held online on November 20, 2025. Torsten Kahlert and Frederik Springer from TIB gave a presentation on the project as a whole, as well as on PIDs for instruments. The slides can be found [here](https://projects.tib.eu/pid-service/tib-doi-konsortium/workshops/).
+From February 24 to 25, 2026, the RDA Germany conference will once again take place on the Telegrafenberg in Potsdam at the GFZ.
