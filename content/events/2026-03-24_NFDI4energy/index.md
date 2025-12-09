@@ -14,7 +14,7 @@ event_url: https://events.hifis.net/event/3058/overview
 #  postcode: '10178'
 #  country: Germany
 
-summary: PID4NFDI will participate in the 3rd NFDI4Energy Conference, which will take place in Aachen from March 24th to 25th in 2026..
+summary: PID4NFDI will participate in the 3rd NFDI4Energy Conference, which will take place in Aachen from March 24th to 25th in 2026.
 abstract: 'PID4NFDI will participate in the 3rd NFDI4Energy Conference, which will take place in Aachen from March 24th to 25th in 2026.'
 
 # Talk start and end times.

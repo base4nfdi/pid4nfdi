@@ -60,4 +60,4 @@ slides:
 projects:
 ---
 
-PIDfest 2026 will take place in Leiden, the Netherlands, from 27 to 29 October 2026. Further details can be found on the [conference website](https://www.pidfest.org/.
+PIDfest 2026 will take place in Leiden, the Netherlands, from 27 to 29 October 2026. Further details can be found on the [conference website](https://www.pidfest.org/).
