@@ -20,15 +20,15 @@ sections:
         subtitle: Driving FAIR, Open and Persistent Research Practices
         text: |
             The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.
-            
+
             <div class="use-case-card-grid">
-          #<div class="pid-card" data-type="Large numbers of PIDs,High-granular data" data-provider="ePIC" data-domain="Social Sciences" data-lang="Dataset elements" >
+            #<div class="pid-card" data-type="Large numbers of PIDs,High-granular data" data-provider="ePIC" data-domain="Social Sciences" data-lang="Dataset elements" >
             <h2>Fundamentals</h2>
-            #<h5> <span style="background-color:gold;"> &nbsp high-granular data &nbsp</span> &nbsp <span style="background-color:sandybrown;"> &nbsp large numbers of PIDs &nbsp </span></h5>            
+            #<h5> <span style="background-color:gold;"> &nbsp high-granular data &nbsp</span> &nbsp <span style="background-color:sandybrown;"> &nbsp large numbers of PIDs &nbsp </span></h5>
             <p>New to PIDs? Learn why persistent identifiers are important and how they make your research FAIR.</p>
             <p>&nbsp</p>
             <h2> <a href="https://pid.services.base4nfdi.de/get-pid/start/" target="_blank">Learn more</a></h2>
-          </div>
+            </div>
     design:
         columns: '1'
   
