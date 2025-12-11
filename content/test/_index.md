@@ -19,35 +19,24 @@ sections:
         title: PID Coordination Hub
         subtitle: Driving FAIR, Open and Persistent Research Practices
         text: |
-            The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.
-
+            The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.   
+## What we offer
             <div class="use-case-card-grid">
-            #<div class="pid-card" data-type="Large numbers of PIDs,High-granular data" data-provider="ePIC" data-domain="Social Sciences" data-lang="Dataset elements" >
             <h2>Fundamentals</h2>
-            #<h5> <span style="background-color:gold;"> &nbsp high-granular data &nbsp</span> &nbsp <span style="background-color:sandybrown;"> &nbsp large numbers of PIDs &nbsp </span></h5>
             <p>New to PIDs? Learn why persistent identifiers are important and how they make your research FAIR.</p>
             <p>&nbsp</p>
             <h2> <a href="https://pid.services.base4nfdi.de/get-pid/start/" target="_blank">Learn more</a></h2>
             </div>
+            
+            <div class="use-case-card-grid">
+            <h2>Services</h2>
+            <p>We provide integrated PID services that underpin the NFDI's infrastructure. This includes managing Prefix Registration, which allows institutions to mint and control their own unique PIDs. We offer specialized support for the Persistent Identification of Instruments to make physical assets traceable and citable, thereby boosting research reproducibility. Furthermore, we deliver technical guidance on Metadata Support and Assessment to ensure that all PID-related descriptive information is accurate, standardized, and compliant with FAIR principles across the entire ecosystem.</p>
+            <p>&nbsp</p>
+            <h2> <a href="https://pid.services.base4nfdi.de/services/" target="_blank">Learn more</a></h2>
+          </div>
     design:
         columns: '1'
   
-  - block: markdown
-    content:
-        title: What are PIDs?
-        text: |
-            A persistent identifier, or short PID, is a unique alphanumeric code that makes it possible to uniquely and sustainably reference objects, persons and organizations. Importantly, a PID is linked to descriptive information (metadata) about the resource, thereby providing context information. The use of PIDs is growing steadily and is being extended to more and more areas of research, for example through the development of PIDs for samples, data management plans or research projects.
-            
-            Hence, a growing variety of resource types/entities are covered by PIDs. Among them are: research data, instruments, cultural objects, data management plans, organisations, projects, persons, physical objects (samples), publication services and repositories, research information systems, research tools (such as electronic lab notebooks), scientific events, software, text publications. The use of PIDs is an essential component for the implementation of the [FAIR principles](https://www.go-fair.org/fair-principles/) that promote the findability, accessibility, interoperability and re-usability of research data. The mandatory and standardized metadata associated with PIDs make research data findable, accessible and citable.
-    
-            
-            You can learn more about PIDs, their use cases and technical implementation at our partners [PID Network Germany](https://www.pid-network.de/en/) and the [PID Competence Center of TIB](https://projects.tib.eu/pid-service/en/persistent-identifiers/persistent-identifiers-pids/). Or watch this introductory video [_The power of PIDs_](https://doi.org/10.5281/zenodo.3977942) by the [FREYA project](https://www.project-freya.eu/):
-            <br>
-            
-            {{< video src="FREYA_The_power_of_PIDs_540p.mp4" controls="yes" poster="FREYA_The_power_of_PIDs_preview.png">}}
-    
-    design:
-        columns: '2'
 
 #  - block: collection
 #    content:
