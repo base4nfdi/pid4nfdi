@@ -27,10 +27,10 @@ sections:
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>📘 Fundamentals</h3>
             <p class="pid-description">New to PIDs? Learn why persistent identifiers are important and how they make your research FAIR.</p>
-            
             <div class="pid-actions">
-              <button class="pid-toggle-details" onclick="window.open('https://pid.services.base4nfdi.de/get-pid/start/', '_blank');">Learn more</button>
-            </div>
+              <button class="pid-toggle-details" onclick="toggleDetails(this)">SLearn more</button>
+              <a href="https://pid.services.base4nfdi.de/get-pid/start/" class="pid-btn-open" target="_blank" rel="noopener">Learn more</a>
+             </div>
           </div>
           
         </div>
