@@ -14,7 +14,7 @@ sections:
       image:
         filename: PID4NFDI-top-neg.png
 
-- block: markdown
+  - block: markdown
     content:
       title: PID Coordination Hub
       subtitle: Driving FAIR, Open and Persistent Research Practices
@@ -30,9 +30,8 @@ sections:
             <div class="pid-actions">
               <button class="pid-toggle-details" onclick="toggleDetails(this)">SLearn more</button>
               <a href="https://pid.services.base4nfdi.de/get-pid/start/" class="pid-btn-open" target="_blank" rel="noopener">Learn more</a>
-             </div>
+            </div>
           </div>
-          
         </div>
     design:
       columns: '1'
