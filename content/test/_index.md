@@ -32,6 +32,18 @@ sections:
             </div>
           </div>
         </div>
+        
+        <div class="pid-card-grid">
+          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+            <h3>🛒 Services</h3>
+        <p class="pid-description">What we offer</p>
+        <ul class="pid-service-list">
+            <li><a href="https://pid.services.base4nfdi.de/services/instruments/" target="_blank" rel="noopener">Persistent Identification of Instruments</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/services/metadata-support-assessment/" target="_blank" rel="noopener">Metadata Support and Assessment</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/services/prefix-registration/" target="_blank" rel="noopener">Prefix Registration</a></li>
+        </ul>
+        </div>
+</div>
     design:
       columns: '1'
 
