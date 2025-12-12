@@ -14,7 +14,7 @@ sections:
       image:
         filename: PID4NFDI-top-neg.png
 
-  - block: markdown
+- block: markdown
     content:
       title: PID Coordination Hub
       subtitle: Driving FAIR, Open and Persistent Research Practices
@@ -24,16 +24,16 @@ sections:
         ## What we offer
 
         <div class="pid-card-grid">
-        <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>📘 Fundamentals</h3>
             <p class="pid-description">New to PIDs? Learn why persistent identifiers are important and how they make your research FAIR.</p>
             
             <div class="pid-actions">
-              <button class="pid-toggle-details" onclick="toggleDetails(this)">Learn more</button>
-              <a href="https://pid.services.base4nfdi.de/get-pid/start/"</a>
+              <button class="pid-toggle-details" onclick="window.open('https://pid.services.base4nfdi.de/get-pid/start/', '_blank');">Learn more</button>
             </div>
-        </div>
-        </div>
+          </div>
+          
+          </div>
     design:
       columns: '1'
 
