@@ -33,7 +33,7 @@ sections:
             </div>
           </div>
           
-          </div>
+        </div>
     design:
       columns: '1'
 
