@@ -18,20 +18,23 @@ sections:
     content:
         title: PID Coordination Hub
         subtitle: Driving FAIR, Open and Persistent Research Practices
-        text: |
-            The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.   
-            ## What we offer
-        <!-- Card Grid -->
+text: |
+        The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.
+
+        ## What we offer
+        
         <div class="pid-card-grid">
-        #<div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+        <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>📘 Fundamentals</h3>
             <p class="pid-description">New to PIDs? Learn why persistent identifiers are important and how they make your research FAIR.</p>
         </div>
-            <div class="pid-actions">
-              <button class="pid-toggle-details" onclick="toggleDetails(this)">Learn more</button>
-              <a href="https://pid.services.base4nfdi.de/get-pid/start/" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
-            </div>
-          </div>
+        <div class="pid-actions">
+            <button class="pid-toggle-details" onclick="toggleDetails(this)">Learn more</button>
+            <a href="https://pid.services.base4nfdi.de/get-pid/start/" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
+        </div>
+        </div>
+    design:
+      columns: '1'
 
 #  - block: collection
 #    content:
