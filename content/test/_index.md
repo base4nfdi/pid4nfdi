@@ -42,8 +42,9 @@ sections:
             <li><a href="https://pid.services.base4nfdi.de/services/metadata-support-assessment/" target="_blank" rel="noopener">Metadata Support and Assessment</a></li>
             <li><a href="https://pid.services.base4nfdi.de/services/prefix-registration/" target="_blank" rel="noopener">Prefix Registration</a></li>
         </ul>
-        </div>
-</div>
+          </div>
+         </div>
+         
     design:
       columns: '1'
 
