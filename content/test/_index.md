@@ -29,7 +29,8 @@ sections:
             <p class="pid-description">New to PIDs? Learn why persistent identifiers are important and how they make your research FAIR.</p>
             
             <div class="pid-actions">
-              <button class="pid-toggle-details" onclick="window.open('https://pid.services.base4nfdi.de/get-pid/start/', '_blank');">Learn more</button>
+              <button class="pid-toggle-details" onclick="toggleDetails(this)">Learn more</button>
+              <a href="https://pid.services.base4nfdi.de/get-pid/start/"</a>
             </div>
         </div>
         </div>
