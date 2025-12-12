@@ -31,9 +31,8 @@ sections:
             <div class="pid-actions">
               <button class="pid-toggle-details" onclick="window.open('https://pid.services.base4nfdi.de/get-pid/start/', '_blank');">Learn more</button>
             </div>
-          </div>
-          
-          </div>
+        </div>
+        </div>
     design:
       columns: '1'
 
