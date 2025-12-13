@@ -28,11 +28,11 @@ sections:
     
           <hr style="height:0px; visibility:hidden;" />
 
-          - **Recommendations and examples for instrument metadata**: To make optimal use of instrument PIDs, it is crucial to fill in the metadata fields carefully. This is not always easy, especially as there did not exist much guidance on this topic so far. 
+          - **Guidance and examples for instrument metadata**: To make optimal use of instrument PIDs, it is crucial to fill in the metadata fields carefully. This is not always easy, especially as there did not exist much guidance on this topic so far. 
             
-            - Recommendations: Linking instrument PIDs to other research entities *[coming soon]*
+            - Guidance: [Linking instrument PIDs to other research entities](https://zenodo.org/records/17535290) 
             
-            - Recommendations: Optimal use of DataCite metadata fields for instruments *[coming soon]*
+            - Guidance: Optimal use of DataCite metadata fields for instruments *[coming soon]*
 
           <br/>      
 
