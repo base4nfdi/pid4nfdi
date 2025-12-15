@@ -36,13 +36,42 @@ sections:
         <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>🛒 Services</h3>
-        <p class="pid-description">What we offer</p>
+        <p class="pid-description">Explore the practical solutions we develop to strengthen research data management: </p>
         <ul class="pid-service-list">
             <li><a href="https://pid.services.base4nfdi.de/services/instruments/" target="_blank" rel="noopener">Persistent Identification of Instruments</a></li>
             <li><a href="https://pid.services.base4nfdi.de/services/metadata-support-assessment/" target="_blank" rel="noopener">Metadata Support and Assessment</a></li>
             <li><a href="https://pid.services.base4nfdi.de/services/prefix-registration/" target="_blank" rel="noopener">Prefix Registration</a></li>
         </ul>
           </div>
+          
+         <div class="pid-card-grid">
+          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+            <h3>💬 Community</h3>
+        <p class="pid-description">Dive into the core of our collaborative network. The Community section is your hub for connecting with peers and leveraging shared knowledge.</p>
+        <ul class="pid-service-list">
+            <li><a href="https://pid.services.base4nfdi.de/community/focus-groups/" target="_blank" rel="noopener">Focus groups</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/community/support/" target="_blank" rel="noopener">Support</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/community/use-cases/" target="_blank" rel="noopener">Use Cases</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/community/consortia-services/" target="_blank" rel="noopener">Consortia Services</a></li>
+        </ul>
+          </div>
+          
+        <div class="pid-card-grid">
+          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+            <h3>📖 Knowledge Base</h3>
+        <p class="pid-description">Find practical Training Materials & Guides to implement PIDs, alongside key Publications detailing our latest efforts in the field.</p>
+        <ul class="pid-service-list">
+            <li><a href="https://pid.services.base4nfdi.de/resources/training-material/" target="_blank" rel="noopener">Training Materials & Guides</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/publication/" target="_blank" rel="noopener">Publications</a></li>
+        </ul>
+          </div>
+          
+         <div class="pid-card-grid">
+          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+            <h3>ℹ️ About</h3>
+        <p class="pid-description">The About section provides a comprehensive overview: learn About [PID4NFDI](https://pid.services.base4nfdi.de/about/), explore our future Roadmap & FAQs, meet the dedicated Team behind the project, and find out how to Contact us to engage with our work supporting the National Research Data Infrastructure (NFDI).</p>
+          </div>
+          
          </div>
          
     design:
