@@ -21,7 +21,9 @@ sections:
       text: |
         The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.
 
-        ## What we offer
+       <div style="text-align: center;">
+       ## What we offer
+       </div>
 
         <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
@@ -69,7 +71,7 @@ sections:
          <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>ℹ️ About</h3>
-        <p class="pid-description">The About section provides a comprehensive overview: learn About [PID4NFDI](https://pid.services.base4nfdi.de/about/), explore our future Roadmap & FAQs, meet the dedicated Team behind the project, and find out how to Contact us to engage with our work supporting the National Research Data Infrastructure (NFDI).</p>
+        <p class="pid-description">The About section provides a comprehensive overview: learn About <a href="https://pid.services.base4nfdi.de/about/">PID4NFDI</a>, explore our future Roadmap & FAQs, meet the dedicated Team behind the project, and find out how to Contact us to engage with our work supporting the National Research Data Infrastructure (NFDI).</p>
           </div>
           
          </div>
