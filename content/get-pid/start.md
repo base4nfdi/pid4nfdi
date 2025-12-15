@@ -19,7 +19,7 @@ sections:
             
             {{< video src="FREYA_The_power_of_PIDs_540p.mp4" controls="yes" poster="FREYA_The_power_of_PIDs_preview.png">}}  
             
-                        For a more in-depth look, take a look at our partners' resources:
+            For a more in-depth look, take a look at our partners' resources:
             * [ePIC - Persistent Identifiers for eResearch](https://www.pidconsortium.net/)
             * [PID Competence Center of TIB](https://www.pid-network.de/en/)
             * [PID Network Germany](https://projects.tib.eu/pid-service/en/persistent-identifiers/persistent-identifiers-pids/)  
