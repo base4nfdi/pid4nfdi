@@ -1,6 +1,20 @@
 {
   "questions": [
     {
+      "id": 15,
+      "section": "Persistence and Costs",
+      "text": "15. Do you prefer to host the PID infrastructure yourself, or would you rather have a PID provider do it for you?",
+      "help": "Self-hosting can provide higher performance and more technical options but requires technical capacity. Self-hosting can make sense if performance is critical, for example, if lots of PIDs should be registered within a very short time frame. The closer the client to the server, the more performant is PID registration. Self-hosting can also make sense if a PID service should follow a specific technical setup (e.g., a specific database-engine under the Handle System, which fits a specific purpose, or more RAM for fast queries). Another reason could be specialized solutions for user management. However, self-hosting demands long-term commitment to maintaining the services to guarantee for persistence, and requires resources for infrastructure maintenance. ePICs and URN:NBNs can be both self-hosted and hosted by providers. Other providers such as DataCite are centrally managed and do not provide the option of self-hosting. ARKs require self-hosting because there are currently no ARK service providers available in Germany.",
+      "options": [
+        "Both self-hosting and provider hosting are ok.",
+        "We definitely want to self-host.",
+        "Not sure yet, but more likely self-host.",
+        "Not sure yet, but more likely provider-hosting.",
+        "We definitely want provider hosting.",
+        "I don't know."
+      ]
+    },
+    {
       "id": 1,
       "section": "Persistence and Costs",
       "text": "1. It is important for us that the PID provider demonstrates a strong, long-term commitment to persistence.",

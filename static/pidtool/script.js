@@ -207,28 +207,64 @@ function showSection(index) {
 
     const selectedValue = answers[q.index] ? answers[q.index].value : null;
 
-    div.innerHTML = `
-      <p><strong>${q.text}</strong><button class="more-info-btn" onclick="toggleHelp(this)">More info</button></p>
-      <div class="help-text">${q.help}</div>
-      <div class="likert">
-        ${((q.options && Array.isArray(q.options) ? q.options : LIKERT_OPTIONS_DEFAULT)
-          .sort((a, b) => a.value - b.value)
-        ).map(opt => `
-          <label>
-            <input type="radio" name="q${q.index}" value="${opt.value}" ${selectedValue == opt.value ? 'checked' : ''} onchange="updateMiniBars(${q.index}, this.value, this)">
-            ${opt.label}
-          </label>
-        `).join('')}
-      </div>
-      <div class="skip-option">
-        <button type="button" class="clear-btn" data-q="${q.index}" onclick="skipAnswer(${q.index})" style="${selectedValue === null ? 'display:none;' : ''}">Clear</button>
-      </div>
-      <div class="mini-bar-wrapper" id="mini-bars-${q.index}"></div>
-    `;
+    if (q.index != 0) {
+      console.log(q.index);
+      div.innerHTML = `
+        <p><strong>${q.text}</strong><button class="more-info-btn" onclick="toggleHelp(this)">More info</button></p>
+        <div class="help-text">${q.help}</div>
+        <div class="likert">
+          ${((q.options && Array.isArray(q.options) ? q.options : LIKERT_OPTIONS_DEFAULT)
+            .sort((a, b) => a.value - b.value)
+          ).map(opt => `
+            <label>
+              <input type="radio" name="q${q.index}" value="${opt.value}" ${selectedValue == opt.value ? 'checked' : ''} onchange="updateMiniBars(${q.index}, this.value, this)">
+              ${opt.label}
+            </label>
+          `).join('')}
+        </div>
+        <div class="skip-option">
+          <button type="button" class="clear-btn" data-q="${q.index}" onclick="skipAnswer(${q.index})" style="${selectedValue === null ? 'display:none;' : ''}">Clear</button>
+        </div>
+        <div class="mini-bar-wrapper" id="mini-bars-${q.index}"></div>
+      `;
+    } else {
+        console.log("special question hosting");
+        div.innerHTML = `
+          <p><strong>${q.text}</strong><button class="more-info-btn" onclick="toggleHelp(this)">More info</button></p>
+          <div class="help-text">${q.help}</div>
+          <div class="likert">
+             <input type="radio" id="opt0" name="opt" value="opt0" checked/>
+             <label for="opt0">${q.options[0]}</label>
+          </div>
+          <div class="likert">
+             <input type="radio" id="opt1" name="opt" value="opt1" />
+             <label for="opt1">${q.options[1]}</label>
+          </div>
+          <div class="likert">
+             <input type="radio" id="opt2" name="opt" value="opt2" />
+             <label for="opt2">${q.options[2]}</label>
+          </div>
+          <div class="likert">
+             <input type="radio" id="opt3" name="opt" value="opt3" />
+             <label for="opt2">${q.options[3]}</label>
+          </div>
+          <div class="likert">
+             <input type="radio" id="opt4" name="opt" value="opt4" />
+             <label for="opt4">${q.options[4]}</label>
+          </div>
+          <div class="likert">
+             <input type="radio" id="opt5" name="opt" value="opt5" />
+             <label for="opt5">${q.options[5]}</label>
+          </div>
+      `;
+    }
 
     section.appendChild(div);
   });
-
+//<label for="option_0"> ${q.options[0]} </label>
+              //<input type="radio" name="option_0" id="option_0" />
+              //<label for="option_1"> ${q.options[1]} </label>
+              //<input type="radio" name="option_1" id="option_1" />
   const nav = document.createElement('div');
   nav.className = 'nav-buttons';
   if (index > 0) {

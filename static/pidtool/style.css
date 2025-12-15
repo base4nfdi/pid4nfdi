@@ -208,6 +208,7 @@ body { font-family: sans-serif; padding: 20px; }
   cursor: pointer;
 }
 
+
 /* Hover-Feedback */
 .likert label:hover {
   background: #f5f8fc;
