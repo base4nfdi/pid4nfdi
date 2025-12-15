@@ -71,7 +71,7 @@ sections:
          <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>ℹ️ About</h3>
-        <p class="pid-description">The About section provides a comprehensive overview: learn About <a href="https://pid.services.base4nfdi.de/about/">PID4NFDI</a>, explore our future Roadmap & FAQs, meet the dedicated Team behind the project, and find out how to Contact us to engage with our work supporting the National Research Data Infrastructure (NFDI).</p>
+        <p class="pid-description">The About section provides a comprehensive overview: learn About <a href="https://pid.services.base4nfdi.de/about/">PID4NFDI</a>, explore our future <a href="https://pid.services.base4nfdi.de/about/roadmap-faqs/">Roadmap & FAQs</a>, meet the dedicated <a href="https://pid.services.base4nfdi.de/about/team/">Team</a> behind the project, and find out how to <a href="https://pid.services.base4nfdi.de/about/contact/">Contact us</a> to engage with our work supporting the National Research Data Infrastructure (NFDI).</p>
           </div>
           
          </div>
