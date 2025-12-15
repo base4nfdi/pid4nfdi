@@ -19,7 +19,8 @@ sections:
       title: PID Coordination Hub
       subtitle: Driving FAIR, Open and Persistent Research Practices
       text: |
-        The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.
+         **Persistent Identifiers (PIDs)** are unique, permanent digital references for research resources — from datasets and publications to researchers, institutions, and instruments. They ensure the long-term findability and citability of research outputs, independent of changes in URLs or institutional structures.  
+         **The PID Coordination Hub** was developed as part of the **PID4NFDI** project and serves as a central support infrastructure for managing persistent identifiers within Germany's [National Research Data Infrastructure (NFDI)](https://www.nfdi.de/). Our goal is to foster the standardization of PID usage, strengthen governance structures, and promote interoperability among NFDI consortia. By integrating various PID providers and harmonizing metadata practices, we support research institutions in implementing the FAIR principles (Findable, Accessible, Interoperable, Reusable).
 
         <h2 style="text-align: center;">What we offer</h2>
 
@@ -68,7 +69,13 @@ sections:
          <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>ℹ️ About</h3>
-        <p class="pid-description">The About section provides a comprehensive overview: learn About <a href="https://pid.services.base4nfdi.de/about/">PID4NFDI</a>, explore our future <a href="https://pid.services.base4nfdi.de/about/roadmap-faqs/">Roadmap & FAQs</a>, meet the dedicated <a href="https://pid.services.base4nfdi.de/about/team/">Team</a> behind the project, and find out how to <a href="https://pid.services.base4nfdi.de/about/contact/">Contact us</a> to engage with our work supporting the National Research Data Infrastructure (NFDI).</p>
+        <p class="pid-description">The About section provides a comprehensive overview of the project and its team.
+        <ul class="pid-service-list">
+            <li><a href="https://pid.services.base4nfdi.de/about/" target="_blank" rel="noopener">About PID4NFDI</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/about/roadmap-faqs/" target="_blank" rel="noopener">Roadmap & FAQs</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/about/team/" target="_blank" rel="noopener">Team</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/about/contact/" target="_blank" rel="noopener">Contact</a></li>
+        </ul>
           </div>
           
          </div>
