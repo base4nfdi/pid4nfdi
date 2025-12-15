@@ -19,7 +19,9 @@ sections:
       title: PID Coordination Hub
       subtitle: Driving FAIR, Open and Persistent Research Practices
       text: |
-        **Persistent Identifiers (PIDs)** are unique, permanent digital references for research resources — from datasets and publications to researchers, institutions, and instruments. They ensure the long-term findability and citability of research outputs, independent of changes in URLs or institutional structures.  
+        **Persistent Identifiers (PIDs)** are unique, permanent digital references for research resources — from datasets and publications to researchers, institutions, and instruments. They ensure the long-term findability and citability of research outputs, independent of changes in URLs or institutional structures.
+        &nbsp;
+        <br>
         **The PID Coordination Hub** was developed as part of the **PID4NFDI** project and serves as a central support infrastructure for managing persistent identifiers within Germany's [National Research Data Infrastructure (NFDI)](https://www.nfdi.de/). Our goal is to foster the standardization of PID usage, strengthen governance structures, and promote interoperability among NFDI consortia. By integrating various PID providers and harmonizing metadata practices, we support research institutions in implementing the FAIR principles (Findable, Accessible, Interoperable, Reusable).
 
         <h2 style="text-align: center;">What we offer</h2>
@@ -69,7 +71,7 @@ sections:
          <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>🗓️ Events</h3>
-        <p class="pid-description">Stay informed about our recent and upcoming activities.See below ⬇️</p>
+        <p class="pid-description">Stay informed about our recent and upcoming activities. See below ⬇️</p>
           </div>
          </div>
          
