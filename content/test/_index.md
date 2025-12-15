@@ -31,7 +31,6 @@ sections:
               <a href="https://pid.services.base4nfdi.de/get-pid/start/" class="pid-btn-open" target="_blank" rel="noopener">Learn more</a>
             </div>
           </div>
-        </div>
         
         <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
@@ -42,9 +41,7 @@ sections:
             <li><a href="https://pid.services.base4nfdi.de/services/metadata-support-assessment/" target="_blank" rel="noopener">Metadata Support and Assessment</a></li>
             <li><a href="https://pid.services.base4nfdi.de/services/prefix-registration/" target="_blank" rel="noopener">Prefix Registration</a></li>
         </ul>
-            </div>
           </div>
-        </div>
           
          <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
@@ -56,9 +53,7 @@ sections:
             <li><a href="https://pid.services.base4nfdi.de/community/use-cases/" target="_blank" rel="noopener">Use Cases</a></li>
             <li><a href="https://pid.services.base4nfdi.de/community/consortia-services/" target="_blank" rel="noopener">Consortia Services</a></li>
         </ul>
-            </div>
           </div>
-        </div>
           
         <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
@@ -68,17 +63,13 @@ sections:
             <li><a href="https://pid.services.base4nfdi.de/resources/training-material/" target="_blank" rel="noopener">Training Materials & Guides</a></li>
             <li><a href="https://pid.services.base4nfdi.de/publication/" target="_blank" rel="noopener">Publications</a></li>
         </ul>
-            </div>
           </div>
-        </div>
           
          <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>ℹ️ About</h3>
         <p class="pid-description">The About section provides a comprehensive overview: learn About <a href="https://pid.services.base4nfdi.de/about/">PID4NFDI</a>, explore our future <a href="https://pid.services.base4nfdi.de/about/roadmap-faqs/">Roadmap & FAQs</a>, meet the dedicated <a href="https://pid.services.base4nfdi.de/about/team/">Team</a> behind the project, and find out how to <a href="https://pid.services.base4nfdi.de/about/contact/">Contact us</a> to engage with our work supporting the National Research Data Infrastructure (NFDI).</p>
-            </div>
           </div>
-        </div>
           
          </div>
          
