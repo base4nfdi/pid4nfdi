@@ -68,8 +68,8 @@ sections:
           
          <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
-            <h3>ℹ️ About</h3>
-        <p class="pid-description">The About section provides a comprehensive overview of the project and its team.
+            <h3>🗓️ Events</h3>
+        <p class="pid-description">The About section provides a comprehensive overview of the project and its team.</p>
         <ul class="pid-service-list">
             <li><a href="https://pid.services.base4nfdi.de/about/" target="_blank" rel="noopener">About PID4NFDI</a></li>
             <li><a href="https://pid.services.base4nfdi.de/about/roadmap-faqs/" target="_blank" rel="noopener">Roadmap & FAQs</a></li>
@@ -78,6 +78,11 @@ sections:
         </ul>
           </div>
           
+         <div class="pid-card-grid">
+          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+            <h3>ℹ️ About</h3>
+        <p class="pid-description">Stay informed about our upcoming and recent activities.See below ⬇️</p>
+          </div>
          </div>
          
     design:
