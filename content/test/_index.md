@@ -108,39 +108,6 @@ sections:
     design:
       view: compact
       columns: '2'
-
-#  - block: collection
-#    content:
-#      title: Latest Publications
-#      text: ""
-#      count: 5
-#      filters:
-#        folders:
-#          - publication
-#        #publication_type: 'article'
-#    design:
-#      view: list
-#      columns: '1'
-
-  - block: markdown
-    content:
-      title: About
-      subtitle: PID4NFDI – Persistent Identifier Services for the German National Research Data Infrastructure (NFDI)
-      text: |
-        <div class="row row-cols-4">
-        <div class="col">
-        {{% cta cta_alt_link="./about/" cta_alt_text="More about the project" %}}
-        </div>
-        <div class="col">
-        {{% cta cta_alt_link="./publication/" cta_alt_text="Latest publications" %}}
-        </div>
-        <div class="col">
-        {{% cta cta_alt_link="./about/team/" cta_alt_text="Meet the team" %}}
-        </div>
-        <div class="col">
-        {{% cta cta_alt_link="./about/contact/" cta_alt_text="Contact us" %}}
-        </div>
-        </div>
     design:
       columns: '1'
 
