@@ -35,7 +35,6 @@ sections:
               <li><a href="https://pid.services.base4nfdi.de/get-pid/providers/" target="_blank" rel="noopener">PID Providers</a></li>
             </ul>
             </div>
-            </div>
 
         
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
