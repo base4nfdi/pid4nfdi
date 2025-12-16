@@ -30,12 +30,12 @@ sections:
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>📘 Fundamentals</h3>
             <p class="pid-description">New to PIDs? Learn why persistent identifiers are important and how they make your research FAIR.</p>
-            <div class="pid-actions">
-              <a href="https://pid.services.base4nfdi.de/get-pid/start/" class="pid-btn-open" target="_blank" rel="noopener">Learn more</a>
+            <ul class="pid-service-list">
+              <li><a href="https://pid.services.base4nfdi.de/get-pid/start/" target="_blank" rel="noopener">Getting Started</a></li>
+              <li><a href="https://pid.services.base4nfdi.de/get-pid/providers/" target="_blank" rel="noopener">PID Providers</a></li>
+            </ul>
             </div>
-            </div>
-          
-        
+
         
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>🛒 Services</h3>
