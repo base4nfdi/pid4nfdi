@@ -418,3 +418,22 @@ video {
   }
   .dropdown-toggle::after { display: none !important; }
 }
+
+/* PID cards: make grid mobile-friendly */
+@media (max-width: 768px) {
+  .pid-card-grid {
+    grid-template-columns: 1fr;  /* 1 card per row */
+  }
+
+  .pid-card {
+    width: 100%;
+    min-width: 0;                /* prevents overflow in CSS grid */
+  }
+
+  /* break long links/words inside cards */
+  .pid-card,
+  .pid-card * {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}

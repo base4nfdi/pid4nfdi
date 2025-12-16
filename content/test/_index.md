@@ -33,9 +33,10 @@ sections:
             <div class="pid-actions">
               <a href="https://pid.services.base4nfdi.de/get-pid/start/" class="pid-btn-open" target="_blank" rel="noopener">Learn more</a>
             </div>
-          </div>
+            </div>
+          
         
-        <div class="pid-card-grid">
+        
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>🛒 Services</h3>
         <p class="pid-description">Explore the practical solutions we develop to strengthen research data management: </p>
@@ -46,7 +47,7 @@ sections:
         </ul>
           </div>
           
-         <div class="pid-card-grid">
+         
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>💬 Community</h3>
         <p class="pid-description">Dive into the core of our collaborative network. The Community section is your hub for connecting with peers and leveraging shared knowledge.</p>
@@ -58,7 +59,7 @@ sections:
         </ul>
           </div>
           
-        <div class="pid-card-grid">
+        
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>📖 Knowledge Base</h3>
         <p class="pid-description">Find practical Training Materials & Guides to implement PIDs, alongside key Publications detailing our latest efforts in the field.</p>
@@ -68,14 +69,13 @@ sections:
         </ul>
           </div>
           
-         <div class="pid-card-grid">
+        
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>🗓️ Events</h3>
         <p class="pid-description">Stay informed about our recent and upcoming activities. See below ⬇️</p>
           </div>
-         </div>
+                  
          
-         <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>ℹ️ About</h3>
         <p class="pid-description">The About section provides a comprehensive overview of the project and its team.</p>
@@ -86,9 +86,8 @@ sections:
             <li><a href="https://pid.services.base4nfdi.de/about/contact/" target="_blank" rel="noopener">Contact</a></li>
         </ul>
           </div>
-         
-    design:
-      columns: '1'
+         </div>
+    
 
 #  - block: collection
 #    content:
@@ -122,7 +121,6 @@ sections:
     design:
       view: compact
       columns: '2'
-    design:
-      columns: '1'
+    
 
 ---
