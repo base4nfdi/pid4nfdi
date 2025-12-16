@@ -1341,85 +1341,125 @@ sections:
           </div>
 
 
-        <style>
-          /* Basic Filter & Grid Styles */
-          .pid-filter { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin:1rem 0 1.5rem }
-          .pid-filter input, .pid-filter select { padding:.4rem .6rem; border:1px solid #e3e3e3; border-radius:.5rem }
-          .pid-filter button { padding:.4rem .7rem; border:1px solid #ccc; border-radius:.5rem; background:#fff; cursor:pointer }
-          .pid-filter label { display: flex; align-items: center; gap: 0.3rem; padding: 0.4rem 0.6rem; font-size: 0.9rem; }
-          #pid-count { margin-left:auto; font-size:.9rem; opacity:.8 }
+        <!-- COMPLETE WORKING STYLE & SCRIPT SECTION -->
+        <!-- Replace everything from <style> to </script> with this -->
 
+        <style>
+          /* ====================================
+            FILTER BAR STYLES
+            ==================================== */
+          .pid-filter { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 0.5rem; 
+            align-items: center; 
+            margin: 1rem 0 1.5rem;
+          }
+          
+          .pid-filter input, 
+          .pid-filter select { 
+            padding: 0.4rem 0.6rem; 
+            border: 1px solid #e3e3e3; 
+            border-radius: 0.5rem; /* RUNDE ECKEN */
+          }
+          
+          .pid-filter button { 
+            padding: 0.4rem 0.7rem; 
+            border: 1px solid #ccc; 
+            border-radius: 0.5rem; /* RUNDE ECKEN */
+            background: #fff; 
+            cursor: pointer;
+          }
+          
+          .pid-filter label { 
+            display: flex; 
+            align-items: center; 
+            gap: 0.3rem; 
+            padding: 0.4rem 0.6rem; 
+            font-size: 0.9rem;
+          }
+          
+          #pid-count { 
+            margin-left: auto; 
+            font-size: 0.9rem; 
+            opacity: 0.8;
+          }
+
+          /* ====================================
+            CARD GRID LAYOUT
+            ==================================== */
           .pid-card-grid {
             display: grid !important;
             gap: 1.5rem !important;
             grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)) !important;
             width: 100% !important;
           }
-          .pid-card-grid .pid-card[hidden]{ display:none !important }
+          
+          .pid-card-grid .pid-card[hidden] { 
+            display: none !important;
+          }
 
+          /* ====================================
+            CARD STYLES
+            ==================================== */
           .pid-card {
             padding: 1.2rem 1.3rem;
-            border:1px solid #e8e8e8; border-radius:12px; background:#fff;
-            box-shadow: 0 1px 0 rgba(0,0,0,.02);
-            transition: transform .08s ease, box-shadow .12s ease, border-color .12s ease;
-          }
-          .pid-card:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.06); border-color:#ddd; }
-          .pid-card h3 { font-size: 1.25rem; line-height:1.25; margin:.1rem 0 .5rem; }
-
-          .pid-badges { display:flex; flex-wrap:wrap; gap:.4rem; margin:.2rem 0 .7rem; }
-          .pid-badge { display:inline-block; padding:.18rem .5rem; border-radius:.55rem; font-size:.8rem; font-weight:500;
-                      background:#f3f4f6; border:1px solid #e5e7eb; color:#222; }
-
-          .pid-badge.type-intro    { background:#d1ecf1; border-color:#bee5eb; }
-          .pid-badge.type-guide    { background:#fff3cd; border-color:#ffeeba; }
-          .pid-badge.type-slides   { background:#e2e3e5; border-color:#d6d8d9; }
-          .pid-badge.type-video    { background:#f8d7da; border-color:#f5c6cb; }
-          .pid-badge.type-hands-on,
-          .pid-badge.type-tool     { background:#d4edda; border-color:#c3e6cb; }
-          .pid-badge.type-docs-api { background:#cce5ff; border-color:#b8daff; }
-
-          .pid-badge.provider-datacite { background:#b3e5fc; border-color:#81d4fa; }
-          .pid-badge.provider-epic     { background:#ffe0b2; border-color:#ffcc80; }
-          .pid-badge.provider-eudat    { background:#e1f5fe; border-color:#b3e5fc; }
-          .pid-badge.provider-ark      { background:#e1bee7; border-color:#ce93d8; }
-          .pid-badge.provider-orcid    { background:#c8e6c9; border-color:#a5d6a7; }
-          .pid-badge.provider-ror      { background:#ffccbc; border-color:#ffab91; }
-          .pid-badge.provider-community{ background:#eee; border-color:#ddd; }
-          .pid-badge.provider-pid4nfdi { background:#e8f5e9; border-color:#c8e6c9; }
-          .pid-badge.provider-dariah   { background:#f3e5f5; border-color:#e1bee7; }
-          .pid-badge.provider-cern     { background:#e3f2fd; border-color:#bbdefb; }
-          .pid-badge.provider-elixir   { background:#e8f5e9; border-color:#c8e6c9; }
-          .pid-badge.provider-nfdi4ing { background:#fff9c4; border-color:#fff59d; }
-
-          .pid-badge.lang-en { background:#e0f7fa; border-color:#b2ebf2; }
-          .pid-badge.lang-de { background:#fce4ec; border-color:#f8bbd0; }
-
-          .pid-actions { display:flex; gap:.5rem; margin:.8rem 0 .6rem; }
-          .pid-btn-more, .pid-btn-open, .pid-toggle-details{
-            display:inline-block;
-            padding:.35rem .7rem;
-            border:1px solid #e0e0e0;
-            border-radius:.5rem;
-            font-size:.85rem;
-            text-decoration:none;
-            transition:all .15s ease;
-            line-height:1.1;
+            border: 1px solid #e8e8e8; 
+            border-radius: 12px; /* RUNDE ECKEN */
             background: #fff;
-            cursor: pointer;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+            transition: transform 0.08s ease, box-shadow 0.12s ease, border-color 0.12s ease;
           }
-          .pid-btn-more:hover, .pid-btn-open:hover, .pid-toggle-details:hover{
-            border-color:#cfcfcf;
-            transform: translateY(-1px);
+          
+          .pid-card:hover { 
+            transform: translateY(-1px); 
+            box-shadow: 0 6px 16px rgba(0,0,0,0.06); 
+            border-color: #ddd;
           }
-          .pid-btn-open{ border-color:#d9e8ff; background:#f5faff; }
-          .pid-btn-open:hover{ border-color:#bcd6ff; }
-          .pid-toggle-details:hover { background: #f8f9fa; }
-          .pid-toggle-details:active { transform: translateY(0); }
+          
+          .pid-card h3 { 
+            font-size: 1.25rem; 
+            line-height: 1.25; 
+            margin: 0.1rem 0 0.5rem;
+          }
 
-          .container:has(.pid-card-grid),
-          .universal-wrapper:has(.pid-card-grid) { max-width: 1400px; }
+          /* ====================================
+            BADGES ABOVE DESCRIPTION (Type + Language)
+            ==================================== */
+          .pid-badges { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 0.4rem; 
+            margin: 0.2rem 0 0.7rem;
+          }
+          
+          .pid-badge { 
+            display: inline-block; 
+            padding: 0.18rem 0.5rem; 
+            border-radius: 0.55rem; /* RUNDE ECKEN */
+            font-size: 0.8rem; 
+            font-weight: 500;
+            background: #f3f4f6; 
+            border: 1px solid #e5e7eb; 
+            color: #222;
+          }
 
-          /* Beschreibungstext */
+          /* Type Badge Colors */
+          .pid-badge.type-intro    { background: #d1ecf1; border-color: #bee5eb; }
+          .pid-badge.type-guide    { background: #fff3cd; border-color: #ffeeba; }
+          .pid-badge.type-slides   { background: #e2e3e5; border-color: #d6d8d9; }
+          .pid-badge.type-video    { background: #f8d7da; border-color: #f5c6cb; }
+          .pid-badge.type-hands-on,
+          .pid-badge.type-tool     { background: #d4edda; border-color: #c3e6cb; }
+          .pid-badge.type-docs-api { background: #cce5ff; border-color: #b8daff; }
+
+          /* Language Badge Colors */
+          .pid-badge.lang-en { background: #e0f7fa; border-color: #b2ebf2; }
+          .pid-badge.lang-de { background: #fce4ec; border-color: #f8bbd0; }
+
+          /* ====================================
+            DESCRIPTION TEXT
+            ==================================== */
           .pid-description {
             margin: 0.5rem 0 0.8rem 0;
             color: #495057;
@@ -1427,12 +1467,94 @@ sections:
             font-size: 0.95rem;
           }
 
-          /* Details-Bereich (ausklappbar) */
+          /* ====================================
+            PID TYPE BADGES BELOW DESCRIPTION
+            ==================================== */
+          .pid-types-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin: 0.6rem 0 0.8rem 0;
+            padding-top: 0.4rem;
+            border-top: 1px solid #f0f0f0;
+          }
+
+          .pid-type-badge {
+            display: inline-block;
+            padding: 0.25rem 0.6rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            border-radius: 0.4rem; /* RUNDE ECKEN */
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            background: #f5f7fa;
+            color: #4a5568;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+          }
+
+          .pid-type-badge:hover {
+            transform: translateY(-1px);
+            background: #edf2f7;
+            border-color: #cbd5e0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          }
+
+          /* ====================================
+            ACTION BUTTONS
+            ==================================== */
+          .pid-actions { 
+            display: flex; 
+            gap: 0.5rem; 
+            margin: 0.8rem 0 0.6rem;
+          }
+          
+          .pid-btn-more, 
+          .pid-btn-open, 
+          .pid-toggle-details {
+            display: inline-block;
+            padding: 0.35rem 0.7rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 0.5rem; /* RUNDE ECKEN */
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: all 0.15s ease;
+            line-height: 1.1;
+            background: #fff;
+            cursor: pointer;
+          }
+          
+          .pid-btn-more:hover, 
+          .pid-btn-open:hover, 
+          .pid-toggle-details:hover {
+            border-color: #cfcfcf;
+            transform: translateY(-1px);
+          }
+          
+          .pid-btn-open { 
+            border-color: #d9e8ff; 
+            background: #f5faff;
+          }
+          
+          .pid-btn-open:hover { 
+            border-color: #bcd6ff;
+          }
+          
+          .pid-toggle-details:hover { 
+            background: #f8f9fa;
+          }
+          
+          .pid-toggle-details:active { 
+            transform: translateY(0);
+          }
+
+          /* ====================================
+            DETAILS SECTION (Collapsible)
+            ==================================== */
           .pid-details {
             margin-top: 1rem;
             padding: 1rem;
             background: #f8f9fa;
-            border-radius: 8px;
+            border-radius: 8px; /* RUNDE ECKEN */
             border-left: 3px solid #007bff;
           }
 
@@ -1440,7 +1562,9 @@ sections:
             display: none !important;
           }
 
-          /* Metadata-Liste */
+          /* ====================================
+            METADATA LIST
+            ==================================== */
           .pid-metadata {
             display: grid;
             gap: 0.5rem;
@@ -1467,83 +1591,17 @@ sections:
             margin-bottom: 0;
           }
 
-          /* Vollständige Beschreibung */
-          .pid-full-description {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #dee2e6;
+          /* ====================================
+            CONTAINER WIDTH
+            ==================================== */
+          .container:has(.pid-card-grid),
+          .universal-wrapper:has(.pid-card-grid) { 
+            max-width: 1400px;
           }
 
-          .pid-full-description h4 {
-            font-size: 1rem;
-            margin: 0 0 0.5rem 0;
-            color: #495057;
-            font-weight: 600;
-          }
-
-          .pid-full-description p {
-            margin: 0;
-            color: #212529;
-            line-height: 1.6;
-          }
-
-          /* PID Types Badges in Übersicht */
-          .pid-types-badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-            margin: 0.6rem 0 0.8rem 0;
-            padding-top: 0.4rem;
-            border-top: 1px solid #f0f0f0;
-          }
-
-          /* Basis-Style für einzelne Badges */
-          .pid-type-badge {
-            display: inline-block;
-            padding: 0.25rem 0.6rem;
-            font-size: 0.75rem;
-            font-weight: 500;
-            border-radius: 0.4rem;
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-            background: #f5f7fa;
-            color: #4a5568;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-          }
-
-          .pid-type-badge:hover {
-            transform: translateY(-1px);
-            background: #edf2f7;
-            border-color: #cbd5e0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-          }
-
-          /* Last Updated Footer */
-          .last-updated-footer {
-            clear: both;
-            width: 100%;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid #e9ecef;
-            text-align: left;
-          }
-
-          .last-updated-footer p {
-            margin: 0.5rem 0;
-            color: #6c757d;
-            font-size: 0.9rem;
-          }
-
-          .last-updated-footer p:first-child {
-            margin-top: 0;
-          }
-
-          .last-updated-footer strong {
-            color: #495057;
-            font-weight: 600;
-          }
-
-          /* Responsive */
+          /* ====================================
+            RESPONSIVE DESIGN
+            ==================================== */
           @media (max-width: 768px) {
             .pid-card-grid {
               grid-template-columns: 1fr !important;
@@ -1568,12 +1626,9 @@ sections:
           }
         </style>
 
-        <!-- ====================================
-            JAVASCRIPT FÜR FILTER & TOGGLE
-            ==================================== -->
         <script>
         // ====================================
-        // TOGGLE-FUNKTIONALITÄT FÜR DETAILS
+        // TOGGLE DETAILS FUNCTIONALITY
         // ====================================
         function toggleDetails(button) {
           const card = button.closest('.pid-card');
@@ -1593,7 +1648,7 @@ sections:
         }
 
         // ====================================
-        // FILTER-LOGIK
+        // MAIN FILTER & BADGE LOGIC
         // ====================================
         (function(){
           const q = s => document.querySelector(s);
@@ -1601,200 +1656,197 @@ sections:
           const cards = qa('.pid-card-grid .pid-card');
 
           const filters = {
-          search: q('#pid-search'),
-          type: q('#f-type'),
-          provider: q('#f-provider'),
-          domain: q('#f-domain'),
-          lang: q('#f-lang'),
-          year: q('#f-year'),
-          proficiency: q('#f-proficiency'),
-          pidTypes: q('#f-pid-types'),
-          license: q('#f-license'),
-          outcomes: q('#f-outcomes')
-        };
+            search: q('#pid-search'),
+            type: q('#f-type'),
+            provider: q('#f-provider'),
+            domain: q('#f-domain'),
+            lang: q('#f-lang'),
+            year: q('#f-year'),
+            proficiency: q('#f-proficiency'),
+            pidTypes: q('#f-pid-types'),
+            license: q('#f-license'),
+            outcomes: q('#f-outcomes')
+          };
 
-        const clearBtn = q('#pid-clear'), counter = q('#pid-count');
+          const clearBtn = q('#pid-clear'), counter = q('#pid-count');
 
-        // ====================================
-        // HILFSFUNKTIONEN
-        // ====================================
-        
-        const has = (card, sel, key) => {
-          const val = sel?.value?.trim();
-          if(!val) return true;
-          const raw = (card.dataset[key] || '').toLowerCase();
-          const arr = raw.split(',').map(s=>s.trim()).filter(Boolean);
-          return arr.some(item => item.includes(val.toLowerCase()));
-        };
-
-        const matchesSearch = (card, term) => {
-          if(!term) return true;
-          return (card.textContent || '').toLowerCase().includes(term.toLowerCase());
-        };
-
-        const hasMetadata = (card, field, value) => {
-          if (!value) return true;
-          const metadata = card.querySelector('.pid-metadata');
-          if (!metadata) return false;
+          // ====================================
+          // HELPER FUNCTIONS
+          // ====================================
           
-          const dts = metadata.querySelectorAll('dt');
-          for (const dt of dts) {
-            if (dt.textContent.includes(field)) {
-              const dd = dt.nextElementSibling;
-              if (dd) {
-                return dd.textContent.toLowerCase().includes(value.toLowerCase());
-              }
-            }
-          }
-          return false;
-        };
+          const has = (card, sel, key) => {
+            const val = sel?.value?.trim();
+            if(!val) return true;
+            const raw = (card.dataset[key] || '').toLowerCase();
+            const arr = raw.split(',').map(s=>s.trim()).filter(Boolean);
+            return arr.some(item => item.includes(val.toLowerCase()));
+          };
 
-        // NEU: PID Type Badge Filter (liest aus Badges statt Metadaten)
-        const hasPidTypeBadge = (card, value) => {
-          if (!value) return true;
-          const badges = card.querySelectorAll('.pid-type-badge');
-          if (!badges.length) return false;
-          
-          for (const badge of badges) {
-            if (badge.textContent.toLowerCase().includes(value.toLowerCase())) {
-              return true;
-            }
-          }
-          return false;
-        };
+          const matchesSearch = (card, term) => {
+            if(!term) return true;
+            return (card.textContent || '').toLowerCase().includes(term.toLowerCase());
+          };
 
-        const hasLearningOutcomes = (card) => {
-          const metadata = card.querySelector('.pid-metadata');
-          if (!metadata) return false;
-          const dts = metadata.querySelectorAll('dt');
-          for (const dt of dts) {
-            if (dt.textContent.includes('Learning Outcomes')) return true;
-          }
-          return false;
-        };
-
-        // ====================================
-        // FILTER ANWENDEN
-        // ====================================
-        
-        function apply(){
-          const term = filters.search?.value?.trim()?.toLowerCase() || '';
-          const outcomesChecked = filters.outcomes?.checked || false;
-          
-          let visible = 0;
-          cards.forEach(card=>{
-            const ok = has(card, filters.type, 'type')
-                    && has(card, filters.provider, 'provider')
-                    && has(card, filters.domain, 'domain')
-                    && has(card, filters.lang, 'lang')
-                    && has(card, filters.year, 'year')
-                    && matchesSearch(card, term)
-                    && hasMetadata(card, 'Proficiency', filters.proficiency?.value)
-                    && hasPidTypeBadge(card, filters.pidTypes?.value)  // VERWENDET BADGES!
-                    && hasMetadata(card, 'License', filters.license?.value)
-                    && (!outcomesChecked || hasLearningOutcomes(card));
+          const hasMetadata = (card, field, value) => {
+            if (!value) return true;
+            const metadata = card.querySelector('.pid-metadata');
+            if (!metadata) return false;
             
-            card.hidden = !ok;
-            if(ok) visible++;
+            const dts = metadata.querySelectorAll('dt');
+            for (const dt of dts) {
+              if (dt.textContent.includes(field)) {
+                const dd = dt.nextElementSibling;
+                if (dd) {
+                  return dd.textContent.toLowerCase().includes(value.toLowerCase());
+                }
+              }
+            }
+            return false;
+          };
+
+          const hasPidTypeBadge = (card, value) => {
+            if (!value) return true;
+            const badges = card.querySelectorAll('.pid-type-badge');
+            if (!badges.length) return false;
+            
+            for (const badge of badges) {
+              if (badge.textContent.toLowerCase().includes(value.toLowerCase())) {
+                return true;
+              }
+            }
+            return false;
+          };
+
+          const hasLearningOutcomes = (card) => {
+            const metadata = card.querySelector('.pid-metadata');
+            if (!metadata) return false;
+            const dts = metadata.querySelectorAll('dt');
+            for (const dt of dts) {
+              if (dt.textContent.includes('Learning Outcomes')) return true;
+            }
+            return false;
+          };
+
+          // ====================================
+          // APPLY FILTERS
+          // ====================================
+          
+          function apply(){
+            const term = filters.search?.value?.trim()?.toLowerCase() || '';
+            const outcomesChecked = filters.outcomes?.checked || false;
+            
+            let visible = 0;
+            cards.forEach(card=>{
+              const ok = has(card, filters.type, 'type')
+                      && has(card, filters.provider, 'provider')
+                      && has(card, filters.domain, 'domain')
+                      && has(card, filters.lang, 'lang')
+                      && has(card, filters.year, 'year')
+                      && matchesSearch(card, term)
+                      && hasMetadata(card, 'Proficiency', filters.proficiency?.value)
+                      && hasPidTypeBadge(card, filters.pidTypes?.value)
+                      && hasMetadata(card, 'License', filters.license?.value)
+                      && (!outcomesChecked || hasLearningOutcomes(card));
+              
+              card.hidden = !ok;
+              if(ok) visible++;
+            });
+            
+            if(counter) {
+              counter.textContent = visible + ' shown / ' + cards.length + ' total';
+            }
+
+            updateURL();
+          }
+
+          // ====================================
+          // URL PARAMETER SYNC
+          // ====================================
+          
+          function updateURL(){
+            const p = new URLSearchParams();
+            if(filters.type?.value) p.set('type', filters.type.value);
+            if(filters.provider?.value) p.set('provider', filters.provider.value);
+            if(filters.domain?.value) p.set('domain', filters.domain.value);
+            if(filters.lang?.value) p.set('lang', filters.lang.value);
+            if(filters.year?.value) p.set('year', filters.year.value);
+            if(filters.proficiency?.value) p.set('proficiency', filters.proficiency.value);
+            if(filters.pidTypes?.value) p.set('pid-types', filters.pidTypes.value);
+            if(filters.license?.value) p.set('license', filters.license.value);
+            if(filters.search?.value) p.set('q', filters.search.value);
+            if(filters.outcomes?.checked) p.set('outcomes', 'true');
+            history.replaceState(null,'', p.toString() ? ('?'+p.toString()) : location.pathname);
+          }
+
+          function restore(){
+            const p = new URLSearchParams(location.search);
+            if(p.get('type') && filters.type) filters.type.value = p.get('type');
+            if(p.get('provider') && filters.provider) filters.provider.value = p.get('provider');
+            if(p.get('domain') && filters.domain) filters.domain.value = p.get('domain');
+            if(p.get('lang') && filters.lang) filters.lang.value = p.get('lang');
+            if(p.get('year') && filters.year) filters.year.value = p.get('year');
+            if(p.get('proficiency') && filters.proficiency) filters.proficiency.value = p.get('proficiency');
+            if(p.get('pid-types') && filters.pidTypes) filters.pidTypes.value = p.get('pid-types');
+            if(p.get('license') && filters.license) filters.license.value = p.get('license');
+            if(p.get('q') && filters.search) filters.search.value = p.get('q');
+            if(p.get('outcomes') && filters.outcomes) filters.outcomes.checked = p.get('outcomes') === 'true';
+          }
+
+          // ====================================
+          // EVENT LISTENERS
+          // ====================================
+          
+          Object.values(filters).forEach(filter => {
+            if(filter) {
+              filter.addEventListener('input', apply);
+              filter.addEventListener('change', apply);
+            }
           });
           
-          if(counter) {
-            counter.textContent = visible + ' shown / ' + cards.length + ' total';
-          }
-
-          updateURL();
-        }
-
-        // ====================================
-        // URL PARAMETER
-        // ====================================
-        
-        function updateURL(){
-          const p = new URLSearchParams();
-          if(filters.type?.value) p.set('type', filters.type.value);
-          if(filters.provider?.value) p.set('provider', filters.provider.value);
-          if(filters.domain?.value) p.set('domain', filters.domain.value);
-          if(filters.lang?.value) p.set('lang', filters.lang.value);
-          if(filters.year?.value) p.set('year', filters.year.value);
-          if(filters.proficiency?.value) p.set('proficiency', filters.proficiency.value);
-          if(filters.pidTypes?.value) p.set('pid-types', filters.pidTypes.value);
-          if(filters.license?.value) p.set('license', filters.license.value);
-          if(filters.search?.value) p.set('q', filters.search.value);
-          if(filters.outcomes?.checked) p.set('outcomes', 'true');
-          history.replaceState(null,'', p.toString() ? ('?'+p.toString()) : location.pathname);
-        }
-
-        function restore(){
-          const p = new URLSearchParams(location.search);
-          if(p.get('type') && filters.type) filters.type.value = p.get('type');
-          if(p.get('provider') && filters.provider) filters.provider.value = p.get('provider');
-          if(p.get('domain') && filters.domain) filters.domain.value = p.get('domain');
-          if(p.get('lang') && filters.lang) filters.lang.value = p.get('lang');
-          if(p.get('year') && filters.year) filters.year.value = p.get('year');
-          if(p.get('proficiency') && filters.proficiency) filters.proficiency.value = p.get('proficiency');
-          if(p.get('pid-types') && filters.pidTypes) filters.pidTypes.value = p.get('pid-types');
-          if(p.get('license') && filters.license) filters.license.value = p.get('license');
-          if(p.get('q') && filters.search) filters.search.value = p.get('q');
-          if(p.get('outcomes') && filters.outcomes) filters.outcomes.checked = p.get('outcomes') === 'true';
-        }
-
-        // ====================================
-        // EVENT LISTENERS
-        // ====================================
-        
-        Object.values(filters).forEach(filter => {
-          if(filter) {
-            filter.addEventListener('input', apply);
-            filter.addEventListener('change', apply);
-          }
-        });
-        
-        if(clearBtn) {
-          clearBtn.addEventListener('click', ()=>{ 
-            Object.values(filters).forEach(f => {
-              if(f) {
-                if(f.type === 'checkbox') f.checked = false;
-                else f.value='';
-              }
-            }); 
-            apply(); 
-          });
-        }
-
-        // ====================================
-        // FILTER-OPTIONEN BEFÜLLEN
-        // ====================================
-        
-        function populateFilters() {
-          // Proficiency Level - MIT KORREKTER SORTIERUNG (novice → expert)
-          if (filters.proficiency && filters.proficiency.children.length <= 1) {
-            const levels = new Set();
-            cards.forEach(card => {
-              const metadata = card.querySelector('.pid-metadata');
-              if (metadata) {
-                const dts = metadata.querySelectorAll('dt');
-                dts.forEach(dt => {
-                  if (dt.textContent.includes('Proficiency')) {
-                    const dd = dt.nextElementSibling;
-                    if (dd) {
-                      dd.textContent.split(',').forEach(level => {
-                        const cleaned = level.trim();
-                        if (cleaned && !cleaned.includes('and expert')) { // Filter ungültige Einträge
-                          levels.add(cleaned);
-                        }
-                      });
-                    }
-                  }
-                });
-              }
+          if(clearBtn) {
+            clearBtn.addEventListener('click', ()=>{ 
+              Object.values(filters).forEach(f => {
+                if(f) {
+                  if(f.type === 'checkbox') f.checked = false;
+                  else f.value='';
+                }
+              }); 
+              apply(); 
             });
-      
-              // Custom Sortierung: novice → expert (nicht alphabetisch!)
+          }
+
+          // ====================================
+          // POPULATE FILTER DROPDOWNS
+          // ====================================
+          
+          function populateFilters() {
+            // Proficiency Level (sorted: novice → expert)
+            if (filters.proficiency && filters.proficiency.children.length <= 1) {
+              const levels = new Set();
+              cards.forEach(card => {
+                const metadata = card.querySelector('.pid-metadata');
+                if (metadata) {
+                  const dts = metadata.querySelectorAll('dt');
+                  dts.forEach(dt => {
+                    if (dt.textContent.includes('Proficiency')) {
+                      const dd = dt.nextElementSibling;
+                      if (dd) {
+                        dd.textContent.split(',').forEach(level => {
+                          const cleaned = level.trim();
+                          if (cleaned && !cleaned.includes('and expert')) {
+                            levels.add(cleaned);
+                          }
+                        });
+                      }
+                    }
+                  });
+                }
+              });
+
               const levelOrder = ['novice', 'advanced beginner', 'competent', 'proficient', 'expert'];
               Array.from(levels).sort((a, b) => {
                 const indexA = levelOrder.indexOf(a.toLowerCase());
                 const indexB = levelOrder.indexOf(b.toLowerCase());
-                // Falls nicht in Liste, ans Ende
                 if (indexA === -1) return 1;
                 if (indexB === -1) return -1;
                 return indexA - indexB;
@@ -1806,7 +1858,7 @@ sections:
               });
             }
 
-            // PID Types - AUS BADGES LESEN (nicht aus Metadaten!)
+            // PID Types (from badges below description)
             if (filters.pidTypes && filters.pidTypes.children.length <= 1) {
               const types = new Set();
               cards.forEach(card => {
@@ -1854,7 +1906,8 @@ sections:
           }
 
           // ====================================
-          // AUTO-BADGES
+          // AUTO-GENERATE BADGES ABOVE DESCRIPTION
+          // (Type + Language only)
           // ====================================
           
           const cls = {
@@ -1881,55 +1934,7 @@ sections:
           });
 
           // ====================================
-          // ACTION BUTTONS
-          // ====================================
-          
-          function contentInsertionPoint(card){
-            const candidates = card.querySelectorAll('p, ul, ol');
-            if(candidates.length) return candidates[candidates.length - 1];
-            return card.querySelector('.pid-badges') || card.querySelector('h2, h3');
-          }
-
-          cards.forEach(card=>{
-            const titleLink = card.querySelector('h2 a, h3 a');
-            const more = card.dataset.more;
-            if(!more && !titleLink) return;
-
-            let row = card.querySelector('.pid-actions');
-            if(!row){
-              row = document.createElement('div');
-              row.className = 'pid-actions';
-              const after = contentInsertionPoint(card);
-              if(after && after.parentNode){
-                after.insertAdjacentElement('afterend', row);
-              } else {
-                card.appendChild(row);
-              }
-            }
-
-            if(more && !card.querySelector('.pid-btn-more')){
-              const moreBtn = document.createElement('a');
-              moreBtn.className = 'pid-btn-more';
-              moreBtn.href = more;
-              moreBtn.textContent = 'More info →';
-              moreBtn.setAttribute('aria-label','More information');
-              row.appendChild(moreBtn);
-            }
-
-            if(titleLink && !card.querySelector('.pid-btn-open')){
-              const openBtn = document.createElement('a');
-              openBtn.className = 'pid-btn-open';
-              openBtn.href = titleLink.href;
-              openBtn.target = '_blank';
-              openBtn.rel = 'noopener';
-              openBtn.textContent = 'Open resource ↗';
-              openBtn.setAttribute('aria-label','Open resource in new tab');
-              row.appendChild(openBtn);
-            }
-          });
-
-          // ====================================
-          // INITIALISIERUNG
+          // INITIALIZATION
           // ====================================
           
           populateFilters();
@@ -1937,6 +1942,8 @@ sections:
           apply();
         })();
         </script>
+
+
     design:
       spacing:
         padding: ["pt-4", "pb-4"]
