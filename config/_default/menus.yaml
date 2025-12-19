@@ -19,6 +19,10 @@ main:
     parent: get-pid
     url: get-pid/providers
     weight: 20
+  - name: PID Selection Tool
+    url: /pidtool/
+    parent: get-pid
+    weight: 31   
   - name: Services
     identifier: services
     url: services
