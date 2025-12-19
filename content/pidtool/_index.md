@@ -24,6 +24,10 @@ The <strong>PID Selection Tool</strong> is designed for individuals or groups �
 </p>
 
 <p>
+While the tool is generally applicable beyond national contexts, its primary target audience is the German research landscape and the <strong>National Research Data Infrastructure (NFDI)</strong>. This focus influences both the formulation of the statements and the underlying expert evaluations, which reflect requirements, governance structures, and practical considerations relevant to PID adoption in Germany and within NFDI contexts.
+</p>
+
+<p>
 The tool guides you through <strong>14 short statements</strong> divided into four thematic sections: <em>Persistence and Costs</em>, <em>Purpose</em>, <em>Metadata &amp; Interoperability</em>, and <em>Technical Setup and Training</em>. Each statement reflects a typical requirement or consideration when selecting PID services – for example, “It is important for us that the PID service demonstrates a strong, long-term commitment to persistence.” 
 </p>
 
