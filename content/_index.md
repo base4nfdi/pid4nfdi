@@ -33,6 +33,7 @@ sections:
             <ul class="pid-service-list">
               <li><a href="https://pid.services.base4nfdi.de/get-pid/start/" target="_blank" rel="noopener">Getting Started</a></li>
               <li><a href="https://pid.services.base4nfdi.de/get-pid/providers/" target="_blank" rel="noopener">PID Providers</a></li>
+              <li><a href="https://pid.services.base4nfdi.de/pidtool/" target="_blank" rel="noopener">PID Selection Tool</a></li>
             </ul>
             </div>
 
