@@ -35,8 +35,8 @@ const STANDARD_ANSWER_OPTIONS = [
 // Note: question ids must start at zero and be consecutive integers, otherwise it will not work out
 const questions = [
   {
-    title: 'Persistence and Costs',
-    questions: [
+    'title': 'Persistence and Costs',
+    'questions': [
       {
         'id': 0,
         'text': '1. It is important for us that the PID provider demonstrates a strong, long-term commitment to persistence.',
@@ -64,8 +64,8 @@ const questions = [
     ]
   },
   {
-    title: 'Purpose',
-    questions: [
+    'title': 'Purpose',
+    'questions': [
       {
         "id": 3,
         "text": "4. It is important for us that our identifiers are globally recognized in scholarly publishing with stable citation practices.",
@@ -101,8 +101,8 @@ const questions = [
     ]
   },
   {
-    title: 'Metadata & Interoperability',
-    questions: [
+    'title': 'Metadata & Interoperability',
+    'questions': [
       {
         "id": 7,
         "text": "8. It is important for us to work with a PID provider that offers full control on the PID metadata. That is, we can define all metadata fields ourselves, including whether the fields are openly accessible/private, mandatory/optional.",
@@ -130,8 +130,8 @@ const questions = [
     ]
   },
   {
-    title: 'Technical Setup and Training',
-    questions: [
+    'title': 'Technical Setup and Training',
+    'questions': [
       {
         "id": 10,
         "text": "11. It is important for us to have the freedom to choose what kind of location our PIDs resolve to (that is, our PIDs should not just resolve to human-readable landing pages, but some PIDs should also resolve to digital resources directly, or to machine-readable metadata records).",
@@ -167,8 +167,8 @@ const questions = [
     ]
   },
   {
-  title: 'Test Questions',
-  questions: [
+    'title': 'Test Questions',
+    'questions': [
       {
         "id": 14,
         "text": "15. Do you prefer to self-host your PID resolver/infrastructure in-house, or that a PID provider does this for you?",
