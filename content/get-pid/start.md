@@ -8,9 +8,6 @@ sections:
     content:
         title: Getting Started
         subtitle: New to PIDs? Learn why persistent identifiers are important and how they make your research FAIR.
-        text: | 
-              - block: markdown
-
         text: |
             ## What are PIDs?
             A persistent identifier, or short PID, is a unique alphanumeric code that makes it possible to uniquely and sustainably reference objects, persons and organizations. Importantly, a PID is linked to descriptive information (metadata) about the resource, thereby providing context information. The use of PIDs is growing steadily and is being extended to more and more areas of research, for example through the development of PIDs for samples, data management plans or research projects.

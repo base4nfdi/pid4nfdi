@@ -8,6 +8,8 @@ sections:
     content:
         title: DOIs for Instruments at the Helmholtz-Zentrum Berlin
         text: |
+            The following use-case report is also available as a document [here](https://doi.org/10.5281/zenodo.17726736).
+            
             <br/>          
   
             ## Introduction: BESSY II and BER II
