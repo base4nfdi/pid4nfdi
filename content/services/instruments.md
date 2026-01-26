@@ -24,7 +24,7 @@ sections:
     
             - Use-case: [DataCite DOIs for instruments at the Helmholtz Zentrum Berlin für Materialien und Energie](https://pid.services.base4nfdi.de/community/use-cases/instruments-at-hzb/)  
             
-            - Use-case: Assigning ePIC PIDs via B2INST for instruments at the NFDI4Earth Sensor Management System *[coming soon]* 
+            - Use-case: [Assigning ePIC PIDs via B2INST for instruments at the NFDI4Earth Sensor Management System](https://zenodo.org/records/17733707) 
     
           <hr style="height:0px; visibility:hidden;" />
 
