@@ -668,7 +668,7 @@ function show_or_remove_help(question_help_button_node, question_help) {
   if (!question_help_button_node.nextSibling.classList.contains('help-text')) {
     let question_help_text_node = document.createElement('div');
     question_help_text_node.className = 'help-text';
-    question_help_text_node.innerText = question_help;
+    question_help_text_node.innerHTML = question_help;
     question_help_button_node.after(question_help_text_node);
     question_help_button_node.innerText = 'Less info';
   }
