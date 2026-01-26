@@ -20,6 +20,10 @@ _build:
     infrastructure managers</strong> – who plan to integrate <em>Persistent Identifiers (PIDs)</em> into an existing or new 
     research service, repository, or tool. It supports the decision-making process by helping you explore which PID system 
     best fits your specific use case and integration goals.</p>
+    <p>While the tool is generally applicable beyond national contexts, its primary target audience is the German research 
+    landscape and the <strong>National Research Data Infrastructure (NFDI)</strong>. This focus influences both the 
+    formulation of the statements and the underlying expert evaluations, which reflect requirements, governance structures, 
+    and practical considerations relevant to PID adoption in Germany and within NFDI contexts.</p>
     <p>The tool guides you through <strong>14 short statements</strong> divided into four thematic sections: 
     <em>Persistence and Costs</em>, <em>Purpose</em>, <em>Metadata &amp; Interoperability</em>, and <em>Technical Setup 
     and Training</em>. Each statement reflects a typical requirement or consideration when selecting PID services – for 
