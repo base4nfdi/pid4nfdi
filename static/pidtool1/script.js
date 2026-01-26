@@ -635,6 +635,10 @@ function show_mini_bars(question_node, question_id, question_type, answer_option
   if (question_node.lastChild.classList.contains('mini-bars-container')) {
     question_node.removeChild(question_node.lastChild);
   }
+  // check whether the chosen answer is "I don't know // skip" If so, then do not show mini bars
+  if (answer_option['text'] === "I don't know // Skip") {
+    return;
+  }
   // create a container for all mini bars
   const mini_bars_container = document.createElement("div");
   mini_bars_container.className = "mini-bars-container";
