@@ -70,13 +70,14 @@ button {
 /* More Info Button*/
 .more-info-btn {
   margin-left: 1em;
+  margin-bottom: 0.5em;
 }
 
 /* More Info Text */
 .help-text {
   font-style: italic;
   color: gray;
-  margin: -1.5em 0 1em 0;
+  margin: 0 0 1em 0;
 }
 
 /* Volume-Question Note */
