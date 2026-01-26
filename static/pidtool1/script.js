@@ -105,23 +105,43 @@ const questions = [
     'questions': [
       {
         "id": 7,
-        "text": "8. It is important for us to work with a PID provider that offers full control on the PID metadata. That is, we can define all metadata fields ourselves, including whether the fields are openly accessible/private, mandatory/optional.",
-        "help": "Some PID providers (e.g., DataCite DOIs) define a metadata schema that needs to be adopted when working with the PID Provider. A standardized metadata schema fixes a limited number of pre-defined fields that are to be filled in by the user when registering a PID. Standardized metadata schemas enable interoperability between systems and metadata harvesting. Other PID providers (e.g., ePIC, ARK) do not fix the metadata schema in advance. The infrastructure administrator can define the metadata schema that defines the PID metadata fields according to his needs. Flexibility supports adjusting to use-case specific needs of different domains or workflows. Not only the fields themselves can be freely defined, but also whether metadata fields should be mandatory or optional and whether they should be publicly available or private to restricted sets of users. URN:NBN:DEs themselves are pure identifier schemes that do not define or mandate any metadata schema. Metadata associated with URN:NBN:DE-identified resources is managed externally in library catalogs, archives, or domain-specific repositories, using independent metadata standards.",
-        'type': 'feature',
-        'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        "text": "8. Do you prefer to work with a PID provider with a widely used/recognized and standardized metadata schema, or would you like to have full control on the PID metadata (that is, you can define all metadata fields yourself, including whether the fields are openly accessible/private, mandatory/optional)?",
+        "help": "Some PID providers define a metadata schema that must be adopted when working with the PID Provider. Working with a PID provider that mandates a widely used and standardized metadata schema ensures consistency in how data is described and shared across different systems and organizations. This uniformity enhances interoperability across systems, eases metadata harvesting, and supports automated processing and research workflows. DataCite defines a widely used, standardized metadata schema for research data and scholarly outputs. URN:NBN:DE defines a national schema that is applied by the DNB catalog. \nOther PID providers (e.g., ePIC, ARK) do not fix the metadata schema in advance. The infrastructure administrator can define the metadata schema that defines the PID metadata fields according to his needs. Flexibility supports adjusting to use-case specific needs of different domains or workflows. Not only the fields themselves can be freely defined, but also whether metadata fields should be mandatory or optional and whether they should be publicly available or private to restricted sets of users. \nPlease also note that if the PID provider mandates a metadata schema, this does not preclude the possibility of additional metadata. Rather, in combination with the mandated metadata schema that <strong>must</strong> be used, additional metadata <strong>can</strong> be stored outside the PID infrastructure. For instance, URN:NBN:DE enables institutions to define their own metadata requirements for external library catalogues, archives or domain-specific repositories. In addition to the DataCite metadata, domain-specific metadata could be stored in customised repository software outside the PID infrastructure.",
+        'type': 'comparison',
+        'options': [
+          {
+            'text': "We definitely want a standardized metadata schema.",
+            'value': 3
+          },
+          {
+            'text': "Not sure yet, but more likely standardized.",
+            'value': 2
+          },
+          {
+            'text': "Not sure yet, but more likely full control.",
+            'value': 2
+          },
+          {
+            'text': "We definitely want full control on the metadata schema.",
+            'value': 3
+          },
+          {
+            'text': "Both are fine.",
+            'value': 3
+          },
+          {
+            'text': "I don't know // Skip",
+            'value': 1
+          }
+        ],
+        'default': {
+          'text': "I don't know // Skip",
+          'value': 1
+        }
       },
       {
         "id": 8,
-        "text": "9. It is important for us to work with a PID provider with a widely used/recognized standardized metadata schema.",
-        "help": "Working with a PID provider that mandates a widely adopted and standardized metadata schema ensures consistency in how data is described and shared across different systems and organizations. This uniformity enables interoperability, supports automated processing and research workflows, and enhances metadata quality and compliance with regulations. DataCite defines a widely used, standardized metadata schema for research data and scholarly outputs. URN:NBN:DE defines a national schema that is applied by the DNB catalog but also allows institutions to define their own metadata requirements for external library catalogs, archives, or domain-specific repositories in use. Other PID providers (ePIC, ARK) give the possibility of flexible metadata configurations (see last statement).",
-        'type': 'feature',
-        'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
-      },
-      {
-        "id": 9,
-        "text": "10. It is important for us that the PID provider offers additional metadata services on top of simple PID registration, such as metadata tooling, statistics, and visualisation.",
+        "text": "9. It is important for us that the PID provider offers additional metadata services on top of simple PID registration, such as metadata tooling, statistics, and visualisation.",
         "help": "Some PID providers, such as DataCite DOI, offer a range of services on top of simple PID registration. These additional services may include: 1) Extensive metadata tooling for enriching and managing PID-related metadata. 2) Statistics and visualizations to track PID usage, citations, and connections. - These enhanced services provide features that can improve discovery, management, and outreach. Other PID providers (such as ePIC Handles, URN:NBN:DE, ARK) do not offer similar extensive metadata tooling features.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
@@ -133,16 +153,16 @@ const questions = [
     'title': 'Technical Setup and Training',
     'questions': [
       {
-        "id": 10,
-        "text": "11. It is important for us to have the freedom to choose what kind of location our PIDs resolve to (that is, our PIDs should not just resolve to human-readable landing pages, but some PIDs should also resolve to digital resources directly, or to machine-readable metadata records).",
+        "id": 9,
+        "text": "10. It is important for us to have the freedom to choose what kind of location our PIDs resolve to (that is, our PIDs should not just resolve to human-readable landing pages, but some PIDs should also resolve to digital resources directly, or to machine-readable metadata records).",
         "help": "Different PIDs by default may resolve to different kinds of resources. Some PIDs resolve to landing pages with human readable metadata, others resolve to a set of machine readable metadata or directly to the research entity (e.g., a file). Some PID systems (such as DataCite DOIs) require that the PID resolves to a landing page which must contain human-readable metadata. Other PID types (e.g. ePIC PID, ARKs, URN:NBN:DE) are allowed to resolve to whatever URL the user requires. Resolving directly to an object may be reasonable if, for example, many (high-granular) data are generated during the research process which might not be published in the end, but still receive a PID that points to the raw data.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
         'default': STANDARD_ANSWER_OPTIONS[1]
       },
       {
-        "id": 11,
-        "text": "12. Do you prefer to self-host your PID resolver/infrastructure in-house, or that a PID provider does this for you?",
+        "id": 10,
+        "text": "11. Do you prefer to self-host your PID resolver/infrastructure in-house, or that a PID provider does this for you?",
         "help": "Self-hosting can provide higher performance and more technical options but requires technical capacity, staff, and demands long-term commitment to maintain the services in order to guarantee for persistence. Self-hosting can make sense if performance is critical, for example, if lots of PIDs should be registered within a very short time frame. The closer the client to the server, the more performant is PID registration. Self-hosting can also make sense if a PID service should follow a specific technical setup (e.g., a specific database-engine under the Handle System, which fits a specific purpose, or more RAM for fast queries). Another reason could be specialized solutions for user management. For ePICs, ARKs and URN:NBN:DE, there is the option to self-host the PID resolver/infrastructure. Other providers such as DataCite are centrally managed and do not provide the option of self-hosting. On the other hand, ARKs require self-hosting because there are currently no ARK service providers available in Germany. The infrastructure for ePIC Handles, DataCite DOIs and URN:NBN:DE can be all hosted by service providers, hence, no self-hosting is required.",
         'type': 'comparison',
         'options': [
@@ -164,7 +184,7 @@ const questions = [
           },
           {
             'text': "Both are fine.",
-            'value': 2
+            'value': 3
           },
           {
             'text': "I don't know // Skip",
@@ -177,8 +197,8 @@ const questions = [
         }
       },
       {
-        "id": 12,
-        "text": "13. It is important for us that the PID provider offers extensive training material.",
+        "id": 11,
+        "text": "12. It is important for us that the PID provider offers extensive training material.",
         "help": "Training resources and user support can make a big difference, especially during onboarding or when integrating PIDs into institutional workflows. DataCite offers extensive documentation, webinars, community calls, and helpdesk support. ARKs, URN:NBN:DE and ePIC Handles are supported through technical documentation and user communities, but additional training offers are limited. ARKs provide rich information through their website, including best practices, presentations and video tutorials. URN systems usually depend on national libraries, where training and support may be limited or targeted to specific institutional partners.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
@@ -189,7 +209,7 @@ const questions = [
 ];
 
 /* Config for Pagination */
-const page_size = [3, 4, 3, 3];
+const page_size = [3, 4, 2, 3];
 let current_page_number = -1; // do not change
 
 /* This sets the index of the question for the cost (which needs to be known to apply the PID volumen question to it). */
@@ -201,7 +221,16 @@ const expert_scores = [
   {
     'provider': 'DataCite DOIs',
     'result_hint': 'DOIs from DataCite are widely used for research data and publications.',
-    'expert_scores': [5, 2, 2, 5, 4, 2, 0, 0, 5, 5, 0,
+    'expert_scores': [5, 2, 2, 5, 4, 2, 0,
+      {
+        "We definitely want a standardized metadata schema.": 5,
+        "Not sure yet, but more likely standardized.": 3.5,
+        "Not sure yet, but more likely full control.": 1.5,
+        "We definitely want full control on the metadata schema.": 0,
+        "Both are fine.": 5,
+        "I don't know // Skip": 2.5
+      },
+      5, 0,
       {
         "We definitely want to self-host.": 0,
         "Not sure yet, but more likely self-hosting.": 1.5,
@@ -220,8 +249,13 @@ const expert_scores = [
       "...support early PID adoption.",
       "",
       "...do not sufficiently supports cataloging, archiving, and stable referencing within national or academic library infrastructures.",
-      "...do not offer full control on the PID metadata because they have a standardized schema.",
-      "...comply to the widely used/recognized standardized DataCite metadata schema.",
+      {
+        "We definitely want a standardized metadata schema.": "...comply to the widely used/recognized standardized DataCite metadata schema.",
+        "Not sure yet, but more likely standardized.": "...comply to the widely used/recognized standardized DataCite metadata schema.",
+        "Not sure yet, but more likely full control.": "...do not offer full control on the PID metadata because they have a standardized schema.",
+        "We definitely want full control on the metadata schema.": "...do not offer full control on the PID metadata because they have a standardized schema.",
+        "Both are fine.": "...comply to the widely used/recognized standardized DataCite metadata schema."
+      },
       "...offer additional metadata services on top of simple PID registration, such as metadata tooling, statistics, and visualisation.",
       "...are only allowed to resolve to landing pages (not to other locations such as the resource directly).",
       {
@@ -237,7 +271,16 @@ const expert_scores = [
   {
     'provider': 'ePIC Handles',
     'result_hint': 'ePIC Handles are widely used in research data infrastructures and built on the Handle system.',
-    'expert_scores': [5, 2, 4, 3, 4, 5, 0, 5, 0, 0, 5,
+    'expert_scores': [5, 2, 4, 3, 4, 5, 0,
+      {
+        "We definitely want a standardized metadata schema.": 0,
+        "Not sure yet, but more likely standardized.": 1.5,
+        "Not sure yet, but more likely full control.": 3.5,
+        "We definitely want full control on the metadata schema.": 5,
+        "Both are fine.": 5,
+        "I don't know // Skip": 2.5
+      },
+      0, 5,
       {
         "We definitely want to self-host.": 5,
         "Not sure yet, but more likely self-hosting.": 5,
@@ -256,8 +299,13 @@ const expert_scores = [
       "...support early PID adoption.",
       "...are highly suitable for assigning PIDs to high-granular entities.",
       "...do not sufficiently support cataloging, archiving, and stable referencing within national or academic library infrastructures.",
-      "...offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
-      "...do not provide a widely used/recognized standardized metadata schema.",
+      {
+        "We definitely want a standardized metadata schema.": "....do not provide a widely used/recognized standardized metadata schema.",
+        "Not sure yet, but more likely standardized.": "...do not provide a widely used/recognized standardized metadata schema.",
+        "Not sure yet, but more likely full control.": "...offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
+        "We definitely want full control on the metadata schema.": "...offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
+        "Both are fine.": "...offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema."
+      },
       "...do not offer any additional metadata services on top of simple PID registration.",
       "...can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
       {
@@ -273,7 +321,16 @@ const expert_scores = [
   {
     'provider': 'URN:NBNs',
     'result_hint': 'URN:NBN is typically used for long-term preservation in national libraries.',
-    'expert_scores': [5, 2, 5, 3, 0, 0, 5, 0, 2, 0, 5,
+    'expert_scores': [5, 2, 5, 3, 0, 0, 5,
+      {
+        "We definitely want a standardized metadata schema.": 5,
+        "Not sure yet, but more likely standardized.": 3.5,
+        "Not sure yet, but more likely full control.": 1.5,
+        "We definitely want full control on the metadata schema.": 0,
+        "Both are fine.": 5,
+        "I don't know // Skip": 2.5
+      },
+      0, 5,
       {
         "We definitely want to self-host.": 5,
         "Not sure yet, but more likely self-hosting.": 5,
@@ -292,8 +349,13 @@ const expert_scores = [
       "...do not sufficiently support early PID adoption.",
       "...are not suitable for assigning PIDs to high-granular entities.",
       "...mainly focus on cataloging, archiving, and stable referencing within national or academic library infrastructures.",
-      "...do not offer full control on the PID metadata.",
-      "",
+      {
+        "We definitely want a standardized metadata schema.": "...comply to the widely used/recognized standardized metadata schema of the DNB catalog.",
+        "Not sure yet, but more likely standardized.": "...comply to the widely used/recognized standardized metadata schema of the DNB catalog.",
+        "Not sure yet, but more likely full control.": "...do not offer full control on the PID metadata because they have a standardized schema.",
+        "We definitely want full control on the metadata schema.": "...do not offer full control on the PID metadata because they have a standardized schema.",
+        "Both are fine.": "...comply to the widely used/recognized standardized metadata schema of the DNB catalog."
+      },
       "...do not offer any additional metadata services on top of simple PID registration.",
       "...can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
       {
@@ -309,7 +371,16 @@ const expert_scores = [
   {
     'provider': 'ARKs',
     'result_hint': 'ARKs are often used in museums and archives for persistent referencing.',
-    'expert_scores': [3, 5, 0, 3, 5, 5, 0, 5, 0, 0, 5,
+    'expert_scores': [3, 5, 0, 3, 5, 5, 0,
+      {
+        "We definitely want a standardized metadata schema.": 0,
+        "Not sure yet, but more likely standardized.": 1.5,
+        "Not sure yet, but more likely full control.": 3.5,
+        "We definitely want full control on the metadata schema.": 5,
+        "Both are fine.": 5,
+        "I don't know // Skip": 2.5
+      },
+      0, 5,
       {
         "We definitely want to self-host.": 5,
         "Not sure yet, but more likely self-hosting.": 3.5,
@@ -328,8 +399,13 @@ const expert_scores = [
       "...support early PID adoption.",
       "...are highly suitable for assigning PIDs to high-granular entities.",
       "...do not sufficiently support cataloging, archiving, and stable referencing within national or academic library infrastructures.",
-      "...offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
-      "...do not provide a widely used/recognized standardized metadata schema.",
+      {
+        "We definitely want a standardized metadata schema.": "....do not provide a widely used/recognized standardized metadata schema.",
+        "Not sure yet, but more likely standardized.": "...do not provide a widely used/recognized standardized metadata schema.",
+        "Not sure yet, but more likely full control.": "...offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
+        "We definitely want full control on the metadata schema.": "...offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema.",
+        "Both are fine.": "...offer full control on the PID metadata, e.g. one can reuse existing schemas or define an own schema."
+      },
       "...do not offer any additional metadata services on top of simple PID registration.",
       "...can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
       {
@@ -657,7 +733,7 @@ function show_mini_bars(question_node, question_id, question_type, answer_option
 
     // color of the bars is adapted to the reached score
     let color;
-    if (expert_val >= 4) {
+    if (expert_val >= 3.5) {
       color = 'green';
     } else if (expert_val >= 2) {
       color = 'orange';
