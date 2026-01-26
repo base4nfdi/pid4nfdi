@@ -142,37 +142,8 @@ const questions = [
       },
       {
         "id": 11,
-        "text": "12. It is important for us to self-host our PID resolver/infrastructure in-house.",
-        "help": "Hint: This and the following statement exclude each other. Hence, you might not want to choose “Very important” for both statements simultaneously. Self-hosting can provide higher performance and more technical options but requires technical capacity. Self-hosting can make sense if performance is critical, for example, if lots of PIDs should be registered within a very short time frame. The closer the client to the server, the more performant is PID registration. Self-hosting can also make sense if a PID service should follow a specific technical setup (e.g., a specific database-engine under the Handle System, which fits a specific purpose, or more RAM for fast queries). Another reason could be specialized solutions for user management. For ePICs, ARKs and URN:NBN:DE, there is the option to self-host the PID resolver/infrastructure. Other providers such as DataCite are centrally managed and do not provide the option of self-hosting.",
-        'type': 'feature',
-        'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
-      },
-      {
-        "id": 12,
-        "text": "13. On the contrary, it is important for us that we do NOT self-host any PID resolver/infrastructure.",
-        "help": "Self-hosting can provide higher performance and more technical options but requires technical capacity and available staff. Self-hosting also demands long-term commitment to maintaining the services to guarantee for persistence. ARKs require self-hosting because there are currently no ARK service providers available in Germany. The infrastructure for ePIC Handles, DataCite DOIs and URN:NBN:DE can be all hosted by service providers, hence, no self-hosting is required.",
-        'type': 'feature',
-        'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
-      },
-      {
-        "id": 13,
-        "text": "14. It is important for us that the PID provider offers extensive training material.",
-        "help": "Training resources and user support can make a big difference, especially during onboarding or when integrating PIDs into institutional workflows. DataCite offers extensive documentation, webinars, community calls, and helpdesk support. ARKs, URN:NBN:DE and ePIC Handles are supported through technical documentation and user communities, but additional training offers are limited. ARKs provide rich information through their website, including best practices, presentations and video tutorials. URN systems usually depend on national libraries, where training and support may be limited or targeted to specific institutional partners.",
-        'type': 'feature',
-        'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
-      }
-    ]
-  },
-  {
-    'title': 'Test Questions',
-    'questions': [
-      {
-        "id": 14,
-        "text": "15. Do you prefer to self-host your PID resolver/infrastructure in-house, or that a PID provider does this for you?",
-        "help": "Hosting help",
+        "text": "12. Do you prefer to self-host your PID resolver/infrastructure in-house, or that a PID provider does this for you?",
+        "help": "Self-hosting can provide higher performance and more technical options but requires technical capacity, staff, and demands long-term commitment to maintain the services in order to guarantee for persistence. Self-hosting can make sense if performance is critical, for example, if lots of PIDs should be registered within a very short time frame. The closer the client to the server, the more performant is PID registration. Self-hosting can also make sense if a PID service should follow a specific technical setup (e.g., a specific database-engine under the Handle System, which fits a specific purpose, or more RAM for fast queries). Another reason could be specialized solutions for user management. For ePICs, ARKs and URN:NBN:DE, there is the option to self-host the PID resolver/infrastructure. Other providers such as DataCite are centrally managed and do not provide the option of self-hosting. On the other hand, ARKs require self-hosting because there are currently no ARK service providers available in Germany. The infrastructure for ePIC Handles, DataCite DOIs and URN:NBN:DE can be all hosted by service providers, hence, no self-hosting is required.",
         'type': 'comparison',
         'options': [
           {
@@ -193,7 +164,7 @@ const questions = [
           },
           {
             'text': "Both are fine.",
-            'value': 3
+            'value': 2
           },
           {
             'text': "I don't know // Skip",
@@ -204,13 +175,21 @@ const questions = [
           'text': "I don't know // Skip",
           'value': 1
         }
+      },
+      {
+        "id": 12,
+        "text": "13. It is important for us that the PID provider offers extensive training material.",
+        "help": "Training resources and user support can make a big difference, especially during onboarding or when integrating PIDs into institutional workflows. DataCite offers extensive documentation, webinars, community calls, and helpdesk support. ARKs, URN:NBN:DE and ePIC Handles are supported through technical documentation and user communities, but additional training offers are limited. ARKs provide rich information through their website, including best practices, presentations and video tutorials. URN systems usually depend on national libraries, where training and support may be limited or targeted to specific institutional partners.",
+        'type': 'feature',
+        'options': STANDARD_ANSWER_OPTIONS,
+        'default': STANDARD_ANSWER_OPTIONS[1]
       }
     ]
   }
 ];
 
 /* Config for Pagination */
-const page_size = [3, 4, 3, 4, 1];
+const page_size = [3, 4, 3, 3];
 let current_page_number = -1; // do not change
 
 /* This sets the index of the question for the cost (which needs to be known to apply the PID volumen question to it). */
@@ -222,7 +201,7 @@ const expert_scores = [
   {
     'provider': 'DataCite DOIs',
     'result_hint': 'DOIs from DataCite are widely used for research data and publications.',
-    'expert_scores': [5, 2, 2, 5, 4, 2, 0, 0, 5, 5, 0, 0, 5, 5,
+    'expert_scores': [5, 2, 2, 5, 4, 2, 0, 0, 5, 5, 0,
       {
         "We definitely want to self-host.": 0,
         "Not sure yet, but more likely self-hosting.": 1.5,
@@ -230,7 +209,8 @@ const expert_scores = [
         "We definitely want provider hosting.": 5,
         "Both are fine.": 5,
         "I don't know // Skip": 2.5
-      }
+      },
+      5
     ],
     'feedback': [
       "...show a strong long-term commitment to persistence.",
@@ -244,22 +224,20 @@ const expert_scores = [
       "...comply to the widely used/recognized standardized DataCite metadata schema.",
       "...offer additional metadata services on top of simple PID registration, such as metadata tooling, statistics, and visualisation.",
       "...are only allowed to resolve to landing pages (not to other locations such as the resource directly).",
-      "...do not offer the option to self-host the PID resolver/infrastructure in-house.",
-      "...hosts the PID resolver/infrastructure for you.",
-      "...offer extensive training material.",
       {
         "We definitely want to self-host.": "...do not offer the possibility to self-host the PID infrastructure.",
         "Not sure yet, but more likely self-hosting.": "...do not offer the possibility to self-host the PID infrastructure.",
         "Not sure yet, but more likely provider hosting.": "...will host the PID infrastructure for you.",
         "We definitely want provider hosting.": "...will host the PID infrastructure for you.",
         "Both are fine.": "...will host the PID infrastructure for you."
-      }
+      },
+      "...offer extensive training material."
     ]
   },
   {
     'provider': 'ePIC Handles',
     'result_hint': 'ePIC Handles are widely used in research data infrastructures and built on the Handle system.',
-    'expert_scores': [5, 2, 4, 3, 4, 5, 0, 5, 0, 0, 5, 5, 5, 1,
+    'expert_scores': [5, 2, 4, 3, 4, 5, 0, 5, 0, 0, 5,
       {
         "We definitely want to self-host.": 5,
         "Not sure yet, but more likely self-hosting.": 5,
@@ -267,8 +245,9 @@ const expert_scores = [
         "We definitely want provider hosting.": 5,
         "Both are fine.": 5,
         "I don't know // Skip": 5
-      }
-      ],
+      },
+      1
+    ],
     'feedback': [
       "...show a strong long-term commitment to persistence.",
       "",
@@ -281,22 +260,20 @@ const expert_scores = [
       "...do not provide a widely used/recognized standardized metadata schema.",
       "...do not offer any additional metadata services on top of simple PID registration.",
       "...can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
-      "...give you the option to self-host the PID resolver/infrastructure in-house.",
-      "...hosts the PID resolver/infrastructure for you.",
-      "...do not offer as extensive training material as other providers.",
       {
         "We definitely want to self-host.": "...offer the possibility to self-host the PID infrastructure.",
         "Not sure yet, but more likely self-hosting.": "...offer both self-hosting and provider hosting of the PID infrastructure.",
         "Not sure yet, but more likely provider hosting.": "...offer both self-hosting and provider hosting of the PID infrastructure.",
         "We definitely want provider hosting.": "...will host the PID infrastructure for you.",
         "Both are fine.": "...offer both self-hosting and provider hosting of the PID infrastructure."
-      }
+      },
+      "...do not offer as extensive training material as other providers."
     ]
   },
   {
     'provider': 'URN:NBNs',
     'result_hint': 'URN:NBN is typically used for long-term preservation in national libraries.',
-    'expert_scores': [5, 2, 5, 3, 0, 0, 5, 0, 2, 0, 5, 5, 5, 1,
+    'expert_scores': [5, 2, 5, 3, 0, 0, 5, 0, 2, 0, 5,
       {
         "We definitely want to self-host.": 5,
         "Not sure yet, but more likely self-hosting.": 5,
@@ -304,7 +281,8 @@ const expert_scores = [
         "We definitely want provider hosting.": 5,
         "Both are fine.": 5,
         "I don't know // Skip": 5
-      }
+      },
+      1
     ],
     'feedback': [
       "...show a strong long-term commitment to persistence.",
@@ -318,22 +296,20 @@ const expert_scores = [
       "",
       "...do not offer any additional metadata services on top of simple PID registration.",
       "...can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
-      "...give you the option to self-host the PID resolver/infrastructure in-house.",
-      "...host the PID resolver/infrastructure for you.",
-      "...do not offer as extensive training material as other providers.",
       {
         "We definitely want to self-host.": "...offer the possibility to self-host the PID infrastructure.",
         "Not sure yet, but more likely self-hosting.": "...offer both self-hosting and provider hosting of the PID infrastructure.",
         "Not sure yet, but more likely provider hosting.": "...offer both self-hosting and provider hosting of the PID infrastructure.",
         "We definitely want provider hosting.": "...will host the PID infrastructure for you.",
         "Both are fine.": "...offer both self-hosting and provider hosting of the PID infrastructure."
-      }
+      },
+      "...do not offer as extensive training material as other providers."
     ]
   },
   {
     'provider': 'ARKs',
     'result_hint': 'ARKs are often used in museums and archives for persistent referencing.',
-    'expert_scores': [3, 5, 0, 3, 5, 5, 0, 5, 0, 0, 5, 5, 0, 4,
+    'expert_scores': [3, 5, 0, 3, 5, 5, 0, 5, 0, 0, 5,
       {
         "We definitely want to self-host.": 5,
         "Not sure yet, but more likely self-hosting.": 3.5,
@@ -341,7 +317,8 @@ const expert_scores = [
         "We definitely want provider hosting.": 0,
         "Both are fine.": 5,
         "I don't know // Skip": 2.5
-      }
+      },
+      4
     ],
     'feedback': [
       "",
@@ -355,16 +332,14 @@ const expert_scores = [
       "...do not provide a widely used/recognized standardized metadata schema.",
       "...do not offer any additional metadata services on top of simple PID registration.",
       "...can resolve to any desired location (e.g., landing pages, the resource itself, ...).",
-      "...give you the opportunity to self-host the PID resolver/infrastructure in-house.",
-      "...resolver/infrastructure must be self-hosted by you.",
-      "...offer extensive training material.",
       {
         "We definitely want to self-host.": "...offer the possibility to self-host the PID infrastructure.",
         "Not sure yet, but more likely self-hosting.": "...offer the possibility to self-host the PID infrastructure.",
         "Not sure yet, but more likely provider hosting.": "...will not host the PID infrastructure for you.",
         "We definitely want provider hosting.": "...will not host the PID infrastructure for you.",
         "Both are fine.": "offer the possibility to self-host the PID infrastructure."
-      }
+      },
+      "...offer extensive training material.",
     ]
   }
 ]
