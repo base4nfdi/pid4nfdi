@@ -1,67 +1,25 @@
+/* ---------------------General Styling------------------------------ */
 
-body { font-family: sans-serif; padding: 20px; }
-.question-section { margin-bottom: 2em; }
-.help-text { font-style: italic; color: gray; margin-top: 0.5em; display: none; }
-.nav-buttons { margin-top: 1em; }
-.result-card {
-  padding: 1em;
-  margin: 1em 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fafafa;
-}
-.more-info-btn { margin-left: 1em; }
-.question {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  position: relative; /* ermöglicht absolute Positionierung von Skip-Button */
+/* text */
+body {
+  font-family: sans-serif;
+  padding: 20px;
 }
 
-.question p {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+/* links */
+a {
+color: #0077cc;
 }
 
-.likert {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 0.5rem;
+/* buttons*/
+button {
+  margin: 0 0 2em 0;
 }
 
-.likert label {
-  flex: 1;
-  min-width: 120px;
-  background: #eef2f7;
-  padding: 0.4rem 0.6rem;
-  text-align: center;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.95rem;
-}
+/* -----------------------Intro Page---------------------------------- */
 
-#progress-container {
-  width: 100%;
-  background-color: #eee;
-  border-radius: 8px;
-  margin-bottom: 1.5em;
-  height: 20px;
-  overflow: hidden;
-}
-
-#progress-bar {
-  height: 100%;
-  width: 0%;
-  background-color: #4CAF50;
-  transition: width 0.3s ease;
-}
-
-#pidtool-intro {
-  background: #f5f5f5;
+#intro-text {
+  background-color: #f2f2f2;
   border-left: 4px solid #007ACC;
   padding: 1em;
   margin-bottom: 1.5em;
@@ -69,174 +27,182 @@ body { font-family: sans-serif; padding: 20px; }
   line-height: 1.6;
 }
 
-/* Container für Balkenanzeige */
-.score-bar-container {
-  width: 100%;
-  background-color: #eee;
-  height: 20px;
-  border-radius: 5px;
-  margin: 10px 0;
-  overflow: hidden;
-}
-
-/* Eigentliche farbige Balkenanzeige */
-.score-bar {
-  height: 100%;
-  transition: width 0.5s ease;
-}
-
-.pid-description {
-  font-size: 0.9em;
-  color: #555;
-  margin-top: 5px;
-}
-
-.result-info {
+/* Note in the intro text and in the results page */
+.note {
   background-color: #f9f9f9;
   padding: 1rem;
   border-radius: 8px;
   font-size: 0.95rem;
-  color: #333;
   margin: 1.2rem 0;
 }
-.result-info a {
-  color: #0077cc;
-  text-decoration: underline;
+
+/* ---------------------------Question Section------------------------------- */
+
+/* ---------------Progress bar--------------- */
+
+/* Progress Bar Container */
+#progress-container {
+  background-color: #e0e0e0;
+  height: 10px;
+  width: 100%;
+  margin: 20px 0;
 }
 
-.result-contact-note {
-  margin-top: 1em;
+/* Progress Bar */
+#progress-bar {
+  height: 10px;
+  background-color: #4caf50;
+  width: 50%
+}
+
+/* --------------Questions-------------- */
+
+/* Individual Question Containers */
+.question {
+  margin-bottom: 2rem;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+/* More Info Button*/
+.more-info-btn {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* More Info Text */
+.help-text {
   font-style: italic;
+  color: gray;
+  margin: 0 0 1em 0;
 }
 
-.statement-scores {
-  margin-top: 0.5em;
-  font-size: 0.8em;
+/* Volume-Question Note */
+#volume-note {
+  font-size: .9rem;
+  color: #666;
+  margin:.4rem 0 0;
 }
-.mini-score {
+
+/* ----------Mini Score Bars----------- */
+
+.label-and-mini-bar {
   display: flex;
   align-items: center;
   gap: 0.5em;
   margin-bottom: 2px;
-  max-width: 800px; /* optional */
 }
 
-.mini-score-label {
+.mini-label {
   width: 120px;
   font-size: 0.8em;
   white-space: nowrap;
 }
 
-.error-message {
-  color: #b00020;              /* kräftiges Rot */
-  background-color: #ffe6e6;   /* hellroter Hintergrund */
-  border: 2px solid #b00020;
-  border-radius: 6px;
-  padding: 1em;
-  margin: 1em 0;
-  font-weight: bold;
-  font-size: 1em;
-}
-
-.importance-option {
-  margin-top: 1em; /* etwas mehr Abstand zu den Radio-Buttons */
-  font-size: 0.9em;
-  color: #444;
-  display: block;
-}
-
-.skip-option {
-  text-align: right;      /* Button nach rechts ausrichten */
-  margin-top: 0.5em;      /* etwas Abstand oberhalb */
-}
-
-.clear-btn {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0.3em 0.8em;
-  font-size: 0.85em;
-  cursor: pointer;
-  color: #333;
-}
-
-.clear-btn:hover {
-  background-color: #e0e0e0;
-  border-color: #999;
-}
-
-/* Container für die kleinen Score-Balken */
-.statement-scores {
-  margin-top: 0.5em;
-}
-
-/* Jede PID-Zeile */
-.mini-score {
-  display: flex;
-  align-items: center;
-  margin: 0.3em 0;
-}
-
-/* Label (PID-Name) */
-.mini-score-label {
-  flex: 0 0 120px; /* fester Platz für den Namen */
-  font-size: 0.9em;
-  color: #333;
-}
-
-/* Der farbige Balken */
 .mini-bar {
-  height: 14px;          /* einheitlich */
+  height: 14px;
   border-radius: 7px;
-  transition: width 0.4s;
-  flex-grow: 0;          /* verhindert, dass Balken sich strecken */
-  display: inline-block; /* JS-width greift sicher */
 }
 
-/* macht die ganze Kachel klickbar und fokussierbar */
-.likert label {
+
+/* -------Answer Options----------- */
+
+/* container for the answer options */
+.answer-options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  gap: 0.75rem;
+}
+
+/* label of the answer options*/
+.answer-options label {
+  flex: 1;
+  min-width: 170px;
+  background: #eef2f7;
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.88rem;
   position: relative;
   border: 1px solid #dbe1ea;
   transition: background .15s ease, border-color .15s ease, transform .05s ease;
 }
 
-/* Radio unsichtbar, aber fokussierbar & klickbar */
-.likert label input[type="radio"] {
+/* radio invisible, but focusable and clickable */
+.answer-options label input[type="radio"] {
   position: absolute;
-  inset: 0;          /* füllt das ganze Label */
-  opacity: 0;        /* bleibt fokussierbar */
+  inset: 0;          /* fills the whole label */
+  opacity: 0;        /* stays focusable */
   cursor: pointer;
 }
 
-/* Hover-Feedback */
-.likert label:hover {
+/* hover feedback */
+.answer-options label:hover {
   background: #f5f8fc;
 }
 
-/* aktiver Klick */
-.likert label:active {
-  transform: translateY(1px);
+/* active click */
+.answer-options label:active {
+  transform: translateY(2px);
 }
 
-/* gewählte Option (kein Farbwechsel-Drama, nur dezent) */
-.likert label:has(input:checked) {
+/* emphasize the chosen option */
+.answer-options label:has(input:checked) {
   background: #e8f0ff;
   border-color: #4f7cff;
   box-shadow: 0 0 0 2px rgba(79,124,255,.15) inset;
 }
 
-/* Tastaturfokus sichtbar machen */
-.likert label:has(input:focus-visible) {
-  outline: 2px solid #4f7cff;
-  outline-offset: 2px;
+
+/* -----------------------Results Page---------------------------------- */
+
+/* result card */
+.result-card {
+  padding: 1em;
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  border-left: 10px solid green;
 }
 
-/* Style for the foldable results */
+/* container for the score bar */
+.result-bar-container {
+  width: 100%;
+  background-color: #eee;
+  height: 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* score bar */
+.result-bar {
+  height: 100%;
+  background-color: green;
+  border-radius: 5px;
+}
+
+/* foldable result details */
 details {
-  border: 1px solid #ccc; /* Rand der Box */
-  background-color: #f0f0f0; /* Hintergrundfarbe */
-  padding: 10px; /* Innenabstand */
-  margin-bottom: 15px; /* Außenabstand */
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 15px;
   font-size: 0.95rem;
   color: #333;
+}
+
+/* plus in the result details */
+#plus{
+  color: green;
+}
+
+/* minus in the result details*/
+#minus{
+  color: red;
 }
