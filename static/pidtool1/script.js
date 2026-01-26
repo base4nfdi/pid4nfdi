@@ -40,7 +40,7 @@ const questions = [
       {
         'id': 0,
         'text': '1. It is important for us that the PID provider demonstrates a strong, long-term commitment to persistence.',
-        'help': ' Persistence is the core promise of a PID - but it’s not guaranteed by the technology alone. It depends on long-term organizational and financial commitment. Systems like DataCite DOIs, ePIC Handles, and URN:NBN:DE are backed by stable institutions/organizations that explicitly commit to maintaining resolvability over time. ARKs can also support persistence, but this varies with the implementation, especially as ARKs need to be hosted by the assigning institution.',
+        'help': 'Persistence is the core promise of a PID - but it’s not guaranteed by the technology alone. It depends on long-term organizational and financial commitment. Systems like DataCite DOIs, ePIC Handles, and URN:NBN:DE are backed by stable institutions/organizations that explicitly commit to maintaining resolvability over time. ARKs can also support persistence, but this varies with the implementation, especially as ARKs need to be hosted by the assigning institution.',
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
         'default': STANDARD_ANSWER_OPTIONS[1]
@@ -93,7 +93,7 @@ const questions = [
       {
         "id": 6,
         "text": "7. It is important for us that the PID provider supports cataloging, archiving, and stable referencing within national or academic library infrastructures.",
-        "help": "URN:NBN:DE are specialized persistent identifiers designed primarily for use by national libraries and archival institutions. It provides stable, location-independent naming of digital and physical resources that often lack other standard identifiers like ISBN or ISSN. URN:NBN:DEs supports comprehensive cataloging and long-term archival needs by uniquely identifying materials such as digitized manuscripts, reports, cultural heritage objects, and institutional publications within library collections. They are collected and discoverable in the central catalog of the German National Library",
+        "help": "URN:NBN:DE are specialized persistent identifiers designed primarily for use by national libraries and archival institutions. It provides stable, location-independent naming of digital and physical resources that often lack other standard identifiers like ISBN or ISSN. URN:NBN:DEs supports comprehensive cataloging and long-term archival needs by uniquely identifying materials such as digitized manuscripts, reports, cultural heritage objects, and institutional publications within library collections. They are collected and discoverable in the central catalog of the German National Library.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
         'default': STANDARD_ANSWER_OPTIONS[1]
