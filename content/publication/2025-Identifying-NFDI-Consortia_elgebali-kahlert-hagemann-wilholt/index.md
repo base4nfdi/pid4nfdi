@@ -1,5 +1,5 @@
 ---
-title: 'PID4NFDI: Survey on PID Practices. Main results.'
+title: 'Identifying NFDI Consortia with Persistent Identifiers'
 
 # Draft?
 draft: false
@@ -9,21 +9,23 @@ draft: false
 # and it will be replaced with their full name and linked to their profile.
 authors:
 - stephanie
+- torsten
+- sara
 
 # Author notes (optional, uncomment line below)
 #author_notes:
 #  - 'e.g. equal contribution'
 
 # Publication date
-date: '2023-02-13'
+date: '2025-12-04'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-07-23'
+publishDate: '2025-12-04'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['speech']
+publication_types: ['guideline']
 
 # Publication name and optional abbreviated publication name (uncomment line below).
 publication: 'Zenodo'
@@ -33,20 +35,20 @@ publication: 'Zenodo'
 #event: ''
 
 # Abstract
-abstract: 'In December 2022 and January 2023, the NFDI working group on Persistent Identifier Services conducted a survey among infrastructure managers of NFDI services to learn about current PID integrations and future plans on PID usage. The slides summarise the key results of the survey.'
+abstract: 'lThis document presents the official recommendation of the PID4NFDI Coordination Hub for assigning persistent identifiers (PIDs) to the consortia of Germany’s National Research Data Infrastructure (NFDI).'
 
 # Summary. An optional shortened abstract. (uncomment lines below)
 #summary: ''
 
 # DOI
-doi: '10.5281/zenodo.7635791'
+doi: '10.5281/zenodo.17743199'
 
 # Tags (site-wide tags)
 tags:
+- NFDI
+- Base4NFDI
 - persistent identifier
 - PID4NFDI
-- Base4NFDI
-- NFDI
 
 # Display this page in the Featured widget?
 featured: false

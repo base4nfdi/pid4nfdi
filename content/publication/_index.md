@@ -4,6 +4,8 @@ title: Publications
 # Other front matter settings
 ---
 
+This page presents a curated selection of our most relevant publications. For a full and comprehensive list of all our research outputs, please refer to our dedicated [Zenodo Community](https://zenodo.org/communities/pid4nfdi/).
+
 <style>
 /* Publications-only styles */
 .media.stream-item.view-compact {

@@ -619,6 +619,18 @@ exportBtn.onclick = () => {
   text += "=== Scores ===\n";
   for (let pid of sortedPIDs) {
     text += `${pid}\n  Score: ${scores[pid]}${unit}\n  Description: ${pidDescriptions[pid] || ''}\n\n`;
+  // Advantages / Disadvantages (wie im UI, nur als Text)
+    const adv = feedback_texts_advantages?.[pid] || [];
+    const dis = feedback_texts_disadvantages?.[pid] || [];
+    text += "  Advantages:\n";
+    if (adv.length === 0) text += "    - —\n";
+    else adv.forEach(t => text += `    - ${t}\n`);
+
+    text += "  Disadvantages:\n";
+    if (dis.length === 0) text += "    - —\n";
+    else dis.forEach(t => text += `    - ${t}\n`);
+
+    text += "\n";
   }
 
   // Antworten (direkt anhängen)

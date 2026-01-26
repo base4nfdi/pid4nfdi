@@ -19,34 +19,75 @@ sections:
       title: PID Coordination Hub
       subtitle: Driving FAIR, Open and Persistent Research Practices
       text: |
-        The PID Coordination Hub serves as a centralized infrastructure for managing persistent identifiers (PIDs) within Germany’s National Research Data Infrastructure (NFDI). Developed under PID4NFDI, PID Coordination Hub aims to standardize PID usage, enhance governance, and support interoperability across NFDI consortia. By integrating various PID providers and consolidating metadata practices, it addresses challenges in infrastructure consistency, policy development, and long-term PID management. Through collaborative frameworks, it assists both mature and developing institutions in effectively implementing FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, fostering a unified research data ecosystem.
+        **Persistent Identifiers (PIDs)** are unique, permanent digital references for research resources — from datasets and publications to researchers, institutions, and instruments. They ensure the long-term findability and citability of research outputs, independent of changes in URLs or institutional structures.
+        &nbsp;
+        <br>
+        **The PID Coordination Hub** was developed as part of the **PID4NFDI** project and serves as a central support infrastructure for managing persistent identifiers within Germany's [National Research Data Infrastructure (NFDI)](https://www.nfdi.de/). Our goal is to foster the standardization of PID usage, strengthen governance structures, and promote interoperability among NFDI consortia. By integrating various PID providers and harmonizing metadata practices, we support research institutions in implementing the FAIR principles (Findable, Accessible, Interoperable, Reusable).
 
-        ## What we offer
+        <h2 style="text-align: center;">What we offer</h2>
 
         <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>📘 Fundamentals</h3>
             <p class="pid-description">New to PIDs? Learn why persistent identifiers are important and how they make your research FAIR.</p>
-            <div class="pid-actions">
-              <a href="https://pid.services.base4nfdi.de/get-pid/start/" class="pid-btn-open" target="_blank" rel="noopener">Learn more</a>
+            <ul class="pid-service-list">
+              <li><a href="https://pid.services.base4nfdi.de/get-pid/start/" target="_blank" rel="noopener">Getting Started</a></li>
+              <li><a href="https://pid.services.base4nfdi.de/get-pid/providers/" target="_blank" rel="noopener">PID Providers</a></li>
+            </ul>
             </div>
-          </div>
-        </div>
+
         
-        <div class="pid-card-grid">
           <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
             <h3>🛒 Services</h3>
-        <p class="pid-description">What we offer</p>
+        <p class="pid-description">Explore the practical solutions we develop to strengthen research data management: </p>
         <ul class="pid-service-list">
             <li><a href="https://pid.services.base4nfdi.de/services/instruments/" target="_blank" rel="noopener">Persistent Identification of Instruments</a></li>
             <li><a href="https://pid.services.base4nfdi.de/services/metadata-support-assessment/" target="_blank" rel="noopener">Metadata Support and Assessment</a></li>
             <li><a href="https://pid.services.base4nfdi.de/services/prefix-registration/" target="_blank" rel="noopener">Prefix Registration</a></li>
         </ul>
           </div>
-         </div>
+          
          
-    design:
-      columns: '1'
+          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+            <h3>💬 Community</h3>
+        <p class="pid-description">Dive into the core of our collaborative network. The Community section is your hub for connecting with peers and leveraging shared knowledge.</p>
+        <ul class="pid-service-list">
+            <li><a href="https://pid.services.base4nfdi.de/community/focus-groups/" target="_blank" rel="noopener">Focus groups</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/community/support/" target="_blank" rel="noopener">Support</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/community/use-cases/" target="_blank" rel="noopener">Use Cases</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/community/consortia-services/" target="_blank" rel="noopener">Consortia Services</a></li>
+        </ul>
+          </div>
+          
+        
+          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+            <h3>📖 Knowledge Base</h3>
+        <p class="pid-description">Find practical Training Materials & Guides to implement PIDs, alongside key Publications detailing our latest efforts in the field.</p>
+        <ul class="pid-service-list">
+            <li><a href="https://pid.services.base4nfdi.de/resources/training-material/" target="_blank" rel="noopener">Training Materials & Guides</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/publication/" target="_blank" rel="noopener">Publications</a></li>
+        </ul>
+          </div>
+          
+        
+          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+            <h3>🗓️ Events</h3>
+        <p class="pid-description">Stay informed about our recent and upcoming activities. See below ⬇️</p>
+          </div>
+                  
+         
+          <div class="pid-card" data-type="Guide" data-provider="Community" data-domain="Generic" data-lang="EN">
+            <h3>ℹ️ About</h3>
+        <p class="pid-description">The About section provides a comprehensive overview of the project and its team.</p>
+        <ul class="pid-service-list">
+            <li><a href="https://pid.services.base4nfdi.de/about/" target="_blank" rel="noopener">About PID4NFDI</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/about/roadmap-faqs/" target="_blank" rel="noopener">Roadmap & FAQs</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/about/team/" target="_blank" rel="noopener">Team</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/about/contact/" target="_blank" rel="noopener">Contact</a></li>
+        </ul>
+          </div>
+         </div>
+    
 
 #  - block: collection
 #    content:
@@ -80,40 +121,6 @@ sections:
     design:
       view: compact
       columns: '2'
-
-#  - block: collection
-#    content:
-#      title: Latest Publications
-#      text: ""
-#      count: 5
-#      filters:
-#        folders:
-#          - publication
-#        #publication_type: 'article'
-#    design:
-#      view: list
-#      columns: '1'
-
-  - block: markdown
-    content:
-      title: About
-      subtitle: PID4NFDI – Persistent Identifier Services for the German National Research Data Infrastructure (NFDI)
-      text: |
-        <div class="row row-cols-4">
-        <div class="col">
-        {{% cta cta_alt_link="./about/" cta_alt_text="More about the project" %}}
-        </div>
-        <div class="col">
-        {{% cta cta_alt_link="./publication/" cta_alt_text="Latest publications" %}}
-        </div>
-        <div class="col">
-        {{% cta cta_alt_link="./about/team/" cta_alt_text="Meet the team" %}}
-        </div>
-        <div class="col">
-        {{% cta cta_alt_link="./about/contact/" cta_alt_text="Contact us" %}}
-        </div>
-        </div>
-    design:
-      columns: '1'
+    
 
 ---
