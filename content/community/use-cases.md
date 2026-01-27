@@ -25,6 +25,7 @@ sections:
             <option>Large numbers of PIDs</option>
             <option>Metadata analysis</option>
             <option>Warm data</option>
+            <option>Controlled vocabulary</option>
           </select>
           
           <select id="f-provider" aria-label="Provider">
@@ -42,6 +43,7 @@ sections:
             <option>Microbiology</option>
             <option>Photon- and neutron sciences</option>
             <option>Social sciences</option>
+            <option>Earth System Sciences</option>
           </select>
           
           <select id="f-lang" aria-label="Language">
@@ -83,6 +85,19 @@ sections:
             <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp DAPHNE4NFDI<h5>
             <h5>Organizations:&nbsp &nbsp HZB</h5>
             <h2> <a href="https://pid.services.base4nfdi.de/community/use-cases/instruments-at-hzb/" target="_blank">Learn more</a></h2>
+          </div>
+
+          <div class="pid-card" data-type="Controlled vocabulary,Metadata analysis" data-provider="ePIC" data-domain="Earth System Sciences" data-lang="Instruments" >
+            <h2>Instrument PIDs in the Sensor Management System</h2>
+            <h5> <span style="background-color:plum;"> &nbsp metadata analysis &nbsp </span> &nbsp <span style="background-color:mediumseagreen;"> &nbsp controlled vocabulary &nbsp </span></h5>
+            <p>This analysis describes the integration of B2INST into the Sensor Management System (SMS), which enables standardized management of sensor metadata in the Earth System Sciences. By combining rich, machine-actionable metadata, controlled vocabulary, and persistent identifiers, the SMS makes instrument information readily reusable by automated workflows (e.g., knowledge graphs and AI/ML-driven discovery and quality control). The SMS has been developed by the four Helmholtz Centers from the Research Field Earth and Environment – Helmholtz Centre for Geosciences (GFZ), Helmholtz Center for Environmental Research (UFZ), Jülich Research Centre (FZJ), and Karlsruhe Institute of Technology (KIT) – as part of the Helmholtz DataHub initiative. Most instruments registered in B2INST originate from the SMS instances operated by these organizations. The report focuses on instrument metadata and curation processes, the seamlessly integrated PID registration workflow, and the lessons learned that can guide the adoption of instrument PIDs in equipment databases.</p>
+            <p>&nbsp</p>
+            <h5>Resource types:&nbsp instruments</h5>
+            <h5>PID Providers: &nbsp &nbsp ePIC</h5>
+            <h5>Research Field: &nbsp Earth System Sciences</h5> 
+            <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp NFDI4Earth<h5>
+            <h5>Organizations:&nbsp &nbsp GFZ, UFZ, KIT, FZJ</h5>
+            <h2> <a href="https://zenodo.org/records/17733707" target="_blank">Learn more</a></h2>
           </div>
 
           <div class="pid-card" data-type="Metadata analysis" data-provider="DataCite" data-domain="Agrosystem research" data-lang="Datasets" >
