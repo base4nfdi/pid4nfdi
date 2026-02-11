@@ -32,7 +32,7 @@ sections:
             
             - Guidance: [Linking instrument PIDs to other research entities](https://zenodo.org/records/17535290) 
             
-            - Guidance: Optimal use of DataCite metadata fields for instruments *[coming soon]*
+            - Guidance: [Metadata examples for instrument PIDs](https://zenodo.org/records/17535689)
 
           <br/>      
 
