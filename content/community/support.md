@@ -21,8 +21,6 @@ sections:
         The events are held on a bi-monthly basis at different times on different days. The event will last one hour and will be announced via NFDI mailing lists and Rocket.chat a few weeks in advance, **together with the access link to the Zoom room**.
         
         The upcoming meetings in 2026 are on 
-        * **Thursday, February 12 at 1 pm,** 
-        * **Wednesdy, May 13 at 1 pm,** 
         * **Monday, September 7 at 11 am, and**
         * **Tuesday, December 1st, at 2 pm**
 
