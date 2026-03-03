@@ -54,9 +54,6 @@ image:
 projects: []
 ---
 <!--more-->
-
-# Entering the World of Linked Data
-
 Metadata has become central to how research is discovered, linked, and evaluated. Yet much of it still lives as structured text rather than as explicit, interoperable knowledge.
 
 Within PID4NFDI, DataCite is presenting a dedicated semantic namespace for the DataCite Metadata Schema:
@@ -99,7 +96,7 @@ The difference looks like this:
 ![Tree vs graph: Dataset linked to person and organization](Example_1.png)
 ![Tree vs graph: Funder linked to dataset, dataset to creator and organization](Example_2.png)
 
-***Figure 1:** The figure compares two ways of understanding the same metadata. On the left, the tree model shows information as nested fields inside a single record: identifiers, creators, affiliations, and funding all appear as parts of that record. On the right, the graph model shows the same information as explicit relationships between distinct entities. In Example A, a dataset is connected to a person, and that person is connected to an organization. In Example B, a funder is connected to a dataset, which is then connected to a creator and that creator's organization. The key difference is that the tree model emphasizes structure inside one record, while the graph model emphasizes reusable connections between things.*
+***Figure 1:**  The figure compares two ways of understanding the same metadata. On the left, the tree model shows information as nested fields inside a single record: identifiers, creators, affiliations, and funding all appear as parts of that record. On the right, the graph model shows the same information as explicit relationships between distinct entities. In Example A, a dataset is connected to a person, and that person is connected to an organization. In Example B, a funder is connected to a dataset, which is then connected to a creator and that creator's organization. The key difference is that the tree model emphasizes structure inside one record, while the graph model emphasizes reusable connections between things.*
 
 In the tree model, the focus is on where information sits inside the record. In the graph model, the focus is on how things relate to each other. That shift is the core idea behind linked data.
 
