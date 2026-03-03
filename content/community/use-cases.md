@@ -26,6 +26,7 @@ sections:
             <option>Large numbers of PIDs</option>
             <option>Metadata analysis</option>
             <option>Metadata mapping</option>
+            <option>Resource type clarification</option>
             <option>Warm data</option>
             <option>Controlled vocabulary</option>
           </select>
@@ -43,6 +44,7 @@ sections:
             <option>Generic</option>
             <option>Humanities</option>
             <option>Microbiology</option>
+            <option>Materials sciences</option>
             <option>Photon- and neutron sciences</option>    
             <option>Social sciences</option>
             <option>Earth System Sciences</option>
@@ -50,6 +52,7 @@ sections:
           
           <select id="f-lang" aria-label="Language">
             <option value="">Resource Type</option>
+            <option>Collections</option>
             <option>Datasets</option>
             <option>Dataset elements</option>
             <option>Instruments</option>
@@ -157,10 +160,21 @@ sections:
             <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp Base4NFDI<h5>
             <h5>Organizations:&nbsp &nbsp TIB</h5>
           </div>    
-        </div>
-        
           
-        </div>
+          <div class="pid-card" data-type="Metadata analysis,Resource type clarification" data-provider="DataCite" data-domain="Materials sciences" data-lang="Collections" >
+            <h2>NOMAD – Clarifying Resource Type for DOI Registration of Aggregated Data</h2>
+            <h5> 
+              <span style="background-color:plum;"> &nbsp metadata analysis &nbsp </span> &nbsp
+              <span style="background-color:#CCCCFF;"> &nbsp resource type clarification &nbsp </span>
+            </h5>
+            <p>This use case analyses how NOMAD “Projects” (aggregations of uploaded files, directories, and derived entries) should be represented in the DataCite Metadata Schema for DOI registration. Our analysis showed that these “Projects” function as curated collections of heterogeneous research objects (nested files, heterogeneous data types, derived entries). They are not project descriptions in the sense of RAiDs, but structured aggregations of multiple items that are bundled and assigned a DOI. On that basis, the recommended resourceTypeGeneral is Collection rather than Dataset or Project. We therefore supported NOMAD in clarifying what exactly is being identified, how those aggregated objects should be described, and how the associated metadata can be enriched in a structured and interoperable way.</p>
+            <p>&nbsp</p>         
+            <h5>Resource types:&nbsp collections (recommended for NOMAD Projects)</h5>
+            <h5>PID Providers: &nbsp &nbsp DataCite</h5>
+            <h5>Research Field: &nbsp materials science, computational materials research</h5>  
+            <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp FAIRmat<h5>
+            <h5>Organizations:&nbsp &nbsp Humboldt-Universität zu Berlin (NOMAD repository operator)</h5>
+          </div>    
         
         <!-- minimal CSS for filters -->
         <style>
