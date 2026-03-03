@@ -59,6 +59,7 @@ sections:
             <option>Projects</option>
             <option>Samples</option>
             <option>Services</option>
+            <option>Storage Resources</option>
             <option>Strains</option>
             <option>Text-based</option>
           </select>
@@ -174,7 +175,22 @@ sections:
             <h5>Research Field: &nbsp materials science, computational materials research</h5>  
             <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp FAIRmat<h5>
             <h5>Organizations:&nbsp &nbsp Humboldt-Universität zu Berlin (NOMAD repository operator)</h5>
-          </div>    
+          </div>  
+        
+          <div class="pid-card" data-type="Warm data,FAIR digital objects" data-provider="ePIC" data-domain="Generic" data-lang="Projects,Storage resources" >
+            <h2>Coscine: Assigning PIDs for Projects and Storage Resources</h2>
+            <h5> 
+              <span style="background-color:#E5AA70;"> &nbsp Warm data &nbsp </span> &nbsp
+              <span style="background-color:#AFE1AF;"> &nbsp FAIR digital objects &nbsp </span>
+            </h5>
+            <p>Cosine is a web-based research data management (RDM) platform developed at RWTH Aachen University in collaboration with NFDI4Ing/NFDI-MatWerk. It can be used to store, manage and archive any kinds of general research data that arise from research projects. The platform focuses on making warm/active data FAIR by collecting rich, customizable metadata and assigning PIDs as early as possible, whereas the final publication of research results is not part of Coscine. The RDM platform assigns ePIC PIDs in the form of FAIR digital objects (FDOs) to enhance FAIRness and interoperability across systems.</p>
+            <p>&nbsp</p>         
+            <h5>Resource types:&nbsp projects, storage resources</h5>
+            <h5>PID Providers: &nbsp &nbsp ePIC</h5>
+            <h5>Research Field: &nbsp generic</h5>  
+            <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp NFDI4ING, NFDI-MatWerk<h5>
+            <h5>Organizations:&nbsp &nbsp RWTH Aachen University</h5>
+          </div>   
         
         <!-- minimal CSS for filters -->
         <style>
