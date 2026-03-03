@@ -95,6 +95,7 @@ But linked data encourages a slightly different way of thinking: not just in ter
 For example, a dataset can be connected to a person. That person can be connected to an organization. A funder can be connected to a dataset. Once those connections are explicit, the metadata becomes easier to reuse across systems.
 
 The difference looks like this:
+
 ![Tree vs graph: Dataset linked to person and organization](Example_1.png)
 ![Tree vs graph: Funder linked to dataset, dataset to creator and organization](Example_2.png)
 
