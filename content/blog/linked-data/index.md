@@ -125,8 +125,8 @@ The objective is not to complicate metadata creation. It is to extend what metad
 
 This is a directional step toward a more connected and semantically explicit metadata ecosystem. The namespace is intended to evolve in dialogue with the community, and we actively welcome review, critique, and implementation feedback.  
 * RFCs and design feedback (Proposals category): [https://github.com/datacite/schema.datacite.org-linked-data/discussions/new?category=proposals](https://github.com/datacite/schema.datacite.org-linked-data/discussions/new?category=proposals)  
-*Submit new ideas: [https://github.com/datacite/schema.datacite.org-linked-data/discussions/new?category=ideas](https://github.com/datacite/schema.datacite.org-linked-data/discussions/new?category=ideas)  
-*Bugs or implementation tasks: [https://github.com/datacite/schema.datacite.org-linked-data/issues](https://github.com/datacite/schema.datacite.org-linked-data/issues)  
+* Submit new ideas: [https://github.com/datacite/schema.datacite.org-linked-data/discussions/new?category=ideas](https://github.com/datacite/schema.datacite.org-linked-data/discussions/new?category=ideas)  
+* Bugs or implementation tasks: [https://github.com/datacite/schema.datacite.org-linked-data/issues](https://github.com/datacite/schema.datacite.org-linked-data/issues)  
 
 Community input will directly shape how this namespace develops and how it can best support real-world infrastructure and workflows.  
 
