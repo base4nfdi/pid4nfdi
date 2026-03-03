@@ -3,7 +3,7 @@
 
 title: "Entering the World of Linked Data"
 subtitle: ""
-summary: "This post introduces DataCite’s linked-data namespace and explains, in beginner-friendly terms, how stable identifiers, machine-readable vocabularies, and explicit relationships make metadata easier to understand, connect, and reuse across systems."
+summary: "This post introduces DataCite’s linked data namespace and explains, in beginner-friendly terms, how stable identifiers, machine-readable vocabularies, and explicit relationships make metadata easier to understand, connect, and reuse across systems."
 authors: ["sara"]
 tags: ["PID4NFDI", "metadata", "NFDI", "Datacite"]
 categories: []
@@ -56,12 +56,12 @@ projects: []
 <!--more-->
 Metadata has become central to how research is discovered, linked, and evaluated. Yet much of it still lives as structured text rather than as explicit, interoperable knowledge.
 
-Within PID4NFDI, DataCite is presenting a dedicated semantic namespace for the DataCite Metadata Schema:
+Within PID4NFDI, DataCite is presenting a dedicated semantic namespace for the [DataCite Metadata Schema](https://schema.datacite.org/):
 
 **Staging site:** [https://schema.stage.datacite.org/linked-data/](https://schema.stage.datacite.org/linked-data/)  
 **GitHub repository:** [https://github.com/datacite/schema.datacite.org-linked-data](https://github.com/datacite/schema.datacite.org-linked-data)
 
-This work adds a linked-data layer around parts of the DataCite Metadata Schema 4.6. In simple terms, it gives important DataCite concepts stable web identifiers and describes them in machine-readable files.
+This work adds a linked data layer around parts of the [DataCite Metadata Schema 4.6](https://schema.datacite.org/meta/kernel-4.6/). In simple terms, it gives important DataCite concepts stable web identifiers and describes them in machine-readable files.
 
 It does not replace the existing DataCite schema. Instead, it adds a semantic layer that helps systems interpret metadata more consistently and connect it more easily across tools and infrastructures.
 
@@ -102,20 +102,20 @@ In the tree model, the focus is on where information sits inside the record. In 
 
 ## **What We Are Presenting**
 
-The linked-data namespace currently provides:
+The linked data namespace currently provides:
 
 * Stable IRIs for published schema resources, including classes, properties, vocabulary schemes, and vocabulary terms  
 * Machine-readable definitions of those resources as JSON-LD files  
 * Controlled vocabularies published as machine-readable concept schemes and term resources  
 * JSON-LD contexts that map short keys to full identifiers  
-* A manifest that inventories the staged linked-data resources  
+* A manifest that inventories the staged linked data resources  
 * Bundled distribution files for easier reuse as a single integrated graph  
 * Human-browsable index pages for exploring the namespace in a browser  
 * Guidance and examples related to XML-shaped JSON and round-tripping
 
 In practical terms, this repository helps describe the meaning of DataCite metadata fields, not just their names.
 
-It gives a linked-data shape to concepts such as:
+It gives a linked data shape to concepts such as:
 
 * identifier  
 * creators  
@@ -137,7 +137,7 @@ JSON-LD is useful because it keeps data readable as JSON while also making the m
 That means the same metadata can be:
 
 * easy for developers to inspect as JSON  
-* more precise for linked-data-aware tools  
+* more precise for linked data-aware tools  
 * easier to convert into RDF-based forms such as Turtle or RDF/XML
 
 For teams already working with JSON, this is helpful because it provides a path toward richer semantics without requiring a completely different way of working.
@@ -175,7 +175,7 @@ The goal is to make metadata more understandable and more useful across connecte
 
 This repository is:
 
-* a linked-data description of parts of the DataCite Metadata Schema  
+* a linked data description of parts of the DataCite Metadata Schema  
 * a semantic namespace for schema terms and controlled vocabularies  
 * a staging environment for publishing and testing these resources
 
