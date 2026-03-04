@@ -94,6 +94,67 @@ sections:
 
 
         
+          <div class="pid-card pid-new" data-type="Registry / Collection" data-provider="DataCite DOI" data-domain="general audience" data-lang="en">
+          <h3>📚 <a href="https://pidservices.org/" target="_blank">PID Services Registry</a></h3>
+          <p class="pid-description">
+            The PID Services Registry provides an overview of services related to Persistent Identifiers (PIDs). Maintained by DataCite and originally developed within the FREYA project, the registry describes PID service providers using structured DataCite metadata and assigns a DOI to each registered service.
+          </p>
+
+          <div class="pid-types-badges">
+            <span class="pid-type-badge">DataCite DOI</span>
+            <span class="pid-type-badge">ORCID</span>
+            <span class="pid-type-badge">Crossref DOI</span>
+            <span class="pid-type-badge">URN</span>
+            <span class="pid-type-badge">ROR</span>
+            <span class="pid-type-badge">RAiD</span>
+            <span class="pid-type-badge">Handle</span>
+          </div>
+
+          <div class="pid-details" hidden>
+            <dl class="pid-metadata">
+              <dt>Organisation:</dt>
+              <dd>DataCite (developed within the FREYA project)</dd>
+
+              <dt>Type:</dt>
+              <dd>Registry / Service Catalogue</dd>
+
+              <dt>Learning Resource Type:</dt>
+              <dd>collection of resources / database</dd>
+
+              <dt>Proficiency Level:</dt>
+              <dd>competent, proficient, expert</dd>
+
+              <dt>Target Group:</dt>
+              <dd>repository managers, infrastructure managers, research data managers</dd>
+
+              <dt>Scope:</dt>
+              <dd>Currently lists 42 PID-related services</dd>
+
+              <dt>Metadata Standard:</dt>
+              <dd>DataCite Metadata Schema</dd>
+
+              <dt>Contact:</dt>
+              <dd><a href="mailto:support@datacite.org">support@datacite.org</a></dd>
+
+              <dt>Keywords:</dt>
+              <dd>PID services, registry, service catalogue, governance, metadata, infrastructure, persistent identifiers</dd>
+
+              <dt>Learning Outcomes:</dt>
+              <dd>
+                Discover and compare PID service providers across the global PID landscape. 
+                Assess governance models, technical scope, and service characteristics. 
+                Understand how PID services are described using structured metadata. 
+                Support informed strategic decision-making when selecting PID infrastructures.
+              </dd>
+            </dl>
+          </div>
+
+          <div class="pid-actions">
+            <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
+            <a href="https://pidservices.org/" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
+          </div>
+        </div>
+
           <div class="pid-card" data-type="Guidance Document" data-provider="DataCite DOI" data-domain="general audience" data-lang="en">
             <h3>📘 <a href="https://doi.org/10.5281/zenodo.17535689" target="_blank">Metadata Examples for Instrument PIDs: Guidance Document</a></h3>
             <p class="pid-description">The purpose of this document is to provide detailed, human-readable guidance on how to map metadata collected for research instruments to the metadata required for registering a persistent identifier (PID) for instruments.</p>

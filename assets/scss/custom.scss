@@ -437,3 +437,23 @@ video {
     word-break: break-word;
   }
 }
+
+.pid-card {
+  position: relative;
+}
+
+.pid-card.pid-new::before {
+  content: "NEW";
+  position: absolute;
+  top: 12px;
+  right: -8px;
+  background: #e63946;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transform: rotate(10deg);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  letter-spacing: 0.5px;
+}
