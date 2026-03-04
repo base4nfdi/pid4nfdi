@@ -41,7 +41,7 @@ show_related: false
 #   To use, add an image named `featured.jpg/png` to your page's folder.
 #   Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: "licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), reuses [work by Premeditated](https://w.wiki/CvkA)"
+  caption: false
   focal_point: ""
   preview_only: false
   alt_text: "An illustration illustrating the Linked Data idea."
