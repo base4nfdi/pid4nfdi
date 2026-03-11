@@ -22,8 +22,11 @@ sections:
             <option>FAIR digital objects</option>
             <option>General</option>
             <option>High-granular data</option>
+            <option>Implementation concept</option>
             <option>Large numbers of PIDs</option>
             <option>Metadata analysis</option>
+            <option>Metadata mapping</option>
+            <option>Resource type clarification</option>
             <option>Warm data</option>
             <option>Controlled vocabulary</option>
           </select>
@@ -41,17 +44,22 @@ sections:
             <option>Generic</option>
             <option>Humanities</option>
             <option>Microbiology</option>
-            <option>Photon- and neutron sciences</option>
+            <option>Materials sciences</option>
+            <option>Photon- and neutron sciences</option>    
             <option>Social sciences</option>
             <option>Earth System Sciences</option>
           </select>
           
           <select id="f-lang" aria-label="Language">
             <option value="">Resource Type</option>
+            <option>Collections</option>
             <option>Datasets</option>
             <option>Dataset elements</option>
             <option>Instruments</option>
+            <option>Projects</option>
             <option>Samples</option>
+            <option>Services</option>
+            <option>Storage Resources</option>
             <option>Strains</option>
             <option>Text-based</option>
           </select>
@@ -76,7 +84,7 @@ sections:
         
           <div class="pid-card" data-type="Connection metadata" data-provider="DataCite" data-domain="Photon- and neutron sciences" data-lang="Instruments" >
             <h2>Instrument PIDs at the Helmholtz-Zentrum Berlin</h2>
-            <h5> <span style="background-color:lightskyblue;"> &nbsp connection metadata &nbsp </span></h5>
+            <h5> <span style="background-color:#E0B0FF;"> &nbsp connection metadata &nbsp </span></h5>
             <p>The Helmholtz Zentrum Berlin für Materialien und Energie (HZB) operates the BESSY II synchrotron radiation source and, until the end of 2019, operated the BER II neutron source. The synchrotron radiation of BESSY II (respectively neutrons at BER II) are directed through beamlines to experiment stations, where researchers can examine the interaction of the radiation with a sample, resulting in recorded measurements. The HZB registers DOIs via DataCite for its beamlines and experiment stations to uniquely identify these devices. Researchers can use the DOIs to link their publication data to the devices they have used to generate their measurements.</p>
             <p>&nbsp</p>
             <h5>Resource types:&nbsp instruments</h5>
@@ -138,7 +146,51 @@ sections:
             <h5>Organizations:&nbsp &nbsp DSMZ</h5>
             <h2> <a href="https://doi.org/10.5281/zenodo.14357800" target="_blank">Learn more</a></h2>
           </div>    
-        </div>
+        
+          <div class="pid-card" data-type="Metadata mapping,Implementation concept" data-provider="DataCite" data-domain="Generic" data-lang="Projects,Services" >
+            <h2>PIDs for Services – Mapping Base4NFDI Requirements to DataCite Metadata</h2>
+            <h5> 
+              <span style="background-color:lightpink;"> &nbsp metadata mapping &nbsp </span> &nbsp
+              <span style="background-color:lightskyblue;"> &nbsp implementation concept &nbsp </span>
+            </h5>
+            <p>The purpose of this work is to evaluate how Base4NFDI basic services (e.g. PID4NFDI, TS4NFDI, DMP4NFDI) can be assigned DOIs using the DataCite Metadata Schema. The analysis maps Base4NFDI portfolio requirements to DataCite’s metadata properties, identifies gaps and ambiguities, and formulates governance, workflow, and landing page recommendations for compliant DOI registration of services. The goal is to increase FAIRness, citation stability, discoverability, provenance tracking, and impact measurement of NFDI basic services.</p>
+            <p>&nbsp</p>         
+            <h5>Resource types:&nbsp projects, services (NFDI basic services)</h5>
+            <h5>PID Providers: &nbsp &nbsp DataCite</h5>
+            <h5>Research Field: &nbsp generic, research data management</h5>  
+            <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp Base4NFDI<h5>
+            <h5>Organizations:&nbsp &nbsp TIB</h5>
+          </div>    
+          
+          <div class="pid-card" data-type="Metadata analysis,Resource type clarification" data-provider="DataCite" data-domain="Materials sciences" data-lang="Collections" >
+            <h2>NOMAD – Clarifying Resource Type for DOI Registration of Aggregated Data</h2>
+            <h5> 
+              <span style="background-color:plum;"> &nbsp metadata analysis &nbsp </span> &nbsp
+              <span style="background-color:#CCCCFF;"> &nbsp resource type clarification &nbsp </span>
+            </h5>
+            <p>This use case analyses how NOMAD “Projects” (aggregations of uploaded files, directories, and derived entries) should be represented in the DataCite Metadata Schema for DOI registration. Our analysis showed that these “Projects” function as curated collections of heterogeneous research objects (nested files, heterogeneous data types, derived entries). They are not project descriptions in the sense of RAiDs, but structured aggregations of multiple items that are bundled and assigned a DOI. On that basis, the recommended resourceTypeGeneral is Collection rather than Dataset or Project. We therefore supported NOMAD in clarifying what exactly is being identified, how those aggregated objects should be described, and how the associated metadata can be enriched in a structured and interoperable way.</p>
+            <p>&nbsp</p>         
+            <h5>Resource types:&nbsp collections (recommended for NOMAD Projects)</h5>
+            <h5>PID Providers: &nbsp &nbsp DataCite</h5>
+            <h5>Research Field: &nbsp materials science, computational materials research</h5>  
+            <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp FAIRmat<h5>
+            <h5>Organizations:&nbsp &nbsp Humboldt-Universität zu Berlin (NOMAD repository operator)</h5>
+          </div>  
+        
+          <div class="pid-card" data-type="Warm data,FAIR digital objects" data-provider="ePIC" data-domain="Generic" data-lang="Projects,Storage resources" >
+            <h2>Coscine: Assigning PIDs for Projects and Storage Resources</h2>
+            <h5> 
+              <span style="background-color:#E5AA70;"> &nbsp Warm data &nbsp </span> &nbsp
+              <span style="background-color:#AFE1AF;"> &nbsp FAIR digital objects &nbsp </span>
+            </h5>
+            <p>Cosine is a web-based research data management (RDM) platform developed at RWTH Aachen University in collaboration with NFDI4Ing/NFDI-MatWerk. It can be used to store, manage and archive any kinds of general research data that arise from research projects. The platform focuses on making warm/active data FAIR by collecting rich, customizable metadata and assigning PIDs as early as possible, whereas the final publication of research results is not part of Coscine. The RDM platform assigns ePIC PIDs in the form of FAIR digital objects (FDOs) to enhance FAIRness and interoperability across systems.</p>
+            <p>&nbsp</p>         
+            <h5>Resource types:&nbsp projects, storage resources</h5>
+            <h5>PID Providers: &nbsp &nbsp ePIC</h5>
+            <h5>Research Field: &nbsp generic</h5>  
+            <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp NFDI4ING, NFDI-MatWerk<h5>
+            <h5>Organizations:&nbsp &nbsp RWTH Aachen University</h5>
+          </div>   
         
         <!-- minimal CSS for filters -->
         <style>
