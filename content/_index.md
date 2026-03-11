@@ -31,7 +31,7 @@ sections:
             <h3>📘 Fundamentals</h3>
             <p class="pid-description">New to PIDs? Learn why persistent identifiers are important and how they make your research FAIR.</p>
             <ul class="pid-service-list">
-              <li><a href="https://pid.services.base4nfdi.de/get-pid/start/" target="_blank" rel="noopener">Getting Started</a></li>
+              <li><a href="https://pid.services.base4nfdi.de/get-pid/start/" target="_blank" rel="noopener">Getting Started with our Cookbook</a></li>
               <li><a href="https://pid.services.base4nfdi.de/get-pid/providers/" target="_blank" rel="noopener">PID Providers</a></li>
               <li><a href="https://pid.services.base4nfdi.de/pidtool/" target="_blank" rel="noopener">PID Selection Tool</a></li>
             </ul>
@@ -54,9 +54,9 @@ sections:
         <p class="pid-description">Dive into the core of our collaborative network. The Community section is your hub for connecting with peers and leveraging shared knowledge.</p>
         <ul class="pid-service-list">
             <li><a href="https://pid.services.base4nfdi.de/community/focus-groups/" target="_blank" rel="noopener">Focus groups</a></li>
-            <li><a href="https://pid.services.base4nfdi.de/community/support/" target="_blank" rel="noopener">Support</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/community/support/" target="_blank" rel="noopener">Open Hours</a></li>
             <li><a href="https://pid.services.base4nfdi.de/community/use-cases/" target="_blank" rel="noopener">Use Cases</a></li>
-            <li><a href="https://pid.services.base4nfdi.de/community/consortia-services/" target="_blank" rel="noopener">Consortia Services</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/about/contact/" target="_blank" rel="noopener">1:1 Consultation</a></li>
         </ul>
           </div>
           
@@ -67,6 +67,7 @@ sections:
         <ul class="pid-service-list">
             <li><a href="https://pid.services.base4nfdi.de/resources/training-material/" target="_blank" rel="noopener">Training Materials & Guides</a></li>
             <li><a href="https://pid.services.base4nfdi.de/publication/" target="_blank" rel="noopener">Publications</a></li>
+            <li><a href="https://www.zotero.org/groups/5597931/pid4nfdi/library" target="_blank" rel="noopener">Zotero Library</a></li>
         </ul>
           </div>
           
