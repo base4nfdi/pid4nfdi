@@ -18,8 +18,8 @@ sections:
             
             For a more in-depth look, take a look at our partners' resources:
             * [ePIC - Persistent Identifiers for eResearch](https://www.pidconsortium.net/)
-            * [PID Competence Center of TIB](https://www.pid-network.de/en/)
-            * [PID Network Germany](https://projects.tib.eu/pid-service/en/persistent-identifiers/persistent-identifiers-pids/)  
+            * [PID Competence Center of TIB](https://projects.tib.eu/pid-service/en/persistent-identifiers/persistent-identifiers-pids/)
+            * [PID Network Germany](https://www.pid-network.de/en/)  
 
             ## PID4NFDI Cookbook
             The **PID4NFDI Cookbook** is a practical guide designed to help individuals and organizations get started with PID registration and usage. It provides support for understanding what PIDs are, why they are important for long-term access and citation of digital resources, and how to integrate them into your workflows. The guide includes:
