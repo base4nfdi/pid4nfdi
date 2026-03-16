@@ -60,7 +60,7 @@ sections:
     
 
         ## 
-        IGSNs are used across a wide range of scientific disciplines and heritage domains. Below is an overview of active communities and initiatives.
+        IGSNs are used across a wide range of scientific domains. Below is an overview of active communities and initiatives.
 
         #### Earth and Environmental Sciences
         IGSNs originated in the geoscience community and remain most widely adopted here. Key institutions and projects include:
