@@ -823,7 +823,7 @@ sections:
           </div>
 
           <div class="pid-card" data-type="Guide" data-provider="ePIC" data-domain="general audience" data-lang="en">
-            <h3>📘 <a href="#" target="_blank">Working with Persistent Identifiers - Hands-on</a></h3>
+            <h3>📘 <a href="https://github.com/EUDAT-Training/B2SAFE-B2STAGE-Training/blob/master/07c-Working-with-PIDs_B2HANDLE.md" target="_blank">Working with Persistent Identifiers - Hands-on</a></h3>
             <p class="pid-description">This lecture illustrates the use of PIDs, more specifically it shows how to employ handles using the B2HANDLE library.</p>
             <div class="pid-types-badges">
               <span class="pid-type-badge">handle</span>
@@ -845,7 +845,7 @@ sections:
             </div>
             <div class="pid-actions">
               <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
-              <a href="#" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
+              <a href="https://github.com/EUDAT-Training/B2SAFE-B2STAGE-Training/blob/master/07c-Working-with-PIDs_B2HANDLE.md" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
             </div>
           </div>
 
