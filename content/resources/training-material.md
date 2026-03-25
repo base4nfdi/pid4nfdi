@@ -850,7 +850,7 @@ sections:
           </div>
 
           <div class="pid-card" data-type="manual" data-provider="Community" data-domain="general audience" data-lang="en">
-            <h3>📘 <a href="#" target="_blank">Working with PIDs CURL</a></h3>
+            <h3>📘 <a href="https://github.com/EUDAT-Training/B2SAFE-B2STAGE-Training/blob/master/07a-Working-with-PIDs_CURL.md" target="_blank">Working with PIDs CURL</a></h3>
             <p class="pid-description">This manual from the EUDAT training repository introduces how to work with persistent identifiers using command-line tools (cURL) in the context of the B2SAFE/B2STAGE services. Covers API endpoints, PID registration, metadata querying.</p>
             <div class="pid-types-badges">
               <span class="pid-type-badge">B2SAFE/B2STAGE</span>
@@ -873,7 +873,7 @@ sections:
             </div>
             <div class="pid-actions">
               <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
-              <a href="#" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
+              <a href="https://github.com/EUDAT-Training/B2SAFE-B2STAGE-Training/blob/master/07a-Working-with-PIDs_CURL.md" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
             </div>
           </div>
 
