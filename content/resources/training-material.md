@@ -974,6 +974,67 @@ sections:
             </div>
           </div>
 
+        <div class="pid-card" data-type="documentation" data-provider="ePIC" data-domain="research infrastructure" data-lang="en">
+            <h3>📘 <a href="https://docs.pidinst.org/en/latest/epic-cookbook/index.html" target="_blank">PIDINST ePIC Cookbook</a></h3>
+            <p class="pid-description">Step-by-step instructions for registering instrument PIDs via the ePIC infrastructure. Covers the PIDINST metadata schema as implemented in ePIC and B2INST, including community-specific customisations.</p>
+            <div class="pid-types-badges">
+              <span class="pid-type-badge">ePIC</span>
+              <span class="pid-type-badge">PIDINST</span>
+              <span class="pid-type-badge">B2Inst</span>
+            </div>
+            <div class="pid-details" hidden>
+              <dl class="pid-metadata">
+              <dt>Authors:</dt>
+              <dd>RDA Persistent Identification of Instruments Working Group</dd>
+              <dt>Organisation:</dt>
+              <dd>Research Data Alliance (RDA)</dd>
+              <dt>Proficiency Level:</dt>
+              <dd>proficient, expert</dd>
+              <dt>Duration:</dt>
+              <dd>Reference documentation</dd>
+              <dt>License:</dt>
+              <dd>Copyright 2020–2024, RDA Persistent Identification of Instruments WG</dd>
+              <dt>Learning Outcomes:</dt>
+              <dd>Register instrument PIDs using ePIC/B2INST. Understand how the PIDINST schema maps onto ePIC infrastructure and how to apply community-specific metadata adaptations.</dd>
+              </dl>
+            </div>
+            <div class="pid-actions">
+              <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
+              <a href="https://docs.pidinst.org/en/latest/epic-cookbook/index.html" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
+            </div>
+          </div>
+
+
+        <div class="pid-card" data-type="documentation" data-provider="DataCite" data-domain="research infrastructure" data-lang="en">
+            <h3>📘 <a href="https://docs.pidinst.org/en/latest/datacite-cookbook/index.html" target="_blank">PIDINST DataCite Cookbook</a></h3>
+            <p class="pid-description">Practical guide for minting DataCite DOIs for research instruments. Covers the mapping of the PIDINST metadata schema onto the DataCite schema, metadata preparation, and DOI registration via Fabrica or the REST API.</p>
+            <div class="pid-types-badges">
+              <span class="pid-type-badge">DataCite DOI</span>
+              <span class="pid-type-badge">PIDINST</span>
+            </div>
+            <div class="pid-details" hidden>
+              <dl class="pid-metadata">
+              <dt>Authors:</dt>
+              <dd>RDA Persistent Identification of Instruments Working Group</dd>
+              <dt>Organisation:</dt>
+              <dd>Research Data Alliance (RDA)</dd>
+              <dt>Proficiency Level:</dt>
+              <dd>proficient, expert</dd>
+              <dt>Duration:</dt>
+              <dd>Reference documentation</dd>
+              <dt>License:</dt>
+              <dd>Copyright 2020–2024, RDA Persistent Identification of Instruments WG</dd>
+              <dt>Learning Outcomes:</dt>
+              <dd>Mint DataCite DOIs for instruments using Fabrica (web form or file upload) or the DataCite REST API. Map PIDINST metadata properties correctly onto the DataCite schema.</dd>
+              </dl>
+            </div>
+            <div class="pid-actions">
+              <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
+              <a href="https://docs.pidinst.org/en/latest/datacite-cookbook/index.html" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
+            </div>
+          </div>
+
+
           <div class="pid-card" data-type="Guide" data-provider="ePIC" data-domain="general audience interested in PIDs for Instruments" data-lang="en">
             <h3>📘 <a href="https://www.pid-network.de/en/news/events/online-seminar-zu-pids-fuer-instrumente" target="_blank">Online seminar on PIDs for instruments</a></h3>
             <p class="pid-description">The "PID Network Germany" project hosted this online seminar on PIDs for instruments. A combination of informative presentations and specific examples of PIDs for instruments.</p>
