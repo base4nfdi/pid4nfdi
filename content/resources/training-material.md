@@ -974,6 +974,38 @@ sections:
             </div>
           </div>
 
+
+        <div class="pid-card" data-type="white paper" data-provider="ePIC DataCite" data-domain="research infrastructure" data-lang="en">
+            <h3>📄 <a href="https://docs.pidinst.org/en/latest/white-paper/index.html" target="_blank">PIDINST White Paper</a></h3>
+            <p class="pid-description">Recommendations for the use of instrument PIDs by institutional instrument providers. Covers the PIDINST metadata schema, use cases, and technical guidance beyond the foundational Data Science Journal paper.</p>
+            <div class="pid-types-badges">
+              <span class="pid-type-badge">ePIC</span>
+              <span class="pid-type-badge">DataCite DOI</span>
+              <span class="pid-type-badge">PIDINST</span>
+            </div>
+            <div class="pid-details" hidden>
+              <dl class="pid-metadata">
+              <dt>Authors:</dt>
+              <dd>RDA Persistent Identification of Instruments Working Group</dd>
+              <dt>Organisation:</dt>
+              <dd>Research Data Alliance (RDA)</dd>
+              <dt>Proficiency Level:</dt>
+              <dd>proficient, expert</dd>
+              <dt>Duration:</dt>
+              <dd>Reference documentation</dd>
+              <dt>License:</dt>
+              <dd>CC-BY-4.0</dd>
+              <dt>Learning Outcomes:</dt>
+              <dd>Understand the PIDINST metadata schema and best practices for instrument PID assignment. Apply recommendations for linking instruments to datasets, people, and platforms.</dd>
+              </dl>
+            </div>
+            <div class="pid-actions">
+              <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
+              <a href="https://docs.pidinst.org/en/latest/white-paper/index.html" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
+            </div>
+          </div>
+
+
         <div class="pid-card" data-type="documentation" data-provider="ePIC" data-domain="research infrastructure" data-lang="en">
             <h3>📘 <a href="https://docs.pidinst.org/en/latest/epic-cookbook/index.html" target="_blank">PIDINST ePIC Cookbook</a></h3>
             <p class="pid-description">Step-by-step instructions for registering instrument PIDs via the ePIC infrastructure. Covers the PIDINST metadata schema as implemented in ePIC and B2INST, including community-specific customisations.</p>
@@ -1097,7 +1129,7 @@ sections:
               <dt>Proficiency Level:</dt>
               <dd>proficient, expert</dd>
               <dt>License:</dt>
-              <dd>Source code and data model: MIT License; Documentation and images: CC-BY 4.0</dd>
+              <dd>Source code and data model: MIT License; Documentation and images: CC-BY-4.0</dd>
               <dt>Learning Outcomes:</dt>
               <dd>Understanding Handle-based PIDs, implementing PID4Cat system, working with LinkML metadata models.</dd>
               </dl>
