@@ -36,7 +36,7 @@ sections:
             <option value="">Provider</option>
             <option>DataCite</option>
             <option>ORCID</option>
-            <option>ePIC</option>
+            <option>ePIC Handle</option>
             <option>ROR</option>
             <option>Crossref</option>
             <option>ARK</option>
@@ -178,8 +178,8 @@ sections:
             <div class="pid-types-badges">
               <span class="pid-type-badge">DataCite DOI</span>
               <span class="pid-type-badge">ORCID</span>
-              <span class="pid-type-badge">PIDInst</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">PIDINST</span>
+              <span class="pid-type-badge">ePIC Handle</span>
               <span class="pid-type-badge">ROR</span>
               <span class="pid-type-badge">B2Inst</span>
             </div>
@@ -333,8 +333,8 @@ sections:
             <div class="pid-types-badges">
               <span class="pid-type-badge">DataCite DOI</span>
               <span class="pid-type-badge">ORCID</span>
-              <span class="pid-type-badge">PIDInst</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">PIDINST</span>
+              <span class="pid-type-badge">ePIC Handle</span>
               <span class="pid-type-badge">RAiD</span>
               <span class="pid-type-badge">SWHID</span>
             </div>
@@ -366,8 +366,8 @@ sections:
             <div class="pid-types-badges">
               <span class="pid-type-badge">DataCite DOI</span>
               <span class="pid-type-badge">ORCID</span>
-              <span class="pid-type-badge">PIDInst</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">PIDINST</span>
+              <span class="pid-type-badge">ePIC Handle</span>
               <span class="pid-type-badge">handle</span>
               <span class="pid-type-badge">ROR</span>
               <span class="pid-type-badge">Crossref DOI</span>
@@ -396,7 +396,7 @@ sections:
             <p class="pid-description">The "PID Guide" is an interactive web-based tool developed by the Netherlands Digital Heritage network (NDE). It helps organisations select the most appropriate persistent identifier (PID) system by guiding them through a series of structured questions.</p>
             <div class="pid-types-badges">
               <span class="pid-type-badge">DataCite DOI</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">ePIC Handle</span>
               <span class="pid-type-badge">handle</span>
               <span class="pid-type-badge">ARK</span>
               <span class="pid-type-badge">URN</span>
@@ -642,7 +642,7 @@ sections:
             <p class="pid-description">This workshop slide deck from the 7th DINI/nestor Workshop provides a practical introduction to persistent identifiers with a focus on DOIs and ePIC handles. It explains the underlying Handle System and registration workflows.</p>
             <div class="pid-types-badges">
               <span class="pid-type-badge">DataCite DOI</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">ePIC Handle</span>
             </div>
             <div class="pid-details" hidden>
               <dl class="pid-metadata">
@@ -806,7 +806,7 @@ sections:
             <h3>📄 <a href="https://doc.pidconsortium.eu/" target="_blank">ePIC API Documentation</a></h3>
             <p class="pid-description">The ePIC Documentation site provides developer- and institution-oriented guidance on using the ePIC API to register and manage persistent identifiers via the ePIC service. Covers API endpoints, authentication, and workflows.</p>
             <div class="pid-types-badges">
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">ePIC Handle</span>
             </div>
             <div class="pid-details" hidden>
               <dl class="pid-metadata">
@@ -827,7 +827,7 @@ sections:
             <p class="pid-description">This lecture illustrates the use of PIDs, more specifically it shows how to employ handles using the B2HANDLE library.</p>
             <div class="pid-types-badges">
               <span class="pid-type-badge">handle</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">ePIC Handle</span>
               <span class="pid-type-badge">DataCite DOI</span>
               <span class="pid-type-badge">ARK</span>
             </div>
@@ -941,7 +941,7 @@ sections:
         <!-- SECTION 5: Instruments & Software Identifiers                -->
         <!-- ============================================================ -->
         <h2 class="pid-section-heading" id="section-instruments-software">🔭 Instruments &amp; Software Identifiers</h2>
-        <p class="pid-section-desc">Resources covering persistent identifiers for research instruments (PIDInst, B2INST) and software (SWHID). These identifier types are newer and less widely adopted than DOIs or ORCIDs, but increasingly important for reproducibility and proper attribution of research infrastructure and code.</p>
+        <p class="pid-section-desc">Resources covering persistent identifiers for research instruments (PIDINST, B2INST) and software (SWHID). These identifier types are newer and less widely adopted than DOIs or ORCIDs, but increasingly important for reproducibility and proper attribution of research infrastructure and code.</p>
 
         <div class="pid-card-grid">
 
@@ -950,9 +950,9 @@ sections:
             <p class="pid-description">Detailed, human-readable guidance on how to map metadata collected for research instruments to the metadata required for registering a persistent identifier (PID) for instruments.</p>
             <div class="pid-types-badges">
               <span class="pid-type-badge">DataCite DOI</span>
-              <span class="pid-type-badge">PIDInst</span>
+              <span class="pid-type-badge">PIDINST</span>
               <span class="pid-type-badge">B2Inst</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">ePIC Handle</span>
             </div>
             <div class="pid-details" hidden>
               <dl class="pid-metadata">
@@ -979,7 +979,7 @@ sections:
             <h3>📄 <a href="https://docs.pidinst.org/en/latest/white-paper/index.html" target="_blank">PIDINST White Paper</a></h3>
             <p class="pid-description">Recommendations for the use of instrument PIDs by institutional instrument providers. Covers the PIDINST metadata schema, use cases, and technical guidance beyond the foundational Data Science Journal paper.</p>
             <div class="pid-types-badges">
-              <span class="pid-type-badge">ePIC</span>
+              <span class="pid-type-badge">ePIC Handle</span>
               <span class="pid-type-badge">DataCite DOI</span>
               <span class="pid-type-badge">PIDINST</span>
             </div>
@@ -1010,7 +1010,7 @@ sections:
             <h3>📘 <a href="https://docs.pidinst.org/en/latest/epic-cookbook/index.html" target="_blank">PIDINST ePIC Cookbook</a></h3>
             <p class="pid-description">Step-by-step instructions for registering instrument PIDs via the ePIC infrastructure. Covers the PIDINST metadata schema as implemented in ePIC and B2INST, including community-specific customisations.</p>
             <div class="pid-types-badges">
-              <span class="pid-type-badge">ePIC</span>
+              <span class="pid-type-badge">ePIC Handle</span>
               <span class="pid-type-badge">PIDINST</span>
               <span class="pid-type-badge">B2Inst</span>
             </div>
@@ -1071,7 +1071,7 @@ sections:
             <h3>📘 <a href="https://www.pid-network.de/en/news/events/online-seminar-zu-pids-fuer-instrumente" target="_blank">Online seminar on PIDs for instruments</a></h3>
             <p class="pid-description">The "PID Network Germany" project hosted this online seminar on PIDs for instruments. A combination of informative presentations and specific examples of PIDs for instruments.</p>
             <div class="pid-types-badges">
-              <span class="pid-type-badge">PIDInst</span>
+              <span class="pid-type-badge">PIDINST</span>
               <span class="pid-type-badge">B2Inst</span>
             </div>
             <div class="pid-details" hidden>
@@ -1094,7 +1094,7 @@ sections:
             <h3>📄 <a href="https://docs.eudat.eu/b2inst/" target="_blank">B2INST User Guide</a></h3>
             <p class="pid-description">B2INST is a community-driven solution for global and unique identification of instruments operated within the research domain. Covers various scientific instruments such as sensors used in environmental sciences.</p>
             <div class="pid-types-badges">
-              <span class="pid-type-badge">PIDInst</span>
+              <span class="pid-type-badge">PIDINST</span>
               <span class="pid-type-badge">B2Inst</span>
             </div>
             <div class="pid-details" hidden>
@@ -1120,7 +1120,7 @@ sections:
             <p class="pid-description">A FAIR PID model for research data in catalysis, based on the Handle system. PID4Cat builds upon the handle system with a custom API and provides a LinkML metadata model for PID-related metadata storage.</p>
             <div class="pid-types-badges">
               <span class="pid-type-badge">handle</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">ePIC Handle</span>
             </div>
             <div class="pid-details" hidden>
               <dl class="pid-metadata">
@@ -1314,8 +1314,8 @@ sections:
             <div class="pid-types-badges">
               <span class="pid-type-badge">DataCite DOI</span>
               <span class="pid-type-badge">ORCID</span>
-              <span class="pid-type-badge">PIDInst</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">PIDINST</span>
+              <span class="pid-type-badge">ePIC Handle</span>
               <span class="pid-type-badge">handle</span>
               <span class="pid-type-badge">ROR</span>
               <span class="pid-type-badge">B2Inst</span>
@@ -1349,8 +1349,8 @@ sections:
             <div class="pid-types-badges">
               <span class="pid-type-badge">DataCite DOI</span>
               <span class="pid-type-badge">ORCID</span>
-              <span class="pid-type-badge">PIDInst</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">PIDINST</span>
+              <span class="pid-type-badge">ePIC Handle</span>
               <span class="pid-type-badge">handle</span>
               <span class="pid-type-badge">ROR</span>
               <span class="pid-type-badge">SWHID</span>
@@ -1383,8 +1383,8 @@ sections:
             <div class="pid-types-badges">
               <span class="pid-type-badge">DataCite DOI</span>
               <span class="pid-type-badge">ORCID</span>
-              <span class="pid-type-badge">PIDInst</span>
-              <span class="pid-type-badge">ePIC handle</span>
+              <span class="pid-type-badge">PIDINST</span>
+              <span class="pid-type-badge">ePIC Handle</span>
               <span class="pid-type-badge">handle</span>
               <span class="pid-type-badge">ROR</span>
               <span class="pid-type-badge">B2Inst</span>
