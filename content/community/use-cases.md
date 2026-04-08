@@ -41,6 +41,7 @@ sections:
             <option value="">Research Field</option>
             <option>Agrosystem research</option>
             <option>Biodiversity</option>
+            <option>Computer sciences</option>
             <option>Generic</option>
             <option>Humanities</option>
             <option>Microbiology</option>
@@ -57,6 +58,7 @@ sections:
             <option>Dataset elements</option>
             <option>Instruments</option>
             <option>Projects</option>
+            <option>Research data management containers</option>
             <option>Samples</option>
             <option>Services</option>
             <option>Storage Resources</option>
@@ -190,7 +192,23 @@ sections:
             <h5>Research Field: &nbsp generic</h5>  
             <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp NFDI4ING, NFDI-MatWerk<h5>
             <h5>Organizations:&nbsp &nbsp RWTH Aachen University</h5>
-          </div>   
+          </div>  
+        
+          <div class="pid-card" data-type="FAIR digital objects" data-provider="ePIC" data-domain="Computer sciences" data-lang="Research data management containers" >
+            <h2>NFDIxCS: Embedding ePIC PIDs into the RDMC Creation Wizard workflow</h2>
+            <h5> 
+              <span style="background-color:#AFE1AF;"> &nbsp FAIR digital objects &nbsp </span>
+            </h5>
+            <p>
+              The RDMC creation wizard leads a user through the publication process of a research data management container (RDMC). At the end of this workflow, an ePIC PID is assigned to the container, turning it into a FAIR Digital Object (FDO) with RDMC-specific metadata. The workflow uses existing repositories to publish the RDMC. Hence, additionally, other PIDs may be registered as well, depending on the repository in use (e.g., Zenodo, GRO.Data, or Coscine).
+            </p>
+            <p>&nbsp</p>         
+            <h5>Resource types:&nbsp research data management containers (RDMCs)</h5>
+            <h5>PID Providers: &nbsp &nbsp ePIC</h5>
+            <h5>Research Field: &nbsp computer sciences</h5>  
+            <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp NFDIxCSk<h5>
+            <h5>Organizations:&nbsp &nbsp GWDG, University of Potsdam, University of Duisburg-Essen, KIT</h5>
+          </div>
         
         <!-- minimal CSS for filters -->
         <style>
