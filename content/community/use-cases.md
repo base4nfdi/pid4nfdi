@@ -41,6 +41,7 @@ sections:
             <option value="">Research Field</option>
             <option>Agrosystem research</option>
             <option>Biodiversity</option>
+            <option>Catalysis research</option>
             <option>Computer sciences</option>
             <option>Generic</option>
             <option>Humanities</option>
@@ -56,7 +57,9 @@ sections:
             <option>Collections</option>
             <option>Datasets</option>
             <option>Dataset elements</option>
+            <option>Devices</option>
             <option>Instruments</option>
+            <option>Materials</option>
             <option>Projects</option>
             <option>Research data management containers</option>
             <option>Samples</option>
@@ -195,7 +198,7 @@ sections:
           </div>  
         
           <div class="pid-card" data-type="FAIR digital objects" data-provider="ePIC" data-domain="Computer sciences" data-lang="Research data management containers" >
-            <h2>NFDIxCS: Embedding ePIC PIDs into the RDMC Creation Wizard workflow</h2>
+            <h2>Embedding ePIC PIDs into the NFDIxCS RDMC Creation Wizard workflow</h2>
             <h5> 
               <span style="background-color:#AFE1AF;"> &nbsp FAIR digital objects &nbsp </span>
             </h5>
@@ -208,6 +211,25 @@ sections:
             <h5>Research Field: &nbsp computer sciences</h5>  
             <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp NFDIxCSk<h5>
             <h5>Organizations:&nbsp &nbsp GWDG, University of Potsdam, University of Duisburg-Essen, KIT</h5>
+          </div>
+        
+          <div class="pid-card" data-type="Implementation concept" data-provider="ePIC" data-domain="Catalysis research" data-lang="Collections,Datasets,Services,Materials,Devices" >
+            <h2>PID4Cat: PIDs for digital and physical resources generated in catalysis research</h2>
+            <h5> 
+                <span style="background-color:lightskyblue;"> &nbsp implementation concept &nbsp </span>
+            </h5>
+            <p>
+              pid4cat is a service that is designed to assign persistent identifiers for resources generated in the catalysis research community, such as collections, samples, materials, devices, datasets, and services. The pid4cat service builds upon existing PID infrastructure, i.e., it assigns ePIC PIDs based on the Handle System while providing enhanced capabilities for metadata management and namespace delegation. pid4cat enables partner organizations to manage their own sub-namespaces while maintaining a consistent approach to identifier creation and metadata management in the overall pid4cat framework. 
+            </p>
+            <p>
+              Though pid4cat uses an ePIC prefix, everything else is set up and run by the providing institution (HLRS), such as Handle server, database and resolver. A specialized API is implemented by pid4cat for simplified PID management.
+            </p>
+            <p>&nbsp</p>         
+            <h5>Resource types:&nbsp collections, materials, devices, datasets, services</h5>
+            <h5>PID Providers: &nbsp &nbsp ePIC, pid4cat</h5>
+            <h5>Research Field: &nbsp Catalysis Research</h5>  
+            <h5>Consortia: &nbsp &nbsp &nbsp &nbsp &nbsp NFDI4Cat<h5>
+            <h5>Organizations:&nbsp &nbsp HLRS</h5>
           </div>
         
         <!-- minimal CSS for filters -->
