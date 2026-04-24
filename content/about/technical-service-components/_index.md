@@ -12,6 +12,8 @@ sections:
         This page documents the individual technical service components that together form the PID4NFDI Coordination Hub. Each component addresses a distinct aspect of PID adoption, metadata quality, and infrastructure interoperability within NFDI.
     design:
       columns: '2'
+      spacing:
+        padding: ['20px', '0', '20px', '0']
 
   - block: markdown
     content:
@@ -141,7 +143,8 @@ sections:
     design:
       columns: '1'
       align: center
-      padding: large
+      spacing:
+        padding: ['5px', '0', '40px', '0']
     background:
       color: 'white'
 ---
