@@ -4,7 +4,7 @@ draft: false
 title: Online workshop: Building Confidence with Research Metadata at Scale
 
 event: Online workshop: Building Confidence with Research Metadata at Scale
-event_url: 
+# event_url: 
 
 #location: Zoom
 #address:
