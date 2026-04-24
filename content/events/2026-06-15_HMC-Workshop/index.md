@@ -1,9 +1,9 @@
 ---
 draft: false
 
-title: Online workshop: Building Confidence with Research Metadata at Scale
+title: "Online workshop: Building Confidence with Research Metadata at Scale"
 
-event: Online workshop: Building Confidence with Research Metadata at Scale
+event: "Online workshop: Building Confidence with Research Metadata at Scale"
 # event_url: 
 
 #location: Zoom
@@ -14,8 +14,8 @@ event: Online workshop: Building Confidence with Research Metadata at Scale
 #  postcode: 
 #  country: 
 
-summary: PID4NFDI invites you to our online online workshop on June 15, 2026 (10:00–12:00 CEST). Learn how to actively interrogate, assess, and act on DOI metadata at scale using the DataCite API. This workshop complements the poster presentation at the 2026 HMC Conference.
-abstract: 'PID4NFDI invites you to our online online workshop on June 15, 2026 (10:00–12:00 CEST). Learn how to actively interrogate, assess, and act on DOI metadata at scale using the DataCite API. This workshop complements the poster presentation at the 2026 HMC Conference.'
+summary: PID4NFDI invites you to our online workshop on June 15, 2026 (10:00–12:00 CEST). Learn how to actively interrogate, assess, and act on DOI metadata at scale using the DataCite API. This workshop complements the poster presentation at the 2026 HMC Conference.
+abstract: 'PID4NFDI invites you to our online workshop on June 15, 2026 (10:00–12:00 CEST). Learn how to actively interrogate, assess, and act on DOI metadata at scale using the DataCite API. This workshop complements the poster presentation at the 2026 HMC Conference.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
