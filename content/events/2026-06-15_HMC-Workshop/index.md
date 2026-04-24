@@ -65,7 +65,7 @@ projects:
 
 **Date**: June 15, 2026  
 **Time**: 10:00 AM to 12:00 PM (CEST)  
-**Location**: Access via the following link: XX).  
+**Location**: TBA  
 **Language**: English   
 
 ---
@@ -88,9 +88,4 @@ Participants should have basic familiarity with the **DataCite Metadata Schema**
 
 
 ### We look forward to your participation!
-
-
-# Registration
-# Participation is free of charge and open to anyone interested via the following link:
-# [https://gfz-de.zoom-x.de/meeting/register/inSis27DTyKBI5nAngUplw](https://gfz-de.zoom-x.de/meeting/register/inSis27DTyKBI5nAngUplw)
 
