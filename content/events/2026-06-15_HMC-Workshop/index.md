@@ -65,7 +65,7 @@ projects:
 
 **Date**: June 15, 2026  
 **Time**: 10:00 AM to 12:00 PM (CEST)  
-**Location**: TBA  
+**Location**: Zoom (please register in advance to get the access information via E-Mail: [https://gfz-de.zoom.us/meeting/register/0gAV_r7PR4CWd9CRmgfgGg#/registration](https://gfz-de.zoom.us/meeting/register/0gAV_r7PR4CWd9CRmgfgGg#/registration)) 
 **Language**: English   
 
 ---
