@@ -107,11 +107,15 @@ main:
     parent: about
     url: about/roadmap-faqs
     weight: 20
+  - name: Technical Service Components
+    parent: about
+    url: about/technical-service-components
+    weight: 30
   - name: Team
     parent: about
     url: about/team
-    weight: 30
+    weight: 40
   - name: Contact
     parent: about
     url: about/contact
-    weight: 40
+    weight: 50
