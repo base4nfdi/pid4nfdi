@@ -129,8 +129,7 @@ sections:
         <p>The approach builds on components of the Terminology Service Suite (TSS), focusing during the incubator phase on a limited set of high-impact, technically feasible integrations. This includes evaluating whether embedded TSS widgets can return canonical URIs that align with DataCite-compatible workflows and support structured, machine-actionable metadata.</p>
         <p>PID4NFDI supports via consultations for identifying targeted insertion points for controlled vocabularies within the RSpace interface and by providing mapping artefacts in JSON, JSKOS, and SSSOM formats to support potential cross-schema exports (e.g., schema.org, DCAT), should RSpace implement export functionality in the future.</p>
         <ul>
-          <li><a href="https://zenodo.org/records/15130045" target="_blank" rel="noopener">October Hackathon</a> identifying core elements for a machine-actionable DMP</li>
-          <li><a href="https://docs.google.com/spreadsheets/d/16_EbNY1OIT9ojN_iY4GPVf6Gz3Tmh7cncaE-kcWMQps/edit?gid=1832869971#gid=1832869971" target="_blank" rel="noopener">RSpace object types</a> mapping guidance for dataset</li>
+          <li><a href="https://zenodo.org/records/15130045" target="_blank" rel="noopener">October Hackathon</a> identifying core elements for a machine-actionable DMP</li>          
         </ul>
 
         <div style="border-left: 8px solid #2a6ebc; padding-left: 1rem; margin-top: 3rem;">
