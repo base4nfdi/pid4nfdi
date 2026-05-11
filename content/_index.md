@@ -84,6 +84,7 @@ sections:
         <ul class="pid-service-list">
             <li><a href="https://pid.services.base4nfdi.de/about/" target="_blank" rel="noopener">About PID4NFDI</a></li>
             <li><a href="https://pid.services.base4nfdi.de/about/roadmap-faqs/" target="_blank" rel="noopener">Roadmap & FAQs</a></li>
+            <li><a href="https://pid.services.base4nfdi.de/about/technical-service-components/" target="_blank" rel="noopener">Technical Service Components</a></li>
             <li><a href="https://pid.services.base4nfdi.de/about/team/" target="_blank" rel="noopener">Team</a></li>
             <li><a href="https://pid.services.base4nfdi.de/about/contact/" target="_blank" rel="noopener">Contact</a></li>
         </ul>
