@@ -91,8 +91,8 @@ sections:
         https://dataservices.gfz-potsdam.de/igsn-new/
 
         #### Uni Kiel IGSN Service
-        - The Kiel IGSN service is operated by the Zentralen Forschungsdatenmanagement und Rechenzentrums at Christian-Albrechts-Universität zu Kiel.
-        - Documentation (DE): https://igsn.uni-kiel.de/documentation/de/
+        The Kiel IGSN service is operated by the Zentralen Forschungsdatenmanagement und Rechenzentrums at Christian-Albrechts-Universität zu Kiel.
+        - Documentation: https://igsn.uni-kiel.de/documentation/en/
 
         #### ARDC IGSN Service (Australia)
         The Australian Research Data Commons (ARDC) provides a dedicated IGSN service, primarily for Australian researchers but relevant as a reference implementation.
@@ -142,7 +142,7 @@ sections:
 
         ##### Helmholtz HMC Earth and Environment
         - FAQ page: https://helmholtz-metadaten.de/de/erde-und-umwelt/faq-igsn        
-        - HMC wiki on IGSN: https://earth-and-environment.helmholtz-metadaten.de/wiki/doku.php?id=wiki:1_fair-building-blocks:0_pid:3_igsn:start
+        - HMC wiki on IGSN: https://earth-and-environment.helmholtz-metadaten.de/wiki/doku.php?id=wiki:3_implementation:0_pid:igsn
 
         ##### Output of FAIR WISH project (Helmholtz) 
         - https://helmholtz-metadaten.de/inf-projects/fair-wish        
@@ -150,8 +150,8 @@ sections:
         - https://helmholtz-metadaten.de/inf-projects/fairaims
       
         ##### IGSN Service der Universität Kiel
-        Dokumentation des IGSN-Dienstes des Zentralen Forschungsdatenmanagements und Rechenzentrums der Christian-Albrechts-Universität zu Kiel
-        https://igsn.uni-kiel.de/documentation/de/
+        Documentation IGSN Service of the Central Research Data Management at Christian-Albrechts-Universität zu Kiel
+        https://igsn.uni-kiel.de/documentation/en/
 
         ##### ARDC
         - https://documentation.ardc.edu.au/igsn/igsn-service-overview         
