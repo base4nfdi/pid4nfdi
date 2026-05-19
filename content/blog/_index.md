@@ -2,7 +2,7 @@
 title: Blog
 
 # Listing view
-view: card.course.compact
+view: card
 
 # Optional banner image (relative to `assets/media/` folder).
 banner:
