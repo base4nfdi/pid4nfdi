@@ -38,7 +38,7 @@ share: false
 featured: false
 
 image:
-  caption: 'Image credit: [NFDI4Earth](https://nfdi4earth.de/nfdi4earth-plenary-2026)
+  caption: 'Image credit: [NFDI4Earth](https://nfdi4earth.de/nfdi4earth-plenary-2026)'
   focal_point: Right
 
 url_code: ''
