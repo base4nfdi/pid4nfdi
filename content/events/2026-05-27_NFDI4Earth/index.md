@@ -24,7 +24,7 @@ date_end: '2026-05-29T16:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2026-05-27T00:00:00Z'
+publishDate: '2026-05-20T00:00:00Z'
 
 tags: ["NFDI4Earth"]
 
