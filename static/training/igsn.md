@@ -106,7 +106,7 @@ An IGSN ID **landing page** gives a sample its digital footprint — it makes th
 
 This is particularly important for **unique samples** where long-term preservation of the object and its associated metadata is critical.
 
-![Example of an IGSN ID landing page for a geosciences sample (IGSN:ICDP5054EHW1001), published by the GFZ Helmholtz Centre for Geosciences.](assets/media/screenshot_igsn_landing_page_gfz.png)
+![Example of an IGSN ID landing page for a geosciences sample (IGSN:ICDP5054EHW1001), published by the GFZ Helmholtz Centre for Geosciences.](https://raw.githubusercontent.com/base4nfdi/pid4nfdi/main/assets/media/screenshot_igsn_landing_page_gfz.png)
 
 Landing page metadata should be:
 
