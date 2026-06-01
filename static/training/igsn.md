@@ -2,7 +2,7 @@
 author:   Rorie Edmunds
 contributor: Stephanie Hagemann-Wilholt (TIB); Torsten Kahlert (TIB, adapted for LiaScript); Antonia Schrader (Helmholtz); Frederik Springer (TIB); Paul Vierkant (DataCite)
 email:
-version:  0.9.1
+version:  0.9
 language: en
 narrator: US English Female
 comment:  A practical training module on IGSN IDs for repository managers.
@@ -35,7 +35,7 @@ By the end of this module you will be able to:
 - Outline the steps your organization needs to take to register IGSN IDs
 - Know when to use a Registered Service Provider instead of a custom workflow
 
-> ⏱️ **Estimated time:** 10–15 minutes
+> ⏱️ **Estimated time:** 20–30 minutes
 
 ---
 
@@ -90,7 +90,7 @@ The IGSN ID is genuinely cross-disciplinary. Examples include:
 - **Life Sciences:** biofluids, tissues, cells, genomic samples, animal/insect/plant specimens, fungi/spores, microorganisms, botanical/herbarium samples
 - **Social Sciences & Humanities:** human/animal/insect/plant remains, fossils, artefacts (tools, weapons, utensils, art, written records, clothing…)
 - **Applied Sciences:** seed accessions, crop and livestock samples, synthetic materials, prototypes
-- **The Arts:** ceramics, sculptures, drawings/paintings/photographs, literary and musical samples, musical instruments, fashion/costume items
+- **The Arts:** ceramics, sculptures, drawings/paintings/photographs, musical instruments, fashion/costume items
 
 > 💡 **Key point for repository managers:** Around **13 million** publicly available IGSN IDs have been registered globally to date, with just over **200,000 from Germany** — primarily geoscience and material science samples.
 
@@ -200,11 +200,11 @@ A community-led organization operating across more than 70 countries since 2009.
 
 All **DataCite Direct Members**, **Consortium Leads**, and **Consortium Organizations** can register IGSN IDs using DataCite services.
 
-If your organization is not yet part of the DataCite community, the easiest and most cost-effective route for German organizations is to join the **DataCite Consortium led by TIB** (German National Library of Science and Technology) — one of the largest DataCite consortium worldwide, with extensive technical support for IGSN ID and DOI registration.
+If your organization is not yet part of the DataCite community, the easiest and most cost-effective route for German organizations is to join the **DataCite Consortium led by TIB** (German National Library of Science and Technology) — one of the largest DataCite consortia worldwide, with extensive technical support for IGSN ID and DOI registration.
 
 More information: https://datacite.org/become-a-member
 
-> 💡 **Special case:** Individual researchers connected to a **Helmholtz Centre** in the geosciences can reach out to the Data Services at the GFZ Helmholtz > Centre for Geosciences for IGSN ID registration support.
+> 💡 **Special case:** Individual researchers connected to a **Helmholtz Centre** in the geosciences can reach out to the Data Services at the GFZ Helmholtz Centre for Geosciences for IGSN ID registration support.
 
 ### What does it cost?
 
@@ -242,6 +242,8 @@ IGSN IDs must be registered in a **specific DataCite Repository type** called th
   only be registered within an IGSN ID Catalog Repository
 
 This is how IGSN IDs are differentiated within DataCite services — at the metadata collection/prefix level, not at the individual record level.
+
+The simplified workflow below illustrates how sample metadata moves from a local repository system into the DataCite infrastructure and ultimately becomes discoverable through an IGSN ID.
 
 ```
    Physical sample
@@ -343,7 +345,7 @@ IGSN IDs help ensure samples adhere to the **FAIR Principles** and the principle
 | **Interoperable** | Standard metadata schema enables consistent identification and integration across systems |
 | **Reusable** | Enables confident referencing, reuse, and proper attribution |
 | **Open** | Metadata is in the public domain under CC0; sample existence is exposed globally |
-| **CARE** | Metadata can include Traditional Knowledge or Biocultural Notices and Labels to recognize indigenous data sovereignty |
+| **CARE** | Metadata can incorporate Traditional Knowledge and Biocultural Notices or Labels to support CARE-aligned practices and indigenous data sovereignty. |
 
 ---
 
