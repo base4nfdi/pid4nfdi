@@ -418,12 +418,12 @@ If your organization is a DataCite member: create an IGSN ID Catalog Repository 
 
 ### Further Resources
 
-- **PID4NFDI:** https://pid.services.base4nfdi.de
-- **DataCite membership:** https://datacite.org/become-a-member
+- **IGSN e.V. - Governing body of the IGSN system and metadata schema** https://ev.igsn.org/
 - **IGSN ID Metadata Recommendations:** https://igsn.github.io/metadata
 - **DataCite Commons (sample search):** https://commons.datacite.org
-- **TIB DataCite Consortium:** https://www.tib.eu
+- **TIB DataCite Consortium:** https://projects.tib.eu/pid-service/tib-doi-konsortium/mitglied-werden/
 - **Contact DataCite:** info@datacite.org | support@datacite.org
+- **PID4NFDI:** https://pid.services.base4nfdi.de | pid4nfdi@lists.nfdi.de
 
 ---
 
