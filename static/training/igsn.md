@@ -2,7 +2,7 @@
 author:   Rorie Edmunds
 contributor: Stephanie Hagemann-Wilholt (TIB); Torsten Kahlert (TIB, adapted for LiaScript); Antonia Schrader (Helmholtz); Frederik Springer (TIB); Paul Vierkant (DataCite)
 email:
-version:  0.9
+version:  0.9.1
 language: en
 narrator: US English Female
 comment:  A practical training module on IGSN IDs for repository managers.
