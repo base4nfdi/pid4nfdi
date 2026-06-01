@@ -35,7 +35,7 @@ By the end of this module you will be able to:
 - Outline the steps your organization needs to take to register IGSN IDs
 - Know when to use a Registered Service Provider instead of a custom workflow
 
-> ⏱️ **Estimated time:** 15–20 minutes
+> ⏱️ **Estimated time:** 10–15 minutes
 
 ---
 
@@ -58,7 +58,7 @@ Under this partnership:
 
 > 💡 **Key point:** If your organization already registers DataCite DOIs, you are already most of the way to registering IGSN IDs.
 
-Even if DataCite were to cease operations, all registered IGSN IDs would continue to persist — the same guarantee that applies to all DOIs.
+As with other DOIs, persistence is supported through the broader DOI infrastructure and governance model.
 
 ---
 
@@ -77,7 +77,7 @@ The most common case. Any single physical specimen, rock, tissue, artefact, prot
 A collection of related objects that need to be referenced as a whole. Individual samples within the collection become *children* of the parent and can be linked hierarchically in the metadata.
 
 **Sample collection sites**
-The physical location where field sampling was carried out. Samples from that site are registered as children of the site record.
+The physical location where field sampling was carried out. Samples from that site are registered as children of the site record. While the collection site itself is not a material sample, it can be registered within the IGSN framework to document provenance and relationships among samples collected at that location.
 
 **Ephemeral samples**
 Samples that no longer exist — for example, consumed or destroyed during analysis — can still receive an IGSN ID, provided the metadata clearly documents the sample's current status.
@@ -105,6 +105,8 @@ The IGSN ID addresses four practical problems in sample management. As a reposit
 An IGSN ID **landing page** gives a sample its digital footprint — it makes the sample part of Open Science by showing that the sample exists and that metadata about it is available.
 
 This is particularly important for **unique samples** where long-term preservation of the object and its associated metadata is critical.
+
+![Example of an IGSN ID landing page for a geosciences sample (IGSN:ICDP5054EHW1001), published by the GFZ Helmholtz Centre for Geosciences.](assets/media/screenshot_igsn_landing_page_gfz.png)
 
 Landing page metadata should be:
 
@@ -198,7 +200,7 @@ A community-led organization operating across more than 70 countries since 2009.
 
 All **DataCite Direct Members**, **Consortium Leads**, and **Consortium Organizations** can register IGSN IDs using DataCite services.
 
-If your organization is not yet part of the DataCite community, the easiest and most cost-effective route for German organizations is to join the **DataCite Consortium led by TIB** (German National Library of Science and Technology) — by far the largest DataCite consortium, with extensive technical support for IGSN ID and DOI registration.
+If your organization is not yet part of the DataCite community, the easiest and most cost-effective route for German organizations is to join the **DataCite Consortium led by TIB** (German National Library of Science and Technology) — one of the largest DataCite consortium worldwide, with extensive technical support for IGSN ID and DOI registration.
 
 More information: https://datacite.org/become-a-member
 
@@ -240,6 +242,36 @@ IGSN IDs must be registered in a **specific DataCite Repository type** called th
   only be registered within an IGSN ID Catalog Repository
 
 This is how IGSN IDs are differentiated within DataCite services — at the metadata collection/prefix level, not at the individual record level.
+
+```
+   Physical sample
+         │
+         ▼
+  Local repository system
+  (LIMS, ELN, or similar)
+         │
+         ▼
+     Sample metadata
+  (mapped to DataCite schema)
+         │
+         ▼
+   DataCite Fabrica / API
+  (or Registered Service Provider)
+         │
+         ▼
+ ┌─────────────────────────┐
+ │  IGSN ID Catalog        │
+ │  Repository             │
+ │  (separate prefix &     │
+ │  credentials)           │
+ └─────────────────────────┘
+         │
+         ▼
+    https://doi.org/…
+         │
+         ▼
+  Sample landing page
+```
 
 ### DataCite tooling
 
