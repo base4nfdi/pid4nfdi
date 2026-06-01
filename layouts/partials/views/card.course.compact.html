@@ -1,0 +1,20 @@
+{{ $item := .item }}
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+  {{ $link = $item.Params.external_link }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+    </div>
+    {{ with $item.Params.summary }}
+    <div class="article-style">
+      {{ . | markdownify }}
+    </div>
+    {{ end }}
+  </div>
+</div>

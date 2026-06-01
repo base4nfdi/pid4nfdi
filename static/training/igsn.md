@@ -1,7 +1,8 @@
 <!--
-author:   Rorie Edmunds, Torsten Kahlert (adapted for LiaScript)
+author:   Rorie Edmunds
+contributor: Stephanie Hagemann-Wilholt (TIB); Torsten Kahlert (TIB, adapted for LiaScript); Antonia Schrader (Helmholtz); Frederik Springer (TIB); Paul Vierkant (DataCite)
 email:
-version:  0.1
+version:  0.9
 language: en
 narrator: US English Female
 comment:  A practical training module on IGSN IDs for repository managers.
@@ -20,7 +21,7 @@ link:     https://creativecommons.org/licenses/by/4.0/
 
 # Registering IGSN IDs: A Guide for Repository Managers
 
-**Authors:** Rorie Edmunds; adopted for LiaScript by Torsten Kahlert | **Version:** 0.1 | **License:** CC BY 4.0
+**Author:** Rorie Edmunds | **Contributors:** Stephanie Hagemann-Wilholt, Torsten Kahlert (LiaScript adaptation), Antonia Schrader, Frederik Springer, Paul Vierkant | **Version:** 0.9 | **License:** CC BY 4.0
 
 ---
 
@@ -57,7 +58,7 @@ Under this partnership:
 
 > 💡 **Key point:** If your organization already registers DataCite DOIs, you are already most of the way to registering IGSN IDs.
 
-Even if DataCite were to cease operations, all registered IGSN IDs would continue to persist — the same guarantee that applies to all DOIs.
+As with other DOIs, persistence is supported through the broader DOI infrastructure and governance model.
 
 ---
 
@@ -76,7 +77,7 @@ The most common case. Any single physical specimen, rock, tissue, artefact, prot
 A collection of related objects that need to be referenced as a whole. Individual samples within the collection become *children* of the parent and can be linked hierarchically in the metadata.
 
 **Sample collection sites**
-The physical location where field sampling was carried out. Samples from that site are registered as children of the site record.
+The physical location where field sampling was carried out. Samples from that site are registered as children of the site record. While the collection site itself is not a material sample, it can be registered within the IGSN framework to document provenance and relationships among samples collected at that location.
 
 **Ephemeral samples**
 Samples that no longer exist — for example, consumed or destroyed during analysis — can still receive an IGSN ID, provided the metadata clearly documents the sample's current status.
@@ -85,11 +86,11 @@ Samples that no longer exist — for example, consumed or destroyed during analy
 
 The IGSN ID is genuinely cross-disciplinary. Examples include:
 
-- **Physical & Earth Sciences:** rocks, minerals, sediment cores, soil, ice cores, atmospheric/water samples
-- **Life Sciences:** tissues, cells, plant specimens, insects, microorganisms
-- **Social Sciences & Humanities:** fossils, artefacts, tools, written records
-- **Applied Sciences:** seed accessions, synthetic materials, prototypes
-- **The Arts:** ceramics, sculptures, musical instruments, fashion/costume items
+- **Physical & Earth Sciences:** rocks, minerals, radioactive elements, sediment cores, soil, mud, dust, petroleum/oil, ice cores, atmospheric/water/gas samples, environmental DNA, astromaterials
+- **Life Sciences:** biofluids, tissues, cells, genomic samples, animal/insect/plant specimens, fungi/spores, microorganisms, botanical/herbarium samples
+- **Social Sciences & Humanities:** human/animal/insect/plant remains, fossils, artefacts (tools, weapons, utensils, art, written records, clothing…)
+- **Applied Sciences:** seed accessions, crop and livestock samples, synthetic materials, prototypes
+- **The Arts:** ceramics, sculptures, drawings/paintings/photographs, literary and musical samples, musical instruments, fashion/costume items
 
 > 💡 **Key point for repository managers:** Around **13 million** publicly available IGSN IDs have been registered globally to date, with just over **200,000 from Germany** — primarily geoscience and material science samples.
 
@@ -104,6 +105,8 @@ The IGSN ID addresses four practical problems in sample management. As a reposit
 An IGSN ID **landing page** gives a sample its digital footprint — it makes the sample part of Open Science by showing that the sample exists and that metadata about it is available.
 
 This is particularly important for **unique samples** where long-term preservation of the object and its associated metadata is critical.
+
+![Example of an IGSN ID landing page for a geosciences sample (IGSN:ICDP5054EHW1001), published by the GFZ Helmholtz Centre for Geosciences.](assets/media/screenshot_igsn_landing_page_gfz.png)
 
 Landing page metadata should be:
 
@@ -128,6 +131,8 @@ The IGSN ID solves this by providing a **globally unique, stable identifier** th
 ### 3.4 Crosslinking and Citation
 
 IGSN ID metadata enables **structured relationships** to be described between a sample and related research outputs — datasets, publications, parent/child samples — using globally unique identifiers.
+
+A citation recommendation example for IGSN IDs was developed within the [KOMET project](https://projects.tib.eu/komet/) and is available as a published [example](https://service.tib.eu/komet/ojs330/index.php/publicknowledge/article/view/15).
 
 This supports:
 
@@ -189,13 +194,13 @@ IGSN IDs are governed through a partnership between two German-based association
 An international nonprofit with more than 20 members, operating a central registration system since 2011. It focuses on community advocacy, expanding the global samples ecosystem, and facilitating a *Community of Communities* for standard methods of identifying, citing, and locating material samples. IGSN e.V. is a member of NFDI.
 
 **DataCite e.V.**
-A community-led organization operating across more than 60 countries since 2009. Under the partnership, DataCite provides IGSN ID registration through its services and supports their ongoing sustainability. DataCite works with NFDI-related organizations through its involvement in the PID4NFDI project.
+A community-led organization operating across more than 70 countries since 2009. Under the partnership, DataCite provides IGSN ID registration through its services and supports their ongoing sustainability. DataCite works with NFDI-related organizations through its involvement in the PID4NFDI project.
 
 ### Who can register?
 
 All **DataCite Direct Members**, **Consortium Leads**, and **Consortium Organizations** can register IGSN IDs using DataCite services.
 
-If your organization is not yet part of the DataCite community, the easiest and most cost-effective route for German organizations is to join the **DataCite Consortium led by TIB** (German National Library of Science and Technology) — by far the largest DataCite consortium, with extensive technical support for IGSN ID and DOI registration.
+If your organization is not yet part of the DataCite community, the easiest and most cost-effective route for German organizations is to join the **DataCite Consortium led by TIB** (German National Library of Science and Technology) — one of the largest DataCite consortium worldwide, with extensive technical support for IGSN ID and DOI registration.
 
 More information: https://datacite.org/become-a-member
 
@@ -203,7 +208,7 @@ More information: https://datacite.org/become-a-member
 
 ### What does it cost?
 
-IGSN IDs use the **same fee model as DataCite DOIs**. There are no additional membership or service charges. With 1 IGSN ID = 1 DOI, your organization is simply charged for the total number of DOIs + IGSN IDs registered under the standard fee tiers.
+IGSN ID registration is provided through DataCite member organizations. The applicable costs depend on the organization's DataCite membership model and may include a membership fee and a shared infrastructure fee. DataCite does not charge fees per registered IGSN ID, nor does it charge end users. Whether to pass on PID registration fees to end users — for example, included in general service fees — is at the sole discretion of the respective repository operators registering the PIDs.
 
 ---
 
@@ -237,6 +242,36 @@ IGSN IDs must be registered in a **specific DataCite Repository type** called th
   only be registered within an IGSN ID Catalog Repository
 
 This is how IGSN IDs are differentiated within DataCite services — at the metadata collection/prefix level, not at the individual record level.
+
+```
+   Physical sample
+         │
+         ▼
+  Local repository system
+  (LIMS, ELN, or similar)
+         │
+         ▼
+     Sample metadata
+  (mapped to DataCite schema)
+         │
+         ▼
+   DataCite Fabrica / API
+  (or Registered Service Provider)
+         │
+         ▼
+ ┌─────────────────────────┐
+ │  IGSN ID Catalog        │
+ │  Repository             │
+ │  (separate prefix &     │
+ │  credentials)           │
+ └─────────────────────────┘
+         │
+         ▼
+    https://doi.org/…
+         │
+         ▼
+  Sample landing page
+```
 
 ### DataCite tooling
 
@@ -283,14 +318,14 @@ Currently two RSPs offer IGSN ID registration services, both with links to Germa
 An electronic lab notebook and research data management platform.
 Offers IGSN ID registration integrated into sample and inventory management.
 → [RSpace Website](https://www.researchspace.com) |
-[IGSN ID Exemplars Blog Post](https://datacite.org/blog/) |
-[Samples 101 guidance document](https://datacite.org/blog/)
+[IGSN ID Exemplars Blog Post](https://doi.org/10.5438/5xq3-b955) |
+[Samples 101 guidance document](https://doi.org/10.5281/zenodo.13669732)
 
 **SESAR (System for Earth and Extraterrestrial Sample Registration)**
 A long-running community sample registry, particularly strong in geosciences.
 Can also support **individual researchers** with sample management and IGSN ID registration.
 → [SESAR Website](https://www.geosamples.org) |
-[IGSN ID Exemplars Blog Post](https://datacite.org/blog/)
+[IGSN ID Exemplars Blog Post](https://doi.org/10.5438/fwb8-j067)
 
 For more information about these RSPs:
 📧 support@datacite.org
@@ -338,7 +373,7 @@ What is the cost implication of registering IGSN IDs for an organization already
 
     [( )] There is an additional annual fee for the IGSN ID service on top of the DataCite membership.
     [( )] IGSN IDs are free of charge — no cost applies regardless of how many are registered.
-    [(X)] No additional membership fees apply; IGSN IDs count as DOIs under existing fee tiers.
+    [(X)] Applicable costs depend on the membership model; DataCite does not charge per registered IGSN ID.
     [( )] Costs depend on the number of samples and must be negotiated with IGSN e.V. separately.
 
 **Question 4**
@@ -390,4 +425,4 @@ If your organization is a DataCite member: create an IGSN ID Catalog Repository 
 
 ---
 
-*This training material was produced as part of the PID4NFDI project. PID4NFDI is the Basic Service for persistent identifiers in the German National Research Data Infrastructure (NFDI), funded by DFG (Grant No. 521466146) as part of Base4NFDI.*
+*This training material was produced as part of the PID4NFDI project. PID4NFDI is the Basic Service for persistent identifiers in the German National Research Data Infrastructure (NFDI), funded by DFG (Grant No. 521453681) as part of Base4NFDI.*
