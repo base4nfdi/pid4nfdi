@@ -31,14 +31,18 @@ main:
     parent: services
     url: services/instruments
     weight: 10
+  - name: IGSN
+    parent: services
+    url: services/igsn
+    weight: 20
   - name: Metadata Support and Assessment
     parent: services
     url: services/metadata-support-assessment
-    weight: 10
+    weight: 30
   - name: Prefix Registration
     parent: services
     url: services/prefix-registration
-    weight: 10
+    weight: 40
 #  - name: Datatype Registry
 #    parent: services
 #    url: services/datatype-registry
