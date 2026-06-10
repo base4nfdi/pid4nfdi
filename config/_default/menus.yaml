@@ -19,18 +19,30 @@ main:
     parent: get-pid
     url: get-pid/providers
     weight: 20
+  - name: PID Selection Tool
+    url: /pidtool/
+    parent: get-pid
+    weight: 31   
   - name: Services
     identifier: services
     url: services
     weight: 300
+  - name: Instruments
+    parent: services
+    url: services/instruments
+    weight: 10
+  - name: IGSN
+    parent: services
+    url: services/igsn
+    weight: 20
   - name: Metadata Support and Assessment
     parent: services
     url: services/metadata-support-assessment
-    weight: 10
+    weight: 30
   - name: Prefix Registration
     parent: services
     url: services/prefix-registration
-    weight: 10
+    weight: 40
 #  - name: Datatype Registry
 #    parent: services
 #    url: services/datatype-registry
@@ -98,12 +110,16 @@ main:
   - name: Roadmap & FAQs
     parent: about
     url: about/roadmap-faqs
-    weight: 20  
+    weight: 20
+  - name: Technical Service Components
+    parent: about
+    url: about/technical-service-components
+    weight: 30
   - name: Team
     parent: about
     url: about/team
-    weight: 30
+    weight: 40
   - name: Contact
     parent: about
     url: about/contact
-    weight: 40
+    weight: 50

@@ -56,28 +56,39 @@ slides:
 projects:
 ---
 
-**Unlock the Future of Research Data! Join the Metadata & PID Workflows Workshop, hosted by PID4NFDI!**
-Get ready to dive deep into the world of Metadata & PID Workflows at our Joint Workshop for ELN and DMP Tools! This is your chance to collaboratively explore how to set up DMP and ELN tool to support Metadata & PID Workflows.
+Digital research tools like **Electronic Lab Notebooks (ELNs)** and **Data Management Planning (DMP)** systems are critical for early-stage metadata capture and documenting research processes. These tools increasingly support Persistent Identifier (PID) workflows, either by referencing existing identifiers or enabling PID registration for core research entities like datasets, samples, instruments, methods, and projects.
 
-This workshop brings together ELN and DMP tool developers, metadata specialists, and key stakeholders from NFDI consortia to:  
-* ✅ Validate and Extend the Metadata Framework.  
-* 🎯 Align on PID Integration Use Cases.  
-* ✨ Define Metadata Completeness & Quality.  
+Capturing rich metadata at the earliest stages of research can:
 
-## Who Should Attend?
-This workshop is tailor-made for:  
-* 🛠️ Developers and technical architects of ELN and DMP tools.  
-* 🔍 Metadata and interoperability experts from NFDI consortia.  
-* 🌱 Representatives from incubator projects focused on ELN/DMP integration.  
+* Enhance metadata quality at the point of creation.
+* Minimize metadata loss in downstream systems.
+* Facilitate PID registration, linkage, and reusability.
 
-## Event Details at a Glance:
-* 🗓️ Date: **September 22-23, 2025** (lunch to lunch)!  
-* 📍 Location: Helmholtz Association Headquarter, Anna-Louisa-Karsch-Straße 2, 10178 Berlin.  
-* 🤝 Host: PID4NFDI: A basic service for the NFDI, funded as part of Base4NFDI.  
-* ❗ Limited Spots! To ensure an interactive and productive environment, the workshop is **limited to 20 people**.  
-* ❗ **Registration is OPEN NOW!** Don't miss out on this unique opportunity. Registration will **close on September 10, 2025**, or once all places have been taken, whichever comes first.  
+The workshop was hosted by PID4NFDI. The project supports the development of sustainable PID infrastructures and integration strategies across the NFDI landscape, ensuring metadata from ELNs and DMPs aligns with PID requirements to achieve higher metadata quality and enable automated, interoperable workflows.
 
-### Visit https://events.hifis.net/event/2908/ to register and be part of this vital conversation.  
+This workshop gathered ELN and DMP tool developers, metadata specialists, and stakeholders from NFDI consortia to:  
 
+* **Validate and Extend the Metadata Framework**
+  * Review the metadata your tools currently capture for key research entities (e.g., samples, datasets, instruments).
 
-### We can't wait to collaborate with you in Berlin! See you there! 👋
+* **Enable Seamless PID Workflows**
+  * Explore practical use cases for integrating PIDs (e.g., ePICs, DOIs, IGSNs) directly into your workflows.
+
+* **Define and Measure Metadata Completeness**
+  * Establish a shared understanding of what constitutes “good enough” metadata for your infrastructure.
+  * Develop quality indicators, completeness thresholds, and scoring or validation mechanisms to guide users.
+
+* **Explore Interoperability Solutions**
+  * Discover how  [TS4NFDI](https://terminology.services.base4nfdi.de/) tools can connect your solutions with others to enable smooth cross-system data flows.
+  * Identify opportunities to develop and test your use cases as incubator projects supported by both PID4NFDI and TS4NFDI.
+
+Target group were developers and technical architects of ELN and DMP tools. Metadata and interoperability experts from NFDI consortia, and representatives from incubator projects focusing on ELN/DMP integration.
+
+## Organizational Aspects
+The conference was conducted in English. 
+
+Registration for on-site participation was limited to 20 people. Lighting talk sessions on Day 1 and 2 of the workshop were streamed online via Zoom.  
+
+The speaker's slides are published in our [PID4NFDI Zenodo Community](https://zenodo.org/communities/pid4nfdi).
+
+Visit https://events.hifis.net/event/2908/ for the program of the Workshop.
