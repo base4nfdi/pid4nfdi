@@ -92,17 +92,17 @@ Although this workshop focuses on use cases from the NFDI consortia, we warmly i
 ## Program & Documentation
 
 
-| Time | Topic | Speaker | Link to materials
-| :--- | :--- | :--- |
+| Time | Topic | Speaker | Link to materials |
+| :--- | :--- | :--- | :--- |
 | 10:00 | Welcome &  project overview | PID4NFDI - Torsten Kahlert (TIB) |
-| 10:15 | Introduction on IGSN | Kirsten Elger (IGSN e.V. / GFZ Helmholtz-Centre for Geosciences) | https://doi.org/10.5281/zenodo.20542440  
-| 10:30 | Lightning Talks (max. 5 Min, 6 Talks from different NFDI consortia) | Daniel Nüst (TU Dresden) | https://doi.org/10.5281/zenodo.20539952  
-                                                                              | Linda Baldewein (Hereon) | https://doi.org/10.5281/zenodo.20539945  
-                                                                              | Theodor Strauch (IPK Gatersleben) | https://doi.org/10.5281/zenodo.20624162  
-                                                                              | Hela Mehrtens (GEOMAR) | https://doi.org/10.5281/zenodo.20663181  
+| 10:15 | Introduction on IGSN | Kirsten Elger (IGSN e.V. / GFZ Helmholtz-Centre for Geosciences) | https://doi.org/10.5281/zenodo.20542440|  
+| 10:30 | Lightning Talks (max. 5 Min, 6 Talks from different NFDI consortia) | Daniel Nüst (TU Dresden) | https://doi.org/10.5281/zenodo.20539952|  
+                                                                              | Linda Baldewein (Hereon) | https://doi.org/10.5281/zenodo.20539945|  
+                                                                              | Theodor Strauch (IPK Gatersleben) | https://doi.org/10.5281/zenodo.20624162|  
+                                                                              | Hela Mehrtens (GEOMAR) | https://doi.org/10.5281/zenodo.20663181|  
                                                                               | Nicolas Hayen  (UB Kiel)|
-                                                                              | Kristina Fischer (Deutsche Archäologische Institut (DAI)) | https://doi.org/10.5281/zenodo.20552227  
-| 11:00 | Q&A Session | Plenary, moderated by PID4NFDI - Antonia Schrader (Helmholtz OS Office) |
+                                                                              | Kristina Fischer (Deutsche Archäologische Institut (DAI)) | https://doi.org/10.5281/zenodo.20552227|  
+| 11:00 | Q&A Session | Plenary, moderated by PID4NFDI - Antonia Schrader (Helmholtz OS Office) |  
 | 11:15 | Overview on Training/Guidance Material | PID4NFDI - Paul Vierkant (DataCite) | [Registering IGSN IDs: Adding PIDs to Samples/ Specimen/Objects…](https://docs.google.com/document/d/1mG8A8bkYAy7IjnDeelmpX2jMHfDcTW1HmrzLlXbwEkI/edit?tab=t.0) & [IGSN Training Material](https://liascript.github.io/course/?https://raw.githubusercontent.com/base4nfdi/pid4nfdi/main/static/training/igsn.md#1)
 | 11:20 | Breakout Session (Feedback and needs on training material in small groups) | | 
 | 11:50 | *Break* | |
@@ -111,7 +111,7 @@ Although this workshop focuses on use cases from the NFDI consortia, we warmly i
 | 12:55 | Recap & Farewell | PID4NFDI - Antonia |
    
 
-The detailed workshop notes, breakout session outcomes, and all relevant links can also be found in our collaborative **[Online Pad]**(https://pad.gwdg.de/s/HamTyOdfAE).
+The detailed workshop notes, breakout session outcomes, and all relevant links can also be found in our collaborative **[Online Pad](https://pad.gwdg.de/s/HamTyOdfAE)**.
 
 
 ## Thank you for your participation!
