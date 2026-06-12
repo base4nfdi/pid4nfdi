@@ -110,8 +110,7 @@ Although this workshop focuses on use cases from the NFDI consortia, we warmly i
 
 ---
 
-## Registration
+## Registration is closed.
 
-Participation is free of charge and open to anyone interested via the following link:
-[https://gfz-de.zoom-x.de/meeting/register/inSis27DTyKBI5nAngUplw](https://gfz-de.zoom-x.de/meeting/register/inSis27DTyKBI5nAngUplw)
+## Thank you for your participation!
 
