@@ -65,7 +65,7 @@ projects:
 
 **Date**: June 04, 2026  
 **Time**: 10:00 AM to 1:00 PM (CEST)  
-**Location**: Online via Zoom
+**Location**: Online via Zoom  
 **Language**: English   
 
 ---
@@ -96,9 +96,10 @@ Although this workshop focuses on use cases from the NFDI consortia, we warmly i
 | :--- | :--- | :--- | :--- |
 | 10:00 | Welcome &  project overview | PID4NFDI - Torsten Kahlert (TIB) |
 | 10:15 | Introduction on IGSN | Kirsten Elger (IGSN e.V. / GFZ Helmholtz-Centre for Geosciences) | https://doi.org/10.5281/zenodo.20542440|  
-| 10:30 | Lightning Talks (max. 5 Min, 6 Talks from different NFDI consortia) | Daniel Nüst (TU Dresden) | https://doi.org/10.5281/zenodo.20539952|  
-                                                                              | Linda Baldewein (Hereon) | https://doi.org/10.5281/zenodo.20539945|  
-                                                                              | Theodor Strauch (IPK Gatersleben) | https://doi.org/10.5281/zenodo.20624162|  
+| 10:30 | Lightning Talks (max. 5 Min, 6 Talks from different NFDI consortia) |  
+|       | Daniel Nüst (TU Dresden)                                            | https://doi.org/10.5281/zenodo.20539952| 
+|       | Linda Baldewein (Hereon) | Hereon                                   | https://doi.org/10.5281/zenodo.20539945|  
+|       | Theodor Strauch (IPK Gatersleben)                                   | https://doi.org/10.5281/zenodo.20624162|  
                                                                               | Hela Mehrtens (GEOMAR) | https://doi.org/10.5281/zenodo.20663181|  
                                                                               | Nicolas Hayen  (UB Kiel)|
                                                                               | Kristina Fischer (Deutsche Archäologische Institut (DAI)) | https://doi.org/10.5281/zenodo.20552227|  
