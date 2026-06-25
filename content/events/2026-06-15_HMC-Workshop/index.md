@@ -65,7 +65,7 @@ projects:
 
 **Date**: June 15, 2026  
 **Time**: 10:00 AM to 12:00 PM (CEST)  
-**Location**: Zoom 
+**Location**: Zoom  
 **Language**: English   
 
 ---
@@ -74,11 +74,12 @@ projects:
 
 This hands-on, online workshop empowered research support professionals to move beyond static views of metadata and actively interrogate, assess, and act on DOI metadata at scale using the DataCite API. Using the DataCite metadata schema as a practical reference point, participants worked directly with real DOI metadata to explore which metadata elements most strongly influenced discovery, reuse, trust, and decision-making. While DataCite was used as a reference implementation, the approaches and principles discussed were applicable to other PID-based and metadata-rich infrastructures.  
 
-Rather than inspecting records one by one, the workshop introduced the DataCite API as an accessible way to turn metadata into evidence. Participants learned how to translate everyday institutional and research questions—such as which records are missing licenses, how well ORCIDs or RORs are adopted, or which outputs are funded by a specific organisation—into concrete, reproducible API queries. The workshop was aimed at repository managers, data stewards, PID infrastructure providers, and analysts working with DOI metadata. It was particularly suitable for professionals who engage with metadata operationally but have limited or no experience working with APIs.  
+Rather than inspecting records one by one, the workshop introduced the DataCite API as an accessible way to turn metadata into evidence. Participants learned how to translate everyday institutional and research questions—such as which records are missing licenses, how well ORCIDs or RORs are adopted, or which outputs are funded by a specific organisation—into concrete, reproducible API queries.  
+The workshop was aimed at repository managers, data stewards, PID infrastructure providers, and analysts working with DOI metadata. It was particularly suitable for professionals who engage with metadata operationally but have limited or no experience working with APIs.  
 
 ## Documentation
 El-Gebali, S., Vierkant, P., Hagemann-Wilholt, S., Böhm, J., Kahlert, T., Springer, F., Schrader, A., & Krause, R. (2026).  
-Building Confidence with Research Metadata at Scale: A Hands-on DataCite REST API Workshop for PID4NFDI (1.0). Zenodo. 
+Building Confidence with Research Metadata at Scale: A Hands-on DataCite REST API Workshop for PID4NFDI (1.0). Zenodo.  
 [https://doi.org/10.5281/zenodo.20793639](https://doi.org/10.5281/zenodo.20793639)
 
 ### Thank you for your participation!
