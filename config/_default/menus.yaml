@@ -22,7 +22,7 @@ main:
   - name: PID Selection Tool
     url: /pidtool/
     parent: get-pid
-    weight: 31   
+    weight: 31
   - name: Services
     identifier: services
     url: services
@@ -43,6 +43,10 @@ main:
     parent: services
     url: services/prefix-registration
     weight: 40
+  - name: PID Metaresolver
+    parent: services
+    url: services/pidmr
+    weight: 50
 #  - name: Datatype Registry
 #    parent: services
 #    url: services/datatype-registry
