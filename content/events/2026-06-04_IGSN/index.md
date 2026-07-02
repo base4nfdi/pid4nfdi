@@ -14,8 +14,8 @@ event_url: https://pid.services.base4nfdi.de/events/2026-06-04_IGSN
 #  postcode: 
 #  country: 
 
-summary: PID4NFDI invites you to our online IGSN Community Workshop on June 4, 2026 (10:00–13:00 CEST), to share use cases and discuss the usage of PIDs for physical objects together.
-abstract: 'PID4NFDI invites you to our online IGSN Community Workshop on June 4, 2026 (10:00–13:00 CEST), to share use cases and discuss the usage of PIDs for physical objects together.'
+summary: PID4NFDI invited you to an online IGSN Community Workshop on June 4, 2026 (10:00–13:00 CEST), to share use cases and discuss the usage of PIDs for physical objects together.
+abstract: 'PID4NFDI invited you to an online IGSN Community Workshop on June 4, 2026 (10:00–13:00 CEST), to share use cases and discuss the usage of PIDs for physical objects together.'
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -65,7 +65,7 @@ projects:
 
 **Date**: June 04, 2026  
 **Time**: 10:00 AM to 1:00 PM (CEST)  
-**Location**: Online via Zoom (Please register to receive access information, see below.)  
+**Location**: Online via Zoom  
 **Language**: English   
 
 ---
@@ -89,29 +89,32 @@ Although this workshop focuses on use cases from the NFDI consortia, we warmly i
 
 ---
 
-## Program
+## Program & Documentation
 
 
-| Time | Topic | Speaker |
-| :--- | :--- | :--- |
+| Time | Topic | Speaker | Link to materials |
+| :--- | :--- | :--- | :--- |
 | 10:00 | Welcome &  project overview | PID4NFDI - Torsten Kahlert (TIB) |
-| 10:15 | Introduction on IGSN | Kirsten Elger (IGSN e.V. / GFZ Helmholtz-Centre for Geosciences) |
-| 10:30 | Lightning Talks (max. 5 Min, 6 Talks from different NFDI consortia) | Various Speakers |
-| 11:00 | Q&A Session | Plenary, moderated by PID4NFDI - Antonia Schrader (Helmholtz OS Office) |
-| 11:15 | Overview on Training/Guidance Material | PID4NFDI - Paul Vierkant (DataCite) |
-| 11:20 | Breakout Session (Feedback and needs on training material in small groups) | |
+| 10:15 | Introduction on IGSN | Kirsten Elger (IGSN e.V. / GFZ Helmholtz-Centre for Geosciences) | https://doi.org/10.5281/zenodo.20542440|  
+| 10:30 | Lightning Talks (max. 5 Min, 6 Talks from different NFDI consortia) |  
+|       | OJS PID Manager Plugin | Daniel Nüst (TU Dresden) | https://doi.org/10.5281/zenodo.20539952| 
+|       | IGSN use case Hereon: Assignment of IGSNs for a sample database – Lessons learned from the FAIR WISH project | Linda Baldewein (Hereon) | https://doi.org/10.5281/zenodo.20539945|  
+|       | IGSN Use Cases of IPK Gatersleben                                   | Theodor Strauch (IPK Gatersleben) | https://doi.org/10.5281/zenodo.20624162|  
+|       | IGSN at GEOMAR, Data and Sample Management                          | Hela Mehrtens (GEOMAR) | https://doi.org/10.5281/zenodo.20663181|  
+|       |                                                                     | Nicolas Hayen (UB Kiel) |  
+|       | Sampling Events in Conservation Documentation                       | Kristina Fischer (Deutsche Archäologische Institut (DAI)) | https://doi.org/10.5281/zenodo.20552227|  
+| 11:00 | Q&A Session | Plenary, moderated by PID4NFDI - Antonia Schrader (Helmholtz OS Office) |  
+| 11:15 | Overview on Training/Guidance Material | PID4NFDI - Paul Vierkant (DataCite) | [Registering IGSN IDs: Adding PIDs to Samples/ Specimen/Objects…](https://docs.google.com/document/d/1mG8A8bkYAy7IjnDeelmpX2jMHfDcTW1HmrzLlXbwEkI/edit?tab=t.0) & [IGSN Training Material](https://liascript.github.io/course/?https://raw.githubusercontent.com/base4nfdi/pid4nfdi/main/static/training/igsn.md#1)
+| 11:20 | Breakout Session (Feedback and needs on training material in small groups) | | 
 | 11:50 | *Break* | |
 | 12:10 | Wrap-up of Breakout Session | Plenary, moderated by PID4NFDI - Paul |
-| 12:15 | Discussion on future formats for structured exchange (Input from Gary Hsu (Deutsches Bergbau-Museum Bochum)) | Plenary, moderated by PID4NFDI - Torsten |
+| 12:15 | Discussion on future formats for structured exchange (Input from Gary Hsu] (Deutsches Bergbau-Museum Bochum)) | Plenary, moderated by PID4NFDI - Torsten | https://doi.org/10.5281/zenodo.20665707
 | 12:55 | Recap & Farewell | PID4NFDI - Antonia |
+   
+
+The detailed workshop notes, breakout session outcomes, and all relevant links can also be found in our collaborative [Online Pad](https://pad.gwdg.de/s/HamTyOdfAE).  
   
+   
 
-*Please note that the program is subject to change.*  
-
----
-
-## Registration
-
-Participation is free of charge and open to anyone interested via the following link:
-[https://gfz-de.zoom-x.de/meeting/register/inSis27DTyKBI5nAngUplw](https://gfz-de.zoom-x.de/meeting/register/inSis27DTyKBI5nAngUplw)
+## Thank you for your participation!
 

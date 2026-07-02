@@ -56,7 +56,7 @@ sections:
         subtitle: Create and Manage Instrument PIDs
         text: |
           ## {#B2INST}
-          [B2INST](https://b2inst.gwdg.de/) is a service offered by EUDAT that enables researchers and institutes to register their instruments and to be able to persistently refer to these registrations in other services or publications. The tool assigns an ePIC PID to each registered instrument. It is free and open to everyone, with various log-in options available. 
+          [B2INST](https://b2inst.gwdg.de/) is a service offered by EUDAT that enables researchers and institutes to register their instruments and to be able to persistently refer to these registrations in other services or publications. The tool assigns an ePIC PID to each registered instrument. It is free and open to everyone in NFDI, with various log-in options available. 
 
           B2INST can be used by institutions and researchers alike. 
 

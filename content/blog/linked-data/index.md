@@ -199,7 +199,6 @@ This is an early step toward a more connected and semantically explicit metadata
 * Bugs or implementation tasks: [https://github.com/datacite/schema.datacite.org-linked-data/issues](https://github.com/datacite/schema.datacite.org-linked-data/issues)  
 =======
 * Bugs or implementation tasks: [https://github.com/datacite/schema.datacite.org-linked-data/issues](https://github.com/datacite/schema.datacite.org-linked-data/issues)
->>>>>>> 4fa5b3da520a79bbc072100744bd699a5079cdd3
 
 Community input will help shape how this namespace develops and how it can best support real-world infrastructure and workflows.
 
