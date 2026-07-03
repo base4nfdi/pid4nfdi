@@ -741,9 +741,6 @@ function show_mini_bars(question_node, question_id, question_type, answer_option
       color = 'red';
     }
     mini_bar.style.backgroundColor = color;
-
-    // show a tooltip with raw value for expert score, user score and expert*user score
-    mini_bar.title = `Expert: ${expert_val} / 5     User: ${user_val} / 3 \nStatement Score for ${provider}: ${expert_val}*${user_val}=${score}`;
   }
 }
 
