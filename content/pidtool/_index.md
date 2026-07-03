@@ -64,7 +64,7 @@ _build:
         <input type="radio" id="more than 100,000" name="pid-volume" value="1">
         more than 100,000
       </label>
-      <label>
+      <label class="highlight-skip">
         <input type="radio" id="I don’t know" name="pid-volume" value="2" checked>
         I don’t know
       </label>

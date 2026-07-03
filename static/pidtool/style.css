@@ -135,7 +135,7 @@ button {
 
 /* Highlight the skip button */
 .answer-options label.highlight-skip {
-  background: #cdd9e7;
+  background: #d7e0ec;
 }
 
 /* radio invisible, but focusable and clickable */
@@ -165,7 +165,7 @@ button {
 
 /* Highlight skip button + emphasize the chosen option */
 .answer-options label.highlight-skip:has(input:checked) {
-  background: #cdd9e7;
+  background: #d7e0ec;
   border-color: #4f7cff;
   box-shadow: 0 0 0 2px rgba(79,124,255,.15) inset;
 }
