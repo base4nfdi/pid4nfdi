@@ -597,7 +597,7 @@ function back_to_questions(section_container, question_container, current_headin
 }
 
 
-// this function uopdates the progress bar which is shown on the questions section
+// this function updates the progress bar which is shown on the questions section
 function updateProgressBar(current_page_number) {
   const totalSections = page_size.length;
   const progress = ((current_page_number + 1) / totalSections) * 100;
@@ -650,6 +650,9 @@ function create_question_node(question) {
       question_answer_option_node.innerHTML =
         `<input type='radio' name='${question_id}' id="${answer_option['text']}" value="${answer_option['value']}">
         ${answer_option['text']}`;
+    }
+    if (answer_option['text']=="I don't know // Skip") {
+      question_answer_option_node.classList.add('highlight-skip');
     }
     question_answer_option_node.addEventListener('click', function () {
       show_mini_bars(question_node, question_id, question_type, answer_option);
