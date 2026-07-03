@@ -757,16 +757,27 @@ function compute_results() {
     results[i] = {
       'provider': expert_scores[i]['provider'],
       'score': 0,
+      'user_score_per_question': [],
+      'expert_score_per_question': [],
+      'score_per_question': [],
       'result_hint': expert_scores[i]['result_hint']
     };
     for (let j = 0; j < user_choice_score.length; j++) { // iterate over scores, j is the question-id
       const question_type = get_question_type(j);
+      let user_score;
+      let expert_score;
       if (question_type === 'feature') {
-        results[i]['score'] += user_choice_score[j] * expert_scores[i]['expert_scores'][j];
+        user_score = user_choice_score[j];
+        expert_score = expert_scores[i]['expert_scores'][j];
       }
       else if (question_type === 'comparison') {
-        results[i]['score'] += user_choice_score[j] * expert_scores[i]['expert_scores'][j][user_choice_text[j]];
+        user_score = user_choice_score[j];
+        expert_score = expert_scores[i]['expert_scores'][j][user_choice_text[j]];
       }
+      results[i]['user_score_per_question'].push(user_score);
+      results[i]['expert_score_per_question'].push(expert_score);
+      results[i]['score_per_question'].push(user_score*expert_score);
+      results[i]['score'] += user_score*expert_score;
     }
   }
   // return the final score for each provider
@@ -1006,9 +1017,17 @@ function download_results(sorted_results, feedback_texts) {
     text+= `[${section['title']}]\n\n`
     for (const question of section['questions']) {
       const question_id = question['id'];
-      text += `  ${question['text']}\n`
-      text += `  Answer: ${user_choice_score[question_id]} (${user_choice_text[question_id]})\n\n`
+      text += `  ${question['text']}\n`;
+      text += `     Your answer: ${user_choice_text[question_id]}\n`;
+      text += `     The following points were assigned to each provider for this question:\n`;
+      for (const element of sorted_results){
+         text += `        ${element['provider']}: ${element['score_per_question'][question_id]}\n`;
+         text += `           (user score: ${element['user_score_per_question'][question_id]}, expert score: ${element['expert_score_per_question'][question_id]}, `;
+         text += `question score: ${element['user_score_per_question'][question_id]}*${element['expert_score_per_question'][question_id]} = ${element['score_per_question'][question_id]}) \n`;
+      }
+      text += `\n`;
     }
+    text += `\n`;
   }
   // add the result notes
   text += "\n\n\n=== Note: ===\n\nThis tool focuses on object-related Persistent Identifiers.\n";

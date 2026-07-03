@@ -88,6 +88,7 @@ _build:
 
   <h2>Results</h2>
   <div id="results-container"></div>
+  <p>You can download your results to find out more details.</p>
   <button id="download-results-button">Download results</button>  
   <div class="note">
     <p><strong>Note:</strong> This tool focuses on object-related Persistent Identifiers. We recommend also integrating 
