@@ -43,7 +43,7 @@ const questions = [
         'help': 'Persistence is the core promise of a PID - but it’s not guaranteed by the technology alone. It depends on long-term organizational and financial commitment. Systems like DataCite DOIs, ePIC Handles, and URN:NBN:DE are backed by stable institutions/organizations that explicitly commit to maintaining resolvability over time. ARKs can also support persistence, but this varies with the implementation, especially as ARKs need to be hosted by the assigning institution.',
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        'default': STANDARD_ANSWER_OPTIONS[4]
       },
       {
         "id": 1,
@@ -51,7 +51,7 @@ const questions = [
         "help": "While many PID systems are designed for long-term reference and persistence, some use cases - especially during early research phases or for internal workflows - may require the option to delete or deactivate PIDs. ARKs support flexible lifecycles, including deletion and the definition of a persistence policy (e.g., how long a identifier will be available) for the PIDs of a namespace. In contrast, DataCite DOIs, ePIC Handles, and URN:NBN:DE are designed to be permanent and generally do not support deletion. Instead, it is possible and considered good practice to set a tombstone for an object that is not available anymore, such that at least the metadata is still available. Whether different persistence policies and deletion are allowed depends on the provider’s policies and the intended role of the PID.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        'default': STANDARD_ANSWER_OPTIONS[4]
       },
       {
         "id": 2,
@@ -59,7 +59,7 @@ const questions = [
         "help": "When registering PIDs, different types of costs can occur for the registering institution: 1) Membership fees or fees per registered PID: When registering many PIDs (e.g. more than 100k identifiers per year), costs can quickly accumulate. Some PID providers, such as URN:NBN:DE and ARK, offer free models that support large-scale usage. Others, like DataCite DOIs and ePIC Handles, have tiered pricing or institutional membership models, which scale more or less strongly with the total number of PIDs registered and end up at different pre-defined upper cost bounds. Choosing a cost-effective provider is especially important when you plan to register many PIDs over time. 2) Costs for hosting PID infrastructure: ARKs require self-hosting of the PID infrastructure, which incurs significant personal and material costs for setting up and maintaining PID infrastructure.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        'default': STANDARD_ANSWER_OPTIONS[4]
       }
     ]
   },
@@ -72,7 +72,7 @@ const questions = [
         "help": "If it is important for your institution that the identifiers used are globally recognized in scholarly publishing with stable citation practices, DataCite DOIs are the most suitable choice. They have strong, well-established support across publishers, citation styles, and research indexing services. Other identifiers such as ePIC Handles, ARKs, and URNs offer persistence but are not as universally accepted and integrated for formal scholarly citation.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        'default': STANDARD_ANSWER_OPTIONS[4]
       },
       {
         "id": 4,
@@ -80,7 +80,7 @@ const questions = [
         "help": "Early PID adoption means assigning persistent identifiers at the earliest stages of research asset creation, often while data is being generated or processed, before formal publication. Assigning PIDs early facilitates collaboration by enabling referencing of in-progress datasets or materials, allows early metadata capture, and ensures persistent connection between related outputs through the research workflow. ePIC Handles, ARKs, and DataCite DOIs support early PID assignment in the research data lifecycle, including pre-publication phases. In comparison, URN:NBN:DE are assigned when the digital object is published.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        'default': STANDARD_ANSWER_OPTIONS[4]
       },
       {
         "id": 5,
@@ -88,7 +88,7 @@ const questions = [
         "help": "If your PID use-case requires PID adoption on a relatively fine-grained level, you might first consider to assign ARKs or ePIC Handles. Often when PIDs are registered for high-granular data, the number of PIDs assigned is high and costs can quickly accumulate, e.g. for DOI. Also, ARKs and Handles offer technical features (suffix passthrough/template Handles) that allow to append paramteres to the PID during resolution to change or extend the resolution URL. Although not offering these specified features, DataCite DOIs are also generally capable of identifying high-granular entities, whereas URN:NBN:DEs are not used for high-granular entities.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        'default': STANDARD_ANSWER_OPTIONS[4]
       },
       {
         "id": 6,
@@ -96,7 +96,7 @@ const questions = [
         "help": "URN:NBN:DE are specialized persistent identifiers designed primarily for use by national libraries and archival institutions. It provides stable, location-independent naming of digital and physical resources that often lack other standard identifiers like ISBN or ISSN. URN:NBN:DEs supports comprehensive cataloging and long-term archival needs by uniquely identifying materials such as digitized manuscripts, reports, cultural heritage objects, and institutional publications within library collections. They are collected and discoverable in the central catalog of the German National Library.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        'default': STANDARD_ANSWER_OPTIONS[4]
       }
     ]
   },
@@ -145,7 +145,7 @@ const questions = [
         "help": "Some PID providers, such as DataCite DOI, offer a range of services on top of simple PID registration. These additional services may include: 1) Extensive metadata tooling for enriching and managing PID-related metadata. 2) Statistics and visualizations to track PID usage, citations, and connections. - These enhanced services provide features that can improve discovery, management, and outreach. Other PID providers (such as ePIC Handles, URN:NBN:DE, ARK) do not offer similar extensive metadata tooling features.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        'default': STANDARD_ANSWER_OPTIONS[4]
       }
     ]
   },
@@ -158,7 +158,7 @@ const questions = [
         "help": "Different PIDs by default may resolve to different kinds of resources. Some PIDs resolve to landing pages with human readable metadata, others resolve to a set of machine readable metadata or directly to the research entity (e.g., a file). Some PID systems (such as DataCite DOIs) require that the PID resolves to a landing page which must contain human-readable metadata. Other PID types (e.g. ePIC PID, ARKs, URN:NBN:DE) are allowed to resolve to whatever URL the user requires. Resolving directly to an object may be reasonable if, for example, many (high-granular) data are generated during the research process which might not be published in the end, but still receive a PID that points to the raw data.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        'default': STANDARD_ANSWER_OPTIONS[4]
       },
       {
         "id": 10,
@@ -202,7 +202,7 @@ const questions = [
         "help": "Training resources and user support can make a big difference, especially during onboarding or when integrating PIDs into institutional workflows. DataCite offers extensive documentation, webinars, community calls, and helpdesk support. ARKs, URN:NBN:DE and ePIC Handles are supported through technical documentation and user communities, but additional training offers are limited. ARKs provide rich information through their website, including best practices, presentations and video tutorials. URN systems usually depend on national libraries, where training and support may be limited or targeted to specific institutional partners.",
         'type': 'feature',
         'options': STANDARD_ANSWER_OPTIONS,
-        'default': STANDARD_ANSWER_OPTIONS[1]
+        'default': STANDARD_ANSWER_OPTIONS[4]
       }
     ]
   }
@@ -745,7 +745,7 @@ function show_mini_bars(question_node, question_id, question_type, answer_option
 }
 
 
-// compute the results when the results page is hown
+// compute the results when the results page is shown
 function compute_results() {
   // this variable will store the final score
   let results = [];
