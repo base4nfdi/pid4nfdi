@@ -14,6 +14,7 @@ sections:
         <!-- Table of Contents -->
         <nav class="pid-toc" aria-label="Section navigation">
           <strong>Jump to section:</strong>
+          <a href="#section-own">🧩 Our Own Materials</a>
           <a href="#section-intro">🧭 Introductions &amp; PID Ecosystem</a>
           <a href="#section-doi">🔬 DOI &amp; DataCite</a>
           <a href="#section-orcid-ror">👤 ORCID &amp; ROR</a>
@@ -79,7 +80,47 @@ sections:
           <button id="pid-clear" type="button">Clear</button>
           <span id="pid-count" aria-live="polite"></span>
         </div>
+        <!-- ============================================================ -->
+        <!-- SECTION 0: PID4NFDI Own Materials                            -->
+        <!-- ============================================================ -->
+        <h2 class="pid-section-heading" id="section-own">🧩 PID4NFDI Training Materials</h2>
+        <p class="pid-section-desc">Training materials developed directly by the PID4NFDI project team.</p>
 
+        <div class="pid-card-grid">
+
+        <div class="pid-card pid-own" data-type="Hands-on" data-provider="DataCite" data-domain="general audience" data-lang="en">
+        <h3>🪨 <a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/base4nfdi/pid4nfdi/main/static/training/igsn.md#1" target="_blank">Registering IGSN IDs: A Guide for Repository Managers</a></h3>
+        <p class="pid-description">An interactive LiaScript training module on International Generic Sample Numbers (IGSN IDs), designed for repository managers working within or connected to the NFDI. Covers what an IGSN ID is, which objects can receive one, and how to get started with registration.</p>
+        <div class="pid-types-badges">
+          <span class="pid-type-badge">IGSN</span>
+          <span class="pid-type-badge">DataCite DOI</span>
+        </div>
+        <div class="pid-details" hidden>
+          <dl class="pid-metadata">
+          <dt>Authors:</dt>
+          <dd>Edmunds, Rorie</dd>
+          <dt>Contributors:</dt>
+          <dd>Hagemann-Wilholt, Stephanie; Kahlert, Torsten; Schrader, Antonia; Springer, Frederik; Vierkant, Paul</dd>
+          <dt>Organisation:</dt>
+          <dd>PID4NFDI</dd>
+          <dt>Proficiency Level:</dt>
+          <dd>advanced beginner, competent, proficient</dd>
+          <dt>Target Group:</dt>
+          <dd>Repository Managers</dd>
+          <dt>License:</dt>
+          <dd>CC-BY-4.0</dd>
+          <dt>Learning Outcomes:</dt>
+          <dd>Explain what an IGSN ID is and how it relates to DOIs. Identify which objects in your repository can receive an IGSN ID. Describe the four key purposes IGSN IDs serve for sample management. Outline the steps your organization needs to take to register IGSN IDs. Know when to use a Registered Service Provider instead of a custom workflow.</dd>
+          </dl>
+        </div>
+        <div class="pid-actions">
+          <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
+          <a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/base4nfdi/pid4nfdi/main/static/training/igsn.md#1" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
+        </div>
+        </div>
+
+        </div><!-- end own-materials grid -->
+        
         <!-- ============================================================ -->
         <!-- SECTION 1: Introductions & PID Ecosystem                     -->
         <!-- ============================================================ -->
@@ -441,7 +482,7 @@ sections:
             </div>
           </div>
 
-          <div class="pid-card pid-new" data-type="Registry / Collection" data-provider="DataCite DOI" data-domain="general audience" data-lang="en">
+          <div class="pid-card" data-type="Registry / Collection" data-provider="DataCite DOI" data-domain="general audience" data-lang="en">
             <h3>📚 <a href="https://pidservices.org/" target="_blank">PID Services Registry</a></h3>
             <p class="pid-description">The PID Services Registry provides an overview of services related to Persistent Identifiers (PIDs). Maintained by DataCite and originally developed within the FREYA project, it describes PID service providers using structured metadata and assigns a DOI to each registered service.</p>
             <div class="pid-types-badges">

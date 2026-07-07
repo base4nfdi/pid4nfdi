@@ -258,6 +258,34 @@ video {
 	border-color: #ddd;
   }
 
+/* ====================================
+  OWN MATERIAL - PID4NFDI HIGHLIGHT
+  ==================================== */
+.pid-card.pid-own {
+  position: relative;
+  overflow: hidden;
+  background: #eef6ff;
+  border-color: #cfe3fb;
+}
+
+.pid-card.pid-own::before {
+  content: "PID4NFDI";
+  position: absolute;
+  top: 14px;
+  right: -34px;
+  width: 140px;
+  padding: 0.25rem 0;
+  background: #4a7fc9;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
   .pid-card h3 {
 	font-size: 1.15rem;
 	margin: 0 0 .4rem;
@@ -442,21 +470,6 @@ video {
   position: relative;
 }
 
-.pid-card.pid-new::before {
-  content: "NEW";
-  position: absolute;
-  top: 12px;
-  right: -8px;
-  background: #e63946;
-  color: white;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 4px;
-  transform: rotate(10deg);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  letter-spacing: 0.5px;
-}
 
 table td:first-child img {
   max-width: 100px;
