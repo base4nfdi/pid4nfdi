@@ -88,7 +88,7 @@ sections:
 
         <div class="pid-card-grid">
 
-        <div class="pid-card pid-own" data-type="Hands-on" data-provider="DataCite" data-domain="general audience" data-lang="en">
+        <div class="pid-card pid-own pid-own-featured" data-type="Hands-on" data-provider="DataCite" data-domain="general audience" data-lang="en">
         <h3>🪨 <a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/base4nfdi/pid4nfdi/main/static/training/igsn.md#1" target="_blank">Registering IGSN IDs: A Guide for Repository Managers</a></h3>
         <p class="pid-description">An interactive LiaScript training module on International Generic Sample Numbers (IGSN IDs), designed for repository managers working within or connected to the NFDI. Covers what an IGSN ID is, which objects can receive one, and how to get started with registration.</p>
         <div class="pid-types-badges">
@@ -116,6 +116,75 @@ sections:
         <div class="pid-actions">
           <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
           <a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/base4nfdi/pid4nfdi/main/static/training/igsn.md#1" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
+        </div>
+        </div>
+
+        <div class="pid-card pid-own" data-type="cookbook" data-provider="DataCite" data-domain="general audience" data-lang="en">
+        <h3>📘 <a href="https://pid4nfdi-training.readthedocs.io/en/latest/" target="_blank">PID4NFDI Cookbook</a></h3>
+        <p class="pid-description">The "PID4NFDI Cookbook" is an open-access online training manual developed under the German National Research Data Infrastructure (NFDI) initiative. It offers a practical guide for individuals and organisations on implementing PIDs in research workflows.</p>
+        <div class="pid-types-badges">
+          <span class="pid-type-badge">DataCite DOI</span>
+          <span class="pid-type-badge">ORCID</span>
+          <span class="pid-type-badge">PIDINST</span>
+          <span class="pid-type-badge">ePIC Handle</span>
+          <span class="pid-type-badge">handle</span>
+          <span class="pid-type-badge">ROR</span>
+          <span class="pid-type-badge">B2Inst</span>
+          <span class="pid-type-badge">ARK</span>
+          <span class="pid-type-badge">Crossref DOI</span>
+          <span class="pid-type-badge">IGSN</span>
+          <span class="pid-type-badge">URN</span>
+          <span class="pid-type-badge">GND</span>
+        </div>
+        <div class="pid-details" hidden>
+          <dl class="pid-metadata">
+          <dt>Organisation:</dt>
+          <dd>PID4NFDI</dd>
+          <dt>Proficiency Level:</dt>
+          <dd>novice, advanced beginner, competent</dd>
+          <dt>License:</dt>
+          <dd>CC-BY-4.0</dd>
+          <dt>Learning Outcomes:</dt>
+          <dd>Understand what a PID is and why it's essential in research infrastructures. Identify different PID systems and know how to select among them. Gain practical guidance to initiate PID implementation within institutions or projects.</dd>
+          </dl>
+        </div>
+        <div class="pid-actions">
+          <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
+          <a href="https://pid4nfdi-training.readthedocs.io/en/latest/" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
+        </div>
+        </div>
+
+        <div class="pid-card pid-own" data-type="collection of resources / database" data-provider="DataCite" data-domain="general audience" data-lang="en, de">
+        <h3>📘 <a href="https://www.zotero.org/groups/5597931/pid4nfdi/library" target="_blank">PID4NFDI Zotero Group Library</a></h3>
+        <p class="pid-description">An openly accessible, curated collection of literature related to Persistent Identifiers (PIDs) in research and research data management. Brings together key papers, reports, and documentation from across the PID landscape.</p>
+        <div class="pid-types-badges">
+          <span class="pid-type-badge">DataCite DOI</span>
+          <span class="pid-type-badge">ORCID</span>
+          <span class="pid-type-badge">PIDINST</span>
+          <span class="pid-type-badge">ePIC Handle</span>
+          <span class="pid-type-badge">handle</span>
+          <span class="pid-type-badge">ROR</span>
+          <span class="pid-type-badge">SWHID</span>
+          <span class="pid-type-badge">B2Inst</span>
+          <span class="pid-type-badge">ARK</span>
+          <span class="pid-type-badge">Crossref DOI</span>
+          <span class="pid-type-badge">RAiD</span>
+          <span class="pid-type-badge">IGSN</span>
+          <span class="pid-type-badge">URN</span>
+          <span class="pid-type-badge">GND</span>
+          <span class="pid-type-badge">B2SAFE/B2STAGE</span>
+        </div>
+        <div class="pid-details" hidden>
+          <dl class="pid-metadata">
+          <dt>Organisation:</dt>
+          <dd>PID4NFDI</dd>
+          <dt>Proficiency Level:</dt>
+          <dd>novice, advanced beginner, competent, proficient, expert</dd>
+          </dl>
+        </div>
+        <div class="pid-actions">
+          <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
+          <a href="https://www.zotero.org/groups/5597931/pid4nfdi/library" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
         </div>
         </div>
 
@@ -1347,76 +1416,7 @@ sections:
         <h2 class="pid-section-heading" id="section-collections">📚 Collections &amp; Portals</h2>
         <p class="pid-section-desc">Curated resource collections, training portals, and broader community platforms covering PIDs and research data management. These resources aggregate multiple PID types and learning formats, and are a good starting point for finding additional training materials beyond this collection.</p>
 
-        <div class="pid-card-grid">
-
-          <div class="pid-card" data-type="cookbook" data-provider="DataCite" data-domain="general audience" data-lang="en">
-            <h3>📘 <a href="https://pid4nfdi-training.readthedocs.io/en/latest/" target="_blank">PID4NFDI Cookbook</a></h3>
-            <p class="pid-description">The "PID4NFDI Cookbook" is an open-access online training manual developed under the German National Research Data Infrastructure (NFDI) initiative. It offers a practical guide for individuals and organisations on implementing PIDs in research workflows.</p>
-            <div class="pid-types-badges">
-              <span class="pid-type-badge">DataCite DOI</span>
-              <span class="pid-type-badge">ORCID</span>
-              <span class="pid-type-badge">PIDINST</span>
-              <span class="pid-type-badge">ePIC Handle</span>
-              <span class="pid-type-badge">handle</span>
-              <span class="pid-type-badge">ROR</span>
-              <span class="pid-type-badge">B2Inst</span>
-              <span class="pid-type-badge">ARK</span>
-              <span class="pid-type-badge">Crossref DOI</span>
-              <span class="pid-type-badge">IGSN</span>
-              <span class="pid-type-badge">URN</span>
-              <span class="pid-type-badge">GND</span>
-            </div>
-            <div class="pid-details" hidden>
-              <dl class="pid-metadata">
-              <dt>Organisation:</dt>
-              <dd>PID4NFDI</dd>
-              <dt>Proficiency Level:</dt>
-              <dd>novice, advanced beginner, competent</dd>
-              <dt>License:</dt>
-              <dd>CC-BY-4.0</dd>
-              <dt>Learning Outcomes:</dt>
-              <dd>Understand what a PID is and why it's essential in research infrastructures. Identify different PID systems and know how to select among them. Gain practical guidance to initiate PID implementation within institutions or projects.</dd>
-              </dl>
-            </div>
-            <div class="pid-actions">
-              <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
-              <a href="https://pid4nfdi-training.readthedocs.io/en/latest/" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
-            </div>
-          </div>
-
-          <div class="pid-card" data-type="collection of resources / database" data-provider="DataCite" data-domain="general audience" data-lang="en, de">
-            <h3>📘 <a href="https://www.zotero.org/groups/5597931/pid4nfdi/library" target="_blank">PID4NFDI Zotero Group Library</a></h3>
-            <p class="pid-description">An openly accessible, curated collection of literature related to Persistent Identifiers (PIDs) in research and research data management. Brings together key papers, reports, and documentation from across the PID landscape.</p>
-            <div class="pid-types-badges">
-              <span class="pid-type-badge">DataCite DOI</span>
-              <span class="pid-type-badge">ORCID</span>
-              <span class="pid-type-badge">PIDINST</span>
-              <span class="pid-type-badge">ePIC Handle</span>
-              <span class="pid-type-badge">handle</span>
-              <span class="pid-type-badge">ROR</span>
-              <span class="pid-type-badge">SWHID</span>
-              <span class="pid-type-badge">B2Inst</span>
-              <span class="pid-type-badge">ARK</span>
-              <span class="pid-type-badge">Crossref DOI</span>
-              <span class="pid-type-badge">RAiD</span>
-              <span class="pid-type-badge">IGSN</span>
-              <span class="pid-type-badge">URN</span>
-              <span class="pid-type-badge">GND</span>
-              <span class="pid-type-badge">B2SAFE/B2STAGE</span>
-            </div>
-            <div class="pid-details" hidden>
-              <dl class="pid-metadata">
-              <dt>Organisation:</dt>
-              <dd>PID4NFDI</dd>
-              <dt>Proficiency Level:</dt>
-              <dd>novice, advanced beginner, competent, proficient, expert</dd>
-              </dl>
-            </div>
-            <div class="pid-actions">
-              <button class="pid-toggle-details" onclick="toggleDetails(this)">Show details ↓</button>
-              <a href="https://www.zotero.org/groups/5597931/pid4nfdi/library" class="pid-btn-open" target="_blank" rel="noopener">Open resource ↗</a>
-            </div>
-          </div>
+        <div class="pid-card-grid">          
 
           <div class="pid-card" data-type="online community, forum, knowledge hub" data-provider="DataCite" data-domain="general audience" data-lang="en">
             <h3>📘 <a href="https://www.pidforum.org/" target="_blank">The PID Forum</a></h3>
@@ -1730,6 +1730,10 @@ sections:
             font-size: 1.25rem; 
             line-height: 1.25; 
             margin: 0.1rem 0 0.5rem;
+          }
+
+          .pid-own-featured {
+            grid-column: 1 / -1;
           }
 
           /* ====================================
