@@ -22,7 +22,8 @@ sections:
         
         The upcoming meetings in 2026 are on 
         * **Monday, September 7 at 11 am, and**
-        * **Tuesday, December 1st, at 2 pm**
+        
+        You can find the access link [here](https://pad.gwdg.de/s/aD4-mm4uBJ). 
 
     design:
       columns: '2'
