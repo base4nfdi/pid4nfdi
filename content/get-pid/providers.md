@@ -27,7 +27,9 @@ sections:
             | ![](pidinst.png) | [PIDINST / RDA (via DataCite or ePIC)](https://www.rd-alliance.org/groups/persistent-identification-instruments-wg) | DOI or ePIC Handle | Instruments | Institutional membership (fee, via DataCite or ePIC) | [PID for Instruments](https://pid4nfdi-training.readthedocs.io/en/latest/pidinst.html) |
             | ![](raid.png) | [RAiD / ARDC](https://www.raid.org/) | RAiD | Research projects and activities | Free service; institutional sign-up via ARDC or regional Registration Agency | [RAiD](https://pid4nfdi-training.readthedocs.io/en/latest/raid.html) |
             | ![](ror.png) | [ROR (Research Organization Registry)](https://ror.org/) | ROR ID | Organisations (research institutions) | Free, editorial review process | [ROR](https://pid4nfdi-training.readthedocs.io/en/latest/ror.html) |
+            | ![](rrid.png) | [RRID (Resource Identification Initiative) / SciCrunch](https://rrid.site/) | RRID (Research Resource Identifier) | Antibodies, organisms, cell lines, research tools | Free, self-service registration | — |
             | ![](swhid.png) | [Software Heritage](https://www.softwareheritage.org/) | SWHID | Software, source code | Free, no registration required for archiving | — |
+            | ![](w3id.png) | [w3id.org (W3C Permanent Identifier Community Group)](https://w3id.org/) | w3id (Permanent URL) | Web resources, ontologies, vocabularies | Free, via GitHub pull request | — |
             | ![](wikidata.png) | [Wikidata](https://www.wikidata.org/) | Wikidata QID | Persons, organisations, concepts, places, and many other entity types | Open, no registration required | [Wikidata](https://pid4nfdi-training.readthedocs.io/en/latest/wikidata.html) |
 
             _This list is sorted alphabetically by provider name. It is a work in progress — entries marked "—" do not yet have a Cookbook article. [Suggestions and corrections are welcome.](https://pid.services.base4nfdi.de/about/contact)_
