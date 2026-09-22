@@ -129,6 +129,9 @@ sections:
      subtitle: 
      text: |
 
+        ##### PID4NFDI  
+        - Registering IGSN IDs Adding Persistent Identifiers to Your Samples, Specimens, and Other Physical Objects: https://doi.org/10.5281/zenodo.20395885  
+        
         ##### Forschungsdaten.org        
         - https://www.forschungsdaten.org/index.php/IGSN 
 
